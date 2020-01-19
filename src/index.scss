@@ -1,0 +1,91 @@
+$footer-height: 70px;
+$success: #62c462;
+$success-dark: #42b142;
+$failure: #ee5f5b;
+$failure-dark: #e9322d;
+$primary: #7a8288;
+$primary-dark: #62686d;
+
+h1 {
+  border-bottom: 1px solid gray;
+  font-size: 36px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #333;
+}
+
+html {
+  height: 100%;
+  font-size: 62.5%; //Give us about 10 px/rem
+  > body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Sans-Serif;
+    font-size: 1.4rem;
+    color: #555555;
+    line-height: 1.42857143;
+
+    #root {
+      height: 100%;
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    > .background {
+      position: fixed;
+      top: 0;
+      left: 300px;
+      min-height: 100%;
+      height: auto;
+      width: calc(100% - 300px);
+      z-index: -1;
+    }
+
+    #wrapper {
+      height: 100%;
+      padding-left: 300px;
+      > .container-fluid {
+        height: 100%;
+        position: relative;
+        margin-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-right: auto;
+        margin-left: auto;
+
+        > .view-frame {
+          display: block;
+          min-height: calc(100% - #{$footer-height} - 20px - 20px);
+          padding-top: 20px;
+
+        }
+        > footer {
+          padding-top: 10px;
+          text-align: center;
+          font-size: 1rem;
+          height: $footer-height;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  html {
+    > body {
+      > .background {
+        width: 100%;
+        left: 0;
+      }
+
+      #wrapper {
+        padding-left: 0px!important;
+      }
+    }
+  }
+}

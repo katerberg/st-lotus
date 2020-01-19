@@ -1,0 +1,35 @@
+html {
+  > body {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  li {
+    list-style: none;
+  }
+}
+
+.modal-backdrop {
+  position: fixed !important;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #158cba
+}
