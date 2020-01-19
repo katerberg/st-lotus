@@ -1,0 +1,104 @@
+.sidebar {
+  position: fixed;
+  width: 300px;
+  left: 300px;
+  margin-left: -300px;
+  height: 100%;
+  text-align: center;
+  background-color: #f8f8f8;
+  z-index: 3;
+  box-shadow: 5px 0px 5px #e7e7e7;
+
+  .list-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-left: 0;
+
+    .list-group-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 15px;
+      margin-bottom: -1px;
+      background-color: #ffffff;
+      border: 1px solid #dddddd;
+      color: #555555;
+      min-height: 2rem;
+      cursor: pointer;
+
+      &.primary {
+        font-weight: 700;
+      }
+
+      &:hover {
+        color: #158cba;
+        background-color: #f5f5f5;
+      }
+    }
+  }
+
+  .profile {
+    $profile-size: 150px;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/technology-business-and-industry/1000/file_light-72-512.png");
+    background-size: $profile-size $profile-size;
+    transition: all 0.2s ease;
+    margin: 16px 0px 8px;
+    height: $profile-size - 6;
+    width: $profile-size - 6;
+    border-radius: calc(#{$profile-size} / 2);
+    display: inline-block;
+    cursor: pointer;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 3px;
+    background-position-x: -3px;
+    background-position-y: -3px;
+
+    >a {
+      font-size: 3em;
+      opacity: 0;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      height: 100%;
+      top: 10%;
+    }
+
+    &:hover {
+      opacity: 0.5;
+      border-color: #158cba;
+      >a {
+        color: #fff;
+        opacity: 1.0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    position: relative;
+
+    .list-group {
+      display: flex;
+      flex-flow: row nowrap;
+      > .list-group-item {
+        &:first-child {
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+        }
+        &:last-child {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+        border-radius: 0px;
+        width: 50%;
+      }
+    }
+  }
+}
