@@ -16,6 +16,9 @@ function Sidebar() {
           to="/rules"
         >{'Rules'}</Link>
         <Link className="list-group-item"
+          to="/players"
+        >{'Players'}</Link>
+        <Link className="list-group-item"
           to="/9th-seed"
         >{'9th Seed Bot'}</Link>
       </div>
