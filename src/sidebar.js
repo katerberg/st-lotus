@@ -6,7 +6,9 @@ function Sidebar() {
   return (
     <header className="sidebar">
       <div className="profile">
-        <Link to="/" />
+        <Link to="/">
+          <img src={`${process.env.PUBLIC_URL}/logo-colour-circle.png`} />
+        </Link>
       </div>
       <div className="list-group">
         <Link className="list-group-item primary"
