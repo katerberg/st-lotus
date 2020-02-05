@@ -12,12 +12,12 @@ function Rules() {
         <p>{'After all the players have drafted their 45 cards, they build their 40-card decks, adding as many basic lands (Plains, Island, Swamp, Mountain, and Forest only - if you want Snow lands or Wastes, you have to draft them!) as they want, just like in any draft. This event doesn’t have continuous construction - maindecks and sideboards are locked in from Round 1 through the end of the event, so building your deck right to start the day is a must.'}</p>
         <p>{'The event is played out in round-robin style, with each player battling each other player over the course of the day for a total of seven matches each. Once everyone has played all of their matches, we check the standings to see where everyone placed! Standings are by match record only - any ties are broken by one-game playoffs.'}</p>
         <p>{'The standings matter for pride, of course, but also for prizes and invitations! In order to enter the St. Lotus VRD, you have to bring a food or drink item worth $50 or more as your buy-in. In the past, this has led players to bring steaks, giant chunks of fancy cheese, and high-end adult beverages. After the dust settles, the top 4 players draft the prizes, with players getting picks in order as follows:'}</p>
-        <ol>
+        <ul>
           <li>{'1st place: Picks 1, 6, 7, and 8'}</li>
           <li>{'2nd Place: Picks 2 and 5'}</li>
           <li>{'3rd Place: Pick 3'}</li>
           <li>{'4th Place: Pick 4'}</li>
-        </ol>
+        </ul>
         <p>
         {'Sounds fun, right? If you want to catch all the action, follow us on '}<a href="https://www.twitch.tv/stlvrd">{'Twitch'}</a>
         {', '}
