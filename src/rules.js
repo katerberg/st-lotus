@@ -19,9 +19,9 @@ function Rules() {
           <li>{'4th Place: Pick 4'}</li>
         </ul>
         <p>
-        {'Sounds fun, right? If you want to catch all the action, follow us on '}<a href="https://www.twitch.tv/stlvrd">{'Twitch'}</a>
+        {'Sounds fun, right? If you want to catch all the action, follow us on '}<a href="https://www.twitch.tv/stlotusmtg">{'Twitch'}</a>
         {', '}
-        <a href="https://www.twitter.com/stlvrd">{'Twitter'}</a>
+        <a href="https://www.twitter.com/stlotusmtg">{'Twitter'}</a>
         {', and '}
         <a href="https://www.youtube.com/channel/UCpwS9X2A-5pmo1txhyD7eoA">{'Youtube'}</a>
         {' so you don’t miss a single moment!'}
