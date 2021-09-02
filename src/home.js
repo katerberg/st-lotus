@@ -1,42 +1,14 @@
 import React from 'react';
 import Typography from '@material-ui/core/Typography';
-import {makeStyles} from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Box from '@material-ui/core/Box';
-
-const useStyles = makeStyles({
-  heroBox: {
-    position: 'relative',
-  },
-  hero: {
-    width: '100vw',
-  },
-  heroText: {
-    position: 'absolute',
-    top: '50%',
-    transform: 'translate(0, -50%)',
-    right: '10px',
-    color: 'white',
-    backgroundColor: 'black',
-    padding: '10px',
-    borderRadius: '10px',
-    border: '5px solid white',
-  },
-});
+import PreviewVideo from './PreviewVideo';
+import Hero from './Hero';
 
 function Home() {
-  const classes = useStyles();
-
   return (
     <div id="home">
-      <Box className={classes.heroBox}>
-        <img className={classes.hero}
-          src={`${process.env.PUBLIC_URL}/hero.png`}
-        />
-        <Typography className={classes.heroText}
-          variant="h1"
-        >{'Vintage.'}<br/>{'Rotisserie.'}<br />{'Draft.'}</Typography>
-      </Box>
+      <Hero />
+      <PreviewVideo/>
       <Container maxWidth="lg">
           <Typography>{'Welcome to the home of St. Lotus, a Vintage Rotisserie Draft series based in St. Louis, MO!'}</Typography>
           <Typography>{'We run a Vintage Rotisserie Draft with a rotating roster of local players approximately once per quarter. If you’re invested in learning more about Vintage Rotisserie Draft, read the rules here!'}</Typography>
