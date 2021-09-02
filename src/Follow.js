@@ -15,7 +15,6 @@ export default function Follow() {
   return (
     <Grid className={classes.root}
       container
-      spacing={3}
     >
       <FollowIcon icon={faYoutube}
         label="Youtube"
