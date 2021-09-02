@@ -30,7 +30,8 @@ export default function Hero() {
 
   return (
     <Box className={classes.heroBox}>
-      <img className={classes.hero}
+      <img alt="Players sitting around a table with computers drafting cards"
+        className={classes.hero}
         src={`${process.env.PUBLIC_URL}/hero.png`}
       />
       <Typography className={classes.heroText}

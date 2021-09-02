@@ -7,7 +7,6 @@ import {makeStyles} from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
   icon: {
     marginRight: theme.spacing(1),
-    height: '50px',
   },
 }));
 
@@ -15,8 +14,11 @@ export default function Topbar() {
   const classes = useStyles();
   return <AppBar><Toolbar>
     <img
+      alt="St Lotus logo"
       className={classes.icon}
+      height="50px"
       src={`${process.env.PUBLIC_URL}/favicon-152.png`}
+      width="50px"
     />
     <Typography color="textPrimary"
       variant="h4"
