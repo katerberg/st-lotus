@@ -4,5 +4,5 @@ import Toolbar from '@material-ui/core/Toolbar';
 import {Typography} from '@material-ui/core';
 
 export default function Topbar() {
-  return <AppBar><Toolbar><Typography>{'St Lotus'}</Typography></Toolbar></AppBar>;
+  return <AppBar><Toolbar><Typography color="textPrimary">{'St Lotus'}</Typography></Toolbar></AppBar>;
 }
