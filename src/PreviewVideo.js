@@ -33,7 +33,7 @@ export default function PreviewVideo() {
       <Container>
       <Typography className={classes.title}
         variant="h2"
-      >{'Latest Draft'}</Typography>
+      >{'Latest Event'}</Typography>
       <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         className={classes.iframe}
