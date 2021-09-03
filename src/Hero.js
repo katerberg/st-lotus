@@ -30,10 +30,24 @@ export default function Hero() {
 
   return (
     <Box className={classes.heroBox}>
-      <img alt="Players sitting around a table with computers drafting cards"
-        className={classes.hero}
-        src={`${process.env.PUBLIC_URL}/hero.png`}
-      />
+      <picture>
+        <source media="(max-width: 999px)"
+          srcSet={`${process.env.PUBLIC_URL}/hero1000.png`}
+        />
+        <source media="(max-width: 1199px)"
+          srcSet={`${process.env.PUBLIC_URL}/hero1200.png`}
+        />
+        <source media="(min-width: 1200px)"
+          srcSet={`${process.env.PUBLIC_URL}/hero.png`}
+        />
+        <img
+          alt="Players sitting around a table with computers drafting cards"
+          className={classes.hero}
+          src={`${process.env.PUBLIC_URL}/hero.png`}
+        />
+      </picture>
+
+
       <Typography className={classes.heroText}
         variant="h1"
       >{'Vintage.'}<br/>{'Rotisserie.'}<br />{'Draft.'}</Typography>
