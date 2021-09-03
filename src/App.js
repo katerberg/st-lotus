@@ -3,23 +3,31 @@ import {
   HashRouter as Router,
 } from 'react-router-dom';
 import Routes from './routes';
-import Sidebar from './sidebar';
-import './App.scss';
+import {createTheme, responsiveFontSizes} from '@material-ui/core/styles';
+import Topbar from './Topbar';
+import {ThemeProvider} from '@material-ui/core';
+
+const theme = responsiveFontSizes(createTheme({
+  palette: {
+    primary: {
+      light: '#c1ffff',
+      main: '#8dd8f8',
+      dark: '#59a7c5',
+      contrastText: '#fff',
+    },
+  },
+}));
 
 function App() {
   return (
-    <div className="App"
-      id="wrapper"
-    >
-      <Router>
-        <Sidebar />
-        <div className="container-fluid">
-          <div className="view-frame">
-            <Routes />
-          </div>
-        </div>
-      </Router>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Topbar/>
+        <Router>
+          <Routes />
+        </Router>
+      </div>
+    </ThemeProvider>
   );
 }
 
