@@ -17,7 +17,7 @@ const theme = responsiveFontSizes(createTheme({
     },
   },
 }));
-//#8dd8f8
+
 function App() {
   return (
     <ThemeProvider theme={theme}>

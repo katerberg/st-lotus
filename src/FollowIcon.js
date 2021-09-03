@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   icon: {
-    fontSize: '3em',
+    fontSize: '2em',
     backgroundColor: theme.palette.primary.main,
     padding: '1em',
     borderRadius: '50%',
