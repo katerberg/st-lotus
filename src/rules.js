@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Rules() {
+export default function Rules() {
   return (
     <div id="rules">
         <h1>{'Rules'}</h1>
@@ -29,5 +29,3 @@ function Rules() {
     </div>
   );
 }
-
-export default Rules;

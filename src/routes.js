@@ -3,8 +3,9 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
-import Home from './home';
+import Home from './home/Home';
 import Rules from './rules';
+import Decks from './Decks';
 
 function Routes() {
   return (
@@ -14,6 +15,12 @@ function Routes() {
           path="/rules"
         >
           <Rules />
+        </Route>
+        <Route
+          exact
+          path="/decks"
+        >
+          <Decks />
         </Route>
         <Route
           path="/"
