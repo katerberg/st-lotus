@@ -21,8 +21,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Topbar/>
         <Router>
+          <Topbar/>
           <Routes />
         </Router>
       </div>
