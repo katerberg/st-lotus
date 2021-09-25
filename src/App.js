@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom';
 import Routes from './routes';
 import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
-import Topbar from './Topbar';
+import Topbar from './topbar/Topbar';
 
 const theme = responsiveFontSizes(createTheme({
   palette: {
