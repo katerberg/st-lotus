@@ -1,21 +1,17 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-import {Typography} from '@material-ui/core';
-
-const useStyles = makeStyles(() => ({
-  root: {
-    marginTop: '60px',
-  },
-}));
+import Grid from '@mui/material/Grid';
+import Typography from '@mui/material/Typography';
 
 export default function Decks() {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
+    <Grid item
+      md={3}
+      sx={{marginTop: '60px'}}
+      xs={12}
+    >
         <Typography
           variant="h1"
         >{'Decks'}</Typography>
-    </div>
+    </Grid>
   );
 }

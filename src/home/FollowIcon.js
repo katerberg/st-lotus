@@ -1,38 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Grid from '@material-ui/core/Grid';
-import {makeStyles} from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
+import Grid from '@mui/material/Grid';
+import IconButton from '@mui/material/IconButton';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    textAlign: 'center',
-  },
-  icon: {
-    fontSize: '2em',
-    backgroundColor: theme.palette.primary.main,
-    padding: '1em',
-    borderRadius: '50%',
-  },
-}));
-
 export default function FollowIcon({icon, label, link}) {
-  const classes = useStyles();
   return (
-      <Grid className={classes.root}
-        item
-        md={3}
-        xs={12}
+    <Grid item
+      md={3}
+      sx={{textAlign: 'center'}}
+      xs={12}
+    >
+      <IconButton aria-label={label}
+        href={link}
+        sx={{
+          fontSize: '3em',
+          backgroundColor: 'primary.main',
+          padding: '0.8em',
+          margin: '0.5em',
+          borderRadius: '50%',
+        }}
       >
-        <IconButton aria-label={label}
-          href={link}
-        >
-          <FontAwesomeIcon className={classes.icon}
-            icon={icon}
-          />
-        </IconButton>
-      </Grid>
+        <FontAwesomeIcon icon={icon}/>
+      </IconButton>
+    </Grid>
   );
 }
 

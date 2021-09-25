@@ -1,46 +1,37 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Typography from '@mui/material/Typography';
 import {faFile} from '@fortawesome/free-regular-svg-icons';
-import Button from '@material-ui/core/Button';
+import Button from '@mui/material/Button';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-const useStyles = makeStyles((theme) => ({
-  container: {
-    backgroundColor: theme.palette.grey[800],
-    width: '100%',
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-  },
-  title: {
-    color: theme.palette.common.white,
-    textAlign: 'center',
-    marginBottom: theme.spacing(2),
-  },
-  icon: {
-  },
-  link: {
-    textAlign: 'center',
-  },
-}));
-
 export default function Archives() {
-  const classes = useStyles();
   const link = 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit?usp=sharing';
 
   return (
-    <Box className={classes.container}>
+    <Box
+      sx={{
+      backgroundColor: 'grey.800',
+      width: '100%',
+      paddingTop: 2,
+      paddingBottom: 2,
+    }}
+    >
       <Container>
-        <Typography className={classes.title}
+        <Typography
+          sx={{
+            color: 'common.white',
+            textAlign: 'center',
+            marginBottom: 2,
+          }}
           variant="h2"
         >{'Previous Draft Picks'}</Typography>
-        <Box className={classes.link}>
+        <Box sx={{textAlign: 'center'}}>
           <Button
             color="primary"
             href={link}
-            startIcon={<FontAwesomeIcon className={classes.icon}
+            startIcon={<FontAwesomeIcon
               icon={faFile}
                        />}
             variant="outlined"

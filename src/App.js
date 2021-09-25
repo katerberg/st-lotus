@@ -3,9 +3,8 @@ import {
   HashRouter as Router,
 } from 'react-router-dom';
 import Routes from './routes';
-import {createTheme, responsiveFontSizes} from '@material-ui/core/styles';
+import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
 import Topbar from './Topbar';
-import {ThemeProvider} from '@material-ui/core';
 
 const theme = responsiveFontSizes(createTheme({
   palette: {
