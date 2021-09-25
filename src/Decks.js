@@ -13,7 +13,9 @@ export default function Decks() {
 
   return (
     <div className={classes.root}>
-        <Typography>{'Decks'}</Typography>
+        <Typography
+          variant="h1"
+        >{'Decks'}</Typography>
     </div>
   );
 }

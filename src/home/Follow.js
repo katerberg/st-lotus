@@ -22,7 +22,7 @@ export default function Follow() {
   const classes = useStyles();
 
   return (
-    <>
+    <div id="follow">
       <Typography className={classes.title}
         variant="h2"
       >{'Follow Us'}</Typography>
@@ -46,6 +46,6 @@ export default function Follow() {
           link="https://www.twitter.com/stlotusmtg"
         />
       </Grid>
-    </>
+    </div>
   );
 }
