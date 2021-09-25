@@ -12,16 +12,18 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Topbar() {
   const classes = useStyles();
-  return <AppBar><Toolbar>
-    <img
-      alt="St Lotus logo"
-      className={classes.icon}
-      height="50px"
-      src={`${process.env.PUBLIC_URL}/favicon-152.png`}
-      width="50px"
-    />
-    <Typography color="textPrimary"
-      variant="h4"
-    >{'St Lotus'}</Typography>
-                          </Toolbar></AppBar>;
+  return <AppBar>
+    <Toolbar>
+      <img
+        alt="St Lotus logo"
+        className={classes.icon}
+        height="50px"
+        src={`${process.env.PUBLIC_URL}/favicon-152.png`}
+        width="50px"
+      />
+      <Typography color="textPrimary"
+        variant="h4"
+      >{'St Lotus'}</Typography>
+    </Toolbar>
+  </AppBar>;
 }

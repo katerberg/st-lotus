@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
 } from 'react-router-dom';
 import Routes from './routes';
 import {createTheme, responsiveFontSizes} from '@material-ui/core/styles';
