@@ -6,7 +6,7 @@ import Archives from './Archives';
 
 function Home() {
   return (
-    <div id="home">
+    <div>
       <Hero />
       <PreviewVideo />
       <Follow />
