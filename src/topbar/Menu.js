@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import NotificationsIcon from '@mui/icons-material/Notifications';
 import HomeIcon from '@mui/icons-material/Home';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 import MenuItem from './MenuItem';
 
 export default function Menu({isOpen, onClose}) {
@@ -14,14 +14,14 @@ export default function Menu({isOpen, onClose}) {
          >
     <List>
       <MenuItem icon={<HomeIcon />}
-        link= "/#home"
+        link= "/"
         onClick={onClose}
         text="Home"
       />
-      <MenuItem icon={<NotificationsIcon />}
-        link="/#follow"
+      <MenuItem icon={<AssignmentIcon />}
+        link="/how-to-play"
         onClick={onClose}
-        text="Follow"
+        text="How To Play"
       />
     </List>
   </Drawer>;

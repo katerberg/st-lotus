@@ -3,6 +3,7 @@ import {
   HashRouter as Router,
 } from 'react-router-dom';
 import Routes from './routes';
+import {createBrowserHistory} from 'history';
 import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
 import Topbar from './topbar/Topbar';
 
@@ -16,6 +17,28 @@ const theme = responsiveFontSizes(createTheme({
     },
   },
 }));
+
+const browserHistory = createBrowserHistory();
+
+browserHistory.listen(location => {
+  const {hash} = location;
+  if (hash !== '') {
+    // Push onto callback queue so it runs after the DOM is updated,
+    // This is required when navigating from a different page so that
+    // The element is rendered on the page before trying to getElementById.
+    setTimeout(
+      () => {
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView();
+        }
+      },
+      0
+    );
+  }
+});
+
 
 function App() {
   return (

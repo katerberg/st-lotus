@@ -1,8 +1,8 @@
 import React from 'react';
 
-export default function Rules() {
+export default function HowToPlay() {
   return (
-    <div id="rules">
+    <div>
         <h1>{'Rules'}</h1>
         <p>{'Rotisserie Draft, a structure borrowed from fantasy baseball, is one of the most skill-intensive and interesting ways to draft in Magic: the Gathering. Instead of opening booster packs, you take some defined group of cards, like a full set of a particular expansion or a cube, and draft those! In our Vintage Rotisserie Drafts, which we call “VRDs”, we draft from a pretty large group of cards - every card that’s legal to play in Vintage!'}</p>
         <p>{'Before the draft starts, we have to determine the pick order. With eight players, there are eight spots to choose from. We could determine the pick order at random, but we like adding an extra layer of strategy (and, let’s face it, complication) by randomly ordering the players and allowing them, in that order, to choose their spot in the draft.'}</p>

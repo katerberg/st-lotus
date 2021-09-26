@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from './home/Home';
-import Rules from './rules';
+import HowToPlay from './HowToPlay';
 import Decks from './Decks';
 
 function Routes() {
@@ -12,9 +12,9 @@ function Routes() {
       <Switch>
         <Route
           exact
-          path="/rules"
+          path="/how-to-play"
         >
-          <Rules />
+          <HowToPlay />
         </Route>
         <Route
           exact

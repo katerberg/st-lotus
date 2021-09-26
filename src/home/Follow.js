@@ -7,7 +7,7 @@ import {faDiscord, faYoutube, faTwitter, faTwitch} from '@fortawesome/free-brand
 export default function Follow() {
 
   return (
-    <div id="follow">
+    <>
       <Typography
         sx={{
           paddingTop: 2,
@@ -41,6 +41,6 @@ export default function Follow() {
           link="https://www.twitter.com/stlotusmtg"
         />
       </Grid>
-    </div>
+    </>
   );
 }
