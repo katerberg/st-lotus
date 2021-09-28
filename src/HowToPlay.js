@@ -30,6 +30,7 @@ export default function HowToPlay() {
       <StyledImage
         alt="Players sitting at a table with computers"
         src={`${process.env.PUBLIC_URL}/draft.jpg`}
+        sx={{marginBottom: 3}}
       />
       <SpacedHeader
         variant="h3"

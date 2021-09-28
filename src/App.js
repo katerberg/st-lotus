@@ -9,6 +9,13 @@ import Box from '@mui/material/Box';
 import Topbar from './topbar/Topbar';
 
 const theme = responsiveFontSizes(createTheme({
+  components: {
+    MuiLink: {
+      defaultProps: {
+        color: '#00E',
+      },
+    },
+  },
   palette: {
     primary: {
       light: '#c1ffff',

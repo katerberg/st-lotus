@@ -6,6 +6,7 @@ import {
 import Home from './home/Home';
 import HowToPlay from './HowToPlay';
 import Decks from './Decks';
+import Rulings from './rulings/Rulings';
 
 function Routes() {
   return (
@@ -21,6 +22,12 @@ function Routes() {
           path="/decks"
         >
           <Decks />
+        </Route>
+        <Route
+          exact
+          path="/rulings"
+        >
+          <Rulings />
         </Route>
         <Route
           path="/"
