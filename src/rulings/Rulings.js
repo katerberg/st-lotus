@@ -6,6 +6,7 @@ import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
 import SpacedHeader from '../common/SpacedHeader';
 import Box from '@mui/material/Box';
+import BannedCard from './BannedCard';
 import Ruling from './Ruling';
 
 const DraftPickImage = styled('img')({
@@ -121,14 +122,19 @@ export default function Rulings() {
             <Link href="https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted">{'banned in Vintage'}</Link>
             {' are also banned in St Lotus tournaments. As of October 2, 2021 (St Lotus #7), this includes the following:'}
           </Typography>
-          <Typography>
             <Grid container>
               <Grid item
                 md={4}
                 xs={12}
               >
                 <StyledList>
-                  {bannedCards.slice(0, Math.floor(bannedCards.length / 3)).map(card => <li key={card.name}><Link href={card.link}>{card.name}</Link></li>)}
+                  {bannedCards.slice(0, Math.floor(bannedCards.length / 3))
+                  .map(card => <BannedCard
+                    key={card.name}
+                    link={card.link}
+                    name={card.name}
+                               />)
+                  }
                 </StyledList>
               </Grid>
               <Grid item
@@ -136,7 +142,13 @@ export default function Rulings() {
                 xs={12}
               >
                 <StyledList>
-                  {bannedCards.slice(Math.floor(bannedCards.length / 3), Math.floor(2 * bannedCards.length / 3)).map(card => <li key={card.name}><Link href={card.link}>{card.name}</Link></li>)}
+                  {bannedCards.slice(Math.floor(bannedCards.length / 3), Math.floor(2 * bannedCards.length / 3))
+                  .map(card => <BannedCard
+                    key={card.name}
+                    link={card.link}
+                    name={card.name}
+                               />)
+                  }
                 </StyledList>
               </Grid>
               <Grid item
@@ -144,11 +156,16 @@ export default function Rulings() {
                 xs={12}
               >
                 <StyledList>
-                  {bannedCards.slice(Math.floor(2 * bannedCards.length / 3), bannedCards.length).map(card => <li key={card.name}><Link href={card.link}>{card.name}</Link></li>)}
+                  {bannedCards.slice(Math.floor(2 * bannedCards.length / 3), bannedCards.length)
+                  .map(card => <BannedCard
+                    key={card.name}
+                    link={card.link}
+                    name={card.name}
+                               />)
+                  }
                 </StyledList>
               </Grid>
             </Grid>
-          </Typography>
         </Ruling>
         <Ruling header="“Self-tutoring” cards earn the player four copies"
           number={4}
@@ -163,6 +180,35 @@ export default function Rulings() {
             {' require a pick to be made in order to play them, but once picked, allow the player to play up to four copies in their pool.'}
           </Typography>
         </Ruling>
+        <Ruling header="“Draft” cards do not function"
+          number={5}
+        >
+          <Typography paragraph>
+            {'Cards that reference “draft” such as '}
+            <Link
+              href="https://scryfall.com/card/cns/59/cogwork-spy"
+            >{'Cogwork Spy'}</Link>
+            {' do not have an effect because during a rotisserie draft, cards are “picked” rather than “drafted”.'}
+          </Typography>
+          <Typography paragraph>
+            {'Similarly, cards that reference “packs” such as '}
+            <Link
+              href="https://scryfall.com/card/cns/55/canal-dredger"
+            >{'Canal Dredger'}</Link>
+            {' do not have a useful function since there are no packs that are picked from.'}
+          </Typography>
+          <Typography paragraph>
+            <Link
+              href="https://scryfall.com/card/cns/61/deal-broker"
+            >{'Deal Broker'}</Link>
+            {' still functions as it would during a booster draft.'}
+          </Typography>
+          <Typography sx={{float: 'right'}}
+            variant="subtitle2"
+          >
+            {'Updated 2021-10-02'}
+          </Typography>
+        </Ruling>
         <Ruling header="“Any number” cards cost a single pick"
           number={6}
         >
@@ -174,6 +220,11 @@ export default function Rulings() {
             {' or '}
             <Link href="https://scryfall.com/card/ice/371/snow-covered-island">{'Snow-Covered Island'}</Link>
             {' require a pick to be made in order to play them, but once picked, may be played in any number.'}
+          </Typography>
+          <Typography sx={{float: 'right'}}
+            variant="subtitle2"
+          >
+            {'Updated 2021-10-02'}
           </Typography>
         </Ruling>
       </Box>
