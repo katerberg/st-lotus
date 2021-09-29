@@ -79,6 +79,7 @@ export default function Rulings() {
       <Box sx={{marginBottom: 6}}>
         <Ruling header="Each player gets 45 picks"
           number={1}
+          updated="2019-02-03"
         >
           <Typography paragraph>{'Cards are picked in order from first seed through eighth seed, and then from eighth seed back to first seed.'}</Typography>
           <DraftPickImage
@@ -86,10 +87,11 @@ export default function Rulings() {
             src={`${process.env.PUBLIC_URL}/draft-order.png`}
           />
           <Typography paragraph>{'Each player may select 45 cards over the course of the draft and may not select any card that has been already taken.'}</Typography>
-          <Typography>{'If a player selects a card that has been taken by another player, they may select a different card. If it is noticed several picks later, they may not choose a card that has been taken in the interim and are limited to the remaining cards only.'}</Typography>
+          <Typography paragraph>{'If a player selects a card that has been taken by another player, they may select a different card. If it is noticed several picks later, they may not choose a card that has been taken in the interim and are limited to the remaining cards only.'}</Typography>
         </Ruling>
         <Ruling header="Decks are 40 cards including basics"
           number={2}
+          updated="2019-02-03"
         >
           <Typography paragraph>
             {'Players must build a deck containing a minimum of 40 cards. They may include any number of '}
@@ -108,7 +110,7 @@ export default function Rulings() {
             <Link href="https://scryfall.com/card/tsr/410/wastes">{'Wastes'}</Link>
             {' in addition to the cards that they pick.'}
           </Typography>
-          <Typography >
+          <Typography paragraph>
             {'Any cards not in the “Main Deck” of 40 or more cards is considered the “Sideboard” and allows cards such as '}
             <Link href="https://scryfall.com/card/jud/64/death-wish">{'Death Wish'}</Link>
             {' to retrieve them during a game. The “Main Deck” must be selected prior to the first match and must be the same for the first game of all matches in the tournament.'}
@@ -116,61 +118,63 @@ export default function Rulings() {
         </Ruling>
         <Ruling header="All cards not legal in Vintage are banned"
           number={3}
+          updated="2019-02-03"
         >
           <Typography paragraph>
             {'Any cards that are '}
             <Link href="https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted">{'banned in Vintage'}</Link>
             {' are also banned in St Lotus tournaments. As of October 2, 2021 (St Lotus #7), this includes the following:'}
           </Typography>
-            <Grid container>
-              <Grid item
-                md={4}
-                xs={12}
-              >
-                <StyledList>
-                  {bannedCards.slice(0, Math.floor(bannedCards.length / 3))
-                  .map(card => <BannedCard
-                    key={card.name}
-                    link={card.link}
-                    name={card.name}
-                               />)
-                  }
-                </StyledList>
-              </Grid>
-              <Grid item
-                md={4}
-                xs={12}
-              >
-                <StyledList>
-                  {bannedCards.slice(Math.floor(bannedCards.length / 3), Math.floor(2 * bannedCards.length / 3))
-                  .map(card => <BannedCard
-                    key={card.name}
-                    link={card.link}
-                    name={card.name}
-                               />)
-                  }
-                </StyledList>
-              </Grid>
-              <Grid item
-                md={4}
-                xs={12}
-              >
-                <StyledList>
-                  {bannedCards.slice(Math.floor(2 * bannedCards.length / 3), bannedCards.length)
-                  .map(card => <BannedCard
-                    key={card.name}
-                    link={card.link}
-                    name={card.name}
-                               />)
-                  }
-                </StyledList>
-              </Grid>
+          <Grid container>
+            <Grid item
+              md={4}
+              xs={12}
+            >
+              <StyledList>
+                {bannedCards.slice(0, Math.floor(bannedCards.length / 3))
+                .map(card => <BannedCard
+                  key={card.name}
+                  link={card.link}
+                  name={card.name}
+                             />)
+                }
+              </StyledList>
             </Grid>
+            <Grid item
+              md={4}
+              xs={12}
+            >
+              <StyledList>
+                {bannedCards.slice(Math.floor(bannedCards.length / 3), Math.floor(2 * bannedCards.length / 3))
+                .map(card => <BannedCard
+                  key={card.name}
+                  link={card.link}
+                  name={card.name}
+                             />)
+                }
+              </StyledList>
+            </Grid>
+            <Grid item
+              md={4}
+              xs={12}
+            >
+              <StyledList>
+                {bannedCards.slice(Math.floor(2 * bannedCards.length / 3), bannedCards.length)
+                .map(card => <BannedCard
+                  key={card.name}
+                  link={card.link}
+                  name={card.name}
+                             />)
+                }
+              </StyledList>
+            </Grid>
+          </Grid>
         </Ruling>
         <Ruling header="“Self-tutoring” cards earn the player four copies"
           number={4}
+          updated="2019-09-08"
         >
-          <Typography>
+          <Typography paragraph>
             {'Cards like '}
             <Link
               href="https://scryfall.com/card/nem/107/nesting-wurm"
@@ -182,6 +186,7 @@ export default function Rulings() {
         </Ruling>
         <Ruling header="“Draft” cards do not function"
           number={5}
+          updated="2021-08-01"
         >
           <Typography paragraph>
             {'Cards that reference “draft” such as '}
@@ -203,16 +208,12 @@ export default function Rulings() {
             >{'Deal Broker'}</Link>
             {' still functions as it would during a booster draft.'}
           </Typography>
-          <Typography sx={{float: 'right'}}
-            variant="subtitle2"
-          >
-            {'Updated 2021-10-02'}
-          </Typography>
         </Ruling>
         <Ruling header="“Any number” cards cost a single pick"
           number={6}
+          updated="2021-10-02"
         >
-          <Typography>
+          <Typography paragraph>
             {'Cards like '}
             <Link
               href="https://scryfall.com/card/5dn/58/relentless-rats"
@@ -220,11 +221,6 @@ export default function Rulings() {
             {' or '}
             <Link href="https://scryfall.com/card/ice/371/snow-covered-island">{'Snow-Covered Island'}</Link>
             {' require a pick to be made in order to play them, but once picked, may be played in any number.'}
-          </Typography>
-          <Typography sx={{float: 'right'}}
-            variant="subtitle2"
-          >
-            {'Updated 2021-10-02'}
           </Typography>
         </Ruling>
       </Box>

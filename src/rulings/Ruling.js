@@ -6,7 +6,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function Ruling({number, header, children}) {
+export default function Ruling({number, header, children, updated}) {
   return (
     <Accordion>
       <AccordionSummary
@@ -24,6 +24,11 @@ export default function Ruling({number, header, children}) {
       </AccordionSummary>
       <AccordionDetails>
         {children}
+        <Typography sx={{float: 'right'}}
+          variant="subtitle2"
+        >
+          {`Updated ${updated}`}
+        </Typography>
       </AccordionDetails>
     </Accordion>
   );
@@ -33,4 +38,5 @@ Ruling.propTypes = {
   number: PropTypes.number.isRequired,
   header: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  updated: PropTypes.string.isRequired,
 };
