@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import {
   HashRouter as Router,
 } from 'react-router-dom';
@@ -29,7 +30,7 @@ const theme = responsiveFontSizes(createTheme({
 const browserHistory = createBrowserHistory();
 
 browserHistory.listen(location => {
-  const {hash} = location;
+  const {hash, pathname, search} = location;
   if (hash !== '') {
     // Push onto callback queue so it runs after the DOM is updated,
     // This is required when navigating from a different page so that
@@ -41,6 +42,8 @@ browserHistory.listen(location => {
         if (element) {
           element.scrollIntoView();
         }
+        window.ga('set', 'page', pathname + search);
+        window.ga('send', 'pageview');
       },
       0
     );
@@ -49,6 +52,10 @@ browserHistory.listen(location => {
 
 
 function App() {
+  ReactGA.initialize('G-QJGV1D67J3');
+  window.ga('set', 'page', window.location.pathname + window.location.search);
+  window.ga('send', 'pageview');
+
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
