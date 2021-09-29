@@ -53,16 +53,16 @@ export default function Rulings() {
             <Link href="https://scryfall.com/card/tsr/410/wastes">{'Wastes'}</Link>
             {' in addition to the cards that they pick.'}
           </Typography>
-          <Typography paragraph>
+          <Typography >
             {'Any cards not in the “Main Deck” of 40 or more cards is considered the “Sideboard” and allows cards such as '}
             <Link href="https://scryfall.com/card/jud/64/death-wish">{'Death Wish'}</Link>
-            {' to retrieve them during a game.'}
+            {' to retrieve them during a game. The “Main Deck” must be selected prior to the first match and must be the same for the first game of all matches in the tournament.'}
           </Typography>
         </Ruling>
         <Ruling header="“Self-tutoring” cards earn the player four copies"
           number={3}
         >
-          <Typography paragraph>
+          <Typography>
             {'Cards like '}
             <Link
               href="https://scryfall.com/card/nem/107/nesting-wurm"
@@ -75,7 +75,7 @@ export default function Rulings() {
         <Ruling header="“Any number” cards cost a single pick"
           number={4}
         >
-          <Typography paragraph>
+          <Typography>
             {'Cards like '}
             <Link
               href="https://scryfall.com/card/5dn/58/relentless-rats"
