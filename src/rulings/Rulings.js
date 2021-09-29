@@ -59,11 +59,33 @@ export default function Rulings() {
             {' to retrieve them during a game.'}
           </Typography>
         </Ruling>
+        <Ruling header="“Self-tutoring” cards earn the player four copies"
+          number={3}
+        >
+          <Typography paragraph>
+            {'Cards like '}
+            <Link
+              href="https://scryfall.com/card/nem/107/nesting-wurm"
+            >{'Nesting Wurm'}</Link>
+            {' or '}
+            <Link href="https://scryfall.com/card/ons/187/avarax">{'Avarax'}</Link>
+            {' require a pick to be made in order to play them, but once picked, allow the player to play up to four copies in their pool.'}
+          </Typography>
+        </Ruling>
+        <Ruling header="“Any number” cards cost a single pick"
+          number={4}
+        >
+          <Typography paragraph>
+            {'Cards like '}
+            <Link
+              href="https://scryfall.com/card/5dn/58/relentless-rats"
+            >{'Relentless Rats'}</Link>
+            {' or '}
+            <Link href="https://scryfall.com/card/ice/371/snow-covered-island">{'Snow-Covered Island'}</Link>
+            {' require a pick to be made in order to play them, but once picked, may be played in any number.'}
+          </Typography>
+        </Ruling>
       </Box>
-      <SpacedHeader
-        variant="h3"
-      >{'Change Log'}</SpacedHeader>
-      <Typography paragraph>{'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex, sit amet blandit leo lobortis eget.'}</Typography>
     </Container>
   );
 }
