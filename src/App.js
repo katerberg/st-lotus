@@ -52,7 +52,7 @@ browserHistory.listen(location => {
 
 
 function App() {
-  ReactGA.initialize('G-QJGV1D67J3');
+  ReactGA.initialize('UA-208899645-1');
   window.ga('set', 'page', window.location.pathname + window.location.search);
   window.ga('send', 'pageview');
 
