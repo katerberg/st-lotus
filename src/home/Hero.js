@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 const HeroImage = styled('img')({
-  width: '100vw',
+  width: '100%',
   minHeight: '300px',
 });
 
