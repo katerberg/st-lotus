@@ -23,21 +23,24 @@ export default function Rulings() {
       <Typography paragraph>{'Over the course of many Vintage Rotisserie Drafts, we have found quite a few edge cases regarding the rules that have needed to be clarified.'}</Typography>
       <Typography paragraph>{'Current rulings and divergences are listed below.'}</Typography>
       <Box sx={{marginBottom: 6}}>
-        <Ruling header="Each player gets 45 picks"
+        <Ruling header="Each player gets 46 picks"
           number={1}
-          updated="2019-02-03"
+          updated="2021-10-02"
         >
           <Typography paragraph>{'Cards are picked in order from first seed through eighth seed, and then from eighth seed back to first seed.'}</Typography>
           <DraftPickImage
             alt="Players sitting around a table with computers drafting cards"
             src={`${process.env.PUBLIC_URL}/draft-order.png`}
           />
-          <Typography paragraph>{'Each player may select 45 cards over the course of the draft and may not select any card that has been already taken.'}</Typography>
+          <Typography paragraph>{'Each player may select 46 cards over the course of the draft and may not select any card that has been already taken.'}</Typography>
           <Typography paragraph>{'If a player selects a card that has been taken by another player, they may select a different card. If it is noticed several picks later, they may not choose a card that has been taken in the interim and are limited to the remaining cards only.'}</Typography>
+          <Typography paragraph
+            variant="body2"
+          >{'2021-10-02: Changed to 46 picks instead of 45 to prevent first and last pick going to first seed.'}</Typography>
         </Ruling>
-        <Ruling header="Decks are 40 cards including basics"
+        <Ruling header="Decks are 40 cards"
           number={2}
-          updated="2019-02-03"
+          updated="2021-10-02"
         >
           <Typography paragraph>
             {'Players must build a deck containing a minimum of 40 cards. They may include any number of '}
@@ -61,6 +64,9 @@ export default function Rulings() {
             <Link href="https://scryfall.com/card/jud/64/death-wish">{'Death Wish'}</Link>
             {' to retrieve them during a game. The “Main Deck” must be selected prior to the first match and must be the same for the first game of all matches in the tournament.'}
           </Typography>
+          <Typography paragraph
+            variant="body2"
+          >{'2021-10-02: Added “Wastes” to the list of free cards.'}</Typography>
         </Ruling>
         <Ruling header="All cards not legal in Vintage are banned"
           number={3}
@@ -69,7 +75,7 @@ export default function Rulings() {
           <Typography paragraph>
             {'Any cards that are '}
             <Link href="https://magic.wizards.com/en/game-info/gameplay/rules-and-formats/banned-restricted">{'banned in Vintage'}</Link>
-            {' are also banned in St Lotus tournaments. As of October 2, 2021 (St Lotus #7), this includes the following:'}
+            {' are also banned in St Lotus tournaments. As of January 8, 2022 (St Lotus #8), this includes the following:'}
           </Typography>
           <BannedCards />
         </Ruling>
