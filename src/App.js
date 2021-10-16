@@ -45,7 +45,7 @@ browserHistory.listen(location => {
         window.ga('set', 'page', pathname + search);
         window.ga('send', 'pageview');
       },
-      0
+      0,
     );
   }
 });

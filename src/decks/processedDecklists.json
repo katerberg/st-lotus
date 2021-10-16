@@ -1,0 +1,441 @@
+[
+  {
+    "date": "2021-07-31",
+    "player": "John Ryan Hamilton",
+    "genre": "Reanimator",
+    "wins": 6,
+    "losses": 1,
+    "stLotus": 6,
+    "decklist": [
+      {
+        "name": "Black Lotus",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838",
+        "uri": "https://scryfall.com/card/vma/4/black-lotus?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Time Walk",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/70901356-3266-4bd9-aacc-f06c27271de5.jpg?1614638832",
+        "uri": "https://scryfall.com/card/vma/2/time-walk?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Vampiric Tutor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005",
+        "uri": "https://scryfall.com/card/cmr/156/vampiric-tutor?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Flooded Strand",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
+        "uri": "https://scryfall.com/card/ktk/233/flooded-strand?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Prismatic Vista",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585",
+        "uri": "https://scryfall.com/card/mh1/244/prismatic-vista?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Preordain",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/4/1453f92e-df2d-4789-aa1b-a5b5c51567d4.jpg?1608909344",
+        "uri": "https://scryfall.com/card/cmr/84/preordain?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Underground Sea",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883",
+        "uri": "https://scryfall.com/card/vma/323/underground-sea?utm_source=api",
+        "type": "Land — Island Swamp",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Spell Pierce",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/b/6bf4dfc0-c58b-4535-b660-54ceaa6e0217.jpg?1562557054",
+        "uri": "https://scryfall.com/card/xln/81/spell-pierce?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Dark Ritual",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/5/95f27eeb-6f14-4db3-adb9-9be5ed76b34b.jpg?1628801678",
+        "uri": "https://scryfall.com/card/a25/82/dark-ritual?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Entomb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/6/d66f864b-b1bb-4596-93b8-3b4bfe6b1332.jpg?1547516853",
+        "uri": "https://scryfall.com/card/uma/94/entomb?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Griselbrand",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/f/cf2a5c2e-7fe1-45eb-b01c-891ab961186f.jpg?1593813293",
+        "uri": "https://scryfall.com/card/mm3/72/griselbrand?utm_source=api",
+        "type": "Legendary Creature — Demon",
+        "cmc": 8,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Steam Vents",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204",
+        "uri": "https://scryfall.com/card/grn/257/steam-vents?utm_source=api",
+        "type": "Land — Island Mountain",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Pyroblast",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621",
+        "uri": "https://scryfall.com/card/ema/142/pyroblast?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "R"
+        ]
+      },
+      {
+        "name": "Chrome Mox",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93.jpg?1599708839",
+        "uri": "https://scryfall.com/card/2xm/240/chrome-mox?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Arid Mesa",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.jpg?1626099519",
+        "uri": "https://scryfall.com/card/mh2/244/arid-mesa?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Flusterstorm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/9/f900eeb7-7c45-44bc-ad3a-0bbe594ecf50.jpg?1562856071",
+        "uri": "https://scryfall.com/card/ima/55/flusterstorm?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Careful Study",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/e/dea15b53-2940-40e7-8d48-8ec11341da83.jpg?1562936545",
+        "uri": "https://scryfall.com/card/ody/70/careful-study?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Collective Brutality",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb94a02f-4660-45b6-8a39-941b710cf8f3.jpg?1576384285",
+        "uri": "https://scryfall.com/card/emn/85/collective-brutality?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Unmask",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/d/2db7a0e6-eea5-4fa6-ac14-401411b106cc.jpg?1562379909",
+        "uri": "https://scryfall.com/card/mmq/168/unmask?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Faithless Looting",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d6e5cc9-bd48-41b6-ac20-5a3e38aecdc5.jpg?1625193770",
+        "uri": "https://scryfall.com/card/c21/168/faithless-looting?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "colors": [
+          "R"
+        ]
+      },
+      {
+        "name": "Iona, Shield of Emeria",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407",
+        "uri": "https://scryfall.com/card/mm2/20/iona-shield-of-emeria?utm_source=api",
+        "type": "Legendary Creature — Angel",
+        "cmc": 9,
+        "colors": [
+          "W"
+        ]
+      },
+      {
+        "name": "Exhume",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/f/5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d.jpg?1600714444",
+        "uri": "https://scryfall.com/card/jmp/230/exhume?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Show and Tell",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/a/fa7b7897-36e0-415a-8bb7-602886164852.jpg?1576382523",
+        "uri": "https://scryfall.com/card/cn2/121/show-and-tell?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Necropotence",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c89c6895-b0f8-444a-9c89-c6b4fd027b3e.jpg?1562853736",
+        "uri": "https://scryfall.com/card/ima/98/necropotence?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 3,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Dance of the Dead",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/4/44de44be-db14-4932-968b-a5bc8b575716.jpg?1562868102",
+        "uri": "https://scryfall.com/card/me2/83/dance-of-the-dead?utm_source=api",
+        "type": "Enchantment — Aura",
+        "cmc": 2,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Necromancy",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/311a6257-dd77-4bb6-81cb-c8e7862350f3.jpg?1562277431",
+        "uri": "https://scryfall.com/card/vis/64/necromancy?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 3,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Archon of Cruelty",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/b/1be9d9a4-d7ee-4854-abc2-85cabf993ec9.jpg?1626095274",
+        "uri": "https://scryfall.com/card/mh2/75/archon-of-cruelty?utm_source=api",
+        "type": "Creature — Archon",
+        "cmc": 8,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Badlands",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1562918068",
+        "uri": "https://scryfall.com/card/vma/291/badlands?utm_source=api",
+        "type": "Land — Swamp Mountain",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Blood Crypt",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/f/5faba6c8-3463-47c1-ba01-09eb87fcb2d5.jpg?1584832229",
+        "uri": "https://scryfall.com/card/rna/245/blood-crypt?utm_source=api",
+        "type": "Land — Swamp Mountain",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Thought Erasure",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/c/7ce226ad-cb1d-47f5-90fc-27704e181884.jpg?1572893858",
+        "uri": "https://scryfall.com/card/grn/206/thought-erasure?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "colors": [
+          "B",
+          "U"
+        ]
+      },
+      {
+        "name": "Pack Rat",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/170693f5-13db-4191-99b1-e527ffb5b88e.jpg?1562783180",
+        "uri": "https://scryfall.com/card/rtr/73/pack-rat?utm_source=api",
+        "type": "Creature — Rat",
+        "cmc": 2,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Rotting Regisaur",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/8/d88c61cb-dbf9-46c3-8795-8896ba1208d5.jpg?1592516753",
+        "uri": "https://scryfall.com/card/m20/111/rotting-regisaur?utm_source=api",
+        "type": "Creature — Zombie Dinosaur",
+        "cmc": 3,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Echoing Truth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/5/55cd75bc-5ec7-45b2-9231-85a321ecd786.jpg?1568003983",
+        "uri": "https://scryfall.com/card/c19/84/echoing-truth?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Sedgemoor Witch",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/9/e900c1eb-968b-4046-b824-c167a7a5b682.jpg?1624591402",
+        "uri": "https://scryfall.com/card/stx/86/sedgemoor-witch?utm_source=api",
+        "type": "Creature — Human Warlock",
+        "cmc": 3,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Ragavan, Nimble Pilferer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/9/a9738cda-adb1-47fb-9f4c-ecd930228c4d.jpg?1627449092",
+        "uri": "https://scryfall.com/card/mh2/138/ragavan-nimble-pilferer?utm_source=api",
+        "type": "Legendary Creature — Monkey Pirate",
+        "cmc": 1,
+        "colors": [
+          "R"
+        ]
+      },
+      {
+        "name": "Elesh Norn, Grand Cenobite",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/78c2bfef-06a5-4c7f-8283-ea3fb673b7a1.jpg?1562850573",
+        "uri": "https://scryfall.com/card/ima/18/elesh-norn-grand-cenobite?utm_source=api",
+        "type": "Legendary Creature — Phyrexian Praetor",
+        "cmc": 7,
+        "colors": [
+          "W"
+        ]
+      },
+      {
+        "name": "Snuff Out",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/75bbe89f-09af-494e-b58e-271f64bde4b5.jpg?1562922833",
+        "uri": "https://scryfall.com/card/gvl/53/snuff-out?utm_source=api",
+        "type": "Instant",
+        "cmc": 4,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Clearwater Pathway // Murkwater Pathway",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/4/b4b99ebb-0d54-4fe5-a495-979aaa564aa8.jpg?1604264337",
+        "uri": "https://scryfall.com/card/znr/260/clearwater-pathway-murkwater-pathway?utm_source=api",
+        "type": "Land // Land",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Boseiju, Who Shelters All",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/0180d9a8-992c-4d55-8ac4-33a587786993.jpg?1562757082",
+        "uri": "https://scryfall.com/card/chk/273/boseiju-who-shelters-all?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "colors": []
+      },
+      {
+        "name": "Makeshift Mannequin",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/9/89dfcad2-a737-405b-b3df-9583e6f0dd54.jpg?1562924122",
+        "uri": "https://scryfall.com/card/arc/20/makeshift-mannequin?utm_source=api",
+        "type": "Instant",
+        "cmc": 4,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Massacre",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/0/f05f5d93-50d1-4aa6-af05-383a6808345b.jpg?1562632742",
+        "uri": "https://scryfall.com/card/nem/58/massacre?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Grave Titan",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/8/68ce4c64-9f82-4be1-aa3b-ba885b2d4307.jpg?1561945357",
+        "uri": "https://scryfall.com/card/c14/145/grave-titan?utm_source=api",
+        "type": "Creature — Giant",
+        "cmc": 6,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Divert",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/e/8eb6e9f8-a508-451e-8a72-5f9834ba5352.jpg?1562921469",
+        "uri": "https://scryfall.com/card/ody/82/divert?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "U"
+        ]
+      },
+      {
+        "name": "Disfigure",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18069340-a698-4f75-82cc-cc94fcf82184.jpg?1592516643",
+        "uri": "https://scryfall.com/card/m20/95/disfigure?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "colors": [
+          "B"
+        ]
+      },
+      {
+        "name": "Overmaster",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/f/afd2e0f0-8a8e-4021-bd24-aff1a3212345.jpg?1562631559",
+        "uri": "https://scryfall.com/card/tor/104/overmaster?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "colors": [
+          "R"
+        ]
+      }
+    ]
+  }
+]

@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Home from './home/Home';
 import HowToPlay from './HowToPlay';
-import Decks from './Decks';
+import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
 
 function Routes() {

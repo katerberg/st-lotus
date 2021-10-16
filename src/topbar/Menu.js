@@ -33,7 +33,6 @@ export default function Menu({isOpen, onClose}) {
   </Drawer>;
 }
 
-
 Menu.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
