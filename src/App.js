@@ -22,7 +22,7 @@ const theme = responsiveFontSizes(createTheme({
       light: '#c1ffff',
       main: '#8dd8f8',
       dark: '#59a7c5',
-      contrastText: '#fff',
+      contrastText: '#000',
     },
   },
 }));
