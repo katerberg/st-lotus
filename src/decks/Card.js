@@ -17,7 +17,7 @@ const StyledCardName = styled(Typography)({
   display: 'block',
 });
 
-export default function Card({card}) {
+export default function Card({card, prefix}) {
   const [anchorEl, setAnchorEl] = useState(null);
   const ref = useRef();
 
@@ -31,7 +31,7 @@ export default function Card({card}) {
 
   return (
     <div ref={ref}>
-      <StyledCardName onClick={handleTooltipOpen}>{card.name}</StyledCardName>
+      <StyledCardName onClick={handleTooltipOpen}>{prefix !== undefined ? `${prefix} ` : ''}{card.name}</StyledCardName>
       <Popover
         anchorEl={anchorEl}
         anchorOrigin={{
@@ -72,4 +72,5 @@ Card.propTypes = {
     cmc: PropTypes.number.isRequired,
     colors: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
+  prefix: PropTypes.string,
 };
