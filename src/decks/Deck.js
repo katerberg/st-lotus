@@ -1,6 +1,9 @@
 import React, {useMemo, useState} from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Divider from '@mui/material/Divider';
 import Card from './Card';
 import SortSelector from './SortSelector';
 
@@ -41,36 +44,41 @@ export default function Deck({deck}) {
 
   return (
     <>
-        <Typography variant="h3">{deck.genre}</Typography>
-        <Typography>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Typography>
-        <Typography>{deck.date}</Typography>
+      <Typography variant="h3">{deck.genre}</Typography>
+      <Typography>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Typography>
+      <Typography>{deck.date}</Typography>
       <hr/>
       <SortSelector onChange={handleSortChange}
         value={sort}
       />
-      {decklist.map((card, i) => {
-        let prefix;
-        if (sort === 'pick') {
-          prefix = i + 1;
-        }
-        if (sort === 'cmc') {
-          prefix = card.cmc;
-        }
-        if (sort === 'color') {
-          if (card.colors.length === 1) {
-            [prefix] = card.colors;
-          } else if (card.colors.length === 0) {
-            prefix = 'C';
-          } else {
-            prefix = 'M';
+      <List component="nav">
+        {decklist.map((card, i) => {
+          let prefix;
+          if (sort === 'pick') {
+            prefix = i + 1;
           }
-        }
-
-        return <Card card={card}
-          key={card.name}
-          prefix={`${prefix}`}
-               />;
-      })}
+          if (sort === 'cmc') {
+            prefix = card.cmc;
+          }
+          if (sort === 'color') {
+            if (card.colors.length === 1) {
+              [prefix] = card.colors;
+            } else if (card.colors.length === 0) {
+              prefix = 'C';
+            } else {
+              prefix = 'M';
+            }
+          }
+          return <React.Fragment key={card.name}>
+            <ListItem button>
+              <Card card={card}
+                prefix={`${prefix}`}
+              />
+            </ListItem>
+            <Divider />
+          </React.Fragment>;
+        })}
+      </List>
     </>
   );
 }

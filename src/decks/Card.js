@@ -13,10 +13,6 @@ const StyledImage = styled('img')({
   marginBottom: '-6px',
 });
 
-const StyledCard = styled(Typography)({
-  cursor: 'pointer',
-  display: 'block',
-});
 const CardName = styled('span')({
   marginRight: '10px',
 });
@@ -35,12 +31,12 @@ export default function Card({card, prefix}) {
 
   return (
     <div ref={ref}>
-      <StyledCard onClick={handleTooltipOpen}
+      <Typography onClick={handleTooltipOpen}
         paragraph
       >
-        <CardName >{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName >
+        <CardName >{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName>
         <ManaCost manaCost={card.manaCost} />
-      </StyledCard>
+      </Typography>
       <Popover
         anchorEl={anchorEl}
         anchorOrigin={{
