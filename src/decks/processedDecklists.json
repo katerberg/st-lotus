@@ -13,6 +13,7 @@
         "uri": "https://scryfall.com/card/vma/4/black-lotus?utm_source=api",
         "type": "Artifact",
         "cmc": 0,
+        "manaCost": "{0}",
         "colors": []
       },
       {
@@ -21,6 +22,7 @@
         "uri": "https://scryfall.com/card/vma/2/time-walk?utm_source=api",
         "type": "Sorcery",
         "cmc": 2,
+        "manaCost": "{1}{U}",
         "colors": [
           "U"
         ]
@@ -31,6 +33,7 @@
         "uri": "https://scryfall.com/card/cmr/156/vampiric-tutor?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{B}",
         "colors": [
           "B"
         ]
@@ -41,6 +44,7 @@
         "uri": "https://scryfall.com/card/ktk/233/flooded-strand?utm_source=api",
         "type": "Land",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -49,6 +53,7 @@
         "uri": "https://scryfall.com/card/mh1/244/prismatic-vista?utm_source=api",
         "type": "Land",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -57,6 +62,7 @@
         "uri": "https://scryfall.com/card/cmr/84/preordain?utm_source=api",
         "type": "Sorcery",
         "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
           "U"
         ]
@@ -67,6 +73,7 @@
         "uri": "https://scryfall.com/card/vma/323/underground-sea?utm_source=api",
         "type": "Land — Island Swamp",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -75,6 +82,7 @@
         "uri": "https://scryfall.com/card/xln/81/spell-pierce?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
           "U"
         ]
@@ -85,6 +93,7 @@
         "uri": "https://scryfall.com/card/a25/82/dark-ritual?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{B}",
         "colors": [
           "B"
         ]
@@ -95,6 +104,7 @@
         "uri": "https://scryfall.com/card/uma/94/entomb?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{B}",
         "colors": [
           "B"
         ]
@@ -105,6 +115,7 @@
         "uri": "https://scryfall.com/card/mm3/72/griselbrand?utm_source=api",
         "type": "Legendary Creature — Demon",
         "cmc": 8,
+        "manaCost": "{4}{B}{B}{B}{B}",
         "colors": [
           "B"
         ]
@@ -115,6 +126,7 @@
         "uri": "https://scryfall.com/card/grn/257/steam-vents?utm_source=api",
         "type": "Land — Island Mountain",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -123,6 +135,7 @@
         "uri": "https://scryfall.com/card/ema/142/pyroblast?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{R}",
         "colors": [
           "R"
         ]
@@ -133,6 +146,7 @@
         "uri": "https://scryfall.com/card/2xm/240/chrome-mox?utm_source=api",
         "type": "Artifact",
         "cmc": 0,
+        "manaCost": "{0}",
         "colors": []
       },
       {
@@ -141,6 +155,7 @@
         "uri": "https://scryfall.com/card/mh2/244/arid-mesa?utm_source=api",
         "type": "Land",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -149,6 +164,7 @@
         "uri": "https://scryfall.com/card/ima/55/flusterstorm?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
           "U"
         ]
@@ -159,6 +175,7 @@
         "uri": "https://scryfall.com/card/ody/70/careful-study?utm_source=api",
         "type": "Sorcery",
         "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
           "U"
         ]
@@ -169,6 +186,7 @@
         "uri": "https://scryfall.com/card/emn/85/collective-brutality?utm_source=api",
         "type": "Sorcery",
         "cmc": 2,
+        "manaCost": "{1}{B}",
         "colors": [
           "B"
         ]
@@ -179,6 +197,7 @@
         "uri": "https://scryfall.com/card/mmq/168/unmask?utm_source=api",
         "type": "Sorcery",
         "cmc": 4,
+        "manaCost": "{3}{B}",
         "colors": [
           "B"
         ]
@@ -189,6 +208,7 @@
         "uri": "https://scryfall.com/card/c21/168/faithless-looting?utm_source=api",
         "type": "Sorcery",
         "cmc": 1,
+        "manaCost": "{R}",
         "colors": [
           "R"
         ]
@@ -199,6 +219,7 @@
         "uri": "https://scryfall.com/card/mm2/20/iona-shield-of-emeria?utm_source=api",
         "type": "Legendary Creature — Angel",
         "cmc": 9,
+        "manaCost": "{6}{W}{W}{W}",
         "colors": [
           "W"
         ]
@@ -209,6 +230,7 @@
         "uri": "https://scryfall.com/card/jmp/230/exhume?utm_source=api",
         "type": "Sorcery",
         "cmc": 2,
+        "manaCost": "{1}{B}",
         "colors": [
           "B"
         ]
@@ -219,6 +241,7 @@
         "uri": "https://scryfall.com/card/cn2/121/show-and-tell?utm_source=api",
         "type": "Sorcery",
         "cmc": 3,
+        "manaCost": "{2}{U}",
         "colors": [
           "U"
         ]
@@ -229,6 +252,7 @@
         "uri": "https://scryfall.com/card/ima/98/necropotence?utm_source=api",
         "type": "Enchantment",
         "cmc": 3,
+        "manaCost": "{B}{B}{B}",
         "colors": [
           "B"
         ]
@@ -239,6 +263,7 @@
         "uri": "https://scryfall.com/card/me2/83/dance-of-the-dead?utm_source=api",
         "type": "Enchantment — Aura",
         "cmc": 2,
+        "manaCost": "{1}{B}",
         "colors": [
           "B"
         ]
@@ -249,6 +274,7 @@
         "uri": "https://scryfall.com/card/vis/64/necromancy?utm_source=api",
         "type": "Enchantment",
         "cmc": 3,
+        "manaCost": "{2}{B}",
         "colors": [
           "B"
         ]
@@ -259,6 +285,7 @@
         "uri": "https://scryfall.com/card/mh2/75/archon-of-cruelty?utm_source=api",
         "type": "Creature — Archon",
         "cmc": 8,
+        "manaCost": "{6}{B}{B}",
         "colors": [
           "B"
         ]
@@ -269,6 +296,7 @@
         "uri": "https://scryfall.com/card/vma/291/badlands?utm_source=api",
         "type": "Land — Swamp Mountain",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -277,6 +305,7 @@
         "uri": "https://scryfall.com/card/rna/245/blood-crypt?utm_source=api",
         "type": "Land — Swamp Mountain",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -285,6 +314,7 @@
         "uri": "https://scryfall.com/card/grn/206/thought-erasure?utm_source=api",
         "type": "Sorcery",
         "cmc": 2,
+        "manaCost": "{U}{B}",
         "colors": [
           "B",
           "U"
@@ -296,6 +326,7 @@
         "uri": "https://scryfall.com/card/rtr/73/pack-rat?utm_source=api",
         "type": "Creature — Rat",
         "cmc": 2,
+        "manaCost": "{1}{B}",
         "colors": [
           "B"
         ]
@@ -306,6 +337,7 @@
         "uri": "https://scryfall.com/card/m20/111/rotting-regisaur?utm_source=api",
         "type": "Creature — Zombie Dinosaur",
         "cmc": 3,
+        "manaCost": "{2}{B}",
         "colors": [
           "B"
         ]
@@ -316,6 +348,7 @@
         "uri": "https://scryfall.com/card/c19/84/echoing-truth?utm_source=api",
         "type": "Instant",
         "cmc": 2,
+        "manaCost": "{1}{U}",
         "colors": [
           "U"
         ]
@@ -326,6 +359,7 @@
         "uri": "https://scryfall.com/card/stx/86/sedgemoor-witch?utm_source=api",
         "type": "Creature — Human Warlock",
         "cmc": 3,
+        "manaCost": "{2}{B}",
         "colors": [
           "B"
         ]
@@ -336,6 +370,7 @@
         "uri": "https://scryfall.com/card/mh2/138/ragavan-nimble-pilferer?utm_source=api",
         "type": "Legendary Creature — Monkey Pirate",
         "cmc": 1,
+        "manaCost": "{R}",
         "colors": [
           "R"
         ]
@@ -346,6 +381,7 @@
         "uri": "https://scryfall.com/card/ima/18/elesh-norn-grand-cenobite?utm_source=api",
         "type": "Legendary Creature — Phyrexian Praetor",
         "cmc": 7,
+        "manaCost": "{5}{W}{W}",
         "colors": [
           "W"
         ]
@@ -356,16 +392,18 @@
         "uri": "https://scryfall.com/card/gvl/53/snuff-out?utm_source=api",
         "type": "Instant",
         "cmc": 4,
+        "manaCost": "{3}{B}",
         "colors": [
           "B"
         ]
       },
       {
-        "name": "Clearwater Pathway // Murkwater Pathway",
+        "name": "Clearwater Pathway",
         "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/4/b4b99ebb-0d54-4fe5-a495-979aaa564aa8.jpg?1604264337",
         "uri": "https://scryfall.com/card/znr/260/clearwater-pathway-murkwater-pathway?utm_source=api",
         "type": "Land // Land",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -374,6 +412,7 @@
         "uri": "https://scryfall.com/card/chk/273/boseiju-who-shelters-all?utm_source=api",
         "type": "Legendary Land",
         "cmc": 0,
+        "manaCost": "",
         "colors": []
       },
       {
@@ -382,6 +421,7 @@
         "uri": "https://scryfall.com/card/arc/20/makeshift-mannequin?utm_source=api",
         "type": "Instant",
         "cmc": 4,
+        "manaCost": "{3}{B}",
         "colors": [
           "B"
         ]
@@ -392,6 +432,7 @@
         "uri": "https://scryfall.com/card/nem/58/massacre?utm_source=api",
         "type": "Sorcery",
         "cmc": 4,
+        "manaCost": "{2}{B}{B}",
         "colors": [
           "B"
         ]
@@ -402,6 +443,7 @@
         "uri": "https://scryfall.com/card/c14/145/grave-titan?utm_source=api",
         "type": "Creature — Giant",
         "cmc": 6,
+        "manaCost": "{4}{B}{B}",
         "colors": [
           "B"
         ]
@@ -412,6 +454,7 @@
         "uri": "https://scryfall.com/card/ody/82/divert?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
           "U"
         ]
@@ -422,6 +465,7 @@
         "uri": "https://scryfall.com/card/m20/95/disfigure?utm_source=api",
         "type": "Instant",
         "cmc": 1,
+        "manaCost": "{B}",
         "colors": [
           "B"
         ]
@@ -432,6 +476,7 @@
         "uri": "https://scryfall.com/card/tor/104/overmaster?utm_source=api",
         "type": "Sorcery",
         "cmc": 1,
+        "manaCost": "{R}",
         "colors": [
           "R"
         ]

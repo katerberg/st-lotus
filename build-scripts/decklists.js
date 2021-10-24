@@ -48,14 +48,29 @@ function getCardColors(processedCard) {
 
 }
 
-function buildCard(dirtyCard) {
+function getCardName(processedCard) {
+  if (processedCard.card_faces) {
+    return processedCard.card_faces[0].name;
+  }
+  return processedCard.name;
+}
+
+function getManaCost(processedCard) {
+  if (processedCard.card_faces) {
+    return processedCard.card_faces[0].mana_cost;
+  }
+  return processedCard.mana_cost;
+}
+
+function buildCard(processedCard) {
   return {
-    name: dirtyCard.name,
-    image: getCardImage(dirtyCard),
-    uri: dirtyCard.scryfall_uri,
-    type: dirtyCard.type_line,
-    cmc: dirtyCard.cmc,
-    colors: getCardColors(dirtyCard),
+    name: getCardName(processedCard),
+    image: getCardImage(processedCard),
+    uri: processedCard.scryfall_uri,
+    type: processedCard.type_line,
+    cmc: processedCard.cmc,
+    manaCost: getManaCost(processedCard),
+    colors: getCardColors(processedCard),
   };
 }
 

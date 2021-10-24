@@ -41,9 +41,10 @@ export default function Deck({deck}) {
 
   return (
     <>
-      <Typography variant="h3">{deck.genre}</Typography>
-      <Typography>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Typography>
-      <Typography>{deck.date}</Typography>
+        <Typography variant="h3">{deck.genre}</Typography>
+        <Typography>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Typography>
+        <Typography>{deck.date}</Typography>
+      <hr/>
       <SortSelector onChange={handleSortChange}
         value={sort}
       />

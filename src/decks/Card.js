@@ -5,6 +5,7 @@ import Link from '@mui/material/Link';
 import {styled} from '@mui/system';
 import Popover from '@mui/material/Popover';
 import Button from '@mui/material/Button';
+import ManaCost from './ManaCost';
 
 const StyledImage = styled('img')({
   width: '300px',
@@ -12,9 +13,12 @@ const StyledImage = styled('img')({
   marginBottom: '-6px',
 });
 
-const StyledCardName = styled(Typography)({
+const StyledCard = styled(Typography)({
   cursor: 'pointer',
   display: 'block',
+});
+const CardName = styled('span')({
+  marginRight: '10px',
 });
 
 export default function Card({card, prefix}) {
@@ -31,7 +35,12 @@ export default function Card({card, prefix}) {
 
   return (
     <div ref={ref}>
-      <StyledCardName onClick={handleTooltipOpen}>{prefix !== undefined ? `${prefix} ` : ''}{card.name}</StyledCardName>
+      <StyledCard onClick={handleTooltipOpen}
+        paragraph
+      >
+        <CardName >{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName >
+        <ManaCost manaCost={card.manaCost} />
+      </StyledCard>
       <Popover
         anchorEl={anchorEl}
         anchorOrigin={{
@@ -70,6 +79,7 @@ Card.propTypes = {
     uri: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     cmc: PropTypes.number.isRequired,
+    manaCost: PropTypes.string.isRequired,
     colors: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
   prefix: PropTypes.string,

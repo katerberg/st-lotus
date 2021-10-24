@@ -9,12 +9,10 @@ import MenuItem from '@mui/material/MenuItem';
 export default function SortSelector({onChange, value}) {
   const handleChange = useCallback(e => onChange(e.target.value), []);
   return (
-    <FormControl fullWidth>
-      <InputLabel id="demo-simple-select-label">{'Sort By'}</InputLabel>
+    <FormControl sx={{marginTop: '10px'}}>
+      <InputLabel>{'Sort'}</InputLabel>
       <Select
-        id="demo-simple-select"
         label="Age"
-        labelId="demo-simple-select-label"
         onChange={handleChange}
         value={value}
       >
