@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import Box from '@mui/material/Box';
 import {styled} from '@mui/system';
 import Popover from '@mui/material/Popover';
 import Button from '@mui/material/Button';
@@ -13,8 +14,12 @@ const StyledImage = styled('img')({
   marginBottom: '-6px',
 });
 
+const CardDisplay = styled(Typography)({
+  display: 'flex',
+});
+
 const CardName = styled('span')({
-  marginRight: '10px',
+  flexGrow: 1,
 });
 
 export default function Card({card, prefix}) {
@@ -30,13 +35,15 @@ export default function Card({card, prefix}) {
   };
 
   return (
-    <div ref={ref}>
-      <Typography onClick={handleTooltipOpen}
+    <Box ref={ref}
+      sx={{width: '100%'}}
+    >
+      <CardDisplay onClick={handleTooltipOpen}
         paragraph
       >
-        <CardName >{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName>
+        <CardName>{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName>
         <ManaCost manaCost={card.manaCost} />
-      </Typography>
+      </CardDisplay>
       <Popover
         anchorEl={anchorEl}
         anchorOrigin={{
@@ -64,7 +71,7 @@ export default function Card({card, prefix}) {
           </Link>
           <StyledImage src={card.image} />
       </Popover>
-    </div>
+    </Box>
   );
 }
 

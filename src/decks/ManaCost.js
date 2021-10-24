@@ -9,7 +9,7 @@ const StyledImage = styled('img')({
 });
 
 export default function ManaCost({manaCost}) {
-  const manaSymbols = manaCost.split('}').map(symbol => symbols[`${symbol}}`]);
+  const manaSymbols = manaCost.split('}').filter(n => n).map(symbol => symbols[`${symbol}}`]);
   return (
     <>
       {manaSymbols.map((manaSymbol, i) => <StyledImage key={i}
