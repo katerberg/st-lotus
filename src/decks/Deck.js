@@ -41,6 +41,25 @@ export default function Deck({deck}) {
     setSort(value);
   };
 
+  const getPrefix = (card, sort, index) => {
+    let prefix;
+    if (sort === 'pick') {
+      prefix = index + 1;
+    }
+    if (sort === 'cmc') {
+      prefix = card.cmc;
+    }
+    if (sort === 'color') {
+      if (card.colors.length === 1) {
+        [prefix] = card.colors;
+      } else if (card.colors.length === 0) {
+        prefix = 'C';
+      } else {
+        prefix = 'M';
+      }
+    }
+    return prefix;
+  };
 
   return (
     <>
@@ -52,32 +71,14 @@ export default function Deck({deck}) {
         value={sort}
       />
       <List component="nav">
-        {decklist.map((card, i) => {
-          let prefix;
-          if (sort === 'pick') {
-            prefix = i + 1;
-          }
-          if (sort === 'cmc') {
-            prefix = card.cmc;
-          }
-          if (sort === 'color') {
-            if (card.colors.length === 1) {
-              [prefix] = card.colors;
-            } else if (card.colors.length === 0) {
-              prefix = 'C';
-            } else {
-              prefix = 'M';
-            }
-          }
-          return <React.Fragment key={card.name}>
+        {decklist.map((card, i) => <React.Fragment key={card.name}>
             <ListItem button>
               <Card card={card}
-                prefix={`${prefix}`}
+                prefix={`${getPrefix(card, sort, i)}`}
               />
             </ListItem>
             <Divider />
-          </React.Fragment>;
-        })}
+          </React.Fragment>)}
       </List>
     </>
   );
