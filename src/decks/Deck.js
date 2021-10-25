@@ -6,10 +6,13 @@ import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
 
 export default function Deck({deck}) {
-  const [sort, setSort] = useState('pick');
+  const [sort, setSort] = useState('color');
 
   const getColorType = (card) => {
     if (card.colors.length === 0) {
+      if (card.type.includes('Land')) {
+        return 'L';
+      }
       return 'C';
     }
     if (card.colors.length > 1) {

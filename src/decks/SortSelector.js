@@ -12,7 +12,7 @@ export default function SortSelector({onChange, value}) {
     <FormControl sx={{marginTop: '10px'}}>
       <InputLabel>{'Sort'}</InputLabel>
       <Select
-        label="Age"
+        label="Sort"
         onChange={handleChange}
         value={value}
       >

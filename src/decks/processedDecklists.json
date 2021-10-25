@@ -15,7 +15,7 @@
         "cmc": 0,
         "manaCost": "{0}",
         "colors": [],
-        "pickOrder": 0
+        "pickOrder": 1
       },
       {
         "name": "Time Walk",
@@ -27,7 +27,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 1
+        "pickOrder": 2
       },
       {
         "name": "Vampiric Tutor",
@@ -39,7 +39,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 2
+        "pickOrder": 3
       },
       {
         "name": "Flooded Strand",
@@ -49,7 +49,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 3
+        "pickOrder": 4
       },
       {
         "name": "Prismatic Vista",
@@ -59,7 +59,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 4
+        "pickOrder": 5
       },
       {
         "name": "Preordain",
@@ -71,7 +71,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 5
+        "pickOrder": 6
       },
       {
         "name": "Underground Sea",
@@ -81,7 +81,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 6
+        "pickOrder": 7
       },
       {
         "name": "Spell Pierce",
@@ -93,7 +93,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 7
+        "pickOrder": 8
       },
       {
         "name": "Dark Ritual",
@@ -105,7 +105,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 8
+        "pickOrder": 9
       },
       {
         "name": "Entomb",
@@ -117,7 +117,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 9
+        "pickOrder": 10
       },
       {
         "name": "Griselbrand",
@@ -129,7 +129,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 10
+        "pickOrder": 11
       },
       {
         "name": "Steam Vents",
@@ -139,7 +139,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 11
+        "pickOrder": 12
       },
       {
         "name": "Pyroblast",
@@ -151,7 +151,7 @@
         "colors": [
           "R"
         ],
-        "pickOrder": 12
+        "pickOrder": 13
       },
       {
         "name": "Chrome Mox",
@@ -161,7 +161,7 @@
         "cmc": 0,
         "manaCost": "{0}",
         "colors": [],
-        "pickOrder": 13
+        "pickOrder": 14
       },
       {
         "name": "Arid Mesa",
@@ -171,7 +171,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 14
+        "pickOrder": 15
       },
       {
         "name": "Flusterstorm",
@@ -183,7 +183,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 15
+        "pickOrder": 16
       },
       {
         "name": "Careful Study",
@@ -195,7 +195,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 16
+        "pickOrder": 17
       },
       {
         "name": "Collective Brutality",
@@ -207,7 +207,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 17
+        "pickOrder": 18
       },
       {
         "name": "Unmask",
@@ -219,7 +219,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 18
+        "pickOrder": 19
       },
       {
         "name": "Faithless Looting",
@@ -231,7 +231,7 @@
         "colors": [
           "R"
         ],
-        "pickOrder": 19
+        "pickOrder": 20
       },
       {
         "name": "Iona, Shield of Emeria",
@@ -243,7 +243,7 @@
         "colors": [
           "W"
         ],
-        "pickOrder": 20
+        "pickOrder": 21
       },
       {
         "name": "Exhume",
@@ -255,7 +255,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 21
+        "pickOrder": 22
       },
       {
         "name": "Show and Tell",
@@ -267,7 +267,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 22
+        "pickOrder": 23
       },
       {
         "name": "Necropotence",
@@ -279,7 +279,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 23
+        "pickOrder": 24
       },
       {
         "name": "Dance of the Dead",
@@ -291,7 +291,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 24
+        "pickOrder": 25
       },
       {
         "name": "Necromancy",
@@ -303,7 +303,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 25
+        "pickOrder": 26
       },
       {
         "name": "Archon of Cruelty",
@@ -315,7 +315,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 26
+        "pickOrder": 27
       },
       {
         "name": "Badlands",
@@ -325,7 +325,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 27
+        "pickOrder": 28
       },
       {
         "name": "Blood Crypt",
@@ -335,7 +335,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 28
+        "pickOrder": 29
       },
       {
         "name": "Thought Erasure",
@@ -348,7 +348,7 @@
           "B",
           "U"
         ],
-        "pickOrder": 29
+        "pickOrder": 30
       },
       {
         "name": "Pack Rat",
@@ -360,7 +360,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 30
+        "pickOrder": 31
       },
       {
         "name": "Rotting Regisaur",
@@ -372,7 +372,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 31
+        "pickOrder": 32
       },
       {
         "name": "Echoing Truth",
@@ -384,7 +384,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 32
+        "pickOrder": 33
       },
       {
         "name": "Sedgemoor Witch",
@@ -396,7 +396,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 33
+        "pickOrder": 34
       },
       {
         "name": "Ragavan, Nimble Pilferer",
@@ -408,7 +408,7 @@
         "colors": [
           "R"
         ],
-        "pickOrder": 34
+        "pickOrder": 35
       },
       {
         "name": "Elesh Norn, Grand Cenobite",
@@ -420,7 +420,7 @@
         "colors": [
           "W"
         ],
-        "pickOrder": 35
+        "pickOrder": 36
       },
       {
         "name": "Snuff Out",
@@ -432,7 +432,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 36
+        "pickOrder": 37
       },
       {
         "name": "Clearwater Pathway",
@@ -442,7 +442,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 37
+        "pickOrder": 38
       },
       {
         "name": "Boseiju, Who Shelters All",
@@ -452,7 +452,7 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 38
+        "pickOrder": 39
       },
       {
         "name": "Makeshift Mannequin",
@@ -464,7 +464,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 39
+        "pickOrder": 40
       },
       {
         "name": "Massacre",
@@ -476,7 +476,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 40
+        "pickOrder": 41
       },
       {
         "name": "Grave Titan",
@@ -488,7 +488,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 41
+        "pickOrder": 42
       },
       {
         "name": "Divert",
@@ -500,7 +500,7 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 42
+        "pickOrder": 43
       },
       {
         "name": "Disfigure",
@@ -512,7 +512,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 43
+        "pickOrder": 44
       },
       {
         "name": "Overmaster",
@@ -524,7 +524,7 @@
         "colors": [
           "R"
         ],
-        "pickOrder": 44
+        "pickOrder": 45
       }
     ]
   }
