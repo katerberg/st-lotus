@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useMemo, useCallback} from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
@@ -7,34 +7,45 @@ import Card from './Card';
 import {cardShape} from './DeckShapes';
 
 export default function DeckSection({cards, title, sort}) {
-
-  const getPrefix = (card, sort) => {
-    let prefix;
+  const getPrefix = useCallback((card) => {
     if (sort === 'pick') {
-      prefix = card.pickOrder;
+      return card.pickOrder;
     }
+    return '';
+  }, [sort]);
+
+  const sortByName = useCallback((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    }
+    if (a.name > b.name) {
+      return 1;
+    }
+    return 0;
+  }, []);
+
+  const sortedCards = useMemo(() => {
     if (sort === 'cmc') {
-      prefix = card.cmc;
+      return [...cards].sort((a, b) => {
+        if (a.cmc < b.cmc) {
+          return -1;
+        }
+        if (a.cmc > b.cmc) {
+          return 1;
+        }
+        return sortByName(a, b);
+      });
     }
-    if (sort === 'color') {
-      if (card.colors.length === 1) {
-        [prefix] = card.colors;
-      } else if (card.colors.length === 0) {
-        prefix = 'C';
-      } else {
-        prefix = 'M';
-      }
-    }
-    return prefix;
-  };
+    return cards;
+  }, [sort, cards, sortByName]);
 
   return (
     <>
       <Typography paragraph>{title}</Typography>
       <List component="nav">
-        {cards.map((card) => <React.Fragment key={card.name}>
+        {sortedCards.map((card) => <React.Fragment key={card.name}>
             <Card card={card}
-              prefix={`${getPrefix(card, sort)}`}
+              prefix={`${getPrefix(card)}`}
             />
             <Divider />
           </React.Fragment>)}

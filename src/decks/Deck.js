@@ -7,32 +7,43 @@ import SortSelector from './SortSelector';
 
 export default function Deck({deck}) {
   const [sort, setSort] = useState('pick');
-  const sortByName = (a, b) => {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
 
+  const getColorType = (card) => {
+    if (card.colors.length === 0) {
+      return 'C';
+    }
+    if (card.colors.length > 1) {
+      return 'M';
+    }
+    return card.colors[0];
   };
-  const decklist = useMemo(() => {
+
+  const decklistSections = useMemo(() => {
     if (sort === 'cmc') {
-      return [...deck.decklist].sort((a, b) => {
-        if (a.cmc < b.cmc) {
-          return -1;
+      const grouped = deck.decklist.reduce((a, c) => {
+        const newAccumulator = {...a};
+        if (newAccumulator[c.cmc] === undefined) {
+          newAccumulator[c.cmc] = [];
         }
-        if (a.cmc > b.cmc) {
-          return 1;
-        }
-        return sortByName(a, b);
-      });
+        newAccumulator[c.cmc].push(c);
+        return newAccumulator;
+      }, {});
+      return Object.entries(grouped).map(([cmc, cards]) => ({title: cmc, cards}));
     }
     if (sort === 'color') {
-      return [...deck.decklist].sort((a, b) => sortByName(a, b));
+      const grouped = deck.decklist.reduce((a, c) => {
+        const newAccumulator = {...a};
+        const colorType = getColorType(c);
+        if (newAccumulator[colorType] === undefined) {
+          newAccumulator[colorType] = [];
+        }
+        newAccumulator[colorType].push(c);
+        return newAccumulator;
+      }, {});
+      return Object.entries(grouped).map(([colorType, cards]) => ({title: colorType, cards}));
+      // Return [...deck.decklist].sort((a, b) => sortByName(a, b));
     }
-    return deck.decklist;
+    return [{title: '', cards: deck.decklist}];
   }, [deck, sort]);
 
   const handleSortChange = (value) => {
@@ -48,10 +59,11 @@ export default function Deck({deck}) {
       <SortSelector onChange={handleSortChange}
         value={sort}
       />
-      <DeckSection cards={decklist}
+      {decklistSections.map(ds => <DeckSection cards={ds.cards}
+        key={ds.title}
         sort={sort}
-        title=""
-      />
+        title={ds.title}
+                                  />)}
     </>
   );
 }

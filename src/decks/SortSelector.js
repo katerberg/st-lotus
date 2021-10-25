@@ -7,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 
 
 export default function SortSelector({onChange, value}) {
-  const handleChange = useCallback(e => onChange(e.target.value), []);
+  const handleChange = useCallback(e => onChange(e.target.value), [onChange]);
   return (
     <FormControl sx={{marginTop: '10px'}}>
       <InputLabel>{'Sort'}</InputLabel>
