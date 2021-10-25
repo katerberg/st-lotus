@@ -1,10 +1,8 @@
 import React, {useMemo, useState} from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import Divider from '@mui/material/Divider';
-import Card from './Card';
+import {cardShape} from './DeckShapes';
+import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
 
 export default function Deck({deck}) {
@@ -41,26 +39,6 @@ export default function Deck({deck}) {
     setSort(value);
   };
 
-  const getPrefix = (card, sort, index) => {
-    let prefix;
-    if (sort === 'pick') {
-      prefix = index + 1;
-    }
-    if (sort === 'cmc') {
-      prefix = card.cmc;
-    }
-    if (sort === 'color') {
-      if (card.colors.length === 1) {
-        [prefix] = card.colors;
-      } else if (card.colors.length === 0) {
-        prefix = 'C';
-      } else {
-        prefix = 'M';
-      }
-    }
-    return prefix;
-  };
-
   return (
     <>
       <Typography variant="h3">{deck.genre}</Typography>
@@ -70,16 +48,10 @@ export default function Deck({deck}) {
       <SortSelector onChange={handleSortChange}
         value={sort}
       />
-      <List component="nav">
-        {decklist.map((card, i) => <React.Fragment key={card.name}>
-            <ListItem button>
-              <Card card={card}
-                prefix={`${getPrefix(card, sort, i)}`}
-              />
-            </ListItem>
-            <Divider />
-          </React.Fragment>)}
-      </List>
+      <DeckSection cards={decklist}
+        sort={sort}
+        title=""
+      />
     </>
   );
 }
@@ -92,13 +64,6 @@ Deck.propTypes = {
     wins: PropTypes.number,
     losses: PropTypes.number,
     stLotus: PropTypes.number,
-    decklist: PropTypes.arrayOf(PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      image: PropTypes.string.isRequired,
-      uri: PropTypes.string.isRequired,
-      type: PropTypes.string.isRequired,
-      cmc: PropTypes.number.isRequired,
-      colors: PropTypes.arrayOf(PropTypes.string).isRequired,
-    })).isRequired,
+    decklist: PropTypes.arrayOf(cardShape).isRequired,
   }).isRequired,
 };
