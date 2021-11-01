@@ -4,22 +4,10 @@ import Typography from '@mui/material/Typography';
 import {cardShape} from './DeckShapes';
 import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
+import {sortByColor} from './Sorting';
 
 export default function Deck({deck}) {
   const [sort, setSort] = useState('color');
-
-  const getColorType = (card) => {
-    if (card.colors.length === 0) {
-      if (card.type.includes('Land')) {
-        return 'L';
-      }
-      return 'C';
-    }
-    if (card.colors.length > 1) {
-      return 'M';
-    }
-    return card.colors[0];
-  };
 
   const decklistSections = useMemo(() => {
     if (sort === 'cmc') {
@@ -34,17 +22,7 @@ export default function Deck({deck}) {
       return Object.entries(grouped).map(([cmc, cards]) => ({title: cmc, cards}));
     }
     if (sort === 'color') {
-      const grouped = deck.decklist.reduce((a, c) => {
-        const newAccumulator = {...a};
-        const colorType = getColorType(c);
-        if (newAccumulator[colorType] === undefined) {
-          newAccumulator[colorType] = [];
-        }
-        newAccumulator[colorType].push(c);
-        return newAccumulator;
-      }, {});
-      return Object.entries(grouped).map(([colorType, cards]) => ({title: colorType, cards}));
-      // Return [...deck.decklist].sort((a, b) => sortByName(a, b));
+      return sortByColor(deck.decklist);
     }
     return [{title: '', cards: deck.decklist}];
   }, [deck, sort]);
