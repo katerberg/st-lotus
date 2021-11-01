@@ -1,6 +1,6 @@
 {
   "extends": ["eslint:recommended", "plugin:react-hooks/recommended"],
-  "plugins": ["react"],
+  "plugins": ["react", "jest"],
   "rules": {
     "no-console": "error",
     "no-extra-parens":  "error",
@@ -152,7 +152,8 @@
   },
   "env": {
     "node": true,
-    "es2020": true
+    "es2020": true,
+    "jest": true
   },
   "globals": {
     "it": true,
