@@ -16,9 +16,9 @@ const getColorType = (card) => {
 
 const sortGroupByColor = (a, b) => colorOrder.indexOf(a.title) - colorOrder.indexOf(b.title);
 
-const sortByCmc = (a, b) => a.cmc - b.cmc;
+const sortCardByCmc = (a, b) => a.cmc - b.cmc;
 
-const sortByName = (a, b) => {
+const sortCardByName = (a, b) => {
   if (a.name < b.name) {
     return -1;
   }
@@ -41,10 +41,27 @@ export function sortByColor(decklist) {
   return Object.entries(grouped)
     .map(([colorType, cards]) => ({
       title: colorType,
-      cards: cards.sort((a, b) => sortByCmc(a, b) || sortByName(a, b), []),
+      cards: cards.sort((a, b) => sortCardByCmc(a, b) || sortCardByName(a, b), []),
     }))
     .sort(sortGroupByColor, []);
 }
 
-const combined = {sortByColor, colorOrder};
+export function sortByCmc(decklist) {
+  const grouped = decklist.reduce((a, c) => {
+    const newAccumulator = {...a};
+    if (newAccumulator[c.cmc] === undefined) {
+      newAccumulator[c.cmc] = [];
+    }
+    newAccumulator[c.cmc].push(c);
+    return newAccumulator;
+  }, {});
+  return Object.entries(grouped)
+    .map(([cmc, cards]) => ({
+      title: cmc,
+      cards: cards.sort((a, b) => sortCardByName(a, b), []),
+    }))
+    .sort((a, b) => a.title - b.title, []);
+}
+
+const combined = {sortByColor, colorOrder, sortByCmc};
 export default combined;
