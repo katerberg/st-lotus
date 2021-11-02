@@ -17,7 +17,13 @@ export default function DeckSection({cards, title, sort}) {
 
   return (
     <Box>
-      <ManaCost manaCost={`{${title}}`} />
+      <Box sx={{
+          '> img': {height: '2rem'},
+          textAlign: 'center',
+        }}
+      >
+        <ManaCost manaCost={`{${title}}`} />
+      </Box>
       <List component="nav">
         {cards.map((card) => <React.Fragment key={card.name}>
             <Card card={card}
