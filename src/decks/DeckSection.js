@@ -1,4 +1,4 @@
-import React, {useMemo, useCallback} from 'react';
+import React, {useCallback} from 'react';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import List from '@mui/material/List';
@@ -14,36 +14,11 @@ export default function DeckSection({cards, title, sort}) {
     return '';
   }, [sort]);
 
-  const sortByName = useCallback((a, b) => {
-    if (a.name < b.name) {
-      return -1;
-    }
-    if (a.name > b.name) {
-      return 1;
-    }
-    return 0;
-  }, []);
-
-  const sortedCards = useMemo(() => {
-    if (sort === 'cmc') {
-      return [...cards].sort((a, b) => {
-        if (a.cmc < b.cmc) {
-          return -1;
-        }
-        if (a.cmc > b.cmc) {
-          return 1;
-        }
-        return sortByName(a, b);
-      });
-    }
-    return cards;
-  }, [sort, cards, sortByName]);
-
   return (
     <>
       <Typography paragraph>{title}</Typography>
       <List component="nav">
-        {sortedCards.map((card) => <React.Fragment key={card.name}>
+        {cards.map((card) => <React.Fragment key={card.name}>
             <Card card={card}
               prefix={`${getPrefix(card)}`}
             />

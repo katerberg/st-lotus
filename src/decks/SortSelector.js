@@ -16,9 +16,9 @@ export default function SortSelector({onChange, value}) {
         onChange={handleChange}
         value={value}
       >
+        <MenuItem value="color">{'Color'}</MenuItem>
         <MenuItem value="pick">{'Pick Order'}</MenuItem>
         <MenuItem value="cmc">{'Mana Value'}</MenuItem>
-        <MenuItem value="color">{'Color'}</MenuItem>
       </Select>
     </FormControl>
   );
