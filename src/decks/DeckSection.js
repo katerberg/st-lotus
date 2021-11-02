@@ -5,6 +5,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import Card from './Card';
 import {cardShape} from './DeckShapes';
+import {Box} from '@mui/system';
 
 export default function DeckSection({cards, title, sort}) {
   const getPrefix = useCallback((card) => {
@@ -15,7 +16,7 @@ export default function DeckSection({cards, title, sort}) {
   }, [sort]);
 
   return (
-    <>
+    <Box>
       <Typography paragraph>{title}</Typography>
       <List component="nav">
         {cards.map((card) => <React.Fragment key={card.name}>
@@ -25,7 +26,7 @@ export default function DeckSection({cards, title, sort}) {
             <Divider />
           </React.Fragment>)}
       </List>
-    </>
+    </Box>
   );
 }
 

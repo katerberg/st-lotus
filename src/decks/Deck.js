@@ -1,4 +1,5 @@
-import React, {useMemo, useState} from 'react';
+import React, {useCallback, useMemo, useState} from 'react';
+import Masonry from '@mui/lab/Masonry';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import {cardShape} from './DeckShapes';
@@ -19,6 +20,15 @@ export default function Deck({deck}) {
     return [{title: '', cards: deck.decklist}];
   }, [deck, sort]);
 
+  const getColumns = useCallback(() => {
+    if (sort === 'pick' || decklistSections.length === 1) {
+      return 1;
+    }
+    if (decklistSections.length === 2) {
+      return {xs: 1, sm: 2};
+    }
+    return {xs: 1, sm: 2, md: 3};
+  }, [sort, decklistSections]);
   const handleSortChange = (value) => {
     setSort(value);
   };
@@ -32,11 +42,13 @@ export default function Deck({deck}) {
       <SortSelector onChange={handleSortChange}
         value={sort}
       />
-      {decklistSections.map(ds => <DeckSection cards={ds.cards}
-        key={ds.title}
-        sort={sort}
-        title={ds.title}
-                                  />)}
+      <Masonry columns={getColumns()}>
+        {decklistSections.map(ds => <DeckSection cards={ds.cards}
+          key={ds.title}
+          sort={sort}
+          title={ds.title}
+                                    />)}
+      </Masonry>
     </>
   );
 }
