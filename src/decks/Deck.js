@@ -1,4 +1,5 @@
 import React, {useCallback, useMemo, useState} from 'react';
+import {styled} from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
@@ -6,6 +7,11 @@ import {cardShape} from './DeckShapes';
 import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
 import {sortByCmc, sortByColor} from './Sorting';
+
+
+const Subtitle = styled(Typography)({
+  marginLeft: '1rem',
+});
 
 export default function Deck({deck}) {
   const [sort, setSort] = useState('color');
@@ -36,8 +42,8 @@ export default function Deck({deck}) {
   return (
     <>
       <Typography variant="h3">{deck.genre}</Typography>
-      <Typography>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Typography>
-      <Typography>{deck.date}</Typography>
+      <Subtitle>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Subtitle>
+      <Subtitle>{deck.date}</Subtitle>
       <hr/>
       <SortSelector onChange={handleSortChange}
         value={sort}

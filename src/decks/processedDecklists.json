@@ -1,16 +1,17 @@
 [
   {
-    "date": "2021-07-31",
-    "player": "John Ryan Hamilton",
-    "genre": "Reanimator",
-    "wins": 6,
-    "losses": 1,
-    "stLotus": 6,
+    "date": "2021-10-02",
+    "player": "Kyle Vance",
+    "genre": "Lantern",
+    "seat": 1,
+    "wins": 4,
+    "losses": 3,
+    "stLotus": 7,
     "decklist": [
       {
-        "name": "Black Lotus",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838",
-        "uri": "https://scryfall.com/card/vma/4/black-lotus?utm_source=api",
+        "name": "Mox Sapphire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/a/ea1feac0-d3a7-45eb-9719-1cdaf51ea0b6.jpg?1614638862",
+        "uri": "https://scryfall.com/card/vma/9/mox-sapphire?utm_source=api",
         "type": "Artifact",
         "cmc": 0,
         "manaCost": "{0}",
@@ -18,37 +19,39 @@
         "pickOrder": 1
       },
       {
-        "name": "Time Walk",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/70901356-3266-4bd9-aacc-f06c27271de5.jpg?1614638832",
-        "uri": "https://scryfall.com/card/vma/2/time-walk?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 2,
-        "manaCost": "{1}{U}",
-        "colors": [
-          "U"
-        ],
+        "name": "Sol Ring",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/c/4cbc6901-6a4a-4d0a-83ea-7eefa3b35021.jpg?1632893059",
+        "uri": "https://scryfall.com/card/c21/263/sol-ring?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
         "pickOrder": 2
       },
       {
-        "name": "Vampiric Tutor",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005",
-        "uri": "https://scryfall.com/card/cmr/156/vampiric-tutor?utm_source=api",
-        "type": "Instant",
-        "cmc": 1,
-        "manaCost": "{B}",
+        "name": "Teferi, Time Raveler",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.jpg?1613386796",
+        "uri": "https://scryfall.com/card/war/221/teferi-time-raveler?utm_source=api",
+        "type": "Legendary Planeswalker — Teferi",
+        "cmc": 3,
+        "manaCost": "{1}{W}{U}",
         "colors": [
-          "B"
+          "U",
+          "W"
         ],
         "pickOrder": 3
       },
       {
-        "name": "Flooded Strand",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
-        "uri": "https://scryfall.com/card/ktk/233/flooded-strand?utm_source=api",
-        "type": "Land",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
+        "name": "Oko, Thief of Crowns",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/3462a3d0-5552-49fa-9eb7-100960c55891.jpg?1613387000",
+        "uri": "https://scryfall.com/card/eld/197/oko-thief-of-crowns?utm_source=api",
+        "type": "Legendary Planeswalker — Oko",
+        "cmc": 3,
+        "manaCost": "{1}{G}{U}",
+        "colors": [
+          "G",
+          "U"
+        ],
         "pickOrder": 4
       },
       {
@@ -62,26 +65,158 @@
         "pickOrder": 5
       },
       {
-        "name": "Preordain",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/4/1453f92e-df2d-4789-aa1b-a5b5c51567d4.jpg?1608909344",
-        "uri": "https://scryfall.com/card/cmr/84/preordain?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 1,
-        "manaCost": "{U}",
-        "colors": [
-          "U"
-        ],
+        "name": "Misty Rainforest",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.jpg?1626099715",
+        "uri": "https://scryfall.com/card/mh2/250/misty-rainforest?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
         "pickOrder": 6
       },
       {
-        "name": "Underground Sea",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883",
-        "uri": "https://scryfall.com/card/vma/323/underground-sea?utm_source=api",
-        "type": "Land — Island Swamp",
+        "name": "Flooded Strand",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
+        "uri": "https://scryfall.com/card/ktk/233/flooded-strand?utm_source=api",
+        "type": "Land",
         "cmc": 0,
         "manaCost": "",
         "colors": [],
         "pickOrder": 7
+      },
+      {
+        "name": "Balance",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/e/ce648aa3-098b-4af0-a433-fd290bc85904.jpg?1580013606",
+        "uri": "https://scryfall.com/card/ema/2/balance?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 8
+      },
+      {
+        "name": "Karn, the Great Creator",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.jpg?1566819742",
+        "uri": "https://scryfall.com/card/war/1/karn-the-great-creator?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Karn, Scion of Urza",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/7/07a3d9e8-8597-498b-869c-cff79e0df516.jpg?1562730952",
+        "uri": "https://scryfall.com/card/dom/1/karn-scion-of-urza?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 10
+      },
+      {
+        "name": "Savannah",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1562930574",
+        "uri": "https://scryfall.com/card/vma/311/savannah?utm_source=api",
+        "type": "Land — Forest Plains",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 11
+      },
+      {
+        "name": "Tundra",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1562943174",
+        "uri": "https://scryfall.com/card/vma/322/tundra?utm_source=api",
+        "type": "Land — Plains Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 12
+      },
+      {
+        "name": "Jace, the Mind Sculptor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c8817585-0d32-4d56-9142-0d29512e86a9.jpg?1598304029",
+        "uri": "https://scryfall.com/card/2xm/56/jace-the-mind-sculptor?utm_source=api",
+        "type": "Legendary Planeswalker — Jace",
+        "cmc": 4,
+        "manaCost": "{2}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 13
+      },
+      {
+        "name": "Hurkyl's Recall",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/3/73edeaaa-6a87-4cf1-b013-bab9a7bb94d9.jpg?1562263763",
+        "uri": "https://scryfall.com/card/mm2/48/hurkyls-recall?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 14
+      },
+      {
+        "name": "Swords to Plowshares",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/e/be2b4177-e47c-4dde-9ead-31b7602065ec.jpg?1633071108",
+        "uri": "https://scryfall.com/card/cmr/387/swords-to-plowshares?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 15
+      },
+      {
+        "name": "Council's Judgment",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aaa187c9-90b3-4770-963a-8a9f932430ef.jpg?1599706018",
+        "uri": "https://scryfall.com/card/2xm/11/councils-judgment?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Sensei's Divining Top",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/3/83c01c91-ea01-46c7-b94c-97777b968459.jpg?1580015272",
+        "uri": "https://scryfall.com/card/ema/232/senseis-divining-top?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 17
+      },
+      {
+        "name": "Sylvan Library",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/5/d5b5d2a7-8185-4df0-a35a-f89c12857f87.jpg?1580014929",
+        "uri": "https://scryfall.com/card/ema/187/sylvan-library?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 18
+      },
+      {
+        "name": "Mental Misstep",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/61e9c6df-1c84-4eab-9076-a4feb6347c10.jpg?1566819829",
+        "uri": "https://scryfall.com/card/nph/38/mental-misstep?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U/P}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 19
       },
       {
         "name": "Spell Pierce",
@@ -93,7 +228,322 @@
         "colors": [
           "U"
         ],
-        "pickOrder": 8
+        "pickOrder": 20
+      },
+      {
+        "name": "Counterspell",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/9/1920dae4-fb92-4f19-ae4b-eb3276b8dac7.jpg?1628801663",
+        "uri": "https://scryfall.com/card/mh2/267/counterspell?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Brainstorm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/3/0359f212-9564-41a9-870b-d2c57455a695.jpg?1628801650",
+        "uri": "https://scryfall.com/card/c21/115/brainstorm?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Monastery Mentor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/b/abcd0e32-2e6b-419b-9e8a-af38f2b48a66.jpg?1562828716",
+        "uri": "https://scryfall.com/card/frf/20/monastery-mentor?utm_source=api",
+        "type": "Creature — Human Monk",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Breeding Pool",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.jpg?1584832238",
+        "uri": "https://scryfall.com/card/rna/246/breeding-pool?utm_source=api",
+        "type": "Land — Forest Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 24
+      },
+      {
+        "name": "Pentad Prism",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/a/2a2862c5-afa8-4e38-a312-483300f8b194.jpg?1599709726",
+        "uri": "https://scryfall.com/card/2xm/281/pentad-prism?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 25
+      },
+      {
+        "name": "Karakas",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1559959289",
+        "uri": "https://scryfall.com/card/uma/244/karakas?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 26
+      },
+      {
+        "name": "Birds of Paradise",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/e/feefe9f0-24a6-461c-9ef1-86c5a6f33b83.jpg?1594681430",
+        "uri": "https://scryfall.com/card/cn2/176/birds-of-paradise?utm_source=api",
+        "type": "Creature — Bird",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Noble Hierarch",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/0/400382a4-aea2-4827-b06a-1b0b3745908b.jpg?1599707413",
+        "uri": "https://scryfall.com/card/2xm/177/noble-hierarch?utm_source=api",
+        "type": "Creature — Human Druid",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 28
+      },
+      {
+        "name": "Nissa, Who Shakes the World",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/8/f857bbe4-5619-4733-a0c7-69700f2ef4f3.jpg?1618426283",
+        "uri": "https://scryfall.com/card/war/169/nissa-who-shakes-the-world?utm_source=api",
+        "type": "Legendary Planeswalker — Nissa",
+        "cmc": 5,
+        "manaCost": "{3}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "Yavimaya, Cradle of Growth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c.jpg?1626100009",
+        "uri": "https://scryfall.com/card/mh2/261/yavimaya-cradle-of-growth?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 30
+      },
+      {
+        "name": "Nature's Claim",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/2/d24b6640-ef2f-4c92-beb3-afdf78f9c2d5.jpg?1562854212",
+        "uri": "https://scryfall.com/card/ima/177/natures-claim?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Manglehorn",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/a/0aa3a844-97e6-4f5d-a36f-56fea4e06932.jpg?1543675886",
+        "uri": "https://scryfall.com/card/akh/175/manglehorn?utm_source=api",
+        "type": "Creature — Beast",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Leyline of the Void",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/4/04d5d429-e0c6-42cc-a477-da7dabb1c295.jpg?1592516724",
+        "uri": "https://scryfall.com/card/m20/107/leyline-of-the-void?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 4,
+        "manaCost": "{2}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 33
+      },
+      {
+        "name": "Helm of Obedience",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/c/ec837c3e-a66f-43c0-adb4-4eefe7888cac.jpg?1562870953",
+        "uri": "https://scryfall.com/card/me2/210/helm-of-obedience?utm_source=api",
+        "type": "Artifact",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Mycosynth Lattice",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/94f89714-3b26-46a2-b9a8-3e664f391cd9.jpg?1578911638",
+        "uri": "https://scryfall.com/card/bbd/241/mycosynth-lattice?utm_source=api",
+        "type": "Artifact",
+        "cmc": 6,
+        "manaCost": "{6}",
+        "colors": [],
+        "pickOrder": 35
+      },
+      {
+        "name": "Winter Orb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/b/ab3cec7e-513e-400d-a1a8-2c71cdde02c6.jpg?1580015285",
+        "uri": "https://scryfall.com/card/ema/234/winter-orb?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 36
+      },
+      {
+        "name": "Tangle Wire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/d/ad62f313-8a8a-4ffa-ada2-b12b76288729.jpg?1562631474",
+        "uri": "https://scryfall.com/card/nem/139/tangle-wire?utm_source=api",
+        "type": "Artifact",
+        "cmc": 3,
+        "manaCost": "{3}",
+        "colors": [],
+        "pickOrder": 37
+      },
+      {
+        "name": "Karn Liberated",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/b/4b0c6662-4dde-40a2-97e0-0318478c0367.jpg?1599705787",
+        "uri": "https://scryfall.com/card/2xm/1/karn-liberated?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 7,
+        "manaCost": "{7}",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Ancestral Vision",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/9079c93e-3da8-442a-89d2-609a3eac83b0.jpg?1619393761",
+        "uri": "https://scryfall.com/card/tsr/52/ancestral-vision?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 39
+      },
+      {
+        "name": "Oath of Nissa",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/613513ea-55dd-4ae8-93b2-247e468112a6.jpg?1594656300",
+        "uri": "https://scryfall.com/card/ogw/140/oath-of-nissa?utm_source=api",
+        "type": "Legendary Enchantment",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 40
+      },
+      {
+        "name": "Chalice of the Void",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/f/1f0d2e8e-c8f2-4b31-a6ba-6283fc8740d4.jpg?1562433485",
+        "uri": "https://scryfall.com/card/a25/222/chalice-of-the-void?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{X}{X}",
+        "colors": [],
+        "pickOrder": 41
+      },
+      {
+        "name": "Settle the Wreckage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cbd346e-098a-4cf6-a72f-468376fd2e8f.jpg?1562560853",
+        "uri": "https://scryfall.com/card/xln/34/settle-the-wreckage?utm_source=api",
+        "type": "Instant",
+        "cmc": 4,
+        "manaCost": "{2}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Spell Queller",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/b/9b76bcd4-580a-4435-afe9-290940b1837f.jpg?1576385020",
+        "uri": "https://scryfall.com/card/emn/189/spell-queller?utm_source=api",
+        "type": "Creature — Spirit",
+        "cmc": 3,
+        "manaCost": "{1}{W}{U}",
+        "colors": [
+          "U",
+          "W"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Elspeth, Sun's Champion",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/6/96f1d11a-084d-4de7-9ed4-33158113520c.jpg?1562840252",
+        "uri": "https://scryfall.com/card/ddo/1/elspeth-suns-champion?utm_source=api",
+        "type": "Legendary Planeswalker — Elspeth",
+        "cmc": 6,
+        "manaCost": "{4}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 44
+      },
+      {
+        "name": "Land Tax",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/5/95bba319-5f66-4085-9f2a-ab71f727ab64.jpg?1599708011",
+        "uri": "https://scryfall.com/card/2xm/20/land-tax?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 45
+      },
+      {
+        "name": "Dovin, Hand of Control",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd6ff745-919b-4688-9e9e-ab7835b3b891.jpg?1557577351",
+        "uri": "https://scryfall.com/card/war/229/dovin-hand-of-control?utm_source=api",
+        "type": "Legendary Planeswalker — Dovin",
+        "cmc": 3,
+        "manaCost": "{2}{W/U}",
+        "colors": [
+          "U",
+          "W"
+        ],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Nemo Baize",
+    "genre": "Reanimator",
+    "seat": 2,
+    "wins": 2,
+    "losses": 5,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Black Lotus",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838",
+        "uri": "https://scryfall.com/card/vma/4/black-lotus?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
       },
       {
         "name": "Dark Ritual",
@@ -105,7 +555,7 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 9
+        "pickOrder": 2
       },
       {
         "name": "Entomb",
@@ -117,181 +567,29 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 10
+        "pickOrder": 3
       },
       {
-        "name": "Griselbrand",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/f/cf2a5c2e-7fe1-45eb-b01c-891ab961186f.jpg?1593813293",
-        "uri": "https://scryfall.com/card/mm3/72/griselbrand?utm_source=api",
-        "type": "Legendary Creature — Demon",
-        "cmc": 8,
-        "manaCost": "{4}{B}{B}{B}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 11
-      },
-      {
-        "name": "Steam Vents",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204",
-        "uri": "https://scryfall.com/card/grn/257/steam-vents?utm_source=api",
-        "type": "Land — Island Mountain",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
-        "pickOrder": 12
-      },
-      {
-        "name": "Pyroblast",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621",
-        "uri": "https://scryfall.com/card/ema/142/pyroblast?utm_source=api",
-        "type": "Instant",
-        "cmc": 1,
-        "manaCost": "{R}",
-        "colors": [
-          "R"
-        ],
-        "pickOrder": 13
-      },
-      {
-        "name": "Chrome Mox",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93.jpg?1599708839",
-        "uri": "https://scryfall.com/card/2xm/240/chrome-mox?utm_source=api",
+        "name": "Mox Diamond",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/f/bf9fecfd-d122-422f-bd0a-5bf69b434dfe.jpg?1562431287",
+        "uri": "https://scryfall.com/card/tpr/228/mox-diamond?utm_source=api",
         "type": "Artifact",
         "cmc": 0,
         "manaCost": "{0}",
         "colors": [],
-        "pickOrder": 14
+        "pickOrder": 4
       },
       {
-        "name": "Arid Mesa",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.jpg?1626099519",
-        "uri": "https://scryfall.com/card/mh2/244/arid-mesa?utm_source=api",
-        "type": "Land",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
-        "pickOrder": 15
-      },
-      {
-        "name": "Flusterstorm",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/9/f900eeb7-7c45-44bc-ad3a-0bbe594ecf50.jpg?1562856071",
-        "uri": "https://scryfall.com/card/ima/55/flusterstorm?utm_source=api",
-        "type": "Instant",
-        "cmc": 1,
-        "manaCost": "{U}",
-        "colors": [
-          "U"
-        ],
-        "pickOrder": 16
-      },
-      {
-        "name": "Careful Study",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/e/dea15b53-2940-40e7-8d48-8ec11341da83.jpg?1562936545",
-        "uri": "https://scryfall.com/card/ody/70/careful-study?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 1,
-        "manaCost": "{U}",
-        "colors": [
-          "U"
-        ],
-        "pickOrder": 17
-      },
-      {
-        "name": "Collective Brutality",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/b/cb94a02f-4660-45b6-8a39-941b710cf8f3.jpg?1576384285",
-        "uri": "https://scryfall.com/card/emn/85/collective-brutality?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 2,
-        "manaCost": "{1}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 18
-      },
-      {
-        "name": "Unmask",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/d/2db7a0e6-eea5-4fa6-ac14-401411b106cc.jpg?1562379909",
-        "uri": "https://scryfall.com/card/mmq/168/unmask?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 4,
-        "manaCost": "{3}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 19
-      },
-      {
-        "name": "Faithless Looting",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d6e5cc9-bd48-41b6-ac20-5a3e38aecdc5.jpg?1625193770",
-        "uri": "https://scryfall.com/card/c21/168/faithless-looting?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 1,
-        "manaCost": "{R}",
-        "colors": [
-          "R"
-        ],
-        "pickOrder": 20
-      },
-      {
-        "name": "Iona, Shield of Emeria",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407",
-        "uri": "https://scryfall.com/card/mm2/20/iona-shield-of-emeria?utm_source=api",
-        "type": "Legendary Creature — Angel",
-        "cmc": 9,
-        "manaCost": "{6}{W}{W}{W}",
-        "colors": [
-          "W"
-        ],
-        "pickOrder": 21
-      },
-      {
-        "name": "Exhume",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/f/5f1cdcba-a04a-4a2f-8bc1-0dd7fa03754d.jpg?1600714444",
-        "uri": "https://scryfall.com/card/jmp/230/exhume?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 2,
-        "manaCost": "{1}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 22
-      },
-      {
-        "name": "Show and Tell",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/a/fa7b7897-36e0-415a-8bb7-602886164852.jpg?1576382523",
-        "uri": "https://scryfall.com/card/cn2/121/show-and-tell?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 3,
-        "manaCost": "{2}{U}",
-        "colors": [
-          "U"
-        ],
-        "pickOrder": 23
-      },
-      {
-        "name": "Necropotence",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c89c6895-b0f8-444a-9c89-c6b4fd027b3e.jpg?1562853736",
-        "uri": "https://scryfall.com/card/ima/98/necropotence?utm_source=api",
-        "type": "Enchantment",
-        "cmc": 3,
-        "manaCost": "{B}{B}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 24
-      },
-      {
-        "name": "Dance of the Dead",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/4/44de44be-db14-4932-968b-a5bc8b575716.jpg?1562868102",
-        "uri": "https://scryfall.com/card/me2/83/dance-of-the-dead?utm_source=api",
+        "name": "Animate Dead",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/b/7b83536a-efa4-41f3-9424-75b0efc0aea5.jpg?1580014163",
+        "uri": "https://scryfall.com/card/ema/78/animate-dead?utm_source=api",
         "type": "Enchantment — Aura",
         "cmc": 2,
         "manaCost": "{1}{B}",
         "colors": [
           "B"
         ],
-        "pickOrder": 25
+        "pickOrder": 5
       },
       {
         "name": "Necromancy",
@@ -303,7 +601,351 @@
         "colors": [
           "B"
         ],
+        "pickOrder": 6
+      },
+      {
+        "name": "Bazaar of Baghdad",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c88acaa8-ad4d-4321-a6f6-9361916e5b5e.jpg?1562935233",
+        "uri": "https://scryfall.com/card/vma/294/bazaar-of-baghdad?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 7
+      },
+      {
+        "name": "Bayou",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1562933075",
+        "uri": "https://scryfall.com/card/vma/293/bayou?utm_source=api",
+        "type": "Land — Swamp Forest",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 8
+      },
+      {
+        "name": "Collector Ouphe",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/8/085107a2-c1ec-473c-81d8-23e5a7197776.jpg?1562202038",
+        "uri": "https://scryfall.com/card/mh1/158/collector-ouphe?utm_source=api",
+        "type": "Creature — Ouphe",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 9
+      },
+      {
+        "name": "Vampiric Tutor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005",
+        "uri": "https://scryfall.com/card/cmr/156/vampiric-tutor?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 10
+      },
+      {
+        "name": "Force of Vigor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/017c415b-d635-43c6-92b8-8c95d1c4ff8d.jpg?1562202072",
+        "uri": "https://scryfall.com/card/mh1/164/force-of-vigor?utm_source=api",
+        "type": "Instant",
+        "cmc": 4,
+        "manaCost": "{2}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 11
+      },
+      {
+        "name": "Duress",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/9/49c07ea0-27ff-46fb-a41f-3e378c977b5d.jpg?1594736092",
+        "uri": "https://scryfall.com/card/m21/96/duress?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 12
+      },
+      {
+        "name": "Bloodstained Mire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/f/7f430794-0d86-4f6a-97e0-4bbb6716d613.jpg?1571667959",
+        "uri": "https://scryfall.com/card/ktk/230/bloodstained-mire?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 13
+      },
+      {
+        "name": "Windswept Heath",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/7/e7b28650-cddc-4878-b1d1-b5a764f4df49.jpg?1571667973",
+        "uri": "https://scryfall.com/card/ktk/248/windswept-heath?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 14
+      },
+      {
+        "name": "Overgrown Tomb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.jpg?1572894177",
+        "uri": "https://scryfall.com/card/grn/253/overgrown-tomb?utm_source=api",
+        "type": "Land — Swamp Forest",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 15
+      },
+      {
+        "name": "Thassa's Oracle",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.jpg?1628801828",
+        "uri": "https://scryfall.com/card/thb/73/thassas-oracle?utm_source=api",
+        "type": "Creature — Merfolk Wizard",
+        "cmc": 2,
+        "manaCost": "{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Unmask",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/d/2db7a0e6-eea5-4fa6-ac14-401411b106cc.jpg?1562379909",
+        "uri": "https://scryfall.com/card/mmq/168/unmask?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "manaCost": "{3}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 17
+      },
+      {
+        "name": "Veil of Summer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aa686c34-1c11-469f-93c2-f9891aea521f.jpg?1628801848",
+        "uri": "https://scryfall.com/card/m20/198/veil-of-summer?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 18
+      },
+      {
+        "name": "Creeping Corrosion",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/5/05d5a7b3-18b6-4b1d-85cc-2253e605390c.jpg?1562609373",
+        "uri": "https://scryfall.com/card/mbs/78/creeping-corrosion?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "manaCost": "{2}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 19
+      },
+      {
+        "name": "Nurturing Peatland",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/7/2744ac83-a79f-4042-8720-688b5adda382.jpg?1562202580",
+        "uri": "https://scryfall.com/card/mh1/243/nurturing-peatland?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 20
+      },
+      {
+        "name": "Dance of the Dead",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/4/44de44be-db14-4932-968b-a5bc8b575716.jpg?1562868102",
+        "uri": "https://scryfall.com/card/me2/83/dance-of-the-dead?utm_source=api",
+        "type": "Enchantment — Aura",
+        "cmc": 2,
+        "manaCost": "{1}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Urborg, Tomb of Yawgmoth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/e/9e1a9e38-6ffc-490f-b0be-23ba4e8204c6.jpg?1619399578",
+        "uri": "https://scryfall.com/card/tsr/287/urborg-tomb-of-yawgmoth?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 22
+      },
+      {
+        "name": "Commune with the Gods",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/7/67d95f6f-3ff0-483d-b98f-ccb4fb5715f4.jpg?1580014753",
+        "uri": "https://scryfall.com/card/ema/162/commune-with-the-gods?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Reanimate",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/5/652271a0-80e8-4b9b-8823-26c1528378fc.jpg?1600714661",
+        "uri": "https://scryfall.com/card/jmp/270/reanimate?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 24
+      },
+      {
+        "name": "Unmarked Grave",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/9/492b368b-de32-45c1-8459-238aae54f9fc.jpg?1626096135",
+        "uri": "https://scryfall.com/card/mh2/106/unmarked-grave?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 25
+      },
+      {
+        "name": "Abrupt Decay",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/8/a8e328c6-3a84-49cf-a1a3-1d1e5373d274.jpg?1593814035",
+        "uri": "https://scryfall.com/card/mm3/146/abrupt-decay?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{B}{G}",
+        "colors": [
+          "B",
+          "G"
+        ],
         "pickOrder": 26
+      },
+      {
+        "name": "Assassin's Trophy",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/906b6e99-128f-4c11-8daf-16099d35b0d4.jpg?1572893498",
+        "uri": "https://scryfall.com/card/grn/152/assassins-trophy?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{B}{G}",
+        "colors": [
+          "B",
+          "G"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Xantid Swarm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/2/022ab408-3292-40b6-b35e-ac1b7f06dffa.jpg?1580014984",
+        "uri": "https://scryfall.com/card/ema/193/xantid-swarm?utm_source=api",
+        "type": "Creature — Insect",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 28
+      },
+      {
+        "name": "Reverent Silence",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/8/b82d3432-2167-4a65-8221-cb7b338e60d0.jpg?1562631670",
+        "uri": "https://scryfall.com/card/nem/111/reverent-silence?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "manaCost": "{3}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "Worldgorger Dragon",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9dae8fa6-c86e-492b-b28b-96d4ee83f6c6.jpg?1580014701",
+        "uri": "https://scryfall.com/card/ema/154/worldgorger-dragon?utm_source=api",
+        "type": "Creature — Nightmare Dragon",
+        "cmc": 6,
+        "manaCost": "{3}{R}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 30
+      },
+      {
+        "name": "Goblin Dark-Dwellers",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/b/3bb7be0d-1937-4b30-909c-df2b31a921e3.jpg?1591320633",
+        "uri": "https://scryfall.com/card/c20/153/goblin-dark-dwellers?utm_source=api",
+        "type": "Creature — Goblin",
+        "cmc": 5,
+        "manaCost": "{3}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Bitter Ordeal",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/8/2879e7a1-0256-4116-be22-7c9972e4ce0b.jpg?1562903258",
+        "uri": "https://scryfall.com/card/fut/80/bitter-ordeal?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Massacre Wurm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e3185b01-0d91-4927-98e9-bc9df6c20917.jpg?1594736296",
+        "uri": "https://scryfall.com/card/m21/114/massacre-wurm?utm_source=api",
+        "type": "Creature — Phyrexian Wurm",
+        "cmc": 6,
+        "manaCost": "{3}{B}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 33
+      },
+      {
+        "name": "Gemstone Mine",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg?1562773338",
+        "uri": "https://scryfall.com/card/tsb/119/gemstone-mine?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Mana Confluence",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/0/504a69eb-3c2d-4bb1-b117-252b15acf0c2.jpg?1593096534",
+        "uri": "https://scryfall.com/card/jou/163/mana-confluence?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 35
+      },
+      {
+        "name": "Dauthi Voidwalker",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/c/dce5db87-4a78-4b8d-b5c2-918ccd1ba4e3.jpg?1626095427",
+        "uri": "https://scryfall.com/card/mh2/81/dauthi-voidwalker?utm_source=api",
+        "type": "Creature — Dauthi Rogue",
+        "cmc": 2,
+        "manaCost": "{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 36
       },
       {
         "name": "Archon of Cruelty",
@@ -315,7 +957,252 @@
         "colors": [
           "B"
         ],
-        "pickOrder": 27
+        "pickOrder": 37
+      },
+      {
+        "name": "Twilight Mire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/3/53c59bee-0369-4a34-832f-fe3829a391b3.jpg?1599710687",
+        "uri": "https://scryfall.com/card/2xm/328/twilight-mire?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Surgical Extraction",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6e438caf-9373-4de8-b4ac-212f5036e677.jpg?1562263333",
+        "uri": "https://scryfall.com/card/mm2/99/surgical-extraction?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{B/P}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 39
+      },
+      {
+        "name": "Forbidden Orchard",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/4/54e03a6c-1c0a-4a24-a3fe-2f3244938769.jpg?1562400201",
+        "uri": "https://scryfall.com/card/c16/296/forbidden-orchard?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 40
+      },
+      {
+        "name": "Reflecting Pool",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/1/919a51f8-e7b5-4544-85a3-2d76f9d2d41d.jpg?1562865930",
+        "uri": "https://scryfall.com/card/cns/210/reflecting-pool?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 41
+      },
+      {
+        "name": "Iona, Shield of Emeria",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407",
+        "uri": "https://scryfall.com/card/mm2/20/iona-shield-of-emeria?utm_source=api",
+        "type": "Legendary Creature — Angel",
+        "cmc": 9,
+        "manaCost": "{6}{W}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Natural State",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/d/fdd4bdd5-1673-4f22-b593-41df8ce95a97.jpg?1562946233",
+        "uri": "https://scryfall.com/card/ogw/136/natural-state?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Sidisi, Undead Vizier",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6ea5dbba-6114-4d97-9363-817ab9e896d3.jpg?1562788006",
+        "uri": "https://scryfall.com/card/dtk/120/sidisi-undead-vizier?utm_source=api",
+        "type": "Legendary Creature — Zombie Naga",
+        "cmc": 5,
+        "manaCost": "{3}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 44
+      },
+      {
+        "name": "Damnable Pact",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d696b28-bec8-481d-a4ff-fefab93e00c1.jpg?1625976796",
+        "uri": "https://scryfall.com/card/c21/139/damnable-pact?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{X}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 45
+      },
+      {
+        "name": "Blooming Marsh",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/90da33d4-fe9c-42fe-b326-2fe337dc3ecd.jpg?1576383503",
+        "uri": "https://scryfall.com/card/kld/243/blooming-marsh?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Coty Gunnett",
+    "genre": "Storm",
+    "seat": 3,
+    "wins": 4,
+    "losses": 3,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Time Vault",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/3/c367ffc1-8084-45a1-87d5-22183604d1cb.jpg?1562934224",
+        "uri": "https://scryfall.com/card/vma/287/time-vault?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 1
+      },
+      {
+        "name": "Force of Will",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/d/dd60b291-0a88-4e8e-bef8-76cdfd6c8183.jpg?1598303900",
+        "uri": "https://scryfall.com/card/2xm/51/force-of-will?utm_source=api",
+        "type": "Instant",
+        "cmc": 5,
+        "manaCost": "{3}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 2
+      },
+      {
+        "name": "Demonic Tutor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/b/3bdbc231-5316-4abd-9d8d-d87cff2c9847.jpg?1618695728",
+        "uri": "https://scryfall.com/card/uma/93/demonic-tutor?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 3
+      },
+      {
+        "name": "Mana Drain",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/a/ba874c0c-f66f-4edc-9859-40273487aef0.jpg?1608909310",
+        "uri": "https://scryfall.com/card/cmr/80/mana-drain?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 4
+      },
+      {
+        "name": "Force of Negation",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/9/e9be371c-c688-44ad-ab71-bd4c9f242d58.jpg?1562201382",
+        "uri": "https://scryfall.com/card/mh1/52/force-of-negation?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{1}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 5
+      },
+      {
+        "name": "Chrome Mox",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f340cbf7-5bbe-45b9-a4bf-d1caa500ff93.jpg?1599708839",
+        "uri": "https://scryfall.com/card/2xm/240/chrome-mox?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 6
+      },
+      {
+        "name": "Narset, Parter of Veils",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5.jpg?1574294103",
+        "uri": "https://scryfall.com/card/war/61/narset-parter-of-veils?utm_source=api",
+        "type": "Legendary Planeswalker — Narset",
+        "cmc": 3,
+        "manaCost": "{1}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 7
+      },
+      {
+        "name": "Volcanic Island",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669",
+        "uri": "https://scryfall.com/card/vma/324/volcanic-island?utm_source=api",
+        "type": "Land — Island Mountain",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 8
+      },
+      {
+        "name": "Urza's Saga",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/1/c1e0f201-42cb-46a1-901a-65bb4fc18f6c.jpg?1626099958",
+        "uri": "https://scryfall.com/card/mh2/259/urzas-saga?utm_source=api",
+        "type": "Enchantment Land — Urza’s Saga",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Underground Sea",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883",
+        "uri": "https://scryfall.com/card/vma/323/underground-sea?utm_source=api",
+        "type": "Land — Island Swamp",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 10
+      },
+      {
+        "name": "Mystical Tutor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/2/9264ecb7-bfc0-495d-aaaa-829045ea858f.jpg?1580014050",
+        "uri": "https://scryfall.com/card/ema/62/mystical-tutor?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 11
+      },
+      {
+        "name": "Imperial Seal",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/0/6023bfe0-84bf-454c-b29d-5d128fe3e6b5.jpg?1562869020",
+        "uri": "https://scryfall.com/card/me2/96/imperial-seal?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 12
       },
       {
         "name": "Badlands",
@@ -325,66 +1212,315 @@
         "cmc": 0,
         "manaCost": "",
         "colors": [],
-        "pickOrder": 28
+        "pickOrder": 13
       },
       {
-        "name": "Blood Crypt",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/f/5faba6c8-3463-47c1-ba01-09eb87fcb2d5.jpg?1584832229",
-        "uri": "https://scryfall.com/card/rna/245/blood-crypt?utm_source=api",
-        "type": "Land — Swamp Mountain",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
-        "pickOrder": 29
-      },
-      {
-        "name": "Thought Erasure",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/c/7ce226ad-cb1d-47f5-90fc-27704e181884.jpg?1572893858",
-        "uri": "https://scryfall.com/card/grn/206/thought-erasure?utm_source=api",
+        "name": "Ponder",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cee2eb1-f60e-4626-ba4a-b543142ca950.jpg?1628314390",
+        "uri": "https://scryfall.com/card/c21/125/ponder?utm_source=api",
         "type": "Sorcery",
-        "cmc": 2,
-        "manaCost": "{U}{B}",
+        "cmc": 1,
+        "manaCost": "{U}",
         "colors": [
-          "B",
           "U"
         ],
-        "pickOrder": 30
+        "pickOrder": 14
       },
       {
-        "name": "Pack Rat",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/7/170693f5-13db-4191-99b1-e527ffb5b88e.jpg?1562783180",
-        "uri": "https://scryfall.com/card/rtr/73/pack-rat?utm_source=api",
-        "type": "Creature — Rat",
-        "cmc": 2,
-        "manaCost": "{1}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 31
-      },
-      {
-        "name": "Rotting Regisaur",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/8/d88c61cb-dbf9-46c3-8795-8896ba1208d5.jpg?1592516753",
-        "uri": "https://scryfall.com/card/m20/111/rotting-regisaur?utm_source=api",
-        "type": "Creature — Zombie Dinosaur",
+        "name": "Dack Fayden",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/0/10158a5e-5a03-41ab-85d2-0907ccf32c9b.jpg?1580015027",
+        "uri": "https://scryfall.com/card/ema/199/dack-fayden?utm_source=api",
+        "type": "Legendary Planeswalker — Dack",
         "cmc": 3,
-        "manaCost": "{2}{B}",
+        "manaCost": "{1}{U}{R}",
         "colors": [
-          "B"
+          "R",
+          "U"
         ],
-        "pickOrder": 32
+        "pickOrder": 15
       },
       {
-        "name": "Echoing Truth",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/5/55cd75bc-5ec7-45b2-9231-85a321ecd786.jpg?1568003983",
-        "uri": "https://scryfall.com/card/c19/84/echoing-truth?utm_source=api",
+        "name": "Underworld Breach",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/e/0e51d796-7279-4c06-87f0-37adbdaa41df.jpg?1596451461",
+        "uri": "https://scryfall.com/card/thb/161/underworld-breach?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Lion's Eye Diamond",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/758f95f8-bcb0-43ae-b474-56ebd855951e.jpg?1590511899",
+        "uri": "https://scryfall.com/card/vma/271/lions-eye-diamond?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 17
+      },
+      {
+        "name": "Brain Freeze",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/a/3a2d7cf9-dddb-4de3-b4f2-c52e3ec8fb4b.jpg?1562906772",
+        "uri": "https://scryfall.com/card/vma/57/brain-freeze?utm_source=api",
         "type": "Instant",
         "cmc": 2,
         "manaCost": "{1}{U}",
         "colors": [
           "U"
         ],
+        "pickOrder": 18
+      },
+      {
+        "name": "Infernal Tutor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/a/6a4e4be5-e057-4b50-9f86-76bc0b9987de.jpg?1593272922",
+        "uri": "https://scryfall.com/card/dis/46/infernal-tutor?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 19
+      },
+      {
+        "name": "Dualcaster Mage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/e/defcc4a3-40e0-4f5d-b23c-6cd6a614abc1.jpg?1625193684",
+        "uri": "https://scryfall.com/card/c21/165/dualcaster-mage?utm_source=api",
+        "type": "Creature — Human Wizard",
+        "cmc": 3,
+        "manaCost": "{1}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 20
+      },
+      {
+        "name": "Chaos Warp",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/1/c144b325-53a3-4590-beb1-2a39cbced47e.jpg?1591320561",
+        "uri": "https://scryfall.com/card/c20/146/chaos-warp?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Toxic Deluge",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/0/d00fa18f-d50a-4d3f-929e-91f29141b1df.jpg?1599706034",
+        "uri": "https://scryfall.com/card/2xm/110/toxic-deluge?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Preordain",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/4/1453f92e-df2d-4789-aa1b-a5b5c51567d4.jpg?1608909344",
+        "uri": "https://scryfall.com/card/cmr/84/preordain?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Drowned Catacomb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/e/8ef728f1-5153-47d6-8f9c-dfd473ee0750.jpg?1562559858",
+        "uri": "https://scryfall.com/card/xln/253/drowned-catacomb?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 24
+      },
+      {
+        "name": "Sulfur Falls",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/b/6bc412fc-e9d4-4283-bd4a-811384e79b5c.jpg?1562737296",
+        "uri": "https://scryfall.com/card/dom/247/sulfur-falls?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 25
+      },
+      {
+        "name": "Nihil Spellbomb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/5/e5892a23-efae-4731-9b8f-41c87960fe93.jpg?1562442193",
+        "uri": "https://scryfall.com/card/a25/226/nihil-spellbomb?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 26
+      },
+      {
+        "name": "Voltaic Key",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/d/6dd61957-f3a2-4976-8f15-88258f71406a.jpg?1562463293",
+        "uri": "https://scryfall.com/card/m11/219/voltaic-key?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 27
+      },
+      {
+        "name": "Expressive Iteration",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/31b770cc-09e7-4c0b-b2a4-462ab4f7200d.jpg?1627428991",
+        "uri": "https://scryfall.com/card/stx/186/expressive-iteration?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{U}{R}",
+        "colors": [
+          "R",
+          "U"
+        ],
+        "pickOrder": 28
+      },
+      {
+        "name": "Brazen Borrower",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/2/c2089ec9-0665-448f-bfe9-d181de127814.jpg?1616182088",
+        "uri": "https://scryfall.com/card/eld/39/brazen-borrower-petty-theft?utm_source=api",
+        "type": "Creature — Faerie Rogue // Instant — Adventure",
+        "cmc": 3,
+        "manaCost": "{1}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "Shatterstorm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/7/f7a1aa93-26d1-40b0-82d8-414f56a36337.jpg?1562557964",
+        "uri": "https://scryfall.com/card/10e/229/shatterstorm?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "manaCost": "{2}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 30
+      },
+      {
+        "name": "Remand",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/c/dc595c63-af05-4c05-80e8-e1a90df26b0f.jpg?1562268359",
+        "uri": "https://scryfall.com/card/mm2/55/remand?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Drown in Sorrow",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/e/fe1e8a62-5b8c-432a-bb8f-c09048c51e0b.jpg?1598304687",
+        "uri": "https://scryfall.com/card/2xm/91/drown-in-sorrow?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{1}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Fatal Push",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6e9d8fe4-fd9b-4923-92bf-7dd6b8fa02e7.jpg?1598304715",
+        "uri": "https://scryfall.com/card/2xm/93/fatal-push?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
         "pickOrder": 33
+      },
+      {
+        "name": "Lotus Bloom",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/b/db89ae4d-1cc2-41d8-a4de-a54b958c4429.jpg?1619398986",
+        "uri": "https://scryfall.com/card/tsr/270/lotus-bloom?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Intuition",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/1/b13e73a5-067d-4dbd-9c98-34a0db6140de.jpg?1562431264",
+        "uri": "https://scryfall.com/card/tpr/54/intuition?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{2}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 35
+      },
+      {
+        "name": "Twinflame",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/0/207128b3-2de3-495a-bf29-eec50c3bd752.jpg?1593096134",
+        "uri": "https://scryfall.com/card/jou/115/twinflame?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 36
+      },
+      {
+        "name": "Cascade Bluffs",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/2/52e912b4-492f-415b-b0ad-d9f90c6139c6.jpg?1599710382",
+        "uri": "https://scryfall.com/card/2xm/313/cascade-bluffs?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 37
+      },
+      {
+        "name": "Agonizing Remorse",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/9/09270c65-546e-4737-a6b7-402cbb87917a.jpg?1581479676",
+        "uri": "https://scryfall.com/card/thb/83/agonizing-remorse?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 38
+      },
+      {
+        "name": "Meekstone",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/a/0a691664-9275-4b89-a8e3-b99c88717ffb.jpg?1562231937",
+        "uri": "https://scryfall.com/card/7ed/307/meekstone?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 39
+      },
+      {
+        "name": "Sunken Ruins",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/1/9181d30d-4f8e-421f-89b8-149ed8000fb2.jpg?1599710647",
+        "uri": "https://scryfall.com/card/2xm/326/sunken-ruins?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 40
       },
       {
         "name": "Sedgemoor Witch",
@@ -396,7 +1532,1645 @@
         "colors": [
           "B"
         ],
+        "pickOrder": 41
+      },
+      {
+        "name": "Abrade",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/2/d27d5b87-6dfc-4b99-822b-f6f8489ad275.jpg?1608912224",
+        "uri": "https://scryfall.com/card/cmr/410/abrade?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Pact of Negation",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/e/1ed4c0bb-b710-44a1-b8bc-6bd11c27b8b8.jpg?1619394428",
+        "uri": "https://scryfall.com/card/tsr/77/pact-of-negation?utm_source=api",
+        "type": "Instant",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Chain of Vapor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/8/38f741bf-13ee-4384-98ab-27833ebb9f6d.jpg?1562395835",
+        "uri": "https://scryfall.com/card/c16/84/chain-of-vapor?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 44
+      },
+      {
+        "name": "Pyroclasm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c8f3b5e-71b4-42e0-9ddb-630e3dcf1be7.jpg?1562438092",
+        "uri": "https://scryfall.com/card/a25/146/pyroclasm?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 45
+      },
+      {
+        "name": "Opposition Agent",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/8/086f97e9-8b62-44f3-b467-149c2ac5ca78.jpg?1608909875",
+        "uri": "https://scryfall.com/card/cmr/141/opposition-agent?utm_source=api",
+        "type": "Creature — Human Rogue",
+        "cmc": 3,
+        "manaCost": "{2}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Eric Levine",
+    "genre": "Eldrazi",
+    "seat": 4,
+    "wins": 5,
+    "losses": 2,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Mox Jet",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/f/5f6927e1-c580-483a-8e2a-6e2deb74800e.jpg?1614638844",
+        "uri": "https://scryfall.com/card/vma/6/mox-jet?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
+      },
+      {
+        "name": "Mana Vault",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/f/cfdf9706-acdb-48fc-89db-93bc50b3b9ad.jpg?1547518467",
+        "uri": "https://scryfall.com/card/uma/229/mana-vault?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 2
+      },
+      {
+        "name": "Strip Mine",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/5/f57fd4c9-0004-4f71-a30f-2720943f57ca.jpg?1562944463",
+        "uri": "https://scryfall.com/card/vma/316/strip-mine?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 3
+      },
+      {
+        "name": "Crucible of Worlds",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/b/eb28b35c-28a5-4042-b21d-6d43658a16eb.jpg?1591196097",
+        "uri": "https://scryfall.com/card/m19/229/crucible-of-worlds?utm_source=api",
+        "type": "Artifact",
+        "cmc": 3,
+        "manaCost": "{3}",
+        "colors": [],
+        "pickOrder": 4
+      },
+      {
+        "name": "Wasteland",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aaafb9bc-7cea-4624-a227-595544fa42b0.jpg?1590511888",
+        "uri": "https://scryfall.com/card/ema/248/wasteland?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 5
+      },
+      {
+        "name": "Ancient Tomb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd3d4b4b-cf31-4f89-8140-9650edb03c7b.jpg?1582753000",
+        "uri": "https://scryfall.com/card/uma/236/ancient-tomb?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 6
+      },
+      {
+        "name": "Stoneforge Mystic",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4d3473d0-b46f-41f5-ac1e-ba217f7747d4.jpg?1599710314",
+        "uri": "https://scryfall.com/card/2xm/31/stoneforge-mystic?utm_source=api",
+        "type": "Creature — Kor Artificer",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 7
+      },
+      {
+        "name": "Thalia, Guardian of Thraben",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/7/97ff44c9-6ff5-432d-9876-488c96833c39.jpg?1562438581",
+        "uri": "https://scryfall.com/card/a25/36/thalia-guardian-of-thraben?utm_source=api",
+        "type": "Legendary Creature — Human Soldier",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 8
+      },
+      {
+        "name": "Phyrexian Revoker",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/9/6982a82c-dd32-40d2-8dd2-ec92d0fc6c2d.jpg?1599709739",
+        "uri": "https://scryfall.com/card/2xm/282/phyrexian-revoker?utm_source=api",
+        "type": "Artifact Creature — Phyrexian Horror",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Mystic Forge",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/2/924a24e7-91b8-4ceb-a136-7a765d98c994.jpg?1592517697",
+        "uri": "https://scryfall.com/card/m20/233/mystic-forge?utm_source=api",
+        "type": "Artifact",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 10
+      },
+      {
+        "name": "Sword of Fire and Ice",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/2626d4c9-fcef-4057-a154-7d987a4a4b84.jpg?1599710057",
+        "uri": "https://scryfall.com/card/2xm/297/sword-of-fire-and-ice?utm_source=api",
+        "type": "Artifact — Equipment",
+        "cmc": 3,
+        "manaCost": "{3}",
+        "colors": [],
+        "pickOrder": 11
+      },
+      {
+        "name": "Phyrexian Metamorph",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/6/d6afeb07-ed44-4e15-99b6-436f8365326f.jpg?1598304141",
+        "uri": "https://scryfall.com/card/2xm/61/phyrexian-metamorph?utm_source=api",
+        "type": "Artifact Creature — Phyrexian Shapeshifter",
+        "cmc": 4,
+        "manaCost": "{3}{U/P}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 12
+      },
+      {
+        "name": "City of Traitors",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/1/71624139-a255-48be-93ca-594a4beba487.jpg?1562429861",
+        "uri": "https://scryfall.com/card/tpr/237/city-of-traitors?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 13
+      },
+      {
+        "name": "Thought-Knot Seer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/f/bffc360e-db41-48f3-9365-680d55046e04.jpg?1562933598",
+        "uri": "https://scryfall.com/card/ogw/9/thought-knot-seer?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 4,
+        "manaCost": "{3}{C}",
+        "colors": [],
+        "pickOrder": 14
+      },
+      {
+        "name": "Engineered Explosives",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/2/420bf1e9-f2ec-4dff-b540-e64de71e58be.jpg?1599709112",
+        "uri": "https://scryfall.com/card/2xm/252/engineered-explosives?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{X}",
+        "colors": [],
+        "pickOrder": 15
+      },
+      {
+        "name": "Prismatic Ending",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/2/825969b9-3c70-4fca-8cab-696e9ca7cdb2.jpg?1626093920",
+        "uri": "https://scryfall.com/card/mh2/25/prismatic-ending?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{X}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Rest in Peace",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/f/9f2b39be-0fec-4647-ade1-8e1626dc5470.jpg?1562439074",
+        "uri": "https://scryfall.com/card/a25/32/rest-in-peace?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 17
+      },
+      {
+        "name": "Ugin, the Ineffable",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/b/7b003521-3da3-41bf-9765-36630653f902.jpg?1559562626",
+        "uri": "https://scryfall.com/card/war/2/ugin-the-ineffable?utm_source=api",
+        "type": "Legendary Planeswalker — Ugin",
+        "cmc": 6,
+        "manaCost": "{6}",
+        "colors": [],
+        "pickOrder": 18
+      },
+      {
+        "name": "Aven Mindcensor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/6/76cf42b4-f767-48b7-b38c-b98306909f06.jpg?1619392559",
+        "uri": "https://scryfall.com/card/tsr/5/aven-mindcensor?utm_source=api",
+        "type": "Creature — Bird Wizard",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 19
+      },
+      {
+        "name": "Cavern of Souls",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/25976cb2-3123-4935-adcc-70e3db51d381.jpg?1590511877",
+        "uri": "https://scryfall.com/card/uma/237/cavern-of-souls?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 20
+      },
+      {
+        "name": "Containment Priest",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/2/a24e8dba-5c86-4e32-8a52-61402f7fe9f0.jpg?1594734854",
+        "uri": "https://scryfall.com/card/m21/13/containment-priest?utm_source=api",
+        "type": "Creature — Human Cleric",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Spirit of the Labyrinth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/4/f44e5128-e146-4e46-b313-a40d82719d1d.jpg?1593091571",
+        "uri": "https://scryfall.com/card/bng/27/spirit-of-the-labyrinth?utm_source=api",
+        "type": "Enchantment Creature — Spirit",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Kataki, War's Wage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4d84ac44-01d8-415e-af69-7c608ac8ae20.jpg?1561967338",
+        "uri": "https://scryfall.com/card/mma/20/kataki-wars-wage?utm_source=api",
+        "type": "Legendary Creature — Spirit",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Trinisphere",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/316caa4e-a53a-460b-978c-5f0fba7bc549.jpg?1599710205",
+        "uri": "https://scryfall.com/card/2xm/303/trinisphere?utm_source=api",
+        "type": "Artifact",
+        "cmc": 3,
+        "manaCost": "{3}",
+        "colors": [],
+        "pickOrder": 24
+      },
+      {
+        "name": "Dismember",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/d/3d286cf6-3e16-4941-9326-1818b1e06d69.jpg?1562261132",
+        "uri": "https://scryfall.com/card/mm2/79/dismember?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{1}{B/P}{B/P}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 25
+      },
+      {
+        "name": "Thalia, Heretic Cathar",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/b/ab0cee38-5e24-49d0-870c-22843ed4e101.jpg?1576384009",
+        "uri": "https://scryfall.com/card/emn/46/thalia-heretic-cathar?utm_source=api",
+        "type": "Legendary Creature — Human Soldier",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 26
+      },
+      {
+        "name": "Abolish",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/4/842e7e6a-c89a-463d-a6e8-743a953c827c.jpg?1562270242",
+        "uri": "https://scryfall.com/card/ddf/29/abolish?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Adarkar Wastes",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f31cf014-7ac9-428b-9ce9-8ba5ebfdd252.jpg?1562557714",
+        "uri": "https://scryfall.com/card/10e/347/adarkar-wastes?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 28
+      },
+      {
+        "name": "Brushland",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/70afcfca-c065-4a33-95b1-ec2b08bcb493.jpg?1562549616",
+        "uri": "https://scryfall.com/card/10e/349/brushland?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 29
+      },
+      {
+        "name": "Caves of Koilos",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/9/e9c93f28-a523-4998-928c-5fe581dca5a3.jpg?1625979899",
+        "uri": "https://scryfall.com/card/c21/283/caves-of-koilos?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 30
+      },
+      {
+        "name": "Battlefield Forge",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/4/24bf3126-d962-40da-a2bb-84faf7cae05a.jpg?1625979761",
+        "uri": "https://scryfall.com/card/c21/278/battlefield-forge?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 31
+      },
+      {
+        "name": "Skyclave Apparition",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/8/b83cfbaa-7890-4f6f-878b-4edb45677371.jpg?1604193295",
+        "uri": "https://scryfall.com/card/znr/39/skyclave-apparition?utm_source=api",
+        "type": "Creature — Kor Spirit",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Reality Smasher",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/2/52d4b652-a830-4fd4-94bb-c17c227f2928.jpg?1562911843",
+        "uri": "https://scryfall.com/card/ogw/7/reality-smasher?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 5,
+        "manaCost": "{4}{C}",
+        "colors": [],
+        "pickOrder": 33
+      },
+      {
+        "name": "Lodestone Golem",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/8/683a5707-cddb-494d-9b41-51b4584ded69.jpg?1562263274",
+        "uri": "https://scryfall.com/card/mm2/219/lodestone-golem?utm_source=api",
+        "type": "Artifact Creature — Golem",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
         "pickOrder": 34
+      },
+      {
+        "name": "Fragmentize",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5bf09deb-2607-4eb0-94a7-9584e771fdfb.jpg?1576380854",
+        "uri": "https://scryfall.com/card/kld/14/fragmentize?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 35
+      },
+      {
+        "name": "Eldrazi Displacer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/0/f0bb1a5c-0f59-4951-827f-fe9df968232d.jpg?1562943353",
+        "uri": "https://scryfall.com/card/ogw/13/eldrazi-displacer?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [],
+        "pickOrder": 36
+      },
+      {
+        "name": "Celestial Purge",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/d/cd38afd4-d7a4-493d-bdea-72be9a1d9a07.jpg?1562267422",
+        "uri": "https://scryfall.com/card/mm2/11/celestial-purge?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 37
+      },
+      {
+        "name": "Thorn of Amethyst",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/4/e472d4f5-add4-4de3-8718-31a47a35277c.jpg?1562371865",
+        "uri": "https://scryfall.com/card/lrw/262/thorn-of-amethyst?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Matter Reshaper",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/9/3906b61a-3865-4dfd-ae06-a7d2a608851a.jpg?1562906487",
+        "uri": "https://scryfall.com/card/ogw/6/matter-reshaper?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 3,
+        "manaCost": "{2}{C}",
+        "colors": [],
+        "pickOrder": 39
+      },
+      {
+        "name": "Timely Reinforcements",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/a/6ae4669c-e526-4c24-9c25-38cb5c5ef59b.jpg?1562645941",
+        "uri": "https://scryfall.com/card/m12/40/timely-reinforcements?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 40
+      },
+      {
+        "name": "Endbringer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/b/6bba7509-db77-414f-926f-1f28a4117831.jpg?1562916641",
+        "uri": "https://scryfall.com/card/ogw/3/endbringer?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 6,
+        "manaCost": "{5}{C}",
+        "colors": [],
+        "pickOrder": 41
+      },
+      {
+        "name": "Eldrazi Mimic",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/311a05b1-042d-47e7-9fd7-6e8abe8fc578.jpg?1562904983",
+        "uri": "https://scryfall.com/card/ogw/2/eldrazi-mimic?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 42
+      },
+      {
+        "name": "Endless One",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/4/64820f4f-1f78-4338-beb8-5ed5a447cfe4.jpg?1562918655",
+        "uri": "https://scryfall.com/card/bfz/8/endless-one?utm_source=api",
+        "type": "Creature — Eldrazi",
+        "cmc": 0,
+        "manaCost": "{X}",
+        "colors": [],
+        "pickOrder": 43
+      },
+      {
+        "name": "Umezawa's Jitte",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/b/3b6e5956-f795-451b-bb24-56462d1ced27.jpg?1562876528",
+        "uri": "https://scryfall.com/card/bok/163/umezawas-jitte?utm_source=api",
+        "type": "Legendary Artifact — Equipment",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 44
+      },
+      {
+        "name": "Eldrazi Temple",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/4/c42049e2-fe4e-4fe9-9599-faf1af50b97d.jpg?1593095918",
+        "uri": "https://scryfall.com/card/ddp/68/eldrazi-temple?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 45
+      },
+      {
+        "name": "Gideon of the Trials",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/5/959ce13f-519f-4472-bbd1-f26a972723d7.jpg?1543674653",
+        "uri": "https://scryfall.com/card/akh/14/gideon-of-the-trials?utm_source=api",
+        "type": "Legendary Planeswalker — Gideon",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Mason Lange",
+    "genre": "Lands",
+    "seat": 5,
+    "wins": 4,
+    "losses": 3,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Mana Crypt",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1599709515",
+        "uri": "https://scryfall.com/card/2xm/270/mana-crypt?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
+      },
+      {
+        "name": "Thoughtseize",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/2/b281a308-ab6b-47b6-bec7-632c9aaecede.jpg?1599706001",
+        "uri": "https://scryfall.com/card/2xm/109/thoughtseize?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 2
+      },
+      {
+        "name": "Inquisition of Kozilek",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/7/e7dd9fad-d8e3-4e46-b4d7-792d029736de.jpg?1593813320",
+        "uri": "https://scryfall.com/card/mm3/75/inquisition-of-kozilek?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 3
+      },
+      {
+        "name": "Polluted Delta",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978",
+        "uri": "https://scryfall.com/card/ktk/239/polluted-delta?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 4
+      },
+      {
+        "name": "Verdant Catacombs",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/94c229ea-90da-4aa0-bfda-b162fb3b5b8b.jpg?1626099986",
+        "uri": "https://scryfall.com/card/mh2/260/verdant-catacombs?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 5
+      },
+      {
+        "name": "Marsh Flats",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42.jpg?1626099665",
+        "uri": "https://scryfall.com/card/mh2/248/marsh-flats?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 6
+      },
+      {
+        "name": "Fastbond",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/a/daf43523-558c-4701-9fa3-5d1ceb82a006.jpg?1566819914",
+        "uri": "https://scryfall.com/card/vma/209/fastbond?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 7
+      },
+      {
+        "name": "Wheel of Fortune",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/2597050f-6b1b-474e-aa16-33fd154628ca.jpg?1562902580",
+        "uri": "https://scryfall.com/card/vma/192/wheel-of-fortune?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 8
+      },
+      {
+        "name": "Tropical Island",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.jpg?1632873386",
+        "uri": "https://scryfall.com/card/vma/321/tropical-island?utm_source=api",
+        "type": "Land — Forest Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Timetwister",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/b/fbee1e10-0b8c-44ea-b0e5-44cdd0bfcd76.jpg?1614638835",
+        "uri": "https://scryfall.com/card/vma/3/timetwister?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 10
+      },
+      {
+        "name": "Hullbreacher",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4df8aabc-7fcb-4b7b-980b-18f499e6c170.jpg?1626088514",
+        "uri": "https://scryfall.com/card/cmr/74/hullbreacher?utm_source=api",
+        "type": "Creature — Merfolk Pirate",
+        "cmc": 3,
+        "manaCost": "{2}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 11
+      },
+      {
+        "name": "Wooded Foothills",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/8/a8503cca-7e7d-44c4-8587-81376b396398.jpg?1571667977",
+        "uri": "https://scryfall.com/card/ktk/249/wooded-foothills?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 12
+      },
+      {
+        "name": "Taiga",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1562897467",
+        "uri": "https://scryfall.com/card/vma/317/taiga?utm_source=api",
+        "type": "Land — Mountain Forest",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 13
+      },
+      {
+        "name": "Green Sun's Zenith",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/01794178-cf41-454c-ac37-1d8b18e42db2.jpg?1580014798",
+        "uri": "https://scryfall.com/card/ema/169/green-suns-zenith?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{X}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 14
+      },
+      {
+        "name": "Courser of Kruphix",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/6/8683a978-1bef-4b01-9361-56b1fc157d26.jpg?1587844649",
+        "uri": "https://scryfall.com/card/a25/164/courser-of-kruphix?utm_source=api",
+        "type": "Enchantment Creature — Centaur",
+        "cmc": 3,
+        "manaCost": "{1}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 15
+      },
+      {
+        "name": "Scavenging Ooze",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/8/487116ab-b885-406b-aa54-56cb67eb3ca5.jpg?1594737205",
+        "uri": "https://scryfall.com/card/m21/204/scavenging-ooze?utm_source=api",
+        "type": "Creature — Ooze",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Ramunap Excavator",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/8/8870ef0b-cb1f-463b-8509-fece4743d3d4.jpg?1608917511",
+        "uri": "https://scryfall.com/card/cmr/433/ramunap-excavator?utm_source=api",
+        "type": "Creature — Naga Cleric",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 17
+      },
+      {
+        "name": "Eternal Witness",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/7/d74e7ded-d063-4d90-a9ff-91c44a8098d7.jpg?1608917430",
+        "uri": "https://scryfall.com/card/cmr/425/eternal-witness?utm_source=api",
+        "type": "Creature — Human Shaman",
+        "cmc": 3,
+        "manaCost": "{1}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 18
+      },
+      {
+        "name": "Once Upon a Time",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/0/4034e5ba-9974-43e3-bde7-8d9b4586c3a4.jpg?1628801815",
+        "uri": "https://scryfall.com/card/eld/169/once-upon-a-time?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 19
+      },
+      {
+        "name": "Leovold, Emissary of Trest",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/e/cedfc5b7-9242-4680-b284-debc8b5a9bc7.jpg?1559959275",
+        "uri": "https://scryfall.com/card/uma/202/leovold-emissary-of-trest?utm_source=api",
+        "type": "Legendary Creature — Elf Advisor",
+        "cmc": 3,
+        "manaCost": "{B}{G}{U}",
+        "colors": [
+          "B",
+          "G",
+          "U"
+        ],
+        "pickOrder": 20
+      },
+      {
+        "name": "Time Spiral",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f3d62dbd-63db-4ac9-950f-9852627f23f2.jpg?1562946525",
+        "uri": "https://scryfall.com/card/usg/103/time-spiral?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 6,
+        "manaCost": "{4}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Dryad Arbor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bb3a843b-2dea-4b44-be74-c09c18b9b969.jpg?1619399228",
+        "uri": "https://scryfall.com/card/tsr/277/dryad-arbor?utm_source=api",
+        "type": "Land Creature — Forest Dryad",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Dryad of the Ilysian Grove",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/d/6d964876-194b-49f1-8e74-cfe9269f2c62.jpg?1584114361",
+        "uri": "https://scryfall.com/card/thb/169/dryad-of-the-ilysian-grove?utm_source=api",
+        "type": "Enchantment Creature — Nymph Dryad",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Azusa, Lost but Seeking",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/b/0b8aff2c-1f7b-4507-b914-53f8c4706b3d.jpg?1596259277",
+        "uri": "https://scryfall.com/card/m21/173/azusa-lost-but-seeking?utm_source=api",
+        "type": "Legendary Creature — Human Monk",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 24
+      },
+      {
+        "name": "Vesuva",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/7/0726f70a-c1c4-4edb-86fb-9be280d9ea73.jpg?1619399642",
+        "uri": "https://scryfall.com/card/tsr/289/vesuva?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 25
+      },
+      {
+        "name": "Amulet of Vigor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/9/997bc933-ac30-477b-a4e1-5333b796a99d.jpg?1562292191",
+        "uri": "https://scryfall.com/card/wwk/121/amulet-of-vigor?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 26
+      },
+      {
+        "name": "Trinket Mage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/a/9a7800f7-95cd-4f5c-b054-4afad8924367.jpg?1561759331",
+        "uri": "https://scryfall.com/card/ddu/41/trinket-mage?utm_source=api",
+        "type": "Creature — Human Wizard",
+        "cmc": 3,
+        "manaCost": "{2}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Relic of Progenitus",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/3/436cd66c-0622-43cd-8748-af4d21a2db3f.jpg?1580015265",
+        "uri": "https://scryfall.com/card/ema/231/relic-of-progenitus?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 28
+      },
+      {
+        "name": "Primeval Titan",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/d/6d5537da-112e-4679-a113-b5d7ce32a66b.jpg?1562850064",
+        "uri": "https://scryfall.com/card/ima/183/primeval-titan?utm_source=api",
+        "type": "Creature — Giant",
+        "cmc": 6,
+        "manaCost": "{4}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "Valakut, the Molten Pinnacle",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/7/37bce60d-2cb0-4772-9f5c-122a7ed426a0.jpg?1562611305",
+        "uri": "https://scryfall.com/card/zen/228/valakut-the-molten-pinnacle?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 30
+      },
+      {
+        "name": "Lotus Cobra",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/4/a4b759f0-901f-4be3-93fa-224609b08d48.jpg?1604199124",
+        "uri": "https://scryfall.com/card/znr/193/lotus-cobra?utm_source=api",
+        "type": "Creature — Snake",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Zuran Orb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/618c8ecc-686d-41de-b9b1-1a7ee9cc7c14.jpg?1631302940",
+        "uri": "https://scryfall.com/card/mh2/300/zuran-orb?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 32
+      },
+      {
+        "name": "Summoner's Pact",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/e/ee0f88ac-8a90-4057-b0e6-c15fbd02da38.jpg?1619398774",
+        "uri": "https://scryfall.com/card/tsr/234/summoners-pact?utm_source=api",
+        "type": "Instant",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 33
+      },
+      {
+        "name": "Zagoth Triome",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/c/cc520518-2063-4b57-a0d4-10cf62a7175e.jpg?1591228738",
+        "uri": "https://scryfall.com/card/iko/259/zagoth-triome?utm_source=api",
+        "type": "Land — Swamp Forest Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Bane of Progress",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/6/66a23edd-96ad-4870-907f-2c332bc2e53b.jpg?1592672856",
+        "uri": "https://scryfall.com/card/cma/91/bane-of-progress?utm_source=api",
+        "type": "Creature — Elemental",
+        "cmc": 6,
+        "manaCost": "{4}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 35
+      },
+      {
+        "name": "Endurance",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/b/eb0e0404-4846-4891-acfa-bd0951ecf9c6.jpg?1626097375",
+        "uri": "https://scryfall.com/card/mh2/157/endurance?utm_source=api",
+        "type": "Creature — Elemental Incarnation",
+        "cmc": 3,
+        "manaCost": "{1}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 36
+      },
+      {
+        "name": "Simic Growth Chamber",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/7/27ba2a33-a9f2-414c-889b-d80b175bec92.jpg?1625981008",
+        "uri": "https://scryfall.com/card/c21/317/simic-growth-chamber?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 37
+      },
+      {
+        "name": "Tolaria West",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b005eef6-75f3-454f-a42b-d851bc84ac4e.jpg?1619399546",
+        "uri": "https://scryfall.com/card/tsr/286/tolaria-west?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Ancient Stirrings",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/726039a0-6c0d-48ef-9b42-99de5d4e41d2.jpg?1599706855",
+        "uri": "https://scryfall.com/card/2xm/151/ancient-stirrings?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 39
+      },
+      {
+        "name": "Blast Zone",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/a/ea6bc7d5-e8f6-4103-920c-9f7ec5cd6c28.jpg?1557577452",
+        "uri": "https://scryfall.com/card/war/244/blast-zone?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 40
+      },
+      {
+        "name": "Crop Rotation",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/2/4249cc64-f75b-4c76-a41a-5b25873c74bc.jpg?1599707090",
+        "uri": "https://scryfall.com/card/2xm/161/crop-rotation?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 41
+      },
+      {
+        "name": "The Tabernacle at Pendrell Vale",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/d/cd3f7f4e-cb25-4121-96a0-a4dc530420b9.jpg?1562938371",
+        "uri": "https://scryfall.com/card/me3/212/the-tabernacle-at-pendrell-vale?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 42
+      },
+      {
+        "name": "Bojuka Bog",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/8/f8435c7e-39ce-48a6-8536-739dd5511a33.jpg?1625979844",
+        "uri": "https://scryfall.com/card/c21/281/bojuka-bog?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 43
+      },
+      {
+        "name": "Gruul Turf",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/9/296e140d-3510-4bbf-8c96-9b361bb369ee.jpg?1604196245",
+        "uri": "https://scryfall.com/card/znc/131/gruul-turf?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 44
+      },
+      {
+        "name": "Hanweir, the Writhing Township",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/7/671fe14d-0070-4bc7-8983-707b570f4492.jpg?1625771778",
+        "uri": "https://scryfall.com/card/emn/130b/hanweir-the-writhing-township?utm_source=api",
+        "type": "Legendary Creature — Eldrazi Ooze",
+        "cmc": 3,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 45
+      },
+      {
+        "name": "Tireless Tracker",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/e/ee8e9928-d9b2-4570-adb8-44b34115decd.jpg?1576385266",
+        "uri": "https://scryfall.com/card/soi/233/tireless-tracker?utm_source=api",
+        "type": "Creature — Human Scout",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Brandon Curry",
+    "genre": "Walkers",
+    "seat": 6,
+    "wins": 5,
+    "losses": 2,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Mox Sapphire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/a/ea1feac0-d3a7-45eb-9719-1cdaf51ea0b6.jpg?1614638862",
+        "uri": "https://scryfall.com/card/vma/9/mox-sapphire?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
+      },
+      {
+        "name": "Sol Ring",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/c/4cbc6901-6a4a-4d0a-83ea-7eefa3b35021.jpg?1632893059",
+        "uri": "https://scryfall.com/card/c21/263/sol-ring?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 2
+      },
+      {
+        "name": "Teferi, Time Raveler",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.jpg?1613386796",
+        "uri": "https://scryfall.com/card/war/221/teferi-time-raveler?utm_source=api",
+        "type": "Legendary Planeswalker — Teferi",
+        "cmc": 3,
+        "manaCost": "{1}{W}{U}",
+        "colors": [
+          "U",
+          "W"
+        ],
+        "pickOrder": 3
+      },
+      {
+        "name": "Oko, Thief of Crowns",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/4/3462a3d0-5552-49fa-9eb7-100960c55891.jpg?1613387000",
+        "uri": "https://scryfall.com/card/eld/197/oko-thief-of-crowns?utm_source=api",
+        "type": "Legendary Planeswalker — Oko",
+        "cmc": 3,
+        "manaCost": "{1}{G}{U}",
+        "colors": [
+          "G",
+          "U"
+        ],
+        "pickOrder": 4
+      },
+      {
+        "name": "Prismatic Vista",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585",
+        "uri": "https://scryfall.com/card/mh1/244/prismatic-vista?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 5
+      },
+      {
+        "name": "Misty Rainforest",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.jpg?1626099715",
+        "uri": "https://scryfall.com/card/mh2/250/misty-rainforest?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 6
+      },
+      {
+        "name": "Flooded Strand",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
+        "uri": "https://scryfall.com/card/ktk/233/flooded-strand?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 7
+      },
+      {
+        "name": "Balance",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/e/ce648aa3-098b-4af0-a433-fd290bc85904.jpg?1580013606",
+        "uri": "https://scryfall.com/card/ema/2/balance?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 8
+      },
+      {
+        "name": "Karn, the Great Creator",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.jpg?1566819742",
+        "uri": "https://scryfall.com/card/war/1/karn-the-great-creator?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Karn, Scion of Urza",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/7/07a3d9e8-8597-498b-869c-cff79e0df516.jpg?1562730952",
+        "uri": "https://scryfall.com/card/dom/1/karn-scion-of-urza?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 10
+      },
+      {
+        "name": "Savannah",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1562930574",
+        "uri": "https://scryfall.com/card/vma/311/savannah?utm_source=api",
+        "type": "Land — Forest Plains",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 11
+      },
+      {
+        "name": "Tundra",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1562943174",
+        "uri": "https://scryfall.com/card/vma/322/tundra?utm_source=api",
+        "type": "Land — Plains Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 12
+      },
+      {
+        "name": "Jace, the Mind Sculptor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/8/c8817585-0d32-4d56-9142-0d29512e86a9.jpg?1598304029",
+        "uri": "https://scryfall.com/card/2xm/56/jace-the-mind-sculptor?utm_source=api",
+        "type": "Legendary Planeswalker — Jace",
+        "cmc": 4,
+        "manaCost": "{2}{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 13
+      },
+      {
+        "name": "Hurkyl's Recall",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/3/73edeaaa-6a87-4cf1-b013-bab9a7bb94d9.jpg?1562263763",
+        "uri": "https://scryfall.com/card/mm2/48/hurkyls-recall?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 14
+      },
+      {
+        "name": "Swords to Plowshares",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/e/be2b4177-e47c-4dde-9ead-31b7602065ec.jpg?1633071108",
+        "uri": "https://scryfall.com/card/cmr/387/swords-to-plowshares?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 15
+      },
+      {
+        "name": "Council's Judgment",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aaa187c9-90b3-4770-963a-8a9f932430ef.jpg?1599706018",
+        "uri": "https://scryfall.com/card/2xm/11/councils-judgment?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Sensei's Divining Top",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/3/83c01c91-ea01-46c7-b94c-97777b968459.jpg?1580015272",
+        "uri": "https://scryfall.com/card/ema/232/senseis-divining-top?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 17
+      },
+      {
+        "name": "Sylvan Library",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/5/d5b5d2a7-8185-4df0-a35a-f89c12857f87.jpg?1580014929",
+        "uri": "https://scryfall.com/card/ema/187/sylvan-library?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 2,
+        "manaCost": "{1}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 18
+      },
+      {
+        "name": "Mental Misstep",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/61e9c6df-1c84-4eab-9076-a4feb6347c10.jpg?1566819829",
+        "uri": "https://scryfall.com/card/nph/38/mental-misstep?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U/P}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 19
+      },
+      {
+        "name": "Spell Pierce",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/b/6bf4dfc0-c58b-4535-b660-54ceaa6e0217.jpg?1562557054",
+        "uri": "https://scryfall.com/card/xln/81/spell-pierce?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 20
+      },
+      {
+        "name": "Counterspell",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/9/1920dae4-fb92-4f19-ae4b-eb3276b8dac7.jpg?1628801663",
+        "uri": "https://scryfall.com/card/mh2/267/counterspell?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{U}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Brainstorm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/3/0359f212-9564-41a9-870b-d2c57455a695.jpg?1628801650",
+        "uri": "https://scryfall.com/card/c21/115/brainstorm?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Monastery Mentor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/b/abcd0e32-2e6b-419b-9e8a-af38f2b48a66.jpg?1562828716",
+        "uri": "https://scryfall.com/card/frf/20/monastery-mentor?utm_source=api",
+        "type": "Creature — Human Monk",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Breeding Pool",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.jpg?1584832238",
+        "uri": "https://scryfall.com/card/rna/246/breeding-pool?utm_source=api",
+        "type": "Land — Forest Island",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 24
+      },
+      {
+        "name": "Pentad Prism",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/a/2a2862c5-afa8-4e38-a312-483300f8b194.jpg?1599709726",
+        "uri": "https://scryfall.com/card/2xm/281/pentad-prism?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 25
+      },
+      {
+        "name": "Karakas",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1559959289",
+        "uri": "https://scryfall.com/card/uma/244/karakas?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 26
+      },
+      {
+        "name": "Birds of Paradise",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/e/feefe9f0-24a6-461c-9ef1-86c5a6f33b83.jpg?1594681430",
+        "uri": "https://scryfall.com/card/cn2/176/birds-of-paradise?utm_source=api",
+        "type": "Creature — Bird",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Noble Hierarch",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/0/400382a4-aea2-4827-b06a-1b0b3745908b.jpg?1599707413",
+        "uri": "https://scryfall.com/card/2xm/177/noble-hierarch?utm_source=api",
+        "type": "Creature — Human Druid",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 28
+      },
+      {
+        "name": "Nissa, Who Shakes the World",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/8/f857bbe4-5619-4733-a0c7-69700f2ef4f3.jpg?1618426283",
+        "uri": "https://scryfall.com/card/war/169/nissa-who-shakes-the-world?utm_source=api",
+        "type": "Legendary Planeswalker — Nissa",
+        "cmc": 5,
+        "manaCost": "{3}{G}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "Yavimaya, Cradle of Growth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c.jpg?1626100009",
+        "uri": "https://scryfall.com/card/mh2/261/yavimaya-cradle-of-growth?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 30
+      },
+      {
+        "name": "Nature's Claim",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/2/d24b6640-ef2f-4c92-beb3-afdf78f9c2d5.jpg?1562854212",
+        "uri": "https://scryfall.com/card/ima/177/natures-claim?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Manglehorn",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/a/0aa3a844-97e6-4f5d-a36f-56fea4e06932.jpg?1543675886",
+        "uri": "https://scryfall.com/card/akh/175/manglehorn?utm_source=api",
+        "type": "Creature — Beast",
+        "cmc": 3,
+        "manaCost": "{2}{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Leyline of the Void",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/4/04d5d429-e0c6-42cc-a477-da7dabb1c295.jpg?1592516724",
+        "uri": "https://scryfall.com/card/m20/107/leyline-of-the-void?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 4,
+        "manaCost": "{2}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 33
+      },
+      {
+        "name": "Helm of Obedience",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/c/ec837c3e-a66f-43c0-adb4-4eefe7888cac.jpg?1562870953",
+        "uri": "https://scryfall.com/card/me2/210/helm-of-obedience?utm_source=api",
+        "type": "Artifact",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Mycosynth Lattice",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/4/94f89714-3b26-46a2-b9a8-3e664f391cd9.jpg?1578911638",
+        "uri": "https://scryfall.com/card/bbd/241/mycosynth-lattice?utm_source=api",
+        "type": "Artifact",
+        "cmc": 6,
+        "manaCost": "{6}",
+        "colors": [],
+        "pickOrder": 35
+      },
+      {
+        "name": "Winter Orb",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/b/ab3cec7e-513e-400d-a1a8-2c71cdde02c6.jpg?1580015285",
+        "uri": "https://scryfall.com/card/ema/234/winter-orb?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 36
+      },
+      {
+        "name": "Tangle Wire",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/d/ad62f313-8a8a-4ffa-ada2-b12b76288729.jpg?1562631474",
+        "uri": "https://scryfall.com/card/nem/139/tangle-wire?utm_source=api",
+        "type": "Artifact",
+        "cmc": 3,
+        "manaCost": "{3}",
+        "colors": [],
+        "pickOrder": 37
+      },
+      {
+        "name": "Karn Liberated",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/b/4b0c6662-4dde-40a2-97e0-0318478c0367.jpg?1599705787",
+        "uri": "https://scryfall.com/card/2xm/1/karn-liberated?utm_source=api",
+        "type": "Legendary Planeswalker — Karn",
+        "cmc": 7,
+        "manaCost": "{7}",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Ancestral Vision",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/0/9079c93e-3da8-442a-89d2-609a3eac83b0.jpg?1619393761",
+        "uri": "https://scryfall.com/card/tsr/52/ancestral-vision?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 39
+      },
+      {
+        "name": "Oath of Nissa",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/1/613513ea-55dd-4ae8-93b2-247e468112a6.jpg?1594656300",
+        "uri": "https://scryfall.com/card/ogw/140/oath-of-nissa?utm_source=api",
+        "type": "Legendary Enchantment",
+        "cmc": 1,
+        "manaCost": "{G}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 40
+      },
+      {
+        "name": "Chalice of the Void",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/f/1f0d2e8e-c8f2-4b31-a6ba-6283fc8740d4.jpg?1562433485",
+        "uri": "https://scryfall.com/card/a25/222/chalice-of-the-void?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{X}{X}",
+        "colors": [],
+        "pickOrder": 41
+      },
+      {
+        "name": "Settle the Wreckage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9cbd346e-098a-4cf6-a72f-468376fd2e8f.jpg?1562560853",
+        "uri": "https://scryfall.com/card/xln/34/settle-the-wreckage?utm_source=api",
+        "type": "Instant",
+        "cmc": 4,
+        "manaCost": "{2}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Spell Queller",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/b/9b76bcd4-580a-4435-afe9-290940b1837f.jpg?1576385020",
+        "uri": "https://scryfall.com/card/emn/189/spell-queller?utm_source=api",
+        "type": "Creature — Spirit",
+        "cmc": 3,
+        "manaCost": "{1}{W}{U}",
+        "colors": [
+          "U",
+          "W"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Elspeth, Sun's Champion",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/6/96f1d11a-084d-4de7-9ed4-33158113520c.jpg?1562840252",
+        "uri": "https://scryfall.com/card/ddo/1/elspeth-suns-champion?utm_source=api",
+        "type": "Legendary Planeswalker — Elspeth",
+        "cmc": 6,
+        "manaCost": "{4}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 44
+      },
+      {
+        "name": "Land Tax",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/5/95bba319-5f66-4085-9f2a-ab71f727ab64.jpg?1599708011",
+        "uri": "https://scryfall.com/card/2xm/20/land-tax?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 45
+      },
+      {
+        "name": "Dovin, Hand of Control",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd6ff745-919b-4688-9e9e-ab7835b3b891.jpg?1557577351",
+        "uri": "https://scryfall.com/card/war/229/dovin-hand-of-control?utm_source=api",
+        "type": "Legendary Planeswalker — Dovin",
+        "cmc": 3,
+        "manaCost": "{2}{W/U}",
+        "colors": [
+          "U",
+          "W"
+        ],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "“Jago” Sheehan-Jago",
+    "genre": "Burn",
+    "seat": 7,
+    "wins": 3,
+    "losses": 4,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Mox Ruby",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/45fd6e91-df76-497f-b642-33dc3d5f6a5a.jpg?1614638852",
+        "uri": "https://scryfall.com/card/vma/8/mox-ruby?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
       },
       {
         "name": "Ragavan, Nimble Pilferer",
@@ -408,123 +3182,1011 @@
         "colors": [
           "R"
         ],
-        "pickOrder": 35
+        "pickOrder": 2
       },
       {
-        "name": "Elesh Norn, Grand Cenobite",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/78c2bfef-06a5-4c7f-8283-ea3fb673b7a1.jpg?1562850573",
-        "uri": "https://scryfall.com/card/ima/18/elesh-norn-grand-cenobite?utm_source=api",
-        "type": "Legendary Creature — Phyrexian Praetor",
-        "cmc": 7,
-        "manaCost": "{5}{W}{W}",
-        "colors": [
-          "W"
-        ],
-        "pickOrder": 36
-      },
-      {
-        "name": "Snuff Out",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/75bbe89f-09af-494e-b58e-271f64bde4b5.jpg?1562922833",
-        "uri": "https://scryfall.com/card/gvl/53/snuff-out?utm_source=api",
-        "type": "Instant",
-        "cmc": 4,
-        "manaCost": "{3}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 37
-      },
-      {
-        "name": "Clearwater Pathway",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/4/b4b99ebb-0d54-4fe5-a495-979aaa564aa8.jpg?1604264337",
-        "uri": "https://scryfall.com/card/znr/260/clearwater-pathway-murkwater-pathway?utm_source=api",
-        "type": "Land // Land",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
-        "pickOrder": 38
-      },
-      {
-        "name": "Boseiju, Who Shelters All",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/0180d9a8-992c-4d55-8ac4-33a587786993.jpg?1562757082",
-        "uri": "https://scryfall.com/card/chk/273/boseiju-who-shelters-all?utm_source=api",
-        "type": "Legendary Land",
-        "cmc": 0,
-        "manaCost": "",
-        "colors": [],
-        "pickOrder": 39
-      },
-      {
-        "name": "Makeshift Mannequin",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/9/89dfcad2-a737-405b-b3df-9583e6f0dd54.jpg?1562924122",
-        "uri": "https://scryfall.com/card/arc/20/makeshift-mannequin?utm_source=api",
-        "type": "Instant",
-        "cmc": 4,
-        "manaCost": "{3}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 40
-      },
-      {
-        "name": "Massacre",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/0/f05f5d93-50d1-4aa6-af05-383a6808345b.jpg?1562632742",
-        "uri": "https://scryfall.com/card/nem/58/massacre?utm_source=api",
-        "type": "Sorcery",
-        "cmc": 4,
-        "manaCost": "{2}{B}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 41
-      },
-      {
-        "name": "Grave Titan",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/8/68ce4c64-9f82-4be1-aa3b-ba885b2d4307.jpg?1561945357",
-        "uri": "https://scryfall.com/card/c14/145/grave-titan?utm_source=api",
-        "type": "Creature — Giant",
-        "cmc": 6,
-        "manaCost": "{4}{B}{B}",
-        "colors": [
-          "B"
-        ],
-        "pickOrder": 42
-      },
-      {
-        "name": "Divert",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/e/8eb6e9f8-a508-451e-8a72-5f9834ba5352.jpg?1562921469",
-        "uri": "https://scryfall.com/card/ody/82/divert?utm_source=api",
+        "name": "Lightning Bolt",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/e/ce711943-c1a1-43a0-8b89-8d169cfb8e06.jpg?1628801721",
+        "uri": "https://scryfall.com/card/jmp/342/lightning-bolt?utm_source=api",
         "type": "Instant",
         "cmc": 1,
-        "manaCost": "{U}",
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 3
+      },
+      {
+        "name": "Dragon's Rage Channeler",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/c/4ced112a-e775-4f97-97b3-74877e9dce12.jpg?1626096503",
+        "uri": "https://scryfall.com/card/mh2/121/dragons-rage-channeler?utm_source=api",
+        "type": "Creature — Human Shaman",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 4
+      },
+      {
+        "name": "Eidolon of the Great Revel",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/183ef738-0559-49ca-85b4-e6836521f203.jpg?1562433053",
+        "uri": "https://scryfall.com/card/a25/128/eidolon-of-the-great-revel?utm_source=api",
+        "type": "Enchantment Creature — Spirit",
+        "cmc": 2,
+        "manaCost": "{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 5
+      },
+      {
+        "name": "Gitaxian Probe",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/9/995486ce-58bb-4753-a812-0ca73ef1a235.jpg?1562880052",
+        "uri": "https://scryfall.com/card/nph/35/gitaxian-probe?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{U/P}",
         "colors": [
           "U"
         ],
-        "pickOrder": 43
+        "pickOrder": 6
       },
       {
-        "name": "Disfigure",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18069340-a698-4f75-82cc-cc94fcf82184.jpg?1592516643",
-        "uri": "https://scryfall.com/card/m20/95/disfigure?utm_source=api",
+        "name": "Arid Mesa",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.jpg?1626099519",
+        "uri": "https://scryfall.com/card/mh2/244/arid-mesa?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 7
+      },
+      {
+        "name": "Scalding Tarn",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/1/71e491c5-8c07-449b-b2f1-ffa052e6d311.jpg?1626099812",
+        "uri": "https://scryfall.com/card/mh2/254/scalding-tarn?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 8
+      },
+      {
+        "name": "Lutri, the Spellchaser",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/b/fb1189c9-7842-466e-8238-1e02677d8494.jpg?1628801771",
+        "uri": "https://scryfall.com/card/iko/227/lutri-the-spellchaser?utm_source=api",
+        "type": "Legendary Creature — Elemental Otter",
+        "cmc": 3,
+        "manaCost": "{1}{U/R}{U/R}",
+        "colors": [
+          "R",
+          "U"
+        ],
+        "pickOrder": 9
+      },
+      {
+        "name": "Bedlam Reveler",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/2/0232f188-44f2-4aee-963c-6f6edc4a21ac.jpg?1576384515",
+        "uri": "https://scryfall.com/card/emn/118/bedlam-reveler?utm_source=api",
+        "type": "Creature — Devil Horror",
+        "cmc": 8,
+        "manaCost": "{6}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 10
+      },
+      {
+        "name": "Plateau",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/b/bb979a96-a57d-4fb5-8ebe-0bd398272abe.jpg?1562932720",
+        "uri": "https://scryfall.com/card/vma/308/plateau?utm_source=api",
+        "type": "Land — Mountain Plains",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 11
+      },
+      {
+        "name": "Frantic Search",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/b/5b87a025-ab29-4375-9338-536636051640.jpg?1591320241",
+        "uri": "https://scryfall.com/card/c20/111/frantic-search?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{2}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 12
+      },
+      {
+        "name": "Bomat Courier",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/2/425bff89-ad15-4d22-bce9-a4a07dbafd87.jpg?1576383013",
+        "uri": "https://scryfall.com/card/kld/199/bomat-courier?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 13
+      },
+      {
+        "name": "Grim Lavamancer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/e/ee2a0d71-15a2-4061-b5f2-434755094aa4.jpg?1599706437",
+        "uri": "https://scryfall.com/card/2xm/129/grim-lavamancer?utm_source=api",
+        "type": "Creature — Human Wizard",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 14
+      },
+      {
+        "name": "Monastery Swiftspear",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/58db2f81-6ff5-402c-8aef-0b667e82cdc4.jpg?1562849346",
+        "uri": "https://scryfall.com/card/ima/140/monastery-swiftspear?utm_source=api",
+        "type": "Creature — Human Monk",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 15
+      },
+      {
+        "name": "Burning-Tree Emissary",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/2/22e3e874-a0ec-4459-b78d-abef6b9232b9.jpg?1602499798",
+        "uri": "https://scryfall.com/card/dds/55/burning-tree-emissary?utm_source=api",
+        "type": "Creature — Human Shaman",
+        "cmc": 2,
+        "manaCost": "{R/G}{R/G}",
+        "colors": [
+          "G",
+          "R"
+        ],
+        "pickOrder": 16
+      },
+      {
+        "name": "Pyroblast",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621",
+        "uri": "https://scryfall.com/card/ema/142/pyroblast?utm_source=api",
         "type": "Instant",
         "cmc": 1,
-        "manaCost": "{B}",
+        "manaCost": "{R}",
         "colors": [
-          "B"
+          "R"
         ],
-        "pickOrder": 44
+        "pickOrder": 17
       },
       {
-        "name": "Overmaster",
-        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/f/afd2e0f0-8a8e-4021-bd24-aff1a3212345.jpg?1562631559",
-        "uri": "https://scryfall.com/card/tor/104/overmaster?utm_source=api",
+        "name": "Sacred Foundry",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/7/b7b598d0-535d-477d-a33d-d6a10ff5439a.jpg?1572894184",
+        "uri": "https://scryfall.com/card/grn/254/sacred-foundry?utm_source=api",
+        "type": "Land — Mountain Plains",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 18
+      },
+      {
+        "name": "Steam Vents",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204",
+        "uri": "https://scryfall.com/card/grn/257/steam-vents?utm_source=api",
+        "type": "Land — Island Mountain",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 19
+      },
+      {
+        "name": "Snapcaster Mage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/e/7e41765e-43fe-461d-baeb-ee30d13d2d93.jpg?1547516526",
+        "uri": "https://scryfall.com/card/uma/71/snapcaster-mage?utm_source=api",
+        "type": "Creature — Human Wizard",
+        "cmc": 2,
+        "manaCost": "{1}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 20
+      },
+      {
+        "name": "Smash to Smithereens",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/5/655c489f-bffb-45a4-8e7c-2d1a35220197.jpg?1562023107",
+        "uri": "https://scryfall.com/card/ori/163/smash-to-smithereens?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 21
+      },
+      {
+        "name": "Boros Charm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/2/22dc1c3a-0110-4925-a745-e51b20553027.jpg?1625977428",
+        "uri": "https://scryfall.com/card/c21/210/boros-charm?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{R}{W}",
+        "colors": [
+          "R",
+          "W"
+        ],
+        "pickOrder": 22
+      },
+      {
+        "name": "Goblin Guide",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/c/3c0f5411-1940-410f-96ce-6f92513f753a.jpg?1599706366",
+        "uri": "https://scryfall.com/card/2xm/127/goblin-guide?utm_source=api",
+        "type": "Creature — Goblin Scout",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 23
+      },
+      {
+        "name": "Fury",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd281158-8180-40b9-a5b7-03cfc712d81a.jpg?1626096626",
+        "uri": "https://scryfall.com/card/mh2/126/fury?utm_source=api",
+        "type": "Creature — Elemental Incarnation",
+        "cmc": 5,
+        "manaCost": "{3}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 24
+      },
+      {
+        "name": "Chain Lightning",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/7/b7cef88c-0ad6-47c4-b6c8-f989586aa635.jpg?1601077393",
+        "uri": "https://scryfall.com/card/jmp/302/chain-lightning?utm_source=api",
         "type": "Sorcery",
         "cmc": 1,
         "manaCost": "{R}",
         "colors": [
           "R"
         ],
+        "pickOrder": 25
+      },
+      {
+        "name": "Goblin Rabblemaster",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/c/bce84a87-093a-42de-9696-8c3250e0f33b.jpg?1592764823",
+        "uri": "https://scryfall.com/card/ddt/46/goblin-rabblemaster?utm_source=api",
+        "type": "Creature — Goblin Warrior",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 26
+      },
+      {
+        "name": "Fiery Confluence",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/1/819a513c-3be6-4bdc-8ba6-1f7326a8f3ea.jpg?1562274574",
+        "uri": "https://scryfall.com/card/cm2/98/fiery-confluence?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 4,
+        "manaCost": "{2}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 27
+      },
+      {
+        "name": "Fireblast",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/1/51e839d8-2c62-46df-a6ca-3964f43b7e54.jpg?1611933944",
+        "uri": "https://scryfall.com/card/jvc/55/fireblast?utm_source=api",
+        "type": "Instant",
+        "cmc": 6,
+        "manaCost": "{4}{R}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 28
+      },
+      {
+        "name": "Mutagenic Growth",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/e/2e0861a2-1858-47af-8154-20a977c2b298.jpg?1562260231",
+        "uri": "https://scryfall.com/card/mm2/149/mutagenic-growth?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{G/P}",
+        "colors": [
+          "G"
+        ],
+        "pickOrder": 29
+      },
+      {
+        "name": "By Force",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/6/66cdfdb2-b47f-446d-9850-8581bd1d806c.jpg?1543675516",
+        "uri": "https://scryfall.com/card/akh/123/by-force?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{X}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 30
+      },
+      {
+        "name": "Lightning Helix",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/7053b773-a369-45b8-912f-ee66de3a63c6.jpg?1562850123",
+        "uri": "https://scryfall.com/card/ima/204/lightning-helix?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{R}{W}",
+        "colors": [
+          "R",
+          "W"
+        ],
+        "pickOrder": 31
+      },
+      {
+        "name": "Shattering Spree",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/6/d6dcff21-5900-43c4-a38b-cdc19c704ce4.jpg?1593272374",
+        "uri": "https://scryfall.com/card/gpt/75/shattering-spree?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Skewer the Critics",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/7/97295660-6bea-46ae-9a3b-0fc6abba407f.jpg?1584831035",
+        "uri": "https://scryfall.com/card/rna/115/skewer-the-critics?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 33
+      },
+      {
+        "name": "Lava Spike",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/9/79c21c1f-eaa4-454d-a1c7-b41466d0a428.jpg?1547517298",
+        "uri": "https://scryfall.com/card/uma/136/lava-spike?utm_source=api",
+        "type": "Sorcery — Arcane",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 34
+      },
+      {
+        "name": "Vexing Devil",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/5/a5ebb551-6b0d-45fa-88c8-3746214094f6.jpg?1547517462",
+        "uri": "https://scryfall.com/card/uma/154/vexing-devil?utm_source=api",
+        "type": "Creature — Devil",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 35
+      },
+      {
+        "name": "Faithless Looting",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d6e5cc9-bd48-41b6-ac20-5a3e38aecdc5.jpg?1625193770",
+        "uri": "https://scryfall.com/card/c21/168/faithless-looting?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 36
+      },
+      {
+        "name": "Light Up the Stage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/2/9287b848-2aeb-4c70-ac4a-acafb871b7a4.jpg?1616182194",
+        "uri": "https://scryfall.com/card/rna/107/light-up-the-stage?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 37
+      },
+      {
+        "name": "Shrine of Burning Rage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/1/d1a8afef-fa50-4aeb-94de-a4d90b1e5631.jpg?1562881740",
+        "uri": "https://scryfall.com/card/nph/153/shrine-of-burning-rage?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 38
+      },
+      {
+        "name": "Deflecting Palm",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/5/c5580886-a402-4048-b8b6-39e19479f491.jpg?1608917621",
+        "uri": "https://scryfall.com/card/cmr/444/deflecting-palm?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{R}{W}",
+        "colors": [
+          "R",
+          "W"
+        ],
+        "pickOrder": 39
+      },
+      {
+        "name": "Skullcrack",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/0/8068a146-f6fe-46f3-a42e-822fbc3502e6.jpg?1561833692",
+        "uri": "https://scryfall.com/card/gtc/106/skullcrack?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 40
+      },
+      {
+        "name": "Blood Moon",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/0/d072e9ca-aae7-45dc-8025-3ce590bae63f.jpg?1599706217",
+        "uri": "https://scryfall.com/card/2xm/118/blood-moon?utm_source=api",
+        "type": "Enchantment",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 41
+      },
+      {
+        "name": "Rift Bolt",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/3/a3459a44-0c26-4ee1-ad7f-67be7cd7d80a.jpg?1619397474",
+        "uri": "https://scryfall.com/card/tsr/184/rift-bolt?utm_source=api",
+        "type": "Sorcery",
+        "cmc": 3,
+        "manaCost": "{2}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Embereth Shieldbreaker",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/c/6cc73d16-5ed7-4104-91f6-0997a2080e2e.jpg?1572490345",
+        "uri": "https://scryfall.com/card/eld/122/embereth-shieldbreaker-battle-display?utm_source=api",
+        "type": "Creature — Human Knight // Sorcery — Adventure",
+        "cmc": 2,
+        "manaCost": "{1}{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Shard Volley",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/3/43db4810-078e-487a-afef-57cbc1db0cc7.jpg?1562878159",
+        "uri": "https://scryfall.com/card/mor/103/shard-volley?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{R}",
+        "colors": [
+          "R"
+        ],
+        "pickOrder": 44
+      },
+      {
+        "name": "Barbarian Ring",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/1809361e-ae1a-4c47-8464-e6496e94d962.jpg?1562899549",
+        "uri": "https://scryfall.com/card/ody/313/barbarian-ring?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
         "pickOrder": 45
+      },
+      {
+        "name": "Ramunap Ruins",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/f/af11d41a-0d29-45e9-9d27-a41282b9e292.jpg?1562810961",
+        "uri": "https://scryfall.com/card/hou/181/ramunap-ruins?utm_source=api",
+        "type": "Land — Desert",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 46
+      }
+    ]
+  },
+  {
+    "date": "2021-10-02",
+    "player": "Kevin Freeman",
+    "genre": "Affinity",
+    "seat": 8,
+    "wins": 1,
+    "losses": 7,
+    "stLotus": 7,
+    "decklist": [
+      {
+        "name": "Mox Emerald",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/c/aced2c55-7543-4076-bcdd-36c4d649b8ae.jpg?1614638841",
+        "uri": "https://scryfall.com/card/vma/5/mox-emerald?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 1
+      },
+      {
+        "name": "Mox Pearl",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/d/ed0216a0-c5c9-4a99-b869-53e4d0256326.jpg?1614638847",
+        "uri": "https://scryfall.com/card/vma/7/mox-pearl?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 2
+      },
+      {
+        "name": "Mox Opal",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/6/56001a36-126b-4c08-af98-a6cc4d84210e.jpg?1599709600",
+        "uri": "https://scryfall.com/card/2xm/275/mox-opal?utm_source=api",
+        "type": "Legendary Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 3
+      },
+      {
+        "name": "Lotus Petal",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/8/f85ab5f9-508e-45de-8fa1-ce1f16552ffc.jpg?1562432227",
+        "uri": "https://scryfall.com/card/tpr/225/lotus-petal?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 4
+      },
+      {
+        "name": "Mishra's Workshop",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aac0c8df-f01d-4178-8d66-ee603f814d24.jpg?1562929426",
+        "uri": "https://scryfall.com/card/vma/305/mishras-workshop?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 5
+      },
+      {
+        "name": "Esper Sentinel",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/3/f3537373-ef54-4578-9d05-6216420ee349.jpg?1626093502",
+        "uri": "https://scryfall.com/card/mh2/12/esper-sentinel?utm_source=api",
+        "type": "Artifact Creature — Human Soldier",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 6
+      },
+      {
+        "name": "Kaldra Compleat",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/7/87cc2855-6b14-44dd-a398-7dc2bbae081f.jpg?1626099096",
+        "uri": "https://scryfall.com/card/mh2/227/kaldra-compleat?utm_source=api",
+        "type": "Legendary Artifact — Equipment",
+        "cmc": 7,
+        "manaCost": "{7}",
+        "colors": [],
+        "pickOrder": 7
+      },
+      {
+        "name": "Batterskull",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/7/b7f16fdf-a3f5-462d-a64a-789d893b6ef5.jpg?1599708720",
+        "uri": "https://scryfall.com/card/2xm/234/batterskull?utm_source=api",
+        "type": "Artifact — Equipment",
+        "cmc": 5,
+        "manaCost": "{5}",
+        "colors": [],
+        "pickOrder": 8
+      },
+      {
+        "name": "Inkmoth Nexus",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/c/ec50c1c3-885e-47d3-ada7-cc0edbf09df1.jpg?1623098818",
+        "uri": "https://scryfall.com/card/mbs/145/inkmoth-nexus?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 9
+      },
+      {
+        "name": "Walking Ballista",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/2/5272436e-74f0-44c4-a291-ea8ebc3f1525.jpg?1599710252",
+        "uri": "https://scryfall.com/card/2xm/306/walking-ballista?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 0,
+        "manaCost": "{X}{X}",
+        "colors": [],
+        "pickOrder": 10
+      },
+      {
+        "name": "Arcbound Ravager",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/0/c0c33a92-5621-40b4-a3a2-b67893edbc01.jpg?1561968545",
+        "uri": "https://scryfall.com/card/mma/198/arcbound-ravager?utm_source=api",
+        "type": "Artifact Creature — Beast",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 11
+      },
+      {
+        "name": "Cranial Plating",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/1/e1375f17-bc25-4a65-98b7-4785bbdbe974.jpg?1599953696",
+        "uri": "https://scryfall.com/card/2xm/245/cranial-plating?utm_source=api",
+        "type": "Artifact — Equipment",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 12
+      },
+      {
+        "name": "Heliod, Sun-Crowned",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/01a8576e-cadc-4521-aadd-3a05f0bc4d20.jpg?1581479085",
+        "uri": "https://scryfall.com/card/thb/18/heliod-sun-crowned?utm_source=api",
+        "type": "Legendary Enchantment Creature — God",
+        "cmc": 3,
+        "manaCost": "{2}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 13
+      },
+      {
+        "name": "Academy Ruins",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/9/a95b7645-154f-4904-bf71-db7eb24d4df2.jpg?1599710297",
+        "uri": "https://scryfall.com/card/2xm/309/academy-ruins?utm_source=api",
+        "type": "Legendary Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 14
+      },
+      {
+        "name": "Gingerbrute",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/1/c1195ec5-979b-4c4a-9c04-62bb53c2b011.jpg?1601080671",
+        "uri": "https://scryfall.com/card/jmp/466/gingerbrute?utm_source=api",
+        "type": "Artifact Creature — Food Golem",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 15
+      },
+      {
+        "name": "Spire of Industry",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/3/8331724d-6fab-454a-b06c-b06e499fa552.jpg?1576382490",
+        "uri": "https://scryfall.com/card/aer/184/spire-of-industry?utm_source=api",
+        "type": "Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 16
+      },
+      {
+        "name": "Seat of the Synod",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/f/1fedc183-2d95-471c-ba78-2169e4df13f8.jpg?1592711674",
+        "uri": "https://scryfall.com/card/c18/278/seat-of-the-synod?utm_source=api",
+        "type": "Artifact Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 17
+      },
+      {
+        "name": "Pithing Needle",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/8/786c1e91-9d75-46a3-9e0d-56d29fcb01a7.jpg?1633160927",
+        "uri": "https://scryfall.com/card/rtr/231/pithing-needle?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 18
+      },
+      {
+        "name": "Spellskite",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/a/aa9bf341-0060-467d-99b3-a5bc7f2270b8.jpg?1599709895",
+        "uri": "https://scryfall.com/card/2xm/289/spellskite?utm_source=api",
+        "type": "Artifact Creature — Phyrexian Horror",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 19
+      },
+      {
+        "name": "Grafdigger's Cage",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/a/0a135e09-b534-4836-9a10-3a9a4a9f8c53.jpg?1592517646",
+        "uri": "https://scryfall.com/card/m20/227/grafdiggers-cage?utm_source=api",
+        "type": "Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 20
+      },
+      {
+        "name": "Tormod's Crypt",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/c/9c224bf0-5641-4160-9d5c-46141ea8372a.jpg?1594737584",
+        "uri": "https://scryfall.com/card/m21/241/tormods-crypt?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 21
+      },
+      {
+        "name": "Damping Sphere",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/a/5/a5c7d16b-8f4e-42b9-be24-3cb091932d7c.jpg?1562740759",
+        "uri": "https://scryfall.com/card/dom/213/damping-sphere?utm_source=api",
+        "type": "Artifact",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 22
+      },
+      {
+        "name": "Hangarback Walker",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/9/791c21fb-fc78-4106-9a42-abc73f41ab8b.jpg?1562026741",
+        "uri": "https://scryfall.com/card/ori/229/hangarback-walker?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 0,
+        "manaCost": "{X}{X}",
+        "colors": [],
+        "pickOrder": 23
+      },
+      {
+        "name": "Thought Monitor",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/9/996c1952-8d10-4296-8960-ff8993833649.jpg?1626095167",
+        "uri": "https://scryfall.com/card/mh2/71/thought-monitor?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 7,
+        "manaCost": "{6}{U}",
+        "colors": [
+          "U"
+        ],
+        "pickOrder": 24
+      },
+      {
+        "name": "Ancient Den",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/a/0a508907-a127-45cd-898a-e936bc08391f.jpg?1625979692",
+        "uri": "https://scryfall.com/card/c21/276/ancient-den?utm_source=api",
+        "type": "Artifact Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 25
+      },
+      {
+        "name": "Frogmite",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/2/b2991802-e313-40de-b167-0ede5efff101.jpg?1562266618",
+        "uri": "https://scryfall.com/card/mm2/215/frogmite?utm_source=api",
+        "type": "Artifact Creature — Frog",
+        "cmc": 4,
+        "manaCost": "{4}",
+        "colors": [],
+        "pickOrder": 26
+      },
+      {
+        "name": "Ornithopter",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/d/ddb96645-44d2-426c-90cb-3186297a8728.jpg?1576382362",
+        "uri": "https://scryfall.com/card/aer/167/ornithopter?utm_source=api",
+        "type": "Artifact Creature — Thopter",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 27
+      },
+      {
+        "name": "Memnite",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/7/975459ba-e1c2-4800-a3fa-5c0cf8ce728f.jpg?1562925499",
+        "uri": "https://scryfall.com/card/td2/2/memnite?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 28
+      },
+      {
+        "name": "Darksteel Citadel",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/b/2ba7597d-6d76-45b8-b172-342999e401bd.jpg?1625979955",
+        "uri": "https://scryfall.com/card/c21/285/darksteel-citadel?utm_source=api",
+        "type": "Artifact Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 29
+      },
+      {
+        "name": "Razortide Bridge",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/7/e7ea7395-430e-4036-92c9-17a850ec2371.jpg?1626099763",
+        "uri": "https://scryfall.com/card/mh2/252/razortide-bridge?utm_source=api",
+        "type": "Artifact Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 30
+      },
+      {
+        "name": "Mishra's Bauble",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/5/45bbbf9b-8fee-4c32-a513-02dac6ac8a39.jpg?1599709584",
+        "uri": "https://scryfall.com/card/2xm/274/mishras-bauble?utm_source=api",
+        "type": "Artifact",
+        "cmc": 0,
+        "manaCost": "{0}",
+        "colors": [],
+        "pickOrder": 31
+      },
+      {
+        "name": "Dispatch",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/e/6e5caadb-9438-460a-852b-123719635550.jpg?1625192974",
+        "uri": "https://scryfall.com/card/c21/88/dispatch?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 32
+      },
+      {
+        "name": "Mycosynth Golem",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/c/3/c3200fa2-182f-4515-b326-ab4fdb95c8c1.jpg?1562879547",
+        "uri": "https://scryfall.com/card/5dn/137/mycosynth-golem?utm_source=api",
+        "type": "Artifact Creature — Golem",
+        "cmc": 11,
+        "manaCost": "{11}",
+        "colors": [],
+        "pickOrder": 33
+      },
+      {
+        "name": "Stonecoil Serpent",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b34bf7fd-9fe3-43e2-8cfe-7ce7cff08afe.jpg?1572491124",
+        "uri": "https://scryfall.com/card/eld/235/stonecoil-serpent?utm_source=api",
+        "type": "Artifact Creature — Snake",
+        "cmc": 0,
+        "manaCost": "{X}",
+        "colors": [],
+        "pickOrder": 34
+      },
+      {
+        "name": "Myr Enforcer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/f/dff51ae7-4b68-4770-915b-fb6bcf9ca1ed.jpg?1562268373",
+        "uri": "https://scryfall.com/card/mm2/224/myr-enforcer?utm_source=api",
+        "type": "Artifact Creature — Myr",
+        "cmc": 7,
+        "manaCost": "{7}",
+        "colors": [],
+        "pickOrder": 35
+      },
+      {
+        "name": "Sojourner's Companion",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c6af084-eee7-4259-a58b-a866e0cf171b.jpg?1631126032",
+        "uri": "https://scryfall.com/card/mh2/235/sojourners-companion?utm_source=api",
+        "type": "Artifact Creature — Salamander",
+        "cmc": 7,
+        "manaCost": "{7}",
+        "colors": [],
+        "pickOrder": 36
+      },
+      {
+        "name": "Power Depot",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/3/032eba04-0a63-4823-85e1-64861330a8d7.jpg?1626099742",
+        "uri": "https://scryfall.com/card/mh2/251/power-depot?utm_source=api",
+        "type": "Artifact Land",
+        "cmc": 0,
+        "manaCost": "",
+        "colors": [],
+        "pickOrder": 37
+      },
+      {
+        "name": "All That Glitters",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/d/9/d9713032-2956-4564-b5f5-2dd16245a4e6.jpg?1572489608",
+        "uri": "https://scryfall.com/card/eld/2/all-that-glitters?utm_source=api",
+        "type": "Enchantment — Aura",
+        "cmc": 2,
+        "manaCost": "{1}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 38
+      },
+      {
+        "name": "Signal Pest",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/e/be065962-f2ed-4ab9-be6b-bfc66d63ff4e.jpg?1562614362",
+        "uri": "https://scryfall.com/card/mbs/131/signal-pest?utm_source=api",
+        "type": "Artifact Creature — Pest",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 39
+      },
+      {
+        "name": "The Ozolith",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/9/3/9341ed06-53db-4604-b60a-3ea9129afbc2.jpg?1591228544",
+        "uri": "https://scryfall.com/card/iko/237/the-ozolith?utm_source=api",
+        "type": "Legendary Artifact",
+        "cmc": 1,
+        "manaCost": "{1}",
+        "colors": [],
+        "pickOrder": 40
+      },
+      {
+        "name": "Second Sunrise",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/e/4e50ee7c-f2a2-4d49-a1cc-8233fd8dd0c5.jpg?1562143349",
+        "uri": "https://scryfall.com/card/mrd/20/second-sunrise?utm_source=api",
+        "type": "Instant",
+        "cmc": 3,
+        "manaCost": "{1}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 41
+      },
+      {
+        "name": "Rally the Ancestors",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/6/d/6d9efacb-9d7c-41f4-9b11-59df1be50e11.jpg?1562826291",
+        "uri": "https://scryfall.com/card/frf/22/rally-the-ancestors?utm_source=api",
+        "type": "Instant",
+        "cmc": 2,
+        "manaCost": "{X}{W}{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 42
+      },
+      {
+        "name": "Built to Last",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/ef3e09a4-93d0-4ed7-bbee-82108672d5f8.jpg?1576380771",
+        "uri": "https://scryfall.com/card/kld/7/built-to-last?utm_source=api",
+        "type": "Instant",
+        "cmc": 1,
+        "manaCost": "{W}",
+        "colors": [
+          "W"
+        ],
+        "pickOrder": 43
+      },
+      {
+        "name": "Steel Overseer",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/f/3f1b0b1f-a152-4bc8-923c-1b3a7f151295.jpg?1625979399",
+        "uri": "https://scryfall.com/card/c21/267/steel-overseer?utm_source=api",
+        "type": "Artifact Creature — Construct",
+        "cmc": 2,
+        "manaCost": "{2}",
+        "colors": [],
+        "pickOrder": 44
+      },
+      {
+        "name": "Thrumming Stone",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/1/31412335-110c-449a-9c2f-bff8763a6504.jpg?1593275623",
+        "uri": "https://scryfall.com/card/csp/142/thrumming-stone?utm_source=api",
+        "type": "Legendary Artifact",
+        "cmc": 5,
+        "manaCost": "{5}",
+        "colors": [],
+        "pickOrder": 45
+      },
+      {
+        "name": "Relentless Rats",
+        "image": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/75f47b6e-9557-4853-b8d6-7602a91c59a7.jpg?1562437033",
+        "uri": "https://scryfall.com/card/a25/105/relentless-rats?utm_source=api",
+        "type": "Creature — Rat",
+        "cmc": 3,
+        "manaCost": "{1}{B}{B}",
+        "colors": [
+          "B"
+        ],
+        "pickOrder": 46
       }
     ]
   }
