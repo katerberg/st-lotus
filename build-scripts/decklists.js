@@ -78,14 +78,20 @@ function buildCard(processedCard, pickOrder) {
 fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dirtyLists) => {
   const parsedDirtyLists = JSON.parse(dirtyLists);
   getCards(parsedDirtyLists).then(processedCards => {
-    const cleanLists = parsedDirtyLists.map(dirtyList => ({
-      ...dirtyList,
-      decklist: dirtyList.decklist.map((dirtyCard, i) => buildCard(processedCards[dirtyCard], i + 1)),
-    }));
-    fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
+    fs.writeFileAsync(`${process.cwd()}/tmp/processedCards.json`, JSON.stringify(processedCards, null, 2), (err) => {
       if (err) {
         throw err;
       }
+    }).then(() => {
+      const cleanLists = parsedDirtyLists.map(dirtyList => ({
+        ...dirtyList,
+        decklist: dirtyList.decklist.map((dirtyCard, i) => buildCard(processedCards[dirtyCard], i + 1)),
+      }));
+      fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
+        if (err) {
+          throw err;
+        }
+      });
     });
   });
 }).catch((e) => {
