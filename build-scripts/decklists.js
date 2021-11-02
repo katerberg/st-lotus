@@ -38,7 +38,7 @@ function getCardImage(processedCard) {
 }
 
 function getCardColors(processedCard) {
-  if (processedCard.card_faces) {
+  if (processedCard.card_faces && processedCard.card_faces.some(cf => cf.colors)) {
     return [...new Set(processedCard.card_faces.reduce((a, c) => [...a, ...c.colors], []))];
   }
   if (processedCard.colors) {
