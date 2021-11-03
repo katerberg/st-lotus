@@ -1,6 +1,7 @@
 import React, {useCallback, useMemo, useState} from 'react';
 import {styled} from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
+import Grid from '@mui/material/Grid';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import {cardShape} from './DeckShapes';
@@ -41,14 +42,26 @@ export default function Deck({deck}) {
 
   return (
     <>
-      <Typography variant="h3">{deck.genre}</Typography>
-      <Subtitle>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Subtitle>
-      <Subtitle>{deck.date}</Subtitle>
+    <Grid container>
+      <Grid flexGrow={1}
+        item
+      >
+        <Typography variant="h3">{deck.genre}</Typography>
+        <Subtitle>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Subtitle>
+        <Subtitle>{deck.date}</Subtitle>
+      </Grid>
+      <Grid item
+        sx={{display: 'flex', alignItems: 'end'}}
+      >
+        <SortSelector onChange={handleSortChange}
+          value={sort}
+        />
+        </Grid>
+      </Grid>
       <hr/>
-      <SortSelector onChange={handleSortChange}
-        value={sort}
-      />
-      <Masonry columns={getColumns()}>
+      <Masonry columns={getColumns()}
+        sx={{marginTop: '20px'}}
+      >
         {decklistSections.map(ds => <DeckSection cards={ds.cards}
           key={ds.title}
           sort={sort}
