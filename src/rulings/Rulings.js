@@ -121,7 +121,7 @@ export default function Rulings() {
         </Ruling>
         <Ruling header="“Any number” cards cost a single pick"
           number={6}
-          updated="2021-10-02"
+          updated="2021-11-06"
         >
           <Typography paragraph>
             {'Cards like '}
@@ -130,8 +130,14 @@ export default function Rulings() {
             >{'Relentless Rats'}</Link>
             {' or '}
             <Link href="https://scryfall.com/card/ice/371/snow-covered-island">{'Snow-Covered Island'}</Link>
-            {' require a pick to be made in order to play them, but once picked, may be played in any number.'}
+            {' require a pick to be made in order to play them, but once picked, may be played in any number up to 25 copies.'}
           </Typography>
+          <Typography paragraph
+            variant="body2"
+          >{'2021-11-06: Changed to 25 copies at most to allow for mill to still be a potential option.'}</Typography>
+          <Typography paragraph
+            variant="body2"
+          >{'2021-10-02: Updated allow more than one copy of some cards.'}</Typography>
         </Ruling>
       </Box>
     </Container>
