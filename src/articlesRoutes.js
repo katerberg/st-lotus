@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Route,
 } from 'react-router-dom';
-import HowToPlay from './HowToPlay';
+import PlaneswalkersInVrd from './articles/PlaneswalkersInVrd';
 
 function ArticlesRoutes() {
   return (
@@ -11,7 +11,7 @@ function ArticlesRoutes() {
         exact
         path="/articles/2021-11-06/Planeswalkers in VRD"
       >
-        <HowToPlay />
+        <PlaneswalkersInVrd />
       </Route>
     </>
   );

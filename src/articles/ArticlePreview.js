@@ -26,7 +26,8 @@ export default function ArticlePreview({link, image, text, date, heading, author
         >
           {heading}
         </Typography>
-        <Typography color="text.secondary"
+        <Typography
+          color="text.secondary"
           variant="subtitle1"
         >{`Written by: ${author} on ${new Intl.DateTimeFormat('en-US', {dateStyle: 'long'}).format(date)}`}</Typography>
         <Typography color="text.secondary"
