@@ -6,9 +6,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function Ruling({number, header, children, updated}) {
+export default function Ruling({number, header, children, updated, defaultExpanded = false}) {
   return (
-    <Accordion>
+    <Accordion defaultExpanded={defaultExpanded}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
       >
@@ -35,6 +35,7 @@ export default function Ruling({number, header, children, updated}) {
 }
 
 Ruling.propTypes = {
+  defaultExpanded: PropTypes.bool,
   number: PropTypes.number.isRequired,
   header: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,

@@ -10,7 +10,7 @@ const StyledImage = styled('img')({
 
 export default function HowToPlay() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <SpacedHeader
         component="h1"
         sx={{marginTop: 10}}

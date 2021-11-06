@@ -14,7 +14,7 @@ const DraftPickImage = styled('img')({
 
 export default function Rulings() {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <SpacedHeader
         component="h1"
         sx={{marginTop: 10}}
@@ -23,7 +23,8 @@ export default function Rulings() {
       <Typography paragraph>{'Over the course of many Vintage Rotisserie Drafts, we have found quite a few edge cases regarding the rules that have needed to be clarified.'}</Typography>
       <Typography paragraph>{'Current rulings and divergences are listed below.'}</Typography>
       <Box sx={{marginBottom: 6}}>
-        <Ruling header="Each player gets 46 picks"
+        <Ruling defaultExpanded
+          header="Each player gets 46 picks"
           number={1}
           updated="2021-10-02"
         >
