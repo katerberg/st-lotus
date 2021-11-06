@@ -1,4 +1,5 @@
 import React from 'react';
+import PlaneswalkersInVrd from './articles/PlaneswalkersInVrd';
 import {
   Switch,
   Route,
@@ -8,7 +9,6 @@ import HowToPlay from './HowToPlay';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
 import Articles from './articles/Articles';
-import ArticlesRoutes from './articlesRoutes';
 
 function Routes() {
   return (
@@ -37,7 +37,12 @@ function Routes() {
         >
           <Articles />
         </Route>
-        <ArticlesRoutes />
+        <Route
+          exact
+          path="/articles/2021-11-06/Planeswalkers in VRD"
+        >
+          <PlaneswalkersInVrd />
+        </Route>
         <Route
           path="/"
         >

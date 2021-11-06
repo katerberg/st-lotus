@@ -38,8 +38,8 @@ export default function ArticlePreview({link, image, text, date, heading, author
         >{`${text}...`}</Typography>
       </CardContent>
       <CardActions>
-        <Button onClick={handleClick}
-          size="small"
+        <Button color="secondary"
+          onClick={handleClick}
         >{'Read'}</Button>
       </CardActions>
     </Card>
