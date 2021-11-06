@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, {useCallback} from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
+import {useHistory} from 'react-router-dom';
 import Typography from '@mui/material/Typography';
 
-export default function ArticlePreview({image, text, date, heading, author}) {
+export default function ArticlePreview({link, image, text, date, heading, author}) {
+  const history = useHistory();
+  const handleClick = useCallback(() => history.push(link), [history, link]);
   return (
     <Card>
       <CardMedia
@@ -34,7 +37,9 @@ export default function ArticlePreview({image, text, date, heading, author}) {
         >{`${text}...`}</Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">{'Read'}</Button>
+        <Button onClick={handleClick}
+          size="small"
+        >{'Read'}</Button>
       </CardActions>
     </Card>
   );
@@ -46,4 +51,5 @@ ArticlePreview.propTypes = {
   text: PropTypes.string.isRequired,
   heading: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };

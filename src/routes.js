@@ -8,6 +8,7 @@ import HowToPlay from './HowToPlay';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
 import Articles from './articles/Articles';
+import ArticlesRoutes from './articlesRoutes';
 
 function Routes() {
   return (
@@ -36,6 +37,7 @@ function Routes() {
         >
           <Articles />
         </Route>
+        <ArticlesRoutes />
         <Route
           path="/"
         >
