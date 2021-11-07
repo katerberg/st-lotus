@@ -5,7 +5,7 @@ import Divider from '@mui/material/Divider';
 import Card from './Card';
 import {cardShape} from './DeckShapes';
 import {Box} from '@mui/system';
-import ManaCost from './ManaCost';
+import ManaCost from '../common/mana-cost/ManaCost';
 
 export default function DeckSection({cards, title, sort}) {
   const getPrefix = useCallback((card) => {

@@ -7,7 +7,7 @@ import ListItem from '@mui/material/ListItem';
 import {styled} from '@mui/system';
 import Popover from '@mui/material/Popover';
 import Button from '@mui/material/Button';
-import ManaCost from './ManaCost';
+import ManaCost from '../common/mana-cost/ManaCost';
 
 const StyledImage = styled('img')({
   width: '300px',
