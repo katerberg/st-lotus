@@ -216,8 +216,15 @@ export default function PlaneswalkersInVrd() {
         variant="h3"
       >{'Walk a Thin Line'}</SubSectionHeader>
       <Typography paragraph>Some might argue (and they might be right) that I overvalue walkers in the format and overestimate their power… but I don’t think I do. As of now, I think walkers are seeing their place in the sun in VRD, the question is how do people adapt to address them (*cough* <Link href="https://scryfall.com/card/stx/188/fracture">Fracture</Link>)? In my next article I will give some thoughts on just that question. The <Link href="https://scryfall.com/card/stx/188/fracture">Fracture</Link> is free for now.</Typography>
-      <Typography paragraph>Author</Typography>
-      <Typography paragraph>Stephen Hagan is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are Reveillark, Trading Post, Living Death, Mystic Snake, and Plow Under. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
+      <Typography
+        color="text.secondary"
+        variant="subtitle1"
+      >About the author:</Typography>
+      <Typography
+        color="text.secondary"
+        sx={{marginLeft: '20px'}}
+        variant="subtitle1"
+      >Stephen Hagan is a longtime L2 Judge, member of the St. Lotus VRD Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are <Link href="https://scryfall.com/card/mor/22/reveillark">Reveillark</Link>, <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>, <Link href="https://scryfall.com/card/tmp/142/living-death">Living Death</Link>, <Link href="https://scryfall.com/card/apc/112/mystic-snake">Mystic Snake</Link>, and <Link href="https://scryfall.com/card/uds/117/plow-under">Plow Under</Link>. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
     </Container>
   );
 }
