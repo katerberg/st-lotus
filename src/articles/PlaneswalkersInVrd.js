@@ -224,7 +224,7 @@ export default function PlaneswalkersInVrd() {
         color="text.secondary"
         sx={{marginLeft: '20px'}}
         variant="subtitle1"
-      >Stephen Hagan is a longtime L2 Judge, member of the St. Lotus VRD Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are <Link href="https://scryfall.com/card/mor/22/reveillark">Reveillark</Link>, <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>, <Link href="https://scryfall.com/card/tmp/142/living-death">Living Death</Link>, <Link href="https://scryfall.com/card/apc/112/mystic-snake">Mystic Snake</Link>, and <Link href="https://scryfall.com/card/uds/117/plow-under">Plow Under</Link>. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
+      >Stephen Hagan is a longtime L2 Judge, member of the St. Lotus Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are <Link href="https://scryfall.com/card/mor/22/reveillark">Reveillark</Link>, <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>, <Link href="https://scryfall.com/card/tmp/142/living-death">Living Death</Link>, <Link href="https://scryfall.com/card/apc/112/mystic-snake">Mystic Snake</Link>, and <Link href="https://scryfall.com/card/uds/117/plow-under">Plow Under</Link>. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
     </Container>
   );
 }
