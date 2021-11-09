@@ -7,7 +7,9 @@ import RankedCard from './RankedCard';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/system';
 import Link from '@mui/material/Link';
-
+import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
+import hagan from './hagan.jpg';
 
 const SubSectionHeader = styled(Typography)({
   marginTop: '20px',
@@ -226,13 +228,34 @@ export default function PlaneswalkersInVrd() {
       <Typography paragraph>Some might argue (and they might be right) that I overvalue walkers in the format and overestimate their power… but I don’t think I do. As of now, I think walkers are seeing their place in the sun in VRD, the question is how do people adapt to address them (*cough* <Link href="https://scryfall.com/card/stx/188/fracture">Fracture</Link>)? In my next article I will give some thoughts on just that question. The <Link href="https://scryfall.com/card/stx/188/fracture">Fracture</Link> is free for now.</Typography>
       <Typography
         color="text.secondary"
-        variant="subtitle1"
+        component="h2"
+        sx={{marginTop: '60px'}}
+        variant="h4"
       >About the author:</Typography>
-      <Typography
-        color="text.secondary"
-        sx={{marginLeft: '20px'}}
-        variant="subtitle1"
-      >Stephen Hagan is a longtime L2 Judge, member of the St. Lotus Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are <Link href="https://scryfall.com/card/mor/22/reveillark">Reveillark</Link>, <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>, <Link href="https://scryfall.com/card/tmp/142/living-death">Living Death</Link>, <Link href="https://scryfall.com/card/apc/112/mystic-snake">Mystic Snake</Link>, and <Link href="https://scryfall.com/card/uds/117/plow-under">Plow Under</Link>. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
+      <Divider sx={{margin: '10px 0 30px'}}/>
+      <Grid container
+        sx={{marginBottom: '40px'}}
+      >
+        <Grid item
+          sm={2}
+          xs={3}
+        >
+          <FullWidthImage src={hagan} />
+        </Grid>
+        <Grid alignItems="center"
+          container
+          flexGrow={1}
+          item
+          sm={10}
+          xs={9}
+        >
+        <Typography
+          color="text.secondary"
+          sx={{verticalAlign: 'middle', marginLeft: '20px'}}
+          variant="subtitle2"
+        >Stephen Hagan is a longtime L2 Judge, member of the St. Lotus Steering Committee, and an experienced Commander player. He has played Magic off and on since Revised. His favorite cards are <Link href="https://scryfall.com/card/mor/22/reveillark">Reveillark</Link>, <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>, <Link href="https://scryfall.com/card/tmp/142/living-death">Living Death</Link>, <Link href="https://scryfall.com/card/apc/112/mystic-snake">Mystic Snake</Link>, and <Link href="https://scryfall.com/card/uds/117/plow-under">Plow Under</Link>. In his normal life he is a sociology professor and father of two awesome kids.</Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
