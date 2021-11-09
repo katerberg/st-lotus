@@ -9,7 +9,6 @@ import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
 import {sortByCmc, sortByColor} from './Sorting';
 
-
 const Subtitle = styled(Typography)({
   marginLeft: '1rem',
 });
