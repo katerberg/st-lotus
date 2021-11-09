@@ -4,6 +4,7 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import HomeIcon from '@mui/icons-material/Home';
 import AssignmentIcon from '@mui/icons-material/Assignment';
+import MenuBookIcon from '@mui/icons-material/MenuBook';
 import GavelIcon from '@mui/icons-material/Gavel';
 import MenuItem from './MenuItem';
 
@@ -23,6 +24,11 @@ export default function Menu({isOpen, onClose}) {
         link="/how-to-play"
         onClick={onClose}
         text="How To Play"
+      />
+      <MenuItem icon={<MenuBookIcon />}
+        link="/articles"
+        onClick={onClose}
+        text="Articles"
       />
       <MenuItem icon={<GavelIcon />}
         link="/rulings"
