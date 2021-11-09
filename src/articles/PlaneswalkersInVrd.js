@@ -240,7 +240,9 @@ export default function PlaneswalkersInVrd() {
           sm={2}
           xs={3}
         >
-          <FullWidthImage src={hagan} />
+          <FullWidthImage src={hagan}
+            sx={{borderRadius: '10px'}}
+          />
         </Grid>
         <Grid alignItems="center"
           container
