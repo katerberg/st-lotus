@@ -22,7 +22,9 @@ export default function RankedCard({averageRound, availableDrafts, ranking, time
       >{`${ranking ? `${ranking}. ` : ''}${cardName}`}</SubSectionHeader>
       <Grid container>
         <Grid item>
-          <CardImage src={link} />
+          <CardImage alt={`${cardName} magic card`}
+            src={link}
+          />
         </Grid>
         <Grid item
           sx={{marginLeft: '20px', marginBottom: '20px'}}
