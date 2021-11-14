@@ -1,5 +1,6 @@
 import React from 'react';
 import PlaneswalkersInVrd from './articles/PlaneswalkersInVrd';
+import CombosInVrd from './articles/CombosInVrd';
 import {
   Switch,
   Route,
@@ -42,6 +43,12 @@ function Routes() {
           path="/articles/2021-11-06/Planeswalkers in VRD"
         >
           <PlaneswalkersInVrd />
+        </Route>
+        <Route
+          exact
+          path="/articles/2021-11-13/Combos in VRD"
+        >
+          <CombosInVrd />
         </Route>
         <Route
           path="/"
