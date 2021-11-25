@@ -1,10 +1,16 @@
 /* eslint-disable react/jsx-no-literals*/
+import ManaCost from '../common/mana-cost/ManaCost';
 import React from 'react';
 import Container from '@mui/material/Container';
 import SpacedHeader from '../common/SpacedHeader';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import {styled} from '@mui/system';
 import ComboCards from './ComboCards';
+
+const Bold = styled('span')({
+  fontWeight: '700',
+});
 
 export default function CombosInVrd() {
   return (
@@ -32,7 +38,7 @@ export default function CombosInVrd() {
         sx={{marginLeft: '20px'}}
         variant="subtitle1"
       >Drafted in more than 75% of VRDs</Typography>
-      <Typography paragraph> These combos are played in nearly every VRD, and if they are not at your table, there is something particularly weird going on. They are generally easy to assemble, game winning, and/or replaceable.</Typography>
+      <Typography paragraph>These combos are played in nearly every VRD, and if they are not at your table, there is something particularly weird going on. They are generally easy to assemble, game winning, and/or replaceable.</Typography>
       <ComboCards cards={[{
         averageRound: 6,
         pickCount: 7,
@@ -123,6 +129,28 @@ export default function CombosInVrd() {
           variant="h6"
         >Replacements:</Typography>
         <Typography>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 3,
+        pickCount: 57,
+        numberOfDrafts: 57,
+        name: 'Tinker',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.png?1562863289',
+      }, {
+        averageRound: 15,
+        pickCount: 43,
+        numberOfDrafts: 54,
+        name: 'Blightsteel Colossus',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/9/7928bb14-7631-4830-a756-26d1ea832ba2.png?1562612395',
+      }]}
+        title="Tinker + Blightsteel Colossus"
+      >
+        <Typography paragraph>Cheats a 11/11 infecting trampler into play.</Typography>
+        <Typography paragraph>With any artifact in play and Blightsteel Colossus <Bold>not</Bold> being in your hand, cast Tinker and put Blightsteel Colossus into play. Attack the next turn to win the game.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Tinker can be replaced with infinite mana which makes this a common pairing with Power Artifact or Auriok Salvagers.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -243,7 +271,7 @@ export default function CombosInVrd() {
         title="Karn, the Great Creator + Mycosynth Lattice"
       >
         <Typography paragraph>Prevents opponent from activating any activated abilities, including mana abilities.</Typography>
-        <Typography>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because [[11]] mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
+        <Typography>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because <ManaCost manaCost="{10}" /> mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 31,
@@ -269,6 +297,91 @@ export default function CombosInVrd() {
         <Typography paragraph>Witherbloom Apprentice can be replaced with Professor Onyx, Ral, Storm Conduit, Witherbloom Pledgemage, Sedgemoor Witch (for infinite creatures instead), Storm-Kiln Artist (for an infinitely-powered attacker with infinite mana), or Silverquill Apprentice (for an infinitely-powered attacker).</Typography>
         <Typography>Chain of Smog can be replaced with Chain of Acid (when taken with Darksteel Citadel).</Typography>
       </ComboCards>
+      <SpacedHeader
+        component="h2"
+        sx={{marginTop: 5}}
+        variant="h3"
+      >{'The Occasionals'}</SpacedHeader>
+      <Typography color="text.secondary"
+        paragraph
+        sx={{marginLeft: '20px'}}
+        variant="subtitle1"
+      >Drafted in 10% or more of VRDs</Typography>
+      <Typography paragraph>These are combos that shouldn’t surprise you to see, but that might raise an eyebrow. They definitely show up commonly enough that they aren’t a terrible decision and in the right decks can be very powerful.</Typography>
+      <ComboCards cards={[{
+        averageRound: 16,
+        pickCount: 17,
+        numberOfDrafts: 54,
+        name: 'Thopter Foundry',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/4/2/42b8d797-b01d-49cf-9818-d84bba17029d.png?1562640917',
+      }, {
+        averageRound: 24,
+        pickCount: 17,
+        numberOfDrafts: 57,
+        name: 'Sword of the Meek',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/9/e9f13705-6ede-4c29-a2b4-a082bf69e9c5.png?1562941962',
+      }]}
+        title="Thopter Foundry + Sword of the Meek"
+      >
+        <Typography paragraph>Generates a large number of tokens and a large amount of life.</Typography>
+        <Typography paragraph>With Thopter Assembly and Sword of the Meek in play, sacrifice Sword of the Meek to the Assembly, which creates a creature that brings the Sword back. Repeat as many times as you like at the end of your opponent’s turn, generating as many creatures and life points as your available mana each turn.</Typography>
+        <Typography paragraph />
+        <Typography
+          color="success.main"
+          variant="h6"
+        >Bonus:</Typography>
+        <Typography>If you have a Time Sieve in play and at least five mana, this also creates infinite turns. With Urza, Lord High Artificer out, this combo accelerates at much faster speed.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 25,
+        pickCount: 10,
+        numberOfDrafts: 57,
+        name: 'Auriok Salvagers',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/9/09c9cd1b-9260-4f98-ac7a-25bb5ae3e06d.png?1562875356',
+      }, {
+        averageRound: 15,
+        pickCount: 41,
+        numberOfDrafts: 57,
+        name: 'Lion’s Eye Diamond',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/3/63bacc32-d6ba-420c-9b49-299c08e5fb39.png?1562719750',
+      }]}
+        title="Auriok Salvagers + Lion’s Eye Diamond"
+      >
+        <Typography paragraph>Generates infinite mana.</Typography>
+        <Typography paragraph>This generates infinite mana of any color by sacrificing the LED (for three) and returning it to the battlefield with Auriok Salvagers (for two). Once infinite <ManaCost manaCost="{W}" /> mana is generated, any other color can be generated as well.</Typography>
+        <Typography paragraph />
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Lion’s Eye Diamond can be replaced with Black Lotus if you’re a very lucky drafter.</Typography>
+      </ComboCards>
     </Container>
   );
+
+
+  // <ComboCards cards={[{
+  //   averageRound: ,
+  //   pickCount: ,
+  //   numberOfDrafts: ,
+  //   name: '',
+  //   imageLink: '',
+  // }, {
+  //   averageRound: ,
+  //   pickCount: ,
+  //   numberOfDrafts: ,
+  //   name: '',
+  //   imageLink: '',
+  // }]}
+  //   title="Auriok Salvagers + Lion’s Eye Diamond"
+  // >
+  //   <Typography paragraph></Typography>
+  //   <Typography paragraph></Typography>
+  //   <Typography paragraph />
+  //   <Typography
+  //     variant="h6"
+  //   >Replacements:</Typography>
+  //   <Typography paragraph></Typography>
+  //   <Typography></Typography>
+  // </ComboCards>
 }
+
