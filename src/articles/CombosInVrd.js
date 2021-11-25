@@ -418,6 +418,33 @@ export default function CombosInVrd() {
         <Typography paragraph>Generates infinite mana.</Typography>
         <Typography>With non-land mana sources that produce at least three mana, cast Isochron Scepter and imprint it with Dramatic Reversal. Activate the Isochron Scepter untapping the mana sources, tap them to produce mana. Repeat ad nauseam.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 29,
+        pickCount: 7,
+        numberOfDrafts: 57,
+        name: 'Worldgorger Dragon',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/9/99783a2b-a95a-457b-82d6-001933aee5ec.png?1562631091',
+      }, {
+        averageRound: 20,
+        pickCount: 36,
+        numberOfDrafts: 57,
+        name: 'Animate Dead',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/f/8fd7861d-925f-4b4c-a4ab-60be6f43d50b.png?1559591550',
+      }]}
+        title="Worldgorger Dragon + Animate Dead"
+      >
+        <Typography paragraph>Generates infinite mana.</Typography>
+        <Typography paragraph>This generates infinite mana of any color that your lands can produce and infinite ETB effects by putting the enchantment into play on the Dragon, which removes all permanents (including lands and the enchantment) which causes the Dragon to die, returning all of those permanents (untapped, thereby generating mana).</Typography>
+        <Typography
+          color="warning.dark"
+          variant="h6"
+        >Caution:</Typography>
+        <Typography paragraph>If Dragon is the only creature in any graveyard and you have no way to remove the Dragon or enchantment at instant speed, this will cause a draw of the game (as happened on camera in VRD 7).</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Animate Dead can be replaced with Necromancy, Dance of the Dead, or any other enchanting reanimation effect.</Typography>
+      </ComboCards>
     </Container>
   );
 
