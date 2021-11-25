@@ -158,6 +158,52 @@ export default function CombosInVrd() {
         <Typography paragraph>Pestermite can be replaced with either of the following: Deceiver Exarch, Bounding Krasis, Combat Celebrant, Port Razer, Battered Golem, Clever Conjurer, Thousand-Year Elixir, Sparring Mummy, Vizier of Tumbling Sands, Hyrax Tower Scout, Restoration Angel (in combination with Kiki-Jiki), Felidar Guardian (in combination with Saheeli Rai or Kiki-Jiki), Spark Double (in combination with Saheeli Rai or Kiki-Jiki), Zealous Conscripts (in combination with Kiki-Jiki), Conspicuous Snoop (with Kiki-Jiki on top of the library) or Skill Borrower (with Kiki-Jiki on top of the library).</Typography>
         <Typography paragraph>Splinter Twin can be replaced with Kiki-Jiki, Mirror Breaker or Saheeli Rai (as described above).</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 25,
+        pickCount: 33,
+        numberOfDrafts: 57,
+        name: 'Helm of Obedience',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/1/b17e9216-b1ed-4101-a04e-2bb139ccfa55.png?1562770147',
+      }, {
+        averageRound: 26,
+        pickCount: 39,
+        numberOfDrafts: 57,
+        name: 'Leyline of the Void',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37dfe8b8-b39e-4e70-9e5b-be42c93b4f70.png?1593272209',
+      }]}
+        title="Helm of Obedience + Leyline of the Void"
+      >
+        <Typography paragraph>Exiles opponent’s entire library.</Typography>
+        <Typography paragraph>With both in play, activate Helm for one mana which exiles each card of your opponent’s library.</Typography>
+        <Typography paragraph>This combo is easily searchable with something like Enlightened Tutor. Despite being quite expensive to assemble, it still is powerful by combining cards that you already get benefit from with a single artifact that allows for an easy win when drawn.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Leyline of the Void can be replaced with Dauthi Voidwalker or Rest in Peace.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 29,
+        pickCount: 9,
+        numberOfDrafts: 57,
+        name: 'Demonic Consultation',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/d/8d727b9b-6114-414d-9172-16b6e1db41cc.png?1562921228',
+      }, {
+        averageRound: 16,
+        pickCount: 9,
+        numberOfDrafts: 14,
+        name: 'Thassa’s Oracle',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.png?1628801828',
+      }]}
+        title="Demonic Consultation + Thassa’s Oracle"
+      >
+        <Typography paragraph>Wins the game.</Typography>
+        <Typography paragraph>With no deck left (usually via casting Demonic Consultation in response to the Thassa’s Oracle trigger), Thassa’s Oracle’s trigger will resolve and wins the game, even if removed because zero cards left in the library is sufficient even with zero devotion to blue.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Demonic Consultation can be replaced with Thought Lash, Leveler, Paradigm Shift, Inverter of Truth, Harness Infinity, Morality Shift, Tainted Pact (with deckbuilding care), or Hermit Druid (with deckbuilding care).</Typography>
+        <Typography paragraph>Thassa’s Oracle can be replaced with Laboratory Maniac or Jace, Wielder of Mysteries.</Typography>
+      </ComboCards>
     </Container>
   );
 }
