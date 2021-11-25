@@ -70,12 +70,37 @@ export default function CombosInVrd() {
       }]}
         title="Time Vault + Tezzeret the Seeker"
       >
-        <Typography paragraph>Generates infinite turns. Tezzeret is all that is needed to start the combo. You activate his -X for 2 and put Time Vault into play. The next turn, you activate his +1 to untap it and then tap it to take another turn. Repeat the process ad nauseam. If you already have Time Vault in play, you can start with the +1.</Typography>
+        <Typography paragraph>Generates infinite turns.</Typography>
+        <Typography paragraph>Tezzeret is all that is needed to start the combo. You activate his -X for 2 and put Time Vault into play. The next turn, you activate his +1 to untap it and then tap it to take another turn. Repeat the process ad nauseam. If you already have Time Vault in play, you can start with the +1.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
         <Typography paragraph>Tezzeret the Seeker can be replaced with Voltaic Key, Galvanic Key, Ral Zarek, Teferi, Who Slows the Sunset, Kiora's Follower, or a handful of other options.</Typography>
         <Typography>A rare addition, but with Crystal Shard or Erratic Portal, all of the single-use “untap” effects from the Splinter Twin combo also can replace the “untap” part of this combo.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 11,
+        pickCount: 51,
+        numberOfDrafts: 57,
+        name: 'Painter’s Servant',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/e/be407a81-b25a-4e5d-845e-be0cc0d18db8.png?1562835450',
+      }, {
+        averageRound: 15,
+        pickCount: 51,
+        numberOfDrafts: 57,
+        name: 'Grindstone',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/4/f4459187-de64-456f-bb66-56dea40d5c3e.png?1562057371',
+      }]}
+        title="Painter’s Servant + Grindstone"
+      >
+        <Typography paragraph>Mills opponent’s entire library.</Typography>
+        <Typography paragraph>With Painter’s Servant (naming any color, but usually “red” for Blue Elemental Blast or “blue” for Red Elemental Blast and Grindstone in play), activate Grindstone targeting your opponent. They will mill two cards, which match color as a result of Painter’s Servant and repeats until they have no cards left in library.</Typography>
+        <Typography paragraph>This combination is helped by being incredibly easy to tutor for, with both pieces being low-cost artifacts. Generally Painter’s Servant is taken earlier, but neither is playable without the other, so depending on how worried you are about your fellow drafters hate-drafting the combo, you can likely float the other piece much later than round 15.</Typography>
+        <Typography
+          color="error.dark"
+          variant="h6"
+        >Caution:</Typography>
+        <Typography paragraph>If the opponent has Emrakul, the Aeon’s Torn, Ulamog, the Infinite Gyre, Kozilek, Butcher of Truth, or Gaea’s Blessing in their deck, this combination will do very little (unless you have a Leyline of the Void or replacement).</Typography>
       </ComboCards>
     </Container>
   );
