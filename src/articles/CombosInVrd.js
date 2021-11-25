@@ -1,4 +1,7 @@
 /* eslint-disable react/jsx-no-literals*/
+import katerberg from './katerberg.jpg';
+import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
 import ManaCost from '../common/mana-cost/ManaCost';
 import React from 'react';
 import Container from '@mui/material/Container';
@@ -7,6 +10,10 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import {styled} from '@mui/system';
 import ComboCards from './ComboCards';
+
+const FullWidthImage = styled('img')({
+  maxWidth: '100%',
+});
 
 const Bold = styled('span')({
   fontWeight: '700',
@@ -790,7 +797,95 @@ export default function CombosInVrd() {
         <Typography paragraph>Knowledge Pool can be replaced with Possibility Storm, Erayo, Soratami Ascendant (once flipped), or Omen Machine (which affects all future cards drawn).</Typography>
         <Typography>Teferi, Mage of Zhalfir can be replaced with Curse of Exhaustion, Teferi, Time Raveler, Lavinia, Azorious Renegade, Drannith Magistrate, Arcane Laboratory (when you are ahead on board), Rule of Law (when you are ahead on board).</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 0,
+        pickCount: 0,
+        numberOfDrafts: 57,
+        name: 'Acererak the Archlich',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/d/dd52d0bd-3abd-401c-9f56-ee911613da3b.png?1627704283',
+      }, {
+        averageRound: 29,
+        pickCount: 3,
+        numberOfDrafts: 57,
+        name: 'Aluren',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/6/268403bc-733d-446e-a7c1-abc957c42bc2.png?1595430482',
+      }]}
+        title="Acererak the Archlich + Aluren"
+      >
+        <Typography paragraph>Deals infinite damage.</Typography>
+        <Typography>With Aluren in play, play Acererak the Archlich, triggering his ability to venture into the “Lost Mines of Phandelver” dungeon, which returns him to your hand. Replay him ad nauseam, going through the “Dark Pool”, draining your opponent’s life.</Typography>
+        <Typography
+          color="warning.dark"
+          variant="h6"
+        >Caution:</Typography>
+        <Typography paragraph>If you are very low on cards in your deck, you may need to find another way to win the game after draining your opponent for most of their life, since you only drain 1 life per card left in your library with this combo.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Aluren can be replaced with Rooftop Storm or Omniscience.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 0,
+        pickCount: 0,
+        numberOfDrafts: 57,
+        name: 'Food Chain',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/8/18a1bb9e-006c-495e-8f99-d451183d2669.png?1562379435',
+      }, {
+        averageRound: 0,
+        pickCount: 0,
+        numberOfDrafts: 57,
+        name: 'Eternal Scourge',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/3/13ce52f5-6d49-4d44-a3d7-925340de8406.png?1576383733',
+      }]}
+        title="Food Chain and Eternal Scourge"
+      >
+        <Typography paragraph>Generates infinite mana.</Typography>
+        <Typography>With Food Chain and Eternal Scourge in play, exile Eternal Scourge with Food Chain. Cast Eternal Scourge from exile. Repeat this process ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Eternal Scourge can be replaced with Misthollow Griffin, Squee, the Immortal, and can have an “extra copy” with Manipulate Fate.</Typography>
+      </ComboCards>
+      <SpacedHeader
+        component="h2"
+        sx={{marginTop: 5}}
+        variant="h3"
+      >{'Core of the Format?'}</SpacedHeader>
+      <Typography paragraph>There are so many combos that show up in VRD that it almost seems like they are the glue holding most decks together, and that a successful draft must include a combo. Some decks, often referred to as “Two Card Monte” decks (whose name originated from The Mana Drain) exist purely as engines designed to play as many combos as possible and hope to get lucky with two pieces of them appearing at the same time!</Typography>
+      <Typography paragraph>The reality is that while one of these combos do usually show up in over half of the decks in an average draft, it is eminently possible to win with a “fair deck”. Aggressive decks such as Burn often do well, as do heavily controlling decks (either with counterspells, planeswalkers, or discard).</Typography>
+      <Typography paragraph>When you draft a combo deck in this format, make sure you have more to it than just the combo, or you’ll be quickly ended with interaction, and end up losing to a disappointing 2/1 that will eventually finish you off.</Typography>
+      <Typography
+        color="text.secondary"
+        component="h2"
+        sx={{marginTop: '60px'}}
+        variant="h4"
+      >About the author:</Typography>
+      <Divider sx={{margin: '10px 0 30px'}}/>
+      <Grid container
+        sx={{marginBottom: '40px'}}
+      >
+        <Grid item
+          sm={2}
+          xs={3}
+        >
+          <FullWidthImage src={katerberg}
+            sx={{borderRadius: '10px'}}
+          />
+        </Grid>
+        <Grid alignItems="center"
+          container
+          flexGrow={1}
+          item
+          sm={10}
+          xs={9}
+        >
+        <Typography
+          color="text.secondary"
+          sx={{verticalAlign: 'middle', marginLeft: '20px'}}
+          variant="subtitle2"
+        >Mark Katerberg is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and a deeply invested combo player. He fell in love with VRD from the days of Shotgun Lotus, and knew that the format needed more live matches to be streamed. His favorite cards are Doomsday, Dark Ritual, Mystical Teachings, and Serra Angel.</Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
-
