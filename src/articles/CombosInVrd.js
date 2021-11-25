@@ -124,6 +124,40 @@ export default function CombosInVrd() {
         >Replacements:</Typography>
         <Typography paragraph>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
       </ComboCards>
+      <SpacedHeader
+        component="h2"
+        sx={{marginTop: 5}}
+        variant="h3"
+      >{'The Regulars'}</SpacedHeader>
+      <Typography color="text.secondary"
+        paragraph
+        sx={{marginLeft: '20px'}}
+        variant="subtitle1"
+      >Drafted in 40% or more of VRDs</Typography>
+      <Typography paragraph>These combos are very common to see at a VRD. While they won’t always show up, they should be in your toolbox and if you’re in the colors late, they’re a great option to shore up a deck that needs a finisher.</Typography>
+      <ComboCards cards={[{
+        averageRound: 28,
+        pickCount: 35,
+        numberOfDrafts: 57,
+        name: 'Pestermite',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/2/f252ae53-443c-4a27-b8f0-639a9a2b8598.png?1562374183',
+      }, {
+        averageRound: 23,
+        pickCount: 33,
+        numberOfDrafts: 57,
+        name: 'Splinter Twin',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/f/2f8f22fb-7291-4517-9b15-e98501f2856b.png?1562702491',
+      }]}
+        title="Pestermite + Splinter Twin"
+      >
+        <Typography paragraph>Generates infinite attackers.</Typography>
+        <Typography paragraph>This is more of a “family” of combos. By putting Splinter Twin on Pestermite (without summoning sickness), you can tap the pestermite to create a hasty version of itself untapping the original. This can be repeated ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Pestermite can be replaced with either of the following: Deceiver Exarch, Bounding Krasis, Combat Celebrant, Port Razer, Battered Golem, Clever Conjurer, Thousand-Year Elixir, Sparring Mummy, Vizier of Tumbling Sands, Hyrax Tower Scout, Restoration Angel (in combination with Kiki-Jiki), Felidar Guardian (in combination with Saheeli Rai or Kiki-Jiki), Spark Double (in combination with Saheeli Rai or Kiki-Jiki), Zealous Conscripts (in combination with Kiki-Jiki), Conspicuous Snoop (with Kiki-Jiki on top of the library) or Skill Borrower (with Kiki-Jiki on top of the library).</Typography>
+        <Typography paragraph>Splinter Twin can be replaced with Kiki-Jiki, Mirror Breaker or Saheeli Rai (as described above).</Typography>
+      </ComboCards>
     </Container>
   );
 }
