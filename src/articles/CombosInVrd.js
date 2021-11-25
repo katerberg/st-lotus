@@ -102,6 +102,28 @@ export default function CombosInVrd() {
         >Caution:</Typography>
         <Typography paragraph>If the opponent has Emrakul, the Aeon’s Torn, Ulamog, the Infinite Gyre, Kozilek, Butcher of Truth, or Gaea’s Blessing in their deck, this combination will do very little (unless you have a Leyline of the Void or replacement).</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 14,
+        pickCount: 43,
+        numberOfDrafts: 57,
+        name: 'Dark Depths',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/2/92409c3a-fb1a-4205-9fe1-0f5affc7b21d.png?1593275643',
+      }, {
+        averageRound: 20,
+        pickCount: 37,
+        numberOfDrafts: 53,
+        name: 'Thespian’s Stage',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/6/b6f27909-e5cd-44c0-91c4-21624f692fd9.png?1561843043',
+      }]}
+        title="Dark Depths + Thespian’s Stage"
+      >
+        <Typography paragraph>Creates a 20/20 indestructible flyer at instant speed.</Typography>
+        <Typography paragraph>With both lands in play, activate Thespian’s Stage targeting Dark Depths. This makes two copies of the legendary land and you choose to keep the one without counters on it. The Stage then triggers and you can sacrifice it to create Marit Lage.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
+      </ComboCards>
     </Container>
   );
 }
