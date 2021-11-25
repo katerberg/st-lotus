@@ -33,8 +33,8 @@ export default function CombosInVrd() {
         variant="subtitle1"
       >{'Written by: Mark Katerberg on November 13, 2021'}</Typography>
       <Typography paragraph>Vintage Rotisserie Draft is well known as a format where combo decks can run rampant. While aggressive and controlling strategies often rely on redundancy (either of threats or of answers), combination decks generally rely on a few powerful pieces, with replaceable filtering pieces that aid in finding the crucial parts that are needed to win the game.</Typography>
-      <Typography paragraph>Over the past decade that this format has been played extensively, the definition of a “playable combo” has varied wildly, with some combos falling far out of favor (looking at you <Link href="https://scryfall.com/card/uds/31/donate">Donate</Link>/Illusions of Grandeur), some combos coming into the format (Tainted Pact/Thassa’s Oracle), and some lasting for the entire time (Painter’s Servant/Grindstone).</Typography>
-      <Typography paragraph>The goal of this article is not to extensively document every combo that could be played. It opted to exclude any three card combos, such as the powerful Brain Freeze + Underworld Breech + Lion’s Eye Diamond synergies, even though those can be more powerful by far than some on the list today. Instead, it tries to capture the most common options, and give newer players an understanding of the options they have when they sit under the tremendous pressure of the question: “Have you made your pick yet?”</Typography>
+      <Typography paragraph>Over the past decade that this format has been played extensively, the definition of a “playable combo” has varied wildly, with some combos falling far out of favor (looking at you <Link href="https://scryfall.com/card/uds/31/donate">Donate</Link>/<Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link>), some combos coming into the format (<Link href="https://scryfall.com/card/ice/121/demonic-consultation">Demonic Consultation</Link>/<Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link>), and some lasting for the entire time (<Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link>/<Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link>).</Typography>
+      <Typography paragraph>The goal of this article is not to extensively document every combo that could be played. It opted to exclude any three card combos, such as the powerful <Link href="https://scryfall.com/card/scg/29/brain-freeze">Brain Freeze</Link> + <Link href="https://scryfall.com/card/thb/161/underworld-breach">Underworld Breach</Link> + <Link href="https://scryfall.com/card/mir/307/lions-eye-diamond">Lion’s Eye Diamond</Link> synergies, even though those can be more powerful by far than some on the list today. Instead, it tries to capture the most common options, and give newer players an understanding of the options they have when they sit under the tremendous pressure of the question: “Have you made your pick yet?”</Typography>
       <SpacedHeader
         component="h2"
         sx={{marginTop: 5}}
@@ -65,8 +65,8 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Hullbreacher can be replaced with any of the following: Leovold, Emissary of Trest, Notion Thief, or Narset, Parter of Veils.</Typography>
-        <Typography>Timetwister can be replaced with any of the following: Wheel of Fortune, Echo of Eons, Time Spiral, Windfall, Whirlpool Warrior, Teferi’s Puzzle Box, or (to a lesser effect) Memory Jar.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/cmr/74/hullbreacher">Hullbreacher</Link> can be replaced with any of the following: <Link href="https://scryfall.com/card/cn2/77/leovold-emissary-of-trest">Leovold, Emissary of Trest</Link>, <Link href="https://scryfall.com/card/dgm/88/notion-thief">Notion Thief</Link>, or <Link href="https://scryfall.com/card/war/61/narset-parter-of-veils">Narset, Parter of Veils</Link>.</Typography>
+        <Typography><Link href="https://scryfall.com/card/lea/84/timetwister">Timetwister</Link> can be replaced with any of the following: <Link href="https://scryfall.com/card/lea/183/wheel-of-fortune">Wheel of Fortune</Link>, <Link href="https://scryfall.com/card/mh1/46/echo-of-eons">Echo of Eons</Link>, <Link href="https://scryfall.com/card/usg/103/time-spiral">Time Spiral</Link>, <Link href="https://scryfall.com/card/usg/111/windfall">Windfall</Link>, <Link href="https://scryfall.com/card/apc/36/whirlpool-warrior">Whirlpool Warrior</Link>, <Link href="https://scryfall.com/card/vis/156/teferis-puzzle-box">Teferi’s Puzzle Box</Link>, or (to a lesser effect) <Link href="https://scryfall.com/card/ulg/129/memory-jar">Memory Jar</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 2,
@@ -84,12 +84,12 @@ export default function CombosInVrd() {
         title="Time Vault + Tezzeret the Seeker"
       >
         <Typography paragraph>Generates infinite turns.</Typography>
-        <Typography paragraph>Tezzeret is all that is needed to start the combo. You activate his -X for 2 and put Time Vault into play. The next turn, you activate his +1 to untap it and then tap it to take another turn. Repeat the process ad nauseam. If you already have Time Vault in play, you can start with the +1.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ala/60/tezzeret-the-seeker">Tezzeret</Link> is all that is needed to start the combo. You activate his -X for 2 and put <Link href="https://scryfall.com/card/lea/274/time-vault">Time Vault</Link> into play. The next turn, you activate his +1 to untap it and then tap it to take another turn. Repeat the process ad nauseam. If you already have <Link href="https://scryfall.com/card/lea/274/time-vault">Time Vault</Link> in play, you can start with the +1.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Tezzeret the Seeker can be replaced with Voltaic Key, Galvanic Key, Ral Zarek, Teferi, Who Slows the Sunset, Kiora's Follower, or a handful of other options.</Typography>
-        <Typography>A rare addition, but with Crystal Shard or Erratic Portal, all of the single-use “untap” effects from the Splinter Twin combo also can replace the “untap” part of this combo.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ala/60/tezzeret-the-seeker">Tezzeret the Seeker</Link> can be replaced with <Link href="https://scryfall.com/card/m20/230/manifold-key">Manifold Key</Link>, <Link href="https://scryfall.com/card/usg/314/voltaic-key">Voltaic Key</Link>, <Link href="https://scryfall.com/card/mrd/173/galvanic-key">Galvanic Key</Link>, <Link href="https://scryfall.com/card/dgm/94/ral-zarek">Ral Zarek</Link>, <Link href="https://scryfall.com/card/mid/245/teferi-who-slows-the-sunset">Teferi, Who Slows the Sunset</Link>, <Link href="https://scryfall.com/card/bng/150/kioras-follower">Kiora's Follower</Link>, or a handful of other options.</Typography>
+        <Typography>A rare addition, but with <Link href="https://scryfall.com/card/mrd/159/crystal-shard">Crystal Shard</Link> or <Link href="https://scryfall.com/card/exo/132/erratic-portal">Erratic Portal</Link>, all of the single-use “untap” effects from the <Link href="https://scryfall.com/card/roe/165/splinter-twin">Splinter Twin</Link> combo also can replace the “untap” part of this combo.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 11,
@@ -107,13 +107,13 @@ export default function CombosInVrd() {
         title="Painter’s Servant + Grindstone"
       >
         <Typography paragraph>Mills opponent’s entire library.</Typography>
-        <Typography paragraph>With Painter’s Servant (naming any color, but usually “red” for Blue Elemental Blast or “blue” for Red Elemental Blast and Grindstone in play), activate Grindstone targeting your opponent. They will mill two cards, which match color as a result of Painter’s Servant and repeats until they have no cards left in library.</Typography>
-        <Typography paragraph>This combination is helped by being incredibly easy to tutor for, with both pieces being low-cost artifacts. Generally Painter’s Servant is taken earlier, but neither is playable without the other, so depending on how worried you are about your fellow drafters hate-drafting the combo, you can likely float the other piece much later than round 15.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> (naming any color, but usually “red” for <Link href="https://scryfall.com/card/lea/49/blue-elemental-blast">Blue Elemental Blast</Link> or “blue” for <Link href="https://scryfall.com/card/lea/169/red-elemental-blast">Red Elemental Blast</Link> and <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> in play), activate <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> targeting your opponent. They will mill two cards, which match color as a result of <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> and repeats until they have no cards left in library.</Typography>
+        <Typography paragraph>This combination is helped by being incredibly easy to tutor for, with both pieces being low-cost artifacts. Generally <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> is taken earlier, but neither is playable without the other, so depending on how worried you are about your fellow drafters hate-drafting the combo, you can likely float the other piece much later than round 15.</Typography>
         <Typography
           color="error.dark"
           variant="h6"
         >Caution:</Typography>
-        <Typography>If the opponent has Emrakul, the Aeon’s Torn, Ulamog, the Infinite Gyre, Kozilek, Butcher of Truth, or Gaea’s Blessing in their deck, this combination will do very little (unless you have a Leyline of the Void or replacement).</Typography>
+        <Typography>If the opponent has <Link href="https://scryfall.com/card/roe/4/emrakul-the-aeons-torn">Emrakul, the Aeon’s Torn</Link>, <Link href="https://scryfall.com/card/roe/12/ulamog-the-infinite-gyre">Ulamog, the Infinite Gyre</Link>, <Link href="https://scryfall.com/card/roe/6/kozilek-butcher-of-truth">Kozilek, Butcher of Truth</Link>, or <Link href="https://scryfall.com/card/wth/129/gaeas-blessing">Gaea’s Blessing</Link> in their deck, this combination will do very little (unless you have a <Link href="https://scryfall.com/card/gpt/52/leyline-of-the-void">Leyline of the Void</Link> or replacement).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 14,
@@ -131,11 +131,11 @@ export default function CombosInVrd() {
         title="Dark Depths + Thespian’s Stage"
       >
         <Typography paragraph>Creates a 20/20 indestructible flyer at instant speed.</Typography>
-        <Typography paragraph>With both lands in play, activate Thespian’s Stage targeting Dark Depths. This makes two copies of the legendary land and you choose to keep the one without counters on it. The Stage then triggers and you can sacrifice it to create Marit Lage.</Typography>
+        <Typography paragraph>With both lands in play, activate <Link href="https://scryfall.com/card/gtc/248/thespians-stage">Thespian’s Stage</Link> targeting <Link href="https://scryfall.com/card/csp/145/dark-depths">Dark Depths</Link>. This makes two copies of the legendary land and you choose to keep the one without counters on it. The <Link href="https://scryfall.com/card/gtc/248/thespians-stage">Stage</Link> then triggers and you can sacrifice it to create Marit Lage.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
+        <Typography><Link href="https://scryfall.com/card/gtc/248/thespians-stage">Thespian’s Stage</Link> can be replaced with <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>, <Link href="https://scryfall.com/card/zen/114/vampire-hexmage">Vampire Hexmage</Link>, or <Link href="https://scryfall.com/card/dst/37/aether-snap">Aether Snap</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 3,
@@ -153,11 +153,11 @@ export default function CombosInVrd() {
         title="Tinker + Blightsteel Colossus"
       >
         <Typography paragraph>Cheats a 11/11 infecting trampler into play.</Typography>
-        <Typography paragraph>With any artifact in play and Blightsteel Colossus <Bold>not</Bold> being in your hand, cast Tinker and put Blightsteel Colossus into play. Attack the next turn to win the game.</Typography>
+        <Typography paragraph>With any artifact in play and <Link href="https://scryfall.com/card/mbs/99/blightsteel-colossus">Blightsteel Colossus</Link> <Bold>not</Bold> being in your hand, cast <Link href="https://scryfall.com/card/ulg/45/tinker">Tinker</Link> and put <Link href="https://scryfall.com/card/mbs/99/blightsteel-colossus">Blightsteel Colossus</Link> into play. Attack the next turn to win the game.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Tinker can be replaced with infinite mana which makes this a common pairing with Power Artifact or Auriok Salvagers.</Typography>
+        <Typography><Link href="https://scryfall.com/card/ulg/45/tinker">Tinker</Link> can be replaced with infinite mana which makes this a common pairing with <Link href="https://scryfall.com/card/atq/11/power-artifact">Power Artifact</Link> or <Link href="https://scryfall.com/card/5dn/4/auriok-salvagers">Auriok Salvagers</Link>.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -186,12 +186,12 @@ export default function CombosInVrd() {
         title="Pestermite + Splinter Twin"
       >
         <Typography paragraph>Generates infinite attackers.</Typography>
-        <Typography paragraph>This is more of a “family” of combos. By putting Splinter Twin on Pestermite (without summoning sickness), you can tap the pestermite to create a hasty version of itself untapping the original. This can be repeated ad nauseam.</Typography>
+        <Typography paragraph>This is more of a “family” of combos. By putting <Link href="https://scryfall.com/card/roe/165/splinter-twin">Splinter Twin</Link> on <Link href="https://scryfall.com/card/lrw/78/pestermite">Pestermite</Link> (without summoning sickness), you can tap the <Link href="https://scryfall.com/card/lrw/78/pestermite">Pestermite</Link> to create a hasty version of itself untapping the original. This can be repeated ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Pestermite can be replaced with either of the following: Deceiver Exarch, Bounding Krasis, Combat Celebrant, Port Razer, Battered Golem, Clever Conjurer, Thousand-Year Elixir, Sparring Mummy, Vizier of Tumbling Sands, Hyrax Tower Scout, Restoration Angel (in combination with Kiki-Jiki), Felidar Guardian (in combination with Saheeli Rai or Kiki-Jiki), Spark Double (in combination with Saheeli Rai or Kiki-Jiki), Zealous Conscripts (in combination with Kiki-Jiki), Conspicuous Snoop (with Kiki-Jiki on top of the library) or Skill Borrower (with Kiki-Jiki on top of the library).</Typography>
-        <Typography>Splinter Twin can be replaced with Kiki-Jiki, Mirror Breaker or Saheeli Rai (as described above).</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/lrw/78/pestermite">Pestermite</Link> can be replaced with either of the following: <Link href="https://scryfall.com/card/nph/33/deceiver-exarch">Deceiver Exarch</Link>, <Link href="https://scryfall.com/card/ori/212/bounding-krasis">Bounding Krasis</Link>, <Link href="https://scryfall.com/card/akh/125/combat-celebrant">Combat Celebrant</Link>, <Link href="https://scryfall.com/card/cmr/193/port-razer">Port Razer</Link>, <Link href="https://scryfall.com/card/5dn/106/battered-golem">Battered Golem</Link>, <Link href="https://scryfall.com/card/afr/51/clever-conjurer">Clever Conjurer</Link>, <Link href="https://scryfall.com/card/lrw/263/thousand-year-elixir">Thousand-Year Elixir</Link>, <Link href="https://scryfall.com/card/akh/29/sparring-mummy">Sparring Mummy</Link>, <Link href="https://scryfall.com/card/akh/75/vizier-of-tumbling-sands">Vizier of Tumbling Sands</Link>, <Link href="https://scryfall.com/card/thb/173/hyrax-tower-scout">Hyrax Tower Scout</Link>, <Link href="https://scryfall.com/card/avr/32/restoration-angel">Restoration Angel</Link> (in combination with <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link>), <Link href="https://scryfall.com/card/aer/19/felidar-guardian">Felidar Guardian</Link> (in combination with <Link href="https://scryfall.com/card/kld/186/saheeli-rai">Saheeli Rai</Link> or <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link>), <Link href="https://scryfall.com/card/war/68/spark-double">Spark Double</Link> (in combination with <Link href="https://scryfall.com/card/kld/186/saheeli-rai">Saheeli Rai</Link> or <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link>), <Link href="https://scryfall.com/card/avr/166/zealous-conscripts">Zealous Conscripts</Link> (in combination with <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link>), <Link href="https://scryfall.com/card/m21/139/conspicuous-snoop">Conspicuous Snoop</Link> (with <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link> on top of the library) or <Link href="https://scryfall.com/card/ala/56/skill-borrower">Skill Borrower</Link> (with <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki</Link> on top of the library).</Typography>
+        <Typography><Link href="https://scryfall.com/card/roe/165/splinter-twin">Splinter Twin</Link> can be replaced with <Link href="https://scryfall.com/card/chk/175/kiki-jiki-mirror-breaker">Kiki-Jiki, Mirror Breaker</Link> or <Link href="https://scryfall.com/card/kld/186/saheeli-rai">Saheeli Rai</Link> (as described above).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 25,
@@ -209,12 +209,12 @@ export default function CombosInVrd() {
         title="Helm of Obedience + Leyline of the Void"
       >
         <Typography paragraph>Exiles opponent’s entire library.</Typography>
-        <Typography paragraph>With both in play, activate Helm for one mana which exiles each card of your opponent’s library.</Typography>
-        <Typography paragraph>This combo is easily searchable with something like Enlightened Tutor. Despite being quite expensive to assemble, it still is powerful by combining cards that you already get benefit from with a single artifact that allows for an easy win when drawn.</Typography>
+        <Typography paragraph>With both in play, activate <Link href="https://scryfall.com/card/all/121/helm-of-obedience">Helm</Link> for one mana which exiles each card of your opponent’s library.</Typography>
+        <Typography paragraph>This combo is easily searchable with something like <Link href="https://scryfall.com/card/mir/14/enlightened-tutor">Enlightened Tutor</Link>. Despite being quite expensive to assemble, it still is powerful by combining cards that you already get benefit from with a single artifact that allows for an easy win when drawn.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Leyline of the Void can be replaced with Dauthi Voidwalker or Rest in Peace.</Typography>
+        <Typography><Link href="https://scryfall.com/card/gpt/52/leyline-of-the-void">Leyline of the Void</Link> can be replaced with <Link href="https://scryfall.com/card/mh2/81/dauthi-voidwalker">Dauthi Voidwalker</Link> or <Link href="https://scryfall.com/card/rtr/18/rest-in-peace">Rest in Peace</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 29,
@@ -232,12 +232,12 @@ export default function CombosInVrd() {
         title="Demonic Consultation + Thassa’s Oracle"
       >
         <Typography paragraph>Wins the game.</Typography>
-        <Typography paragraph>With no deck left (usually via casting Demonic Consultation in response to the Thassa’s Oracle trigger), Thassa’s Oracle’s trigger will resolve and wins the game, even if removed because zero cards left in the library is sufficient even with zero devotion to blue.</Typography>
+        <Typography paragraph>With no deck left (usually via casting <Link href="https://scryfall.com/card/ice/121/demonic-consultation">Demonic Consultation</Link> in response to the <Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link> trigger), <Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link>’s trigger will resolve and wins the game, even if removed because zero cards left in the library is sufficient even with zero devotion to blue.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Demonic Consultation can be replaced with Thought Lash, Leveler, Paradigm Shift, Inverter of Truth, Harness Infinity, Morality Shift, Tainted Pact (with deckbuilding care), or Hermit Druid (with deckbuilding care).</Typography>
-        <Typography>Thassa’s Oracle can be replaced with Laboratory Maniac or Jace, Wielder of Mysteries.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ice/121/demonic-consultation">Demonic Consultation</Link> can be replaced with <Link href="https://scryfall.com/card/all/39/thought-lash">Thought Lash</Link>, <Link href="https://scryfall.com/card/mrd/195/leveler">Leveler</Link>, <Link href="https://scryfall.com/card/wth/46/paradigm-shift">Paradigm Shift</Link>, <Link href="https://scryfall.com/card/ogw/72/inverter-of-truth">Inverter of Truth</Link>, <Link href="https://scryfall.com/card/stx/191/harness-infinity">Harness Infinity</Link>, <Link href="https://scryfall.com/card/jud/70/morality-shift">Morality Shift</Link>, <Link href="https://scryfall.com/card/ody/164/tainted-pact">Tainted Pact</Link> (with deckbuilding care), or <Link href="https://scryfall.com/card/sth/108/hermit-druid">Hermit Druid</Link> (with deckbuilding care).</Typography>
+        <Typography><Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link> can be replaced with <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link> or <Link href="https://scryfall.com/card/war/54/jace-wielder-of-mysteries">Jace, Wielder of Mysteries</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 26,
@@ -255,12 +255,12 @@ export default function CombosInVrd() {
         title="Academy Ruins + Mindslaver"
       >
         <Typography paragraph>Takes infinite turns.</Typography>
-        <Typography paragraph>With Academy Ruins and many lands in play, cast and activate Mindslaver. Activate Academy Ruins to put Mindslaver on top of your library. Repeat ad nauseam.</Typography>
-        <Typography paragraph>This combo is obviously incredibly mana intensive and hard to get working. It has largely been a suplement to a Goblin Welder deck that gets minor benefit from Mindslaver ahead of time, eventually ending in this combo after disrupting the opponent with several mindslavers earlier.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/tsp/269/academy-ruins">Academy Ruins</Link> and many lands in play, cast and activate <Link href="https://scryfall.com/card/mrd/206/mindslaver">Mindslaver</Link>. Activate <Link href="https://scryfall.com/card/tsp/269/academy-ruins">Academy Ruins</Link> to put <Link href="https://scryfall.com/card/mrd/206/mindslaver">Mindslaver</Link> on top of your library. Repeat ad nauseam.</Typography>
+        <Typography paragraph>This combo is obviously incredibly mana intensive and hard to get working. It has largely been a suplement to a <Link href="https://scryfall.com/card/ulg/80/goblin-welder">Goblin Welder</Link> deck that gets minor benefit from <Link href="https://scryfall.com/card/mrd/206/mindslaver">Mindslaver</Link> ahead of time, eventually ending in this combo after disrupting the opponent with several <Link href="https://scryfall.com/card/mrd/206/mindslaver">Mindslavers</Link> earlier.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Academy Ruins can be replaced with Emry, Lurker of the Loch or Trading Post.</Typography>
+        <Typography><Link href="https://scryfall.com/card/tsp/269/academy-ruins">Academy Ruins</Link> can be replaced with <Link href="https://scryfall.com/card/eld/43/emry-lurker-of-the-loch">Emry, Lurker of the Loch</Link> or <Link href="https://scryfall.com/card/m13/220/trading-post">Trading Post</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 41,
@@ -278,7 +278,7 @@ export default function CombosInVrd() {
         title="Karn, the Great Creator + Mycosynth Lattice"
       >
         <Typography paragraph>Prevents opponent from activating any activated abilities, including mana abilities.</Typography>
-        <Typography>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because <ManaCost manaCost="{10}" /> mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
+        <Typography>With <Link href="https://scryfall.com/card/war/1/karn-the-great-creator">Karn, the Great Creator</Link> in play, activate <Link href="https://scryfall.com/card/war/1/karn-the-great-creator">Karn’s</Link> minus ability to retrieve <Link href="https://scryfall.com/card/dst/130/mycosynth-lattice">Mycosynth Lattice</Link> from your sideboard and cast it (usually on a later turn because <ManaCost manaCost="{10}" /> mana is a lot). <Link href="https://scryfall.com/card/war/1/karn-the-great-creator">Karn’s</Link> static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 31,
@@ -296,13 +296,13 @@ export default function CombosInVrd() {
         title="Chain of Smog + Witherbloom Apprentice"
       >
         <Typography paragraph>Makes the opponent lose infinite life.</Typography>
-        <Typography paragraph>With Witherbloom Apprentice in play, cast Chain of Smog, targeting yourself and triggering Witherbloom Apprentice. When it resolves, choose to copy it, triggering it again. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/stx/247/witherbloom-apprentice">Witherbloom Apprentice</Link> in play, cast <Link href="https://scryfall.com/card/ons/132/chain-of-smog">Chain of Smog</Link>, targeting yourself and triggering <Link href="https://scryfall.com/card/stx/247/witherbloom-apprentice">Witherbloom Apprentice</Link>. When it resolves, choose to copy it, triggering it again. Repeat ad nauseam.</Typography>
         <Typography paragraph />
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Witherbloom Apprentice can be replaced with Professor Onyx, Ral, Storm Conduit, Witherbloom Pledgemage, Sedgemoor Witch (for infinite creatures instead), Storm-Kiln Artist (for an infinitely-powered attacker with infinite mana), or Silverquill Apprentice (for an infinitely-powered attacker).</Typography>
-        <Typography>Chain of Smog can be replaced with Chain of Acid (when taken with Darksteel Citadel).</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/stx/247/witherbloom-apprentice">Witherbloom Apprentice</Link> can be replaced with <Link href="https://scryfall.com/card/stx/83/professor-onyx">Professor Onyx</Link>, <Link href="https://scryfall.com/card/war/211/ral-storm-conduit">Ral, Storm Conduit</Link>, <Link href="https://scryfall.com/card/stx/249/witherbloom-pledgemage">Witherbloom Pledgemage</Link>, <Link href="https://scryfall.com/card/stx/86/sedgemoor-witch">Sedgemoor Witch</Link> (for infinite creatures instead), <Link href="https://scryfall.com/card/stx/115/storm-kiln-artist">Storm-Kiln Artist</Link> (for an infinitely-powered attacker with infinite mana), or <Link href="https://scryfall.com/card/stx/231/silverquill-apprentice">Silverquill Apprentice</Link> (for an infinitely-powered attacker).</Typography>
+        <Typography><Link href="https://scryfall.com/card/ons/132/chain-of-smog">Chain of Smog</Link> can be replaced with <Link href="https://scryfall.com/card/ons/252/chain-of-acid">Chain of Acid</Link> (when taken with <Link href="https://scryfall.com/card/dst/164/darksteel-citadel">Darksteel Citadel</Link>).</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -331,13 +331,13 @@ export default function CombosInVrd() {
         title="Thopter Foundry + Sword of the Meek"
       >
         <Typography paragraph>Generates a large number of tokens and a large amount of life.</Typography>
-        <Typography paragraph>With Thopter Assembly and Sword of the Meek in play, sacrifice Sword of the Meek to the Assembly, which creates a creature that brings the Sword back. Repeat as many times as you like at the end of your opponent’s turn, generating as many creatures and life points as your available mana each turn.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/arb/133/thopter-foundry">Thopter Foundry</Link> and <Link href="https://scryfall.com/card/fut/165/sword-of-the-meek">Sword of the Meek</Link> in play, sacrifice <Link href="https://scryfall.com/card/fut/165/sword-of-the-meek">Sword of the Meek</Link> to the <Link href="https://scryfall.com/card/arb/133/thopter-foundry">Foundry</Link>, which creates a creature that brings the <Link href="https://scryfall.com/card/fut/165/sword-of-the-meek">Sword</Link> back. Repeat as many times as you like at the end of your opponent’s turn, generating as many creatures and life points as your available mana each turn.</Typography>
         <Typography paragraph />
         <Typography
           color="success.main"
           variant="h6"
         >Bonus:</Typography>
-        <Typography>If you have a Time Sieve in play and at least five mana, this also creates infinite turns. With Urza, Lord High Artificer out, this combo accelerates at much faster speed.</Typography>
+        <Typography>If you have a <Link href="https://scryfall.com/card/arb/31/time-sieve">Time Sieve</Link> in play and at least five mana, this also creates infinite turns. With <Link href="https://scryfall.com/card/mh1/75/urza-lord-high-artificer">Urza, Lord High Artificer</Link> out, this combo accelerates at much faster speed.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 25,
@@ -355,12 +355,12 @@ export default function CombosInVrd() {
         title="Auriok Salvagers + Lion’s Eye Diamond"
       >
         <Typography paragraph>Generates infinite mana.</Typography>
-        <Typography paragraph>This generates infinite mana of any color by sacrificing the LED (for three) and returning it to the battlefield with Auriok Salvagers (for two). Once infinite <ManaCost manaCost="{W}" /> mana is generated, any other color can be generated as well.</Typography>
+        <Typography paragraph>This generates infinite mana of any color by sacrificing the <Link href="https://scryfall.com/card/mir/307/lions-eye-diamond">LED</Link> (for three) and returning it to the battlefield with <Link href="https://scryfall.com/card/5dn/4/auriok-salvagers">Auriok Salvagers</Link> (for two). Once infinite <ManaCost manaCost="{W}" /> mana is generated, any other color can be generated as well.</Typography>
         <Typography paragraph />
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Lion’s Eye Diamond can be replaced with Black Lotus if you’re a very lucky drafter.</Typography>
+        <Typography><Link href="https://scryfall.com/card/mir/307/lions-eye-diamond">Lion’s Eye Diamond</Link> can be replaced with <Link href="https://scryfall.com/card/lea/232/black-lotus">Black Lotus</Link> if you’re a very lucky drafter.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 20,
@@ -378,11 +378,11 @@ export default function CombosInVrd() {
         title="Ivy Lane Denizen + Scurry Oak"
       >
         <Typography paragraph>Generates infinite tokens and an infinitely large creature.</Typography>
-        <Typography paragraph>With Ivy Lane Denizen in play, play Scurry Oak. It triggers Ivy Lane Denizen, targeting Scurry Oak. This triggers Scurry Oak, creating a creature re-triggering Ivy Lane Denizen. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/gtc/125/ivy-lane-denizen">Ivy Lane Denizen</Link> in play, play <Link href="https://scryfall.com/card/mh2/172/scurry-oak">Scurry Oak</Link>. It triggers <Link href="https://scryfall.com/card/gtc/125/ivy-lane-denizen">Ivy Lane Denizen</Link>, targeting <Link href="https://scryfall.com/card/mh2/172/scurry-oak">Scurry Oak</Link>. This triggers <Link href="https://scryfall.com/card/mh2/172/scurry-oak">Scurry Oak</Link>, creating a creature re-triggering <Link href="https://scryfall.com/card/gtc/125/ivy-lane-denizen">Ivy Lane Denizen</Link>. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Scurry Oak can be replaced with Herd Baloth.</Typography>
+        <Typography><Link href="https://scryfall.com/card/mh2/172/scurry-oak">Scurry Oak</Link> can be replaced with <Link href="https://scryfall.com/card/mh2/165/herd-baloth">Herd Baloth</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 25,
@@ -400,12 +400,12 @@ export default function CombosInVrd() {
         title="Power Artifact + Grim Monolith"
       >
         <Typography paragraph>This generates infinite <ManaCost manaCost="{C}"/> mana.</Typography>
-        <Typography paragraph>With both in play, tap Grim Monolith for <ManaCost manaCost="{3}"/>. Activate Power Artifact's ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With both in play, tap <Link href="https://scryfall.com/card/ulg/126/grim-monolith">Grim Monolith</Link> for <ManaCost manaCost="{3}"/>. Activate <Link href="https://scryfall.com/card/atq/11/power-artifact">Power Artifact</Link>'s ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Grim Monolith can be replaced with Basalt Monolith, but this does reduce the efficacy of some tutors, like Muddle the Mixture.</Typography>
-        <Typography>Power Artifact can be replaced with Kinnan, Bonder Prodigy, Nyxbloom Ancient, Mana Reflection, Zirda, the Dawnwaker, or Forsaken Monument (with Basalt Monolith).</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ulg/126/grim-monolith">Grim Monolith</Link> can be replaced with <Link href="https://scryfall.com/card/lea/231/basalt-monolith">Basalt Monolith</Link>, but this does reduce the efficacy of some tutors, like <Link href="https://scryfall.com/card/rav/60/muddle-the-mixture">Muddle the Mixture</Link>.</Typography>
+        <Typography><Link href="https://scryfall.com/card/atq/11/power-artifact">Power Artifact</Link> can be replaced with <Link href="https://scryfall.com/card/iko/192/kinnan-bonder-prodigy">Kinnan, Bonder Prodigy</Link>, <Link href="https://scryfall.com/card/thb/190/nyxbloom-ancient">Nyxbloom Ancient</Link>, <Link href="https://scryfall.com/card/shm/122/mana-reflection">Mana Reflection</Link>, <Link href="https://scryfall.com/card/iko/233/zirda-the-dawnwaker">Zirda, the Dawnwaker</Link>, or <Link href="https://scryfall.com/card/znr/244/forsaken-monument">Forsaken Monument</Link> (with <Link href="https://scryfall.com/card/lea/231/basalt-monolith">Basalt Monolith</Link>).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 23,
@@ -423,7 +423,7 @@ export default function CombosInVrd() {
         title="Isochron Scepter + Dramatic Reversal"
       >
         <Typography paragraph>Generates infinite mana.</Typography>
-        <Typography>With non-land mana sources that produce at least three mana, cast Isochron Scepter and imprint it with Dramatic Reversal. Activate the Isochron Scepter untapping the mana sources, tap them to produce mana. Repeat ad nauseam.</Typography>
+        <Typography>With non-land mana sources that produce at least three mana, cast <Link href="https://scryfall.com/card/mrd/188/isochron-scepter">Isochron Scepter</Link> and imprint it with <Link href="https://scryfall.com/card/kld/44/dramatic-reversal">Dramatic Reversal</Link>. Activate the <Link href="https://scryfall.com/card/mrd/188/isochron-scepter">Isochron Scepter</Link> untapping the mana sources, tap them to produce mana. Repeat ad nauseam.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 29,
@@ -441,16 +441,16 @@ export default function CombosInVrd() {
         title="Worldgorger Dragon + Animate Dead"
       >
         <Typography paragraph>Generates infinite mana.</Typography>
-        <Typography paragraph>This generates infinite mana of any color that your lands can produce and infinite ETB effects by putting the enchantment into play on the Dragon, which removes all permanents (including lands and the enchantment) which causes the Dragon to die, returning all of those permanents (untapped, thereby generating mana).</Typography>
+        <Typography paragraph>This generates infinite mana of any color that your lands can produce and infinite ETB effects by putting the enchantment into play on the <Link href="https://scryfall.com/card/jud/103/worldgorger-dragon">Dragon</Link>, which removes all permanents (including lands and the enchantment) which causes the <Link href="https://scryfall.com/card/jud/103/worldgorger-dragon">Dragon</Link> to die, returning all of those permanents (untapped, thereby generating mana).</Typography>
         <Typography
           color="warning.dark"
           variant="h6"
         >Caution:</Typography>
-        <Typography paragraph>If Dragon is the only creature in any graveyard and you have no way to remove the Dragon or enchantment at instant speed, this will cause a draw of the game (as happened on camera in VRD 7).</Typography>
+        <Typography paragraph>If <Link href="https://scryfall.com/card/jud/103/worldgorger-dragon">Dragon</Link> is the only creature in any graveyard and you have no way to remove the <Link href="https://scryfall.com/card/jud/103/worldgorger-dragon">Dragon</Link> or enchantment at instant speed, this will cause a draw of the game (as happened on camera in VRD 7).</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Animate Dead can be replaced with Necromancy, Dance of the Dead, or any other enchanting reanimation effect.</Typography>
+        <Typography><Link href="https://scryfall.com/card/lea/92/animate-dead">Animate Dead</Link> can be replaced with <Link href="https://scryfall.com/card/vis/64/necromancy">Necromancy</Link>, <Link href="https://scryfall.com/card/me2/83/dance-of-the-dead">Dance of the Dead</Link>, or any other enchanting reanimation effect.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 23,
@@ -468,11 +468,11 @@ export default function CombosInVrd() {
         title="Soulfire Grand Master + Time Walk"
       >
         <Typography paragraph>Generates infinite turns.</Typography>
-        <Typography paragraph>With Soulfire Grand Master out and six mana sources available, activate her ability and cast Time Walk. Repeat each turn to and find a way to win the game where only you take turns.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/frf/27/soulfire-grand-master">Soulfire Grand Master</Link> out and six mana sources available, activate her ability and cast <Link href="https://scryfall.com/card/lea/83/time-walk">Time Walk</Link>. Repeat each turn to and find a way to win the game where only you take turns.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Time Walk can be replaced by Time Warp, Temporal Manipulation, or Turnabout (for infinite mana instead).</Typography>
+        <Typography><Link href="https://scryfall.com/card/lea/83/time-walk">Time Walk</Link> can be replaced by <Link href="https://scryfall.com/card/tmp/97/time-warp">Time Warp</Link>, <Link href="https://scryfall.com/card/p02/54/temporal-manipulation">Temporal Manipulation</Link>, or <Link href="https://scryfall.com/card/usg/105/turnabout">Turnabout</Link> (for infinite mana instead).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 24,
@@ -490,7 +490,7 @@ export default function CombosInVrd() {
         title="Flash + Protean Hulk"
       >
         <Typography paragraph>Wins the game.</Typography>
-        <Typography paragraph>Flash Hulk has a myriad of combinations that win the game, but a classic one is the “Cephalid Breakfast” combo. With Protean Hulk in hand, cast Flash, putting Protean Hulk into play. Protean Hulk dies to Flash, searching up Cephalid Illusionist, Nomads-en-Kor, Hapless Researcher, and Grand Abolisher (for protection). Activate Cephalid Illusionist, targeting Nomads-en-Kor milling three cards from your library. Repeat until you have no cards remaining, milling Dread Return, Laboratory Maniac, Narcomoeba (into play). Cast Dread Return on Laboratory Maniac. Activate Hapless Researcher to win the game.</Typography>
+        <Typography paragraph>Flash Hulk has a myriad of combinations that win the game, but a classic one is the “Cephalid Breakfast” combo. With Protean Hulk in hand, cast Flash, putting Protean Hulk into play. Protean Hulk dies to Flash, searching up Cephalid Illusionist, Nomads-en-Kor, Hapless Researcher, and Grand Abolisher (for protection). Activate Cephalid Illusionist, targeting Nomads-en-Kor milling three cards from your library. Repeat until you have no cards remaining, milling <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link>, <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>, Narcomoeba (into play). Cast <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link> on <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>. Activate Hapless Researcher to win the game.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
@@ -516,7 +516,7 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Vizier of Remedies can be replaced with Solemnity.</Typography>
+        <Typography paragraph>Vizier of Remedies can be replaced with <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
         <Typography>Devoted Druid can be replaced with Quillspike for infinite power instead.</Typography>
       </ComboCards>
       <SpacedHeader
@@ -564,7 +564,7 @@ export default function CombosInVrd() {
         title="Energy Field + Rest in Peace"
       >
         <Typography paragraph>Translates any damage into exiling cards from your library.</Typography>
-        <Typography paragraph>With Rest in Peace and Energy Field in play, any damage permanently exiles cards from your library instead of causing life loss. Often this wins with Thassa’s Oracle or one of its replacements once the deck is gone.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/rtr/18/rest-in-peace">Rest in Peace</Link> and Energy Field in play, any damage permanently exiles cards from your library instead of causing life loss. Often this wins with <Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link> or one of its replacements once the deck is gone.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 28,
@@ -626,7 +626,7 @@ export default function CombosInVrd() {
         title="Solemnity + Phyrexian Unlife"
       >
         <Typography paragraph>Prevents you from losing from life loss.</Typography>
-        <Typography paragraph>With Solemnity in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put poison counters on you, which evaporate due to Solemnity.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link> in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put poison counters on you, which evaporate due to <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
@@ -756,12 +756,12 @@ export default function CombosInVrd() {
         title="Illusions of Grandeur + Donate"
       >
         <Typography paragraph>Causes an opponent to lose twenty life (after a couple of turns).</Typography>
-        <Typography paragraph>A classic combo featured in the “Trix” deck that rarely appears anymore. With Illusions of Grandeur in play, you cast Donate giving it to your opponent, who is left with a cumulative upkeep cost or loses twenty life.</Typography>
+        <Typography paragraph>A classic combo featured in the “Trix” deck that rarely appears anymore. With <Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link> in play, you cast <Link href="https://scryfall.com/card/uds/31/donate">Donate</Link> giving it to your opponent, who is left with a cumulative upkeep cost or loses twenty life.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Illusions of Grandeur can be replaced with Demonic Pact.</Typography>
-        <Typography>Donate can be replaced with Harmless Offering, or Bazaar Trader.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link> can be replaced with Demonic Pact.</Typography>
+        <Typography><Link href="https://scryfall.com/card/uds/31/donate">Donate</Link> can be replaced with Harmless Offering, or Bazaar Trader.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"

@@ -46,7 +46,7 @@ function Routes() {
         </Route>
         <Route
           exact
-          path="/articles/2021-11-13/Combos in VRD"
+          path="/articles/2021-11-25/Combos in VRD"
         >
           <CombosInVrd />
         </Route>
