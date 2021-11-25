@@ -400,6 +400,24 @@ export default function CombosInVrd() {
         <Typography paragraph>Grim Monolith can be replaced with Basalt Monolith, but this does reduce the efficacy of some tutors, like Muddle the Mixture.</Typography>
         <Typography>Power Artifact can be replaced with Kinnan, Bonder Prodigy, Nyxbloom Ancient, Mana Reflection, Zirda, the Dawnwaker, or Forsaken Monument (with Basalt Monolith).</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 23,
+        pickCount: 34,
+        numberOfDrafts: 57,
+        name: 'Isochron Scepter',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/7/878b0159-6917-45d3-b9ea-562ac49f0b8f.png?1562149998',
+      }, {
+        averageRound: 34,
+        pickCount: 5,
+        numberOfDrafts: 31,
+        name: 'Dramatic Reversal',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/c/dcb59045-2743-48ae-8063-727e551b1c41.png?1576381170',
+      }]}
+        title="Isochron Scepter + Dramatic Reversal"
+      >
+        <Typography paragraph>Generates infinite mana.</Typography>
+        <Typography>With non-land mana sources that produce at least three mana, cast Isochron Scepter and imprint it with Dramatic Reversal. Activate the Isochron Scepter untapping the mana sources, tap them to produce mana. Repeat ad nauseam.</Typography>
+      </ComboCards>
     </Container>
   );
 
