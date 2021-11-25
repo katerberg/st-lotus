@@ -756,6 +756,40 @@ export default function CombosInVrd() {
         <Typography paragraph>Illusions of Grandeur can be replaced with Demonic Pact.</Typography>
         <Typography>Donate can be replaced with Harmless Offering, or Bazaar Trader.</Typography>
       </ComboCards>
+      <SpacedHeader
+        component="h2"
+        sx={{marginTop: 5}}
+        variant="h3"
+      >{'The Untested'}</SpacedHeader>
+      <Typography color="text.secondary"
+        paragraph
+        sx={{marginLeft: '20px'}}
+        variant="subtitle1"
+      >Unplayed</Typography>
+      <Typography paragraph>These combos have powerful effects and are known quantities in Competitive EDH, Cubes, or other formats. They haven’t seen play in a VRD yet, but could show up sometime soon.</Typography>
+      <ComboCards cards={[{
+        averageRound: 0,
+        pickCount: 0,
+        numberOfDrafts: 57,
+        name: 'Knowledge Pool',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/9/393454c2-b256-4a6e-9bc2-56a47cab5073.png?1562610637',
+      }, {
+        averageRound: 37,
+        pickCount: 13,
+        numberOfDrafts: 57,
+        name: 'Teferi, Mage of Zhalfir',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/c/3c0145f6-4e27-49e7-9ef6-bac6fa3de26d.png?1562907491',
+      }]}
+        title="Knowledge Pool + Teferi, Mage of Zhalfir"
+      >
+        <Typography paragraph>Prevents your opponent from successfully casting any spells.</Typography>
+        <Typography>With Knowledge Pool and Teferi, Mage of Zhalfir in play, any spell your opponent casts will trigger Knowledge Pool which exiles it. Teferi, Mage of Zhalfir prevents them from casting the other spell since it would not be at sorcery speed.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Knowledge Pool can be replaced with Possibility Storm, Erayo, Soratami Ascendant (once flipped), or Omen Machine (which affects all future cards drawn).</Typography>
+        <Typography>Teferi, Mage of Zhalfir can be replaced with Curse of Exhaustion, Teferi, Time Raveler, Lavinia, Azorious Renegade, Drannith Magistrate, Arcane Laboratory (when you are ahead on board), Rule of Law (when you are ahead on board).</Typography>
+      </ComboCards>
     </Container>
   );
 }

@@ -1,3 +1,4 @@
+/* eslint-disable multiline-ternary */
 import React from 'react';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
@@ -52,13 +53,20 @@ export default function ComboCards({children, title, cards}) {
             <CardImage alt={`${c.name} magic card`}
               src={c.imageLink}
             />
-            <Grid sx={{marginLeft: '20px'}}>
-              <CardText color="text.secondary"
+            <Grid container
+              sx={{marginLeft: '20px'}}
+            >
+              {c.pickCount ? <>
+                  <CardText color="text.secondary"
+                    variant="subtitle1"
+                  >{`Picked ${c.pickCount} of ${c.numberOfDrafts} drafts`}</CardText>
+                  <CardText color="text.secondary"
+                    variant="subtitle1"
+                  >{`Average pick round ${c.averageRound}`}</CardText>
+                </> :
+              <Typography color="text.secondary"
                 variant="subtitle1"
-              >{`Picked ${c.pickCount} of ${c.numberOfDrafts} drafts`}</CardText>
-              <CardText color="text.secondary"
-                variant="subtitle1"
-              >{`Average pick round ${c.averageRound}`}</CardText>
+              >{'Unpicked'}</Typography>}
             </Grid>
           </CardContainer>,
         )}
@@ -84,5 +92,5 @@ ComboCards.propTypes = {
     averageRound: PropTypes.number.isRequired,
   })).isRequired,
   title: PropTypes.string.isRequired,
-  children: PropTypes.object.isRequired,
+  children: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
