@@ -204,6 +204,47 @@ export default function CombosInVrd() {
         <Typography paragraph>Demonic Consultation can be replaced with Thought Lash, Leveler, Paradigm Shift, Inverter of Truth, Harness Infinity, Morality Shift, Tainted Pact (with deckbuilding care), or Hermit Druid (with deckbuilding care).</Typography>
         <Typography paragraph>Thassa’s Oracle can be replaced with Laboratory Maniac or Jace, Wielder of Mysteries.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 26,
+        pickCount: 38,
+        numberOfDrafts: 57,
+        name: 'Academy Ruins',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/a/f/af09af65-0a3b-42df-b0fd-372e2158beac.png?1562931959',
+      }, {
+        averageRound: 27,
+        pickCount: 25,
+        numberOfDrafts: 57,
+        name: 'Mindslaver',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/8/98fb1eaa-2871-491a-a4f5-3e358778ba40.png?1562151747',
+      }]}
+        title="Academy Ruins + Mindslaver"
+      >
+        <Typography paragraph>Takes infinite turns.</Typography>
+        <Typography paragraph>With Academy Ruins and many lands in play, cast and activate Mindslaver. Activate Academy Ruins to put Mindslaver on top of your library. Repeat ad nauseam.</Typography>
+        <Typography paragraph>This combo is obviously incredibly mana intensive and hard to get working. It has largely been a suplement to a Goblin Welder deck that gets minor benefit from Mindslaver ahead of time, eventually ending in this combo after disrupting the opponent with several mindslavers earlier.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Academy Ruins can be replaced with Emry, Lurker of the Loch or Trading Post.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 41,
+        pickCount: 24,
+        numberOfDrafts: 24,
+        name: 'Karn, the Great Creator',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.png?1566819742',
+      }, {
+        averageRound: 28,
+        pickCount: 23,
+        numberOfDrafts: 57,
+        name: 'Mycosynth Lattice',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/7/e7e7f15a-074a-4137-88ca-e5d376d146fd.png?1562640258',
+      }]}
+        title="Karn, the Great Creator + Mycosynth Lattice"
+      >
+        <Typography paragraph>Prevents opponent from activating any activated abilities, including mana abilities.</Typography>
+        <Typography paragraph>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because [[11]] mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
+      </ComboCards>
     </Container>
   );
 }
