@@ -490,11 +490,11 @@ export default function CombosInVrd() {
         title="Flash + Protean Hulk"
       >
         <Typography paragraph>Wins the game.</Typography>
-        <Typography paragraph>Flash Hulk has a myriad of combinations that win the game, but a classic one is the “Cephalid Breakfast” combo. With Protean Hulk in hand, cast Flash, putting Protean Hulk into play. Protean Hulk dies to Flash, searching up Cephalid Illusionist, Nomads-en-Kor, Hapless Researcher, and Grand Abolisher (for protection). Activate Cephalid Illusionist, targeting Nomads-en-Kor milling three cards from your library. Repeat until you have no cards remaining, milling <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link>, <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>, Narcomoeba (into play). Cast <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link> on <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>. Activate Hapless Researcher to win the game.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/mir/66/flash">Flash</Link> <Link href="https://scryfall.com/card/dis/90/protean-hulk">Hulk</Link> has a myriad of combinations that win the game, but a classic one is the “Cephalid Breakfast” combo. With <Link href="https://scryfall.com/card/dis/90/protean-hulk">Protean Hulk</Link> in hand, cast <Link href="https://scryfall.com/card/mir/66/flash">Flash</Link>, putting <Link href="https://scryfall.com/card/dis/90/protean-hulk">Protean Hulk</Link> into play. <Link href="https://scryfall.com/card/dis/90/protean-hulk">Protean Hulk</Link> dies to <Link href="https://scryfall.com/card/mir/66/flash">Flash</Link>, searching up <Link href="https://scryfall.com/card/tor/28/cephalid-illusionist">Cephalid Illusionist</Link>, <Link href="https://scryfall.com/card/sth/9/nomads-en-kor">Nomads-en-Kor</Link>, <Link href="https://scryfall.com/card/jud/42/hapless-researcher">Hapless Researcher</Link>, and <Link href="https://scryfall.com/card/m12/19/grand-abolisher">Grand Abolisher</Link> (for protection). Activate <Link href="https://scryfall.com/card/tor/28/cephalid-illusionist">Cephalid Illusionist</Link>, targeting <Link href="https://scryfall.com/card/sth/9/nomads-en-kor">Nomads-en-Kor</Link> milling three cards from your library. Repeat until you have no cards remaining, milling <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link>, <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>, <Link href="https://scryfall.com/card/fut/54/narcomoeba">Narcomoeba</Link> (into play). Cast <Link href="https://scryfall.com/card/tsp/104/dread-return">Dread Return</Link> on <Link href="https://scryfall.com/card/isd/61/laboratory-maniac">Laboratory Maniac</Link>. Activate <Link href="https://scryfall.com/card/jud/42/hapless-researcher">Hapless Researcher</Link> to win the game.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Similar to Doomsday, nearly every part of the combo are replaceable other than the namesakes.</Typography>
+        <Typography>Similar to <Link href="https://scryfall.com/card/wth/66/doomsday">Doomsday</Link>, nearly every part of the combo are replaceable other than the namesakes.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 12,
@@ -512,12 +512,12 @@ export default function CombosInVrd() {
         title="Vizier of Remedies + Devoted Druid"
       >
         <Typography paragraph>Generates infinite <ManaCost manaCost="{G}"/> mana.</Typography>
-        <Typography paragraph>With Vizier of Remedies and a non-summoning sick Devoted Druid in play, tap the druid for mana. Activate its untap ability, which will untap it without the counter. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/akh/38/vizier-of-remedies">Vizier of Remedies</Link> and a non-summoning sick <Link href="https://scryfall.com/card/shm/110/devoted-druid">Devoted Druid</Link> in play, tap the druid for mana. Activate its untap ability, which will untap it without the counter. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Vizier of Remedies can be replaced with <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
-        <Typography>Devoted Druid can be replaced with Quillspike for infinite power instead.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/akh/38/vizier-of-remedies">Vizier of Remedies</Link> can be replaced with <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
+        <Typography><Link href="https://scryfall.com/card/shm/110/devoted-druid">Devoted Druid</Link> can be replaced with <Link href="https://scryfall.com/card/eve/126/quillspike">Quillspike</Link> for infinite power instead.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -883,7 +883,7 @@ export default function CombosInVrd() {
           color="text.secondary"
           sx={{verticalAlign: 'middle', marginLeft: '20px'}}
           variant="subtitle2"
-        >Mark Katerberg is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and a deeply invested combo player. He fell in love with VRD from the days of Shotgun Lotus, and knew that the format needed more live matches to be streamed. His favorite cards are Doomsday, Dark Ritual, Mystical Teachings, and Serra Angel.</Typography>
+        >Mark Katerberg is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and a deeply invested combo player. He fell in love with VRD from the days of Shotgun Lotus, and knew that the format needed more live matches to be streamed. His favorite cards are <Link href="https://scryfall.com/card/wth/66/doomsday">Doomsday</Link>, Dark Ritual, Mystical Teachings, and Serra Angel.</Typography>
         </Grid>
       </Grid>
     </Container>
