@@ -55,6 +55,28 @@ export default function CombosInVrd() {
         <Typography paragraph>Hullbreacher can be replaced with any of the following: Leovold, Emissary of Trest, Notion Thief, or Narset, Parter of Veils.</Typography>
         <Typography>Timetwister can be replaced with any of the following: Wheel of Fortune, Echo of Eons, Time Spiral, Windfall, Whirlpool Warrior, Teferi’s Puzzle Box, or (to a lesser effect) Memory Jar.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 2,
+        pickCount: 56,
+        numberOfDrafts: 57,
+        name: 'Time Vault',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/0/902441dc-c976-4c92-b897-6376eaa0fe38.png?1559591445',
+      }, {
+        averageRound: 15,
+        pickCount: 46,
+        numberOfDrafts: 57,
+        name: 'Tezzeret the Seeker',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.png?1562702928',
+      }]}
+        title="Time Vault + Tezzeret the Seeker"
+      >
+        <Typography paragraph>Generates infinite turns. Tezzeret is all that is needed to start the combo. You activate his -X for 2 and put Time Vault into play. The next turn, you activate his +1 to untap it and then tap it to take another turn. Repeat the process ad nauseam. If you already have Time Vault in play, you can start with the +1.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Tezzeret the Seeker can be replaced with Voltaic Key, Galvanic Key, Ral Zarek, Teferi, Who Slows the Sunset, Kiora's Follower, or a handful of other options.</Typography>
+        <Typography>A rare addition, but with Crystal Shard or Erratic Portal, all of the single-use “untap” effects from the Splinter Twin combo also can replace the “untap” part of this combo.</Typography>
+      </ComboCards>
     </Container>
   );
 }
