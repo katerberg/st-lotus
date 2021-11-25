@@ -245,7 +245,30 @@ export default function CombosInVrd() {
         <Typography paragraph>Prevents opponent from activating any activated abilities, including mana abilities.</Typography>
         <Typography paragraph>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because [[11]] mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 31,
+        pickCount: 5,
+        numberOfDrafts: 57,
+        name: 'Chain of Smog',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/b/6bfe64f9-8b03-41f6-a47b-fade397ad9d1.png?1562920423',
+      }, {
+        averageRound: 25,
+        pickCount: 2,
+        numberOfDrafts: 6,
+        name: 'Witherbloom Apprentice',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/f/7f80a11b-188b-464c-b00d-c9d1cfb8ddee.png?1624740448',
+      }]}
+        title="Chain of Smog + Witherbloom Apprentice"
+      >
+        <Typography paragraph>Makes the opponent lose infinite life.</Typography>
+        <Typography paragraph>With Witherbloom Apprentice in play, cast Chain of Smog, targeting yourself and triggering Witherbloom Apprentice. When it resolves, choose to copy it, triggering it again. Repeat ad nauseam.</Typography>
+        <Typography paragraph />
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Witherbloom Apprentice can be replaced with Professor Onyx, Ral, Storm Conduit, Witherbloom Pledgemage, Sedgemoor Witch (for infinite creatures instead), Storm-Kiln Artist (for an infinitely-powered attacker with infinite mana), or Silverquill Apprentice (for an infinitely-powered attacker).</Typography>
+        <Typography paragraph>Chain of Smog can be replaced with Chain of Acid (when taken with Darksteel Citadel).</Typography>
+      </ComboCards>
     </Container>
   );
 }
-
