@@ -512,8 +512,135 @@ export default function CombosInVrd() {
         <Typography paragraph>Vizier of Remedies can be replaced with Solemnity.</Typography>
         <Typography>Devoted Druid can be replaced with Quillspike for infinite power instead.</Typography>
       </ComboCards>
+      <SpacedHeader
+        component="h2"
+        sx={{marginTop: 5}}
+        variant="h3"
+      >{'The Shocking'}</SpacedHeader>
+      <Typography color="text.secondary"
+        paragraph
+        sx={{marginLeft: '20px'}}
+        variant="subtitle1"
+      >Drafted in 1% or more of VRDs</Typography>
+      <Typography paragraph>These combos are very rarely seen. Obviously any of these combos are powerful enough to win the game, but they have generally not proven themselves in the wide number of drafts where they’ve been available.</Typography>
+      <ComboCards cards={[{
+        averageRound: 47,
+        pickCount: 4,
+        numberOfDrafts: 57,
+        name: 'Squirrel Nest',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/2/22eccb27-1723-4c5a-96b8-85e6e5739c30.png?1562901472',
+      }, {
+        averageRound: 36,
+        pickCount: 5,
+        numberOfDrafts: 57,
+        name: 'Earthcraft',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/d/9dda7531-82a1-4f49-8858-601ddbc6e2bc.png?1587857352',
+      }]}
+        title="Squirrel Nest + Earthcraft"
+      >
+        <Typography paragraph>Generates infinite creatures.</Typography>
+        <Typography>With Squirrel Nest enchanting a basic land and Earthcraft in play, tap Squirrel Nest to create a creature. Activate Earthcraft, tapping the squirrel to untap the land. Repeat ad nauseam.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 38,
+        pickCount: 5,
+        numberOfDrafts: 57,
+        name: 'Energy Field',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/1/81ff5770-b207-41e1-97b7-b9347c72b407.png?1562922391',
+      }, {
+        averageRound: 22,
+        pickCount: 36,
+        numberOfDrafts: 53,
+        name: 'Rest in Peace',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37c2b1d1-faa0-40fd-82f4-216604ce7635.png?1562784882',
+      }]}
+        title="Energy Field + Rest in Peace"
+      >
+        <Typography paragraph>Translates any damage into exiling cards from your library.</Typography>
+        <Typography paragraph>With Rest in Peace and Energy Field in play, any damage permanently exiles cards from your library instead of causing life loss. Often this wins with Thassa’s Oracle or one of its replacements once the deck is gone.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 28,
+        pickCount: 4,
+        numberOfDrafts: 43,
+        name: 'Dualcaster Mage',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/b/0b80c8a0-0870-4836-bee1-f4a805d119d6.png?1561931952',
+      }, {
+        averageRound: 41,
+        pickCount: 2,
+        numberOfDrafts: 49,
+        name: 'Twinflame',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/0/207128b3-2de3-495a-bf29-eec50c3bd752.png?1593096134',
+      }]}
+        title="Dualcaster Mage + Twinflame"
+      >
+        <Typography paragraph>Generates infinite attackers.</Typography>
+        <Typography paragraph>With another creature in play, cast Twinflame on the original creature, holding priority. Cast Dualcaster Mage copying Twinflame, pointing at the Dualcaster Mage. Repeat this until you have infinite hasted Dualcaster Magi in play.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Twinflame can be replaced with Heat Shimmer, Mythos of Illuna, Seize the Day, Fated Intuition, Kindred Charge, Sublime Epiphany, Repudiate // Replicate, Cackling Counterpart, or Acrobatic Maneuver (for infinite draw)</Typography>
+      </ComboCards>
     </Container>
   );
+
+  // Mindcrank + Bloodchief Ascension
+  // Mindcrank has been picked 2 times (of 54 legal) at pick 174 (round 22) on average
+  // Bloodchief Ascension has been picked 1 time (of 57 legal) at pick 92 (round 12)
+
+  // Generates infinite life-loss and milling. With a fully leveled up Bloodchief Ascension and a Mindcrank in play, cause your opponent to either put a card in their graveyard or lose a life. This will trigger one of the two abilities, which will trigger the other until the opponent has run out of life and cards in library.
+  // Replacements:
+  // Bloodchief Ascension can be replaced with Duskmantle Guildmage.
+  // Solemnity + Phyrexian Unlife
+  // Solemnity has been picked 4 times (of 30 legal) at pick 304.8 (round 39) on average
+  // Phyrexian Unlife has been picked 1 time (of 54 legal) at pick 299 (round 38)
+
+  // Prevents you from losing from life loss. With Solemnity in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put on poison counters, which evaporate due to Solemnity.
+  // Replacements:
+  // Phyrexian Unlife can be replaced with Glacial Chasm (although it will not stop “life loss” effects like Tendrils of Agony)
+  // Valakut, the Molten Pinnacle + Scapeshift
+  // Valakut, the Molten Pinnacle has been picked 3 times (of 57 legal) at pick 274 (round 35) on average
+  // Scapeshift has been picked 3 times (of 57 legal) at pick 217.3 (round 28) on average
+
+  // Deals a large amount of damage. With at least seven lands in play, Scapeshift in your hand, and Valakut, the Molten Pinnacle in your deck, cast Scapeshift, sacrificing all of your lands. Find Valakut and six mountains, each of which will deal 3 damage for a total of at least 18 damage. This is often combined with Prismatic Omen, Dryad of the Elysian Grove (which both reduce the number of lands needed by counting Valakut as a mountain).
+  // Replacements:
+  // Scapeshift can be replaced with Primeval Titan which can fetch Valakut earlier, allowing it to deal damage “fairly”.
+  // Ad Nauseam + Angel’s Grace
+  // Ad Nauseam has been picked 2 times (of 57 legal) at pick 327 (round 41) on average
+  // Angel's Grace has been picked 2 times (of 57 legal) at pick 445.5 (round 56) on average
+
+  // Draws infinite cards. After casting Angel’s Grace, cast Ad Nauseam and take all the cards in your deck. You will be at a very negative life total but you cannot lose until the end of turn.
+  // Replacements:
+  // Angel’s Grace can be replaced with Phyrexian Unlife.
+  // Ad Nauseam can be replaced with Spoils of the Vault.
+  // Heliod, Sun-Crowned + Walking Ballista
+  // Heliod, Sun-Crowned has been picked 1 time (of 14 legal) at pick 104 (round 13)
+  // Walking Ballista has been picked 26 times (of 30 legal) at pick 159.3 (round 20) on average
+
+  // Generates infinite damage. With both in play and the Walking Ballista at two counters or more, activate Heliod’s ability to give Walking Ballista lifelink. Activate Walking Ballista to deal a damage, adding a counter to it. Repeat ad nauseam.
+  // Replacements:
+  // Walking Ballista can be replaced with Triskelion or Spike Feeder (for infinite life)
+  // Heliod, Sun-Crowned can be replaced with Mikaeus, the Unhallowed (only for Triskelion).
+  // Phyrexian Dreadnought + Stifle
+  // Stifle has been picked 19 times (of 57 legal) at pick 201.6 (round 26) on average
+  // Phyrexian Dreadnought has been picked 1 time (of 57 legal) at pick 134 (round 17)
+
+  // Creates a 12/12 trampler. Cast Phyrexian Dreadnought. Counter its trigger with Stifle.
+  // Replacements:
+  // Stifle can be replaced with Dress Down, Illusionary Mask, Torpor Orb, Hushwing Gryf, Hushbringer, or Tocatli Honor Guard.
+  // Opalescence + Enchanted Evening
+  // Opalescence has been picked 2 times (of 57 legal) at pick 117 (round 15) on average
+  // Enchanted Evening has been picked 1 time (of 57 legal) at pick 204 (round 26)
+
+  // Destroys all (current and future) lands. With both Enchanted Evening and Opalescence in play, all zero-cost permanents (including lands) have zero toughness and die.
+  // Illusions of Grandeur + Donate
+  // Donate has been picked 1 time (of 57 legal) at pick 287 (round 36)
+  // Illusions of Grandeur has been picked 1 time (of 57 legal) at pick 290 (round 37)
+
+  // Causes an opponent to lose twenty life (after a couple of turns). A classic combo featured in the “Trix” deck that rarely appears anymore. With Illusions of Grandeur in play, you cast Donate giving it to your opponent, who is left with a cumulative upkeep cost or loses twenty life.
+  // Replacements:
+  // Illusions of Grandeur can be replaced with Demonic Pact.
+  // Donate can be replaced with Harmless Offering, or Bazaar Trader.
 
 
   // <ComboCards cards={[{
