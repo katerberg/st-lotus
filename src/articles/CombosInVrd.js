@@ -581,30 +581,76 @@ export default function CombosInVrd() {
         >Replacements:</Typography>
         <Typography>Twinflame can be replaced with Heat Shimmer, Mythos of Illuna, Seize the Day, Fated Intuition, Kindred Charge, Sublime Epiphany, Repudiate // Replicate, Cackling Counterpart, or Acrobatic Maneuver (for infinite draw)</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 22,
+        pickCount: 2,
+        numberOfDrafts: 54,
+        name: 'Mindcrank',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/1/d13a5ae0-d76a-4430-98c1-47a19e615e2c.png?1562881729',
+      }, {
+        averageRound: 12,
+        pickCount: 1,
+        numberOfDrafts: 57,
+        name: 'Bloodchief Ascension',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/a/a/aa213dbb-c52a-4084-92aa-d0b5d97a97d9.png?1562615322',
+      }]}
+        title="Mindcrank + Bloodchief Ascension"
+      >
+        <Typography paragraph>Generates infinite life-loss and milling.</Typography>
+        <Typography paragraph>With a fully leveled up Bloodchief Ascension and a Mindcrank in play, cause your opponent to either put a card in their graveyard or lose a life. This will trigger one of the two abilities, which will trigger the other until the opponent has run out of life and cards in library.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Bloodchief Ascension can be replaced with Duskmantle Guildmage.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 39,
+        pickCount: 4,
+        numberOfDrafts: 30,
+        name: 'Solemnity',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/a/0a71fb62-acbd-49f5-842f-0fc9fa48afea.png?1562788659',
+      }, {
+        averageRound: 38,
+        pickCount: 1,
+        numberOfDrafts: 54,
+        name: 'Phyrexian Unlife',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/4/b4a1e16a-39f0-47ab-aba8-73e82ba9ab18.png?1562880895',
+      }]}
+        title="Solemnity + Phyrexian Unlife"
+      >
+        <Typography paragraph>Prevents you from losing from life loss.</Typography>
+        <Typography paragraph>With Solemnity in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put poison counters on you, which evaporate due to Solemnity.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Phyrexian Unlife can be replaced with Glacial Chasm (although it will not stop “life loss” effects like Tendrils of Agony)</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 35,
+        pickCount: 3,
+        numberOfDrafts: 57,
+        name: 'Valakut, the Molten Pinnacle',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37bce60d-2cb0-4772-9f5c-122a7ed426a0.png?1562611305',
+      }, {
+        averageRound: 28,
+        pickCount: 3,
+        numberOfDrafts: 57,
+        name: 'Scapeshift',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/4/84829605-50eb-455d-a236-ebfa11e883c5.png?1562879722',
+      }]}
+        title="Valakut, the Molten Pinnacle + Scapeshift"
+      >
+        <Typography paragraph>Deals a large amount of damage.</Typography>
+        <Typography paragraph>With at least seven lands in play, Scapeshift in your hand, and Valakut, the Molten Pinnacle in your deck, cast Scapeshift, sacrificing all of your lands. Find Valakut and six mountains, each of which will deal 3 damage for a total of at least 18 damage. This is often combined with Prismatic Omen, Dryad of the Elysian Grove (which both reduce the number of lands needed by counting Valakut as a mountain).</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Scapeshift can be replaced with Primeval Titan which can fetch Valakut earlier, allowing it to deal damage “fairly”.</Typography>
+      </ComboCards>
     </Container>
   );
 
-  // Mindcrank + Bloodchief Ascension
-  // Mindcrank has been picked 2 times (of 54 legal) at pick 174 (round 22) on average
-  // Bloodchief Ascension has been picked 1 time (of 57 legal) at pick 92 (round 12)
-
-  // Generates infinite life-loss and milling. With a fully leveled up Bloodchief Ascension and a Mindcrank in play, cause your opponent to either put a card in their graveyard or lose a life. This will trigger one of the two abilities, which will trigger the other until the opponent has run out of life and cards in library.
-  // Replacements:
-  // Bloodchief Ascension can be replaced with Duskmantle Guildmage.
-  // Solemnity + Phyrexian Unlife
-  // Solemnity has been picked 4 times (of 30 legal) at pick 304.8 (round 39) on average
-  // Phyrexian Unlife has been picked 1 time (of 54 legal) at pick 299 (round 38)
-
-  // Prevents you from losing from life loss. With Solemnity in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put on poison counters, which evaporate due to Solemnity.
-  // Replacements:
-  // Phyrexian Unlife can be replaced with Glacial Chasm (although it will not stop “life loss” effects like Tendrils of Agony)
-  // Valakut, the Molten Pinnacle + Scapeshift
-  // Valakut, the Molten Pinnacle has been picked 3 times (of 57 legal) at pick 274 (round 35) on average
-  // Scapeshift has been picked 3 times (of 57 legal) at pick 217.3 (round 28) on average
-
-  // Deals a large amount of damage. With at least seven lands in play, Scapeshift in your hand, and Valakut, the Molten Pinnacle in your deck, cast Scapeshift, sacrificing all of your lands. Find Valakut and six mountains, each of which will deal 3 damage for a total of at least 18 damage. This is often combined with Prismatic Omen, Dryad of the Elysian Grove (which both reduce the number of lands needed by counting Valakut as a mountain).
-  // Replacements:
-  // Scapeshift can be replaced with Primeval Titan which can fetch Valakut earlier, allowing it to deal damage “fairly”.
+  //
   // Ad Nauseam + Angel’s Grace
   // Ad Nauseam has been picked 2 times (of 57 legal) at pick 327 (round 41) on average
   // Angel's Grace has been picked 2 times (of 57 legal) at pick 445.5 (round 56) on average
