@@ -392,7 +392,7 @@ export default function CombosInVrd() {
       }]}
         title="Power Artifact + Grim Monolith"
       >
-        <Typography paragraph>This generates infinite colorless mana.</Typography>
+        <Typography paragraph>This generates infinite <ManaCost manaCost="{C}"/> mana.</Typography>
         <Typography paragraph>With both in play, tap Grim Monolith for <ManaCost manaCost="{3}"/>. Activate Power Artifact's ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
@@ -444,6 +444,73 @@ export default function CombosInVrd() {
           variant="h6"
         >Replacements:</Typography>
         <Typography>Animate Dead can be replaced with Necromancy, Dance of the Dead, or any other enchanting reanimation effect.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 23,
+        pickCount: 4,
+        numberOfDrafts: 36,
+        name: 'Soulfire Grand Master',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/c/fc3a4e7d-6667-4c2f-b6b4-484f401b0455.png?1562831870',
+      }, {
+        averageRound: 2,
+        pickCount: 57,
+        numberOfDrafts: 57,
+        name: 'Time Walk',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.png?1559591444',
+      }]}
+        title="Soulfire Grand Master + Time Walk"
+      >
+        <Typography paragraph>Generates infinite turns.</Typography>
+        <Typography paragraph>With Soulfire Grand Master out and six mana sources available, activate her ability and cast Time Walk. Repeat each turn to and find a way to win the game where only you take turns.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Time Walk can be replaced by Time Warp, Temporal Manipulation, or Turnabout (for infinite mana instead).</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 24,
+        pickCount: 12,
+        numberOfDrafts: 57,
+        name: 'Flash',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/3/63af3c26-5b1f-46f6-9aa2-036c615bf5ea.png?1562719749',
+      }, {
+        averageRound: 28,
+        pickCount: 8,
+        numberOfDrafts: 57,
+        name: 'Protean Hulk',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/d/3d978332-95bf-4f86-9e67-06f10983c267.png?1593273433',
+      }]}
+        title="Flash + Protean Hulk"
+      >
+        <Typography paragraph>Wins the game.</Typography>
+        <Typography paragraph>Flash Hulk has a myriad of combinations that win the game, but a classic one is the “Cephalid Breakfast” combo. With Protean Hulk in hand, cast Flash, putting Protean Hulk into play. Protean Hulk dies to Flash, searching up Cephalid Illusionist, Nomads-en-Kor, Hapless Researcher, and Grand Abolisher (for protection). Activate Cephalid Illusionist, targeting Nomads-en-Kor milling three cards from your library. Repeat until you have no cards remaining, milling Dread Return, Laboratory Maniac, Narcomoeba (into play). Cast Dread Return on Laboratory Maniac. Activate Hapless Researcher to win the game.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Similar to Doomsday, nearly every part of the combo are replaceable other than the namesakes.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 12,
+        pickCount: 3,
+        numberOfDrafts: 30,
+        name: 'Vizier of Remedies',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/6/36ab760e-93e0-4dbc-aaa1-02316f62ed3f.png?1543674853',
+      }, {
+        averageRound: 13,
+        pickCount: 3,
+        numberOfDrafts: 57,
+        name: 'Devoted Druid',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/2/820e2f07-f637-4144-b45a-0e1430dcf55e.png?1562832416',
+      }]}
+        title="Vizier of Remedies + Devoted Druid"
+      >
+        <Typography paragraph>Generates infinite <ManaCost manaCost="{G}"/> mana.</Typography>
+        <Typography paragraph>With Vizier of Remedies and a non-summoning sick Devoted Druid in play, tap the druid for mana. Activate its untap ability, which will untap it without the counter. Repeat ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Vizier of Remedies can be replaced with Solemnity.</Typography>
+        <Typography>Devoted Druid can be replaced with Quillspike for infinite power instead.</Typography>
       </ComboCards>
     </Container>
   );
