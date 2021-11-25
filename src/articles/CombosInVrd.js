@@ -355,6 +355,51 @@ export default function CombosInVrd() {
         >Replacements:</Typography>
         <Typography>Lion’s Eye Diamond can be replaced with Black Lotus if you’re a very lucky drafter.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 20,
+        pickCount: 1,
+        numberOfDrafts: 53,
+        name: 'Ivy Lane Denizen',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/9/b95be874-93c0-4e05-9e5a-fe8f38bcb445.png?1561843498',
+      }, {
+        averageRound: 19,
+        pickCount: 1,
+        numberOfDrafts: 5,
+        name: 'Scurry Oak',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/f/0fb48c2e-ee0f-4fae-9c22-247870c10d5b.png?1626097756',
+      }]}
+        title="Ivy Lane Denizen + Scurry Oak"
+      >
+        <Typography paragraph>Generates infinite tokens and an infinitely large creature.</Typography>
+        <Typography paragraph>With Ivy Lane Denizen in play, play Scurry Oak. It triggers Ivy Lane Denizen, targeting Scurry Oak. This triggers Scurry Oak, creating a creature re-triggering Ivy Lane Denizen. Repeat ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Scurry Oak can be replaced with Herd Baloth.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 25,
+        pickCount: 22,
+        numberOfDrafts: 57,
+        name: 'Power Artifact',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/4/e48bc89e-6da5-43da-b4e0-60d5f850199c.png?1562943281',
+      }, {
+        averageRound: 6,
+        pickCount: 57,
+        numberOfDrafts: 57,
+        name: 'Grim Monolith',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/d/9ddc9fe1-17c8-4e1d-aeb8-c4214e881280.png?1562863767',
+      }]}
+        title="Power Artifact + Grim Monolith"
+      >
+        <Typography paragraph>This generates infinite colorless mana.</Typography>
+        <Typography paragraph>With both in play, tap Grim Monolith for <ManaCost manaCost="{3}"/>. Activate Power Artifact's ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Grim Monolith can be replaced with Basalt Monolith, but this does reduce the efficacy of some tutors, like Muddle the Mixture.</Typography>
+        <Typography>Power Artifact can be replaced with Kinnan, Bonder Prodigy, Nyxbloom Ancient, Mana Reflection, Zirda, the Dawnwaker, or Forsaken Monument (with Basalt Monolith).</Typography>
+      </ComboCards>
     </Container>
   );
 
@@ -372,7 +417,7 @@ export default function CombosInVrd() {
   //   name: '',
   //   imageLink: '',
   // }]}
-  //   title="Auriok Salvagers + Lion’s Eye Diamond"
+  //   title=""
   // >
   //   <Typography paragraph></Typography>
   //   <Typography paragraph></Typography>
