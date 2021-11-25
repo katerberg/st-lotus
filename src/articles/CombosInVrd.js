@@ -693,55 +693,70 @@ export default function CombosInVrd() {
         <Typography paragraph>Heliod, Sun-Crowned can be replaced with Mikaeus, the Unhallowed (only for Triskelion).</Typography>
         <Typography>Walking Ballista can be replaced with Triskelion or Spike Feeder (for infinite life).</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 17,
+        pickCount: 1,
+        numberOfDrafts: 57,
+        name: 'Phyrexian Dreadnought',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/b/7b8197b9-0cd1-4fa1-9668-d1b5f1759151.png?1562720243',
+      }, {
+        averageRound: 26,
+        pickCount: 19,
+        numberOfDrafts: 57,
+        name: 'Stifle',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.png?1562527068',
+      }]}
+        title="Phyrexian Dreadnought + Stifle"
+      >
+        <Typography paragraph>Creates a 12/12 trampler.</Typography>
+        <Typography paragraph>Cast Phyrexian Dreadnought. Counter its trigger with Stifle.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography>Stifle can be replaced with Dress Down, Illusionary Mask, Torpor Orb, Hushwing Gryf, Hushbringer, or Tocatli Honor Guard.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 15,
+        pickCount: 2,
+        numberOfDrafts: 57,
+        name: 'Opalescence',
+        imageLink: '',
+      }, {
+        averageRound: 26,
+        pickCount: 1,
+        numberOfDrafts: 57,
+        name: 'Enchanted Evening',
+        imageLink: '',
+      }]}
+        title="Opalescence + Enchanted Evening"
+      >
+        <Typography paragraph>Destroys all (current and future) lands.</Typography>
+        <Typography>With both Enchanted Evening and Opalescence in play, all zero-cost permanents (including lands) have zero toughness and die.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 37,
+        pickCount: 1,
+        numberOfDrafts: 57,
+        name: 'Illusions of Grandeur',
+        imageLink: '',
+      }, {
+        averageRound: 36,
+        pickCount: 1,
+        numberOfDrafts: 57,
+        name: 'Donate',
+        imageLink: '',
+      }]}
+        title="Illusions of Grandeur + Donate"
+      >
+        <Typography paragraph>Causes an opponent to lose twenty life (after a couple of turns).</Typography>
+        <Typography paragraph>A classic combo featured in the “Trix” deck that rarely appears anymore. With Illusions of Grandeur in play, you cast Donate giving it to your opponent, who is left with a cumulative upkeep cost or loses twenty life.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Illusions of Grandeur can be replaced with Demonic Pact.</Typography>
+        <Typography>Donate can be replaced with Harmless Offering, or Bazaar Trader.</Typography>
+      </ComboCards>
     </Container>
   );
-
-
-  // Phyrexian Dreadnought + Stifle
-  // Stifle has been picked 19 times (of 57 legal) at pick 201.6 (round 26) on average
-  // Phyrexian Dreadnought has been picked 1 time (of 57 legal) at pick 134 (round 17)
-
-  // Creates a 12/12 trampler. Cast Phyrexian Dreadnought. Counter its trigger with Stifle.
-  // Replacements:
-  // Stifle can be replaced with Dress Down, Illusionary Mask, Torpor Orb, Hushwing Gryf, Hushbringer, or Tocatli Honor Guard.
-  // Opalescence + Enchanted Evening
-  // Opalescence has been picked 2 times (of 57 legal) at pick 117 (round 15) on average
-  // Enchanted Evening has been picked 1 time (of 57 legal) at pick 204 (round 26)
-
-  // Destroys all (current and future) lands. With both Enchanted Evening and Opalescence in play, all zero-cost permanents (including lands) have zero toughness and die.
-  // Illusions of Grandeur + Donate
-  // Donate has been picked 1 time (of 57 legal) at pick 287 (round 36)
-  // Illusions of Grandeur has been picked 1 time (of 57 legal) at pick 290 (round 37)
-
-  // Causes an opponent to lose twenty life (after a couple of turns). A classic combo featured in the “Trix” deck that rarely appears anymore. With Illusions of Grandeur in play, you cast Donate giving it to your opponent, who is left with a cumulative upkeep cost or loses twenty life.
-  // Replacements:
-  // Illusions of Grandeur can be replaced with Demonic Pact.
-  // Donate can be replaced with Harmless Offering, or Bazaar Trader.
-
-
-  // <ComboCards cards={[{
-  //   averageRound: ,
-  //   pickCount: ,
-  //   numberOfDrafts: ,
-  //   name: '',
-  //   imageLink: '',
-  // }, {
-  //   averageRound: ,
-  //   pickCount: ,
-  //   numberOfDrafts: ,
-  //   name: '',
-  //   imageLink: '',
-  // }]}
-  //   title=""
-  // >
-  //   <Typography paragraph></Typography>
-  //   <Typography paragraph></Typography>
-  //   <Typography paragraph />
-  //   <Typography
-  //     variant="h6"
-  //   >Replacements:</Typography>
-  //   <Typography paragraph></Typography>
-  //   <Typography></Typography>
-  // </ComboCards>
 }
 
