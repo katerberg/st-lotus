@@ -100,7 +100,7 @@ export default function CombosInVrd() {
           color="error.dark"
           variant="h6"
         >Caution:</Typography>
-        <Typography paragraph>If the opponent has Emrakul, the Aeon’s Torn, Ulamog, the Infinite Gyre, Kozilek, Butcher of Truth, or Gaea’s Blessing in their deck, this combination will do very little (unless you have a Leyline of the Void or replacement).</Typography>
+        <Typography>If the opponent has Emrakul, the Aeon’s Torn, Ulamog, the Infinite Gyre, Kozilek, Butcher of Truth, or Gaea’s Blessing in their deck, this combination will do very little (unless you have a Leyline of the Void or replacement).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 14,
@@ -122,7 +122,7 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
+        <Typography>Thespian’s Stage can be replaced with Solemnity, Vampire Hexmage, or Aether Snap.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -156,7 +156,7 @@ export default function CombosInVrd() {
           variant="h6"
         >Replacements:</Typography>
         <Typography paragraph>Pestermite can be replaced with either of the following: Deceiver Exarch, Bounding Krasis, Combat Celebrant, Port Razer, Battered Golem, Clever Conjurer, Thousand-Year Elixir, Sparring Mummy, Vizier of Tumbling Sands, Hyrax Tower Scout, Restoration Angel (in combination with Kiki-Jiki), Felidar Guardian (in combination with Saheeli Rai or Kiki-Jiki), Spark Double (in combination with Saheeli Rai or Kiki-Jiki), Zealous Conscripts (in combination with Kiki-Jiki), Conspicuous Snoop (with Kiki-Jiki on top of the library) or Skill Borrower (with Kiki-Jiki on top of the library).</Typography>
-        <Typography paragraph>Splinter Twin can be replaced with Kiki-Jiki, Mirror Breaker or Saheeli Rai (as described above).</Typography>
+        <Typography>Splinter Twin can be replaced with Kiki-Jiki, Mirror Breaker or Saheeli Rai (as described above).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 25,
@@ -179,7 +179,7 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Leyline of the Void can be replaced with Dauthi Voidwalker or Rest in Peace.</Typography>
+        <Typography>Leyline of the Void can be replaced with Dauthi Voidwalker or Rest in Peace.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 29,
@@ -202,7 +202,7 @@ export default function CombosInVrd() {
           variant="h6"
         >Replacements:</Typography>
         <Typography paragraph>Demonic Consultation can be replaced with Thought Lash, Leveler, Paradigm Shift, Inverter of Truth, Harness Infinity, Morality Shift, Tainted Pact (with deckbuilding care), or Hermit Druid (with deckbuilding care).</Typography>
-        <Typography paragraph>Thassa’s Oracle can be replaced with Laboratory Maniac or Jace, Wielder of Mysteries.</Typography>
+        <Typography>Thassa’s Oracle can be replaced with Laboratory Maniac or Jace, Wielder of Mysteries.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 26,
@@ -225,7 +225,7 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Academy Ruins can be replaced with Emry, Lurker of the Loch or Trading Post.</Typography>
+        <Typography>Academy Ruins can be replaced with Emry, Lurker of the Loch or Trading Post.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 41,
@@ -243,7 +243,7 @@ export default function CombosInVrd() {
         title="Karn, the Great Creator + Mycosynth Lattice"
       >
         <Typography paragraph>Prevents opponent from activating any activated abilities, including mana abilities.</Typography>
-        <Typography paragraph>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because [[11]] mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
+        <Typography>With Karn, the Great Creator in play, activate Karn’s minus ability to retrieve Mycosynth Lattice from your sideboard and cast it (usually on a later turn because [[11]] mana is a lot). Karn’s static ability prevents all of opponent’s lands from being tapped for mana.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 31,
@@ -267,7 +267,7 @@ export default function CombosInVrd() {
           variant="h6"
         >Replacements:</Typography>
         <Typography paragraph>Witherbloom Apprentice can be replaced with Professor Onyx, Ral, Storm Conduit, Witherbloom Pledgemage, Sedgemoor Witch (for infinite creatures instead), Storm-Kiln Artist (for an infinitely-powered attacker with infinite mana), or Silverquill Apprentice (for an infinitely-powered attacker).</Typography>
-        <Typography paragraph>Chain of Smog can be replaced with Chain of Acid (when taken with Darksteel Citadel).</Typography>
+        <Typography>Chain of Smog can be replaced with Chain of Acid (when taken with Darksteel Citadel).</Typography>
       </ComboCards>
     </Container>
   );
