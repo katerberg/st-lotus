@@ -647,26 +647,56 @@ export default function CombosInVrd() {
         >Replacements:</Typography>
         <Typography>Scapeshift can be replaced with Primeval Titan which can fetch Valakut earlier, allowing it to deal damage “fairly”.</Typography>
       </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 41,
+        pickCount: 2,
+        numberOfDrafts: 57,
+        name: 'Ad Nauseam',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/a/0a4ce4a1-65e3-4b40-be35-8fc55a968ec8.png?1562700939',
+      }, {
+        averageRound: 56,
+        pickCount: 2,
+        numberOfDrafts: 57,
+        name: 'Angel’s Grace',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/5/8/580cb5be-fa59-4eb9-8808-7d2943fb6413.png?1562913383',
+      }]}
+        title="Ad Nauseam + Angel’s Grace"
+      >
+        <Typography paragraph>Draws infinite cards.</Typography>
+        <Typography paragraph>After casting Angel’s Grace, cast Ad Nauseam and take all the cards in your deck. You will be at a very negative life total but you cannot lose until the end of turn.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Ad Nauseam can be replaced with Spoils of the Vault.</Typography>
+        <Typography>Angel’s Grace can be replaced with Phyrexian Unlife.</Typography>
+      </ComboCards>
+      <ComboCards cards={[{
+        averageRound: 13,
+        pickCount: 1,
+        numberOfDrafts: 14,
+        name: 'Heliod, Sun-Crowned',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/1/01a8576e-cadc-4521-aadd-3a05f0bc4d20.png?1581479085',
+      }, {
+        averageRound: 20,
+        pickCount: 26,
+        numberOfDrafts: 30,
+        name: 'Walking Ballista',
+        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.png?1576382470',
+      }]}
+        title="Heliod, Sun-Crowned + Walking Ballista"
+      >
+        <Typography paragraph>Generates infinite damage.</Typography>
+        <Typography paragraph>With both in play and the Walking Ballista at two counters or more, activate Heliod’s ability to give Walking Ballista lifelink. Activate Walking Ballista to deal a damage, adding a counter to it. Repeat ad nauseam.</Typography>
+        <Typography
+          variant="h6"
+        >Replacements:</Typography>
+        <Typography paragraph>Heliod, Sun-Crowned can be replaced with Mikaeus, the Unhallowed (only for Triskelion).</Typography>
+        <Typography>Walking Ballista can be replaced with Triskelion or Spike Feeder (for infinite life).</Typography>
+      </ComboCards>
     </Container>
   );
 
-  //
-  // Ad Nauseam + Angel’s Grace
-  // Ad Nauseam has been picked 2 times (of 57 legal) at pick 327 (round 41) on average
-  // Angel's Grace has been picked 2 times (of 57 legal) at pick 445.5 (round 56) on average
 
-  // Draws infinite cards. After casting Angel’s Grace, cast Ad Nauseam and take all the cards in your deck. You will be at a very negative life total but you cannot lose until the end of turn.
-  // Replacements:
-  // Angel’s Grace can be replaced with Phyrexian Unlife.
-  // Ad Nauseam can be replaced with Spoils of the Vault.
-  // Heliod, Sun-Crowned + Walking Ballista
-  // Heliod, Sun-Crowned has been picked 1 time (of 14 legal) at pick 104 (round 13)
-  // Walking Ballista has been picked 26 times (of 30 legal) at pick 159.3 (round 20) on average
-
-  // Generates infinite damage. With both in play and the Walking Ballista at two counters or more, activate Heliod’s ability to give Walking Ballista lifelink. Activate Walking Ballista to deal a damage, adding a counter to it. Repeat ad nauseam.
-  // Replacements:
-  // Walking Ballista can be replaced with Triskelion or Spike Feeder (for infinite life)
-  // Heliod, Sun-Crowned can be replaced with Mikaeus, the Unhallowed (only for Triskelion).
   // Phyrexian Dreadnought + Stifle
   // Stifle has been picked 19 times (of 57 legal) at pick 201.6 (round 26) on average
   // Phyrexian Dreadnought has been picked 1 time (of 57 legal) at pick 134 (round 17)
