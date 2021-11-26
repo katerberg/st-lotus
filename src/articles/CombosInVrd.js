@@ -546,7 +546,7 @@ export default function CombosInVrd() {
         title="Squirrel Nest + Earthcraft"
       >
         <Typography paragraph>Generates infinite creatures.</Typography>
-        <Typography>With Squirrel Nest enchanting a basic land and Earthcraft in play, tap Squirrel Nest to create a creature. Activate Earthcraft, tapping the squirrel to untap the land. Repeat ad nauseam.</Typography>
+        <Typography>With <Link href="https://scryfall.com/card/ody/274/squirrel-nest">Squirrel Nest</Link> enchanting a basic land and Earthcraft in play, tap <Link href="https://scryfall.com/card/ody/274/squirrel-nest">Squirrel Nest</Link> to create a creature. Activate <Link href="https://scryfall.com/card/tmp/222/earthcraft">Earthcraft</Link>, tapping the squirrel to untap the land. Repeat ad nauseam.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 38,
@@ -564,7 +564,7 @@ export default function CombosInVrd() {
         title="Energy Field + Rest in Peace"
       >
         <Typography paragraph>Translates any damage into exiling cards from your library.</Typography>
-        <Typography paragraph>With <Link href="https://scryfall.com/card/rtr/18/rest-in-peace">Rest in Peace</Link> and Energy Field in play, any damage permanently exiles cards from your library instead of causing life loss. Often this wins with <Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link> or one of its replacements once the deck is gone.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/rtr/18/rest-in-peace">Rest in Peace</Link> and <Link href="https://scryfall.com/card/usg/73/energy-field">Energy Field</Link> in play, any damage permanently exiles cards from your library instead of causing life loss. Often this wins with <Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link> or one of its replacements once the deck is gone.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 28,
@@ -582,11 +582,11 @@ export default function CombosInVrd() {
         title="Dualcaster Mage + Twinflame"
       >
         <Typography paragraph>Generates infinite attackers.</Typography>
-        <Typography paragraph>With another creature in play, cast Twinflame on the original creature, holding priority. Cast Dualcaster Mage copying Twinflame, pointing at the Dualcaster Mage. Repeat this until you have infinite hasted Dualcaster Magi in play.</Typography>
+        <Typography paragraph>With another creature in play, cast <Link href="https://scryfall.com/card/jou/115/twinflame">Twinflame</Link> on the original creature, holding priority. Cast <Link href="https://scryfall.com/card/c14/34/dualcaster-mage">Dualcaster Mage</Link> copying <Link href="https://scryfall.com/card/jou/115/twinflame">Twinflame</Link>, pointing at the <Link href="https://scryfall.com/card/c14/34/dualcaster-mage">Dualcaster Mage</Link>. Repeat this until you have infinite hasted <Link href="https://scryfall.com/card/c14/34/dualcaster-mage">Dualcaster Magi</Link> in play.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Twinflame can be replaced with Heat Shimmer, Mythos of Illuna, Seize the Day, Fated Intuition, Kindred Charge, Sublime Epiphany, Repudiate // Replicate, Cackling Counterpart, or Acrobatic Maneuver (for infinite draw)</Typography>
+        <Typography><Link href="https://scryfall.com/card/jou/115/twinflame">Twinflame</Link> can be replaced with <Link href="https://scryfall.com/card/lrw/175/heat-shimmer">Heat Shimmer</Link>, <Link href="https://scryfall.com/card/iko/58/mythos-of-illuna">Mythos of Illuna</Link>, <Link href="https://scryfall.com/card/ody/220/seize-the-day">Seize the Day</Link>, <Link href="https://scryfall.com/card/bng/39/fated-infatuation">Fated Infatuation</Link>, <Link href="https://scryfall.com/card/c17/27/kindred-charge">Kindred Charge</Link>, <Link href="https://scryfall.com/card/m21/74/sublime-epiphany">Sublime Epiphany</Link>, <Link href="https://scryfall.com/card/rna/227/repudiate-replicate">Repudiate // Replicate</Link>, <Link href="https://scryfall.com/card/isd/46/cackling-counterpart">Cackling Counterpart</Link>, or <Link href="https://scryfall.com/card/kld/1/acrobatic-maneuver">Acrobatic Maneuver</Link> (for infinite draw)</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 22,
