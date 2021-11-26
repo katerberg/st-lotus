@@ -31,7 +31,7 @@ export default function CombosInVrd() {
         color="text.secondary"
         sx={{marginBottom: '20px', marginLeft: '20px'}}
         variant="subtitle1"
-      >{'Written by: Mark Katerberg on November 13, 2021'}</Typography>
+      >{'Written by: Mark Katerberg on November 25, 2021'}</Typography>
       <Typography paragraph>Vintage Rotisserie Draft is well known as a format where combo decks can run rampant. While aggressive and controlling strategies often rely on redundancy (either of threats or of answers), combination decks generally rely on a few powerful pieces, with replaceable filtering pieces that aid in finding the crucial parts that are needed to win the game.</Typography>
       <Typography paragraph>Over the past decade that this format has been played extensively, the definition of a “playable combo” has varied wildly, with some combos falling far out of favor (looking at you <Link href="https://scryfall.com/card/uds/31/donate">Donate</Link>/<Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link>), some combos coming into the format (<Link href="https://scryfall.com/card/ice/121/demonic-consultation">Demonic Consultation</Link>/<Link href="https://scryfall.com/card/thb/73/thassas-oracle">Thassa’s Oracle</Link>), and some lasting for the entire time (<Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link>/<Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link>).</Typography>
       <Typography paragraph>The goal of this article is not to extensively document every combo that could be played. It opted to exclude any three card combos, such as the powerful <Link href="https://scryfall.com/card/scg/29/brain-freeze">Brain Freeze</Link> + <Link href="https://scryfall.com/card/thb/161/underworld-breach">Underworld Breach</Link> + <Link href="https://scryfall.com/card/mir/307/lions-eye-diamond">Lion’s Eye Diamond</Link> synergies, even though those can be more powerful by far than some on the list today. Instead, it tries to capture the most common options, and give newer players an understanding of the options they have when they sit under the tremendous pressure of the question: “Have you made your pick yet?”</Typography>
@@ -107,7 +107,7 @@ export default function CombosInVrd() {
         title="Painter’s Servant + Grindstone"
       >
         <Typography paragraph>Mills opponent’s entire library.</Typography>
-        <Typography paragraph>With <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> (naming any color, but usually “red” for <Link href="https://scryfall.com/card/lea/49/blue-elemental-blast">Blue Elemental Blast</Link> or “blue” for <Link href="https://scryfall.com/card/lea/169/red-elemental-blast">Red Elemental Blast</Link> and <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> in play), activate <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> targeting your opponent. They will mill two cards, which match color as a result of <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> and repeats until they have no cards left in library.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> (naming any color, but usually “red” for <Link href="https://scryfall.com/card/lea/49/blue-elemental-blast">Blue Elemental Blast</Link> or “blue” for <Link href="https://scryfall.com/card/lea/169/red-elemental-blast">Red Elemental Blast</Link> and <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> in play), activate <Link href="https://scryfall.com/card/tmp/290/grindstone">Grindstone</Link> targeting your opponent. They will mill two cards, which match color as a result of <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> and repeats until they have no cards left in their library.</Typography>
         <Typography paragraph>This combination is helped by being incredibly easy to tutor for, with both pieces being low-cost artifacts. Generally <Link href="https://scryfall.com/card/shm/257/painters-servant">Painter’s Servant</Link> is taken earlier, but neither is playable without the other, so depending on how worried you are about your fellow drafters hate-drafting the combo, you can likely float the other piece much later than round 15.</Typography>
         <Typography
           color="error.dark"
@@ -604,11 +604,11 @@ export default function CombosInVrd() {
         title="Mindcrank + Bloodchief Ascension"
       >
         <Typography paragraph>Generates infinite life-loss and milling.</Typography>
-        <Typography paragraph>With a fully leveled up Bloodchief Ascension and a Mindcrank in play, cause your opponent to either put a card in their graveyard or lose a life. This will trigger one of the two abilities, which will trigger the other until the opponent has run out of life and cards in library.</Typography>
+        <Typography paragraph>With a fully leveled up <Link href="https://scryfall.com/card/zen/82/bloodchief-ascension">Bloodchief Ascension</Link> and a <Link href="https://scryfall.com/card/nph/144/mindcrank">Mindcrank</Link> in play, cause your opponent to either put a card in their graveyard or lose a life. This will trigger one of the two abilities, which will trigger the other until the opponent has run out of life and cards in their library.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Bloodchief Ascension can be replaced with Duskmantle Guildmage.</Typography>
+        <Typography><Link href="https://scryfall.com/card/zen/82/bloodchief-ascension">Bloodchief Ascension</Link> can be replaced with <Link href="https://scryfall.com/card/gtc/158/duskmantle-guildmage">Duskmantle Guildmage</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 39,
@@ -626,11 +626,11 @@ export default function CombosInVrd() {
         title="Solemnity + Phyrexian Unlife"
       >
         <Typography paragraph>Prevents you from losing from life loss.</Typography>
-        <Typography paragraph>With <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link> in play, counters cannot be added to you. As you take damage, Phyrexian Unlife attempts to put poison counters on you, which evaporate due to <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
+        <Typography paragraph>With <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link> in play, counters cannot be added to you. As you take damage, <Link href="https://scryfall.com/card/nph/18/phyrexian-unlife">Phyrexian Unlife</Link> attempts to put poison counters on you, which evaporate due to <Link href="https://scryfall.com/card/hou/22/solemnity">Solemnity</Link>.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Phyrexian Unlife can be replaced with Glacial Chasm (although it will not stop “life loss” effects like Tendrils of Agony)</Typography>
+        <Typography><Link href="https://scryfall.com/card/nph/18/phyrexian-unlife">Phyrexian Unlife</Link> can be replaced with <Link href="https://scryfall.com/card/ice/353/glacial-chasm">Glacial Chasm</Link> (although it will not stop “life loss” effects like <Link href="https://scryfall.com/card/scg/75/tendrils-of-agony">Tendrils of Agony</Link>)</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 35,
@@ -648,11 +648,11 @@ export default function CombosInVrd() {
         title="Valakut, the Molten Pinnacle + Scapeshift"
       >
         <Typography paragraph>Deals a large amount of damage.</Typography>
-        <Typography paragraph>With at least seven lands in play, Scapeshift in your hand, and Valakut, the Molten Pinnacle in your deck, cast Scapeshift, sacrificing all of your lands. Find Valakut and six mountains, each of which will deal 3 damage for a total of at least 18 damage. This is often combined with Prismatic Omen, Dryad of the Elysian Grove (which both reduce the number of lands needed by counting Valakut as a mountain).</Typography>
+        <Typography paragraph>With at least seven lands in play, <Link href="https://scryfall.com/card/mor/136/scapeshift">Scapeshift</Link> in your hand, and <Link href="https://scryfall.com/card/zen/228/valakut-the-molten-pinnacle">Valakut, the Molten Pinnacle</Link> in your deck, cast <Link href="https://scryfall.com/card/mor/136/scapeshift">Scapeshift</Link>, sacrificing all of your lands. Find <Link href="https://scryfall.com/card/zen/228/valakut-the-molten-pinnacle">Valakut</Link> and six mountains, each of which will deal 3 damage for a total of at least 18 damage. This is often combined with <Link href="https://scryfall.com/card/shm/126/prismatic-omen">Prismatic Omen</Link> or <Link href="https://scryfall.com/card/thb/169/dryad-of-the-ilysian-grove">Dryad of the Elysian Grove</Link> (which both reduce the number of lands needed by counting <Link href="https://scryfall.com/card/zen/228/valakut-the-molten-pinnacle">Valakut</Link> as a mountain).</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Scapeshift can be replaced with Primeval Titan which can fetch Valakut earlier, allowing it to deal damage “fairly”.</Typography>
+        <Typography><Link href="https://scryfall.com/card/mor/136/scapeshift">Scapeshift</Link> can be replaced with <Link href="https://scryfall.com/card/m11/192/primeval-titan">Primeval Titan</Link> which can fetch <Link href="https://scryfall.com/card/zen/228/valakut-the-molten-pinnacle">Valakut</Link> earlier, allowing it to deal damage “fairly”.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 41,
@@ -670,12 +670,12 @@ export default function CombosInVrd() {
         title="Ad Nauseam + Angel’s Grace"
       >
         <Typography paragraph>Draws infinite cards.</Typography>
-        <Typography paragraph>After casting Angel’s Grace, cast Ad Nauseam and take all the cards in your deck. You will be at a very negative life total but you cannot lose until the end of turn.</Typography>
+        <Typography paragraph>After casting <Link href="https://scryfall.com/card/tsp/3/angels-grace">Angel’s Grace</Link>, cast <Link href="https://scryfall.com/card/ala/63/ad-nauseam">Ad Nauseam</Link> and take all the cards in your deck. You will be at a very negative life total but you cannot lose until the end of turn.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Ad Nauseam can be replaced with Spoils of the Vault.</Typography>
-        <Typography>Angel’s Grace can be replaced with Phyrexian Unlife.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ala/63/ad-nauseam">Ad Nauseam</Link> can be replaced with <Link href="https://scryfall.com/card/mrd/78/spoils-of-the-vault">Spoils of the Vault</Link>.</Typography>
+        <Typography><Link href="https://scryfall.com/card/tsp/3/angels-grace">Angel’s Grace</Link> can be replaced with <Link href="https://scryfall.com/card/nph/18/phyrexian-unlife">Phyrexian Unlife</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 13,
@@ -693,12 +693,12 @@ export default function CombosInVrd() {
         title="Heliod, Sun-Crowned + Walking Ballista"
       >
         <Typography paragraph>Generates infinite damage.</Typography>
-        <Typography paragraph>With both in play and the Walking Ballista at two counters or more, activate Heliod’s ability to give Walking Ballista lifelink. Activate Walking Ballista to deal a damage, adding a counter to it. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With both in play and the <Link href="https://scryfall.com/card/aer/181/walking-ballista">Walking Ballista</Link> at two counters or more, activate <Link href="https://scryfall.com/card/thb/18/heliod-sun-crowned">Heliod’s</Link> ability to give <Link href="https://scryfall.com/card/aer/181/walking-ballista">Walking Ballista</Link> lifelink. Activate <Link href="https://scryfall.com/card/aer/181/walking-ballista">Walking Ballista</Link> to deal a damage, adding a counter to it. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Heliod, Sun-Crowned can be replaced with Mikaeus, the Unhallowed (only for Triskelion).</Typography>
-        <Typography>Walking Ballista can be replaced with Triskelion or Spike Feeder (for infinite life).</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/thb/18/heliod-sun-crowned">Heliod, Sun-Crowned</Link> can be replaced with <Link href="https://scryfall.com/card/dka/70/mikaeus-the-unhallowed">Mikaeus, the Unhallowed</Link> (only for <Link href="https://scryfall.com/card/atq/73/triskelion">Triskelion</Link>).</Typography>
+        <Typography><Link href="https://scryfall.com/card/aer/181/walking-ballista">Walking Ballista</Link> can be replaced with<Link href="https://scryfall.com/card/atq/73/triskelion"> Triskelion</Link> or <Link href="https://scryfall.com/card/sth/118/spike-feeder">Spike Feeder</Link> (for infinite life).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 17,
@@ -716,11 +716,11 @@ export default function CombosInVrd() {
         title="Phyrexian Dreadnought + Stifle"
       >
         <Typography paragraph>Creates a 12/12 trampler.</Typography>
-        <Typography paragraph>Cast Phyrexian Dreadnought. Counter its trigger with Stifle.</Typography>
+        <Typography paragraph>Cast <Link href="https://scryfall.com/card/mir/315/phyrexian-dreadnought">Phyrexian Dreadnought</Link>. Counter its trigger with Stifle.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Stifle can be replaced with Dress Down, Illusionary Mask, Torpor Orb, Hushwing Gryf, Hushbringer, or Tocatli Honor Guard.</Typography>
+        <Typography><Link href="https://scryfall.com/card/scg/52/stifle">Stifle</Link> can be replaced with <Link href="https://scryfall.com/card/mh2/39/dress-down">Dress Down</Link>, <Link href="https://scryfall.com/card/lea/249/illusionary-mask">Illusionary Mask</Link>, <Link href="https://scryfall.com/card/nph/162/torpor-orb">Torpor Orb</Link>, <Link href="https://scryfall.com/card/c16/68/hushwing-gryff">Hushwing Gryf</Link>, <Link href="https://scryfall.com/card/eld/18/hushbringer">Hushbringer</Link>, or <Link href="https://scryfall.com/card/xln/42/tocatli-honor-guard">Tocatli Honor Guard</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 15,
@@ -738,7 +738,7 @@ export default function CombosInVrd() {
         title="Opalescence + Enchanted Evening"
       >
         <Typography paragraph>Destroys all (current and future) lands.</Typography>
-        <Typography>With both Enchanted Evening and Opalescence in play, all zero-cost permanents (including lands) have zero toughness and die.</Typography>
+        <Typography>With both <Link href="https://scryfall.com/card/shm/140/enchanted-evening">Enchanted Evening</Link> and <Link href="https://scryfall.com/card/uds/13/opalescence">Opalescence</Link> in play, all zero-cost permanents (including lands) have zero toughness and die.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 37,
@@ -760,8 +760,8 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph><Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link> can be replaced with Demonic Pact.</Typography>
-        <Typography><Link href="https://scryfall.com/card/uds/31/donate">Donate</Link> can be replaced with Harmless Offering, or Bazaar Trader.</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/ice/79/illusions-of-grandeur">Illusions of Grandeur</Link> can be replaced with <Link href="https://scryfall.com/card/ori/92/demonic-pact">Demonic Pact</Link>.</Typography>
+        <Typography><Link href="https://scryfall.com/card/uds/31/donate">Donate</Link> can be replaced with <Link href="https://scryfall.com/card/emn/131/harmless-offering">Harmless Offering</Link>, or <Link href="https://scryfall.com/card/wwk/72/bazaar-trader">Bazaar Trader</Link>.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -790,12 +790,12 @@ export default function CombosInVrd() {
         title="Knowledge Pool + Teferi, Mage of Zhalfir"
       >
         <Typography paragraph>Prevents your opponent from successfully casting any spells.</Typography>
-        <Typography>With Knowledge Pool and Teferi, Mage of Zhalfir in play, any spell your opponent casts will trigger Knowledge Pool which exiles it. Teferi, Mage of Zhalfir prevents them from casting the other spell since it would not be at sorcery speed.</Typography>
+        <Typography>With <Link href="https://scryfall.com/card/mbs/111/knowledge-pool">Knowledge Pool</Link> and <Link href="https://scryfall.com/card/tsp/83/teferi-mage-of-zhalfir">Teferi, Mage of Zhalfir</Link> in play, any spell your opponent casts will trigger <Link href="https://scryfall.com/card/mbs/111/knowledge-pool">Knowledge Pool</Link> which exiles it. <Link href="https://scryfall.com/card/tsp/83/teferi-mage-of-zhalfir">Teferi, Mage of Zhalfir</Link> prevents them from casting the other spell since it would not be at sorcery speed.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography paragraph>Knowledge Pool can be replaced with Possibility Storm, Erayo, Soratami Ascendant (once flipped), or Omen Machine (which affects all future cards drawn).</Typography>
-        <Typography>Teferi, Mage of Zhalfir can be replaced with Curse of Exhaustion, Teferi, Time Raveler, Lavinia, Azorious Renegade, Drannith Magistrate, Arcane Laboratory (when you are ahead on board), Rule of Law (when you are ahead on board).</Typography>
+        <Typography paragraph><Link href="https://scryfall.com/card/mbs/111/knowledge-pool">Knowledge Pool</Link> can be replaced with <Link href="https://scryfall.com/card/dgm/34/possibility-storm">Possibility Storm</Link>, <Link href="https://scryfall.com/card/sok/35/erayo-soratami-ascendant-erayos-essence">Erayo, Soratami Ascendant</Link> (once flipped), or <Link href="https://scryfall.com/card/nph/148/omen-machine">Omen Machine</Link> (which affects all future cards drawn).</Typography>
+        <Typography><Link href="https://scryfall.com/card/tsp/83/teferi-mage-of-zhalfir">Teferi, Mage of Zhalfir</Link> can be replaced with <Link href="https://scryfall.com/card/dka/5/curse-of-exhaustion">Curse of Exhaustion</Link>, <Link href="https://scryfall.com/card/war/221/teferi-time-raveler">Teferi, Time Raveler</Link>, <Link href="https://scryfall.com/card/rna/189/lavinia-azorius-renegade">Lavinia, Azorious Renegade</Link>, <Link href="https://scryfall.com/card/iko/11/drannith-magistrate">Drannith Magistrate</Link>, <Link href="https://scryfall.com/card/usg/60/arcane-laboratory">Arcane Laboratory</Link> (when you are ahead on board), <Link href="https://scryfall.com/card/mrd/19/rule-of-law">Rule of Law</Link> (when you are ahead on board).</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 0,
@@ -813,7 +813,7 @@ export default function CombosInVrd() {
         title="Acererak the Archlich + Aluren"
       >
         <Typography paragraph>Deals infinite damage.</Typography>
-        <Typography>With Aluren in play, play Acererak the Archlich, triggering his ability to venture into the “Lost Mines of Phandelver” dungeon, which returns him to your hand. Replay him ad nauseam, going through the “Dark Pool”, draining your opponent’s life.</Typography>
+        <Typography>With <Link href="https://scryfall.com/card/tmp/213/aluren">Aluren</Link> in play, play <Link href="https://scryfall.com/card/afr/87/acererak-the-archlich">Acererak the Archlich</Link>, triggering his ability to venture into the “<Link href="https://scryfall.com/card/tafr/21/lost-mine-of-phandelver">Lost Mines of Phandelver</Link>” dungeon, which returns him to your hand. Replay him ad nauseam, going through the “Dark Pool”, draining your opponent’s life.</Typography>
         <Typography
           color="warning.dark"
           variant="h6"
@@ -822,7 +822,7 @@ export default function CombosInVrd() {
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Aluren can be replaced with Rooftop Storm or Omniscience.</Typography>
+        <Typography><Link href="https://scryfall.com/card/tmp/213/aluren">Aluren</Link> can be replaced with <Link href="https://scryfall.com/card/isd/71/rooftop-storm">Rooftop Storm</Link> or <Link href="https://scryfall.com/card/m13/63/omniscience">Omniscience</Link>.</Typography>
       </ComboCards>
       <ComboCards cards={[{
         averageRound: 0,
@@ -840,11 +840,11 @@ export default function CombosInVrd() {
         title="Food Chain and Eternal Scourge"
       >
         <Typography paragraph>Generates infinite mana.</Typography>
-        <Typography>With Food Chain and Eternal Scourge in play, exile Eternal Scourge with Food Chain. Cast Eternal Scourge from exile. Repeat this process ad nauseam.</Typography>
+        <Typography>With <Link href="https://scryfall.com/card/mmq/246/food-chain">Food Chain</Link> and <Link href="https://scryfall.com/card/emn/7/eternal-scourge">Eternal Scourge</Link> in play, exile <Link href="https://scryfall.com/card/emn/7/eternal-scourge">Eternal Scourge</Link> with <Link href="https://scryfall.com/card/mmq/246/food-chain">Food Chain</Link>. Cast <Link href="https://scryfall.com/card/emn/7/eternal-scourge">Eternal Scourge</Link> from exile. Repeat this process ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
-        <Typography>Eternal Scourge can be replaced with Misthollow Griffin, Squee, the Immortal, and can have an “extra copy” with Manipulate Fate.</Typography>
+        <Typography><Link href="https://scryfall.com/card/emn/7/eternal-scourge">Eternal Scourge</Link> can be replaced with <Link href="https://scryfall.com/card/avr/68/misthollow-griffin">Misthollow Griffin</Link>, <Link href="https://scryfall.com/card/dom/146/squee-the-immortal">Squee, the Immortal</Link>, and can have an “extra copy” with <Link href="https://scryfall.com/card/inv/60/manipulate-fate">Manipulate Fate</Link>.</Typography>
       </ComboCards>
       <SpacedHeader
         component="h2"
@@ -883,7 +883,7 @@ export default function CombosInVrd() {
           color="text.secondary"
           sx={{verticalAlign: 'middle', marginLeft: '20px'}}
           variant="subtitle2"
-        >Mark Katerberg is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and a deeply invested combo player. He fell in love with VRD from the days of Shotgun Lotus, and knew that the format needed more live matches to be streamed. His favorite cards are <Link href="https://scryfall.com/card/wth/66/doomsday">Doomsday</Link>, Dark Ritual, Mystical Teachings, and Serra Angel.</Typography>
+        >Mark Katerberg is a longtime L2 Judge, Member of the St. Lotus VRD Steering Committee, and a deeply invested combo player. He fell in love with VRD from the days of <Link href="https://www.youtube.com/user/shotgunlotus">Shotgun Lotus</Link>, and knew that the format needed more live matches to be streamed. His favorite cards are <Link href="https://scryfall.com/card/wth/66/doomsday">Doomsday</Link>, <Link href="https://scryfall.com/card/lea/98/dark-ritual">Dark Ritual</Link>, <Link href="https://scryfall.com/card/tsp/69/mystical-teachings">Mystical Teachings</Link>, and <Link href="https://scryfall.com/card/lea/39/serra-angel">Serra Angel</Link>.</Typography>
         </Grid>
       </Grid>
     </Container>

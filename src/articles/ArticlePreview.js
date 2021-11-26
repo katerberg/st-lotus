@@ -12,7 +12,7 @@ export default function ArticlePreview({link, image, text, date, heading, author
   const history = useHistory();
   const handleClick = useCallback(() => history.push(link), [history, link]);
   return (
-    <Card>
+    <Card sx={{margin: '20px'}}>
       <CardMedia
         alt={`image preview for ${heading}`}
         component="img"
