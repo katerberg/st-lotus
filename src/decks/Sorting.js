@@ -19,10 +19,10 @@ const sortGroupByColor = (a, b) => colorOrder.indexOf(a.title) - colorOrder.inde
 const sortCardByCmc = (a, b) => a.cmc - b.cmc;
 
 const sortCardByName = (a, b) => {
-  if (a.name < b.name) {
+  if (a.displayName < b.displayName) {
     return -1;
   }
-  if (a.name > b.name) {
+  if (a.displayName > b.displayName) {
     return 1;
   }
   return 0;

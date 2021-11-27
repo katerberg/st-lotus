@@ -25,7 +25,7 @@ export default function DeckSection({cards, title, sort}) {
         <ManaCost manaCost={`{${title}}`} />
       </Box>
       <List component="nav">
-        {cards.map((card) => <React.Fragment key={card.name}>
+        {cards.map((card) => <React.Fragment key={card.displayName}>
             <Card card={card}
               prefix={`${getPrefix(card)}`}
             />

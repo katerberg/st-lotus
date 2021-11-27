@@ -48,7 +48,7 @@ function getCardColors(processedCard) {
 
 }
 
-function getCardName(processedCard) {
+function getCardDisplayName(processedCard) {
   if (processedCard.card_faces) {
     return processedCard.card_faces[0].name;
   }
@@ -62,9 +62,10 @@ function getManaCost(processedCard) {
   return processedCard.mana_cost;
 }
 
-function buildCard(processedCard, pickOrder) {
+function buildCard(rawCardName, processedCard, pickOrder) {
   return {
-    name: getCardName(processedCard),
+    apiName: rawCardName,
+    displayName: getCardDisplayName(processedCard),
     image: getCardImage(processedCard),
     uri: processedCard.scryfall_uri,
     type: processedCard.type_line,
@@ -85,7 +86,7 @@ fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dir
     }).then(() => {
       const cleanLists = parsedDirtyLists.map(dirtyList => ({
         ...dirtyList,
-        decklist: dirtyList.decklist.map((dirtyCard, i) => buildCard(processedCards[dirtyCard], i + 1)),
+        decklist: dirtyList.decklist.map((dirtyCard, i) => buildCard(dirtyCard, processedCards[dirtyCard], i + 1)),
       }));
       fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
         if (err) {

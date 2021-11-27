@@ -1,11 +1,11 @@
 import {colorOrder, sortByColor, sortByCmc} from './Sorting';
 
 describe('Sorting', () => {
-  function makeCard(colors = [], type = '', name, cmc = 0, pickOrder) {
+  function makeCard(colors = [], type = '', displayName, cmc = 0, pickOrder) {
     return {
       colors,
       type,
-      name: name !== undefined ? name : `${Math.random()}`,
+      displayName: displayName !== undefined ? displayName : `${Math.random()}`,
       cmc,
       pickOrder: pickOrder !== undefined ? pickOrder : Math.floor(Math.random() * 100000000),
     };
@@ -38,7 +38,7 @@ describe('Sorting', () => {
       });
     });
 
-    it('sub sorts by cmc, then name', () => {
+    it('sub sorts by cmc, then displayName', () => {
       const decklist = [
         makeCard(['U'], '', '', 4),
         makeCard(['U', 'G'], '', 'Xantid Swarm', 0),
@@ -94,7 +94,7 @@ describe('Sorting', () => {
       expect(result[5].title).toEqual('9');
     });
 
-    it('sub sorts by name', () => {
+    it('sub sorts by displayName', () => {
       const decklist = [
         makeCard([], '', 'Arid Mesa', 0),
         makeCard([], '', 'Verdant Catacombs', 0),

@@ -8,6 +8,7 @@ import {styled} from '@mui/system';
 import Popover from '@mui/material/Popover';
 import Button from '@mui/material/Button';
 import ManaCost from '../common/mana-cost/ManaCost';
+import CardStats from './CardStats';
 
 const StyledImage = styled('img')({
   width: '300px',
@@ -39,7 +40,7 @@ export default function Card({card, prefix}) {
       sx={{width: '100%'}}
     >
       <Typography sx={{flexGrow: 1}}>
-        <CardName>{prefix !== undefined ? `${prefix} ` : ''}{card.name}</CardName>
+        <CardName>{prefix !== undefined ? `${prefix} ` : ''}{card.displayName}</CardName>
       </Typography>
       <ManaCost manaCost={card.manaCost} />
     </ListItem>
@@ -69,6 +70,7 @@ export default function Card({card, prefix}) {
           >{'See in Scryfall'}</Button>
         </Link>
         <StyledImage src={card.image} />
+        <CardStats card={card} />
     </Popover>
     </>
   );
