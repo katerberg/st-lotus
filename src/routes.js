@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 import Home from './home/Home';
 import HowToPlay from './HowToPlay';
-import Decks from './decks/Decks';
+import StLotus7Decks from './decks/StLotus7Decks';
 import Rulings from './rulings/Rulings';
 import Articles from './articles/Articles';
 
@@ -22,9 +22,9 @@ function Routes() {
         </Route>
         <Route
           exact
-          path="/decks"
+          path="/decks/st-lotus-7"
         >
-          <Decks />
+          <StLotus7Decks />
         </Route>
         <Route
           exact
