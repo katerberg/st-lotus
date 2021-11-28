@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import Grid from '@mui/material/Grid';
 import {cardShape} from './DeckShapes';
+import Skeleton from '@mui/material/Skeleton';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import axios from 'axios';
 import {config} from '../common/config';
@@ -19,17 +21,16 @@ export default function CardStats({card}) {
     <Grid
       container
       direction="column"
-      sx={{paddingLeft: '20px'}}
+      sx={{paddingLeft: '20px', paddingRight: '20px'}}
     >
-      {stats && <>
+      <Stack>
         <Typography>
-          {`Taken in ${stats.numberTaken} of ${stats.numberOfDrafts} drafts`}
+          {stats ? `Taken in ${stats.numberTaken} of ${stats.numberOfDrafts} drafts` : <Skeleton variant="text" />}
         </Typography>
         <Typography>
-          {`Usually taken in round ${stats.averageRound}`}
+          {stats ? `Usually taken in round ${stats.averageRound}` : <Skeleton variant="text" />}
         </Typography>
-      </>
-      }
+      </Stack>
     </Grid>
   );
 }
