@@ -13,7 +13,7 @@ export default function StLotus7Decks() {
         sx={{marginTop: 10}}
         variant="h2"
       >{'St Lotus 7'}</SpacedHeader>
-      <Typography paragraph>{'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nisl aliquam, luctus metus quis, lobortis risus. Praesent maximus tincidunt dolor, non sodales lectus. Etiam eget erat vitae enim pellentesque imperdiet. Aliquam scelerisque tristique velit, vitae gravida nisl imperdiet eget. Nam congue, ipsum quis rhoncus pretium, lacus lorem tincidunt sem, eget tincidunt est magna a lectus. Morbi euismod risus a est pellentesque euismod. Mauris vel sapien vitae ante aliquet condimentum. Phasellus sodales tellus vel nisl egestas, et vulputate tortor dapibus. Nullam a lectus mattis, venenatis orci quis, dignissim eros. Nullam at lectus id lorem eleifend suscipit. Phasellus mattis diam ut fringilla aliquet. Duis iaculis, dui nec ornare varius, erat mi suscipit nisi, non laoreet augue odio tristique orci. Aenean cursus metus quis diam pulvinar, ut sagittis tortor pellentesque.'}</Typography>
+      <Typography paragraph>{'Brandon Curry took the tournament with a planeswalker heavy deck. He managed to squeak out a win against Eric Levine’s Eldrazi and Taxes list. This draft really showed the power of continuous board-control and prioritizing mana fixing incredibly early. Often we see combo decks get attempted in really high numbers, but the consistency of a bunch of planeswalkers, consistent mana, and good controlling elements got Brandon his first VRD win.'}</Typography>
       {decklists.map((deck, i) => <Deck deck={deck}
         key={i}
                                   />)}

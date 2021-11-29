@@ -48,6 +48,7 @@ export default function Deck({deck}) {
         <Typography variant="h3">{deck.genre}</Typography>
         <Subtitle>{`${deck.player}`}{deck.wins !== undefined && deck.losses !== undefined ? ` (${deck.wins}-${deck.losses})` : ''}</Subtitle>
         <Subtitle>{deck.date}</Subtitle>
+        <Subtitle>{`Seat: ${deck.seat}`}</Subtitle>
       </Grid>
       <Grid item
         sx={{display: 'flex', alignItems: 'end'}}
@@ -76,6 +77,7 @@ Deck.propTypes = {
     date: PropTypes.string.isRequired,
     player: PropTypes.string.isRequired,
     genre: PropTypes.string.isRequired,
+    seat: PropTypes.number.isRequired,
     wins: PropTypes.number,
     losses: PropTypes.number,
     stLotus: PropTypes.number,
