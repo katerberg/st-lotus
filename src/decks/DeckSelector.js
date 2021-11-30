@@ -37,9 +37,7 @@ export default function DeckSelector({decks, references}) {
         direction="down"
         in={trigger}
       >
-        <FloatingBox
-          sx={{}}
-        >
+        <FloatingBox>
           <FormControl fullWidth>
             <InputLabel>{'Deck'}</InputLabel>
             <Select
