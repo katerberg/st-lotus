@@ -13,7 +13,7 @@ const Subtitle = styled(Typography)({
   marginLeft: '1rem',
 });
 
-export default function Deck({deck}) {
+function Deck({deck}, ref) {
   const [sort, setSort] = useState('color');
 
   const decklistSections = useMemo(() => {
@@ -35,13 +35,16 @@ export default function Deck({deck}) {
     }
     return {xs: 1, sm: 2, md: 3};
   }, [sort, decklistSections]);
+
   const handleSortChange = (value) => {
     setSort(value);
   };
 
   return (
     <>
-    <Grid container>
+    <Grid container
+      ref={ref}
+    >
       <Grid flexGrow={1}
         item
       >
@@ -71,6 +74,8 @@ export default function Deck({deck}) {
     </>
   );
 }
+
+export default React.forwardRef(Deck);
 
 Deck.propTypes = {
   deck: PropTypes.shape({
