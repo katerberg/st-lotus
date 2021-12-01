@@ -1,4 +1,5 @@
-import React, {useState, useCallback} from 'react';
+/* eslint-disable no-console */
+import React, {useEffect, useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
 import Zoom from '@mui/material/Zoom';
 import Box from '@mui/material/Box';
@@ -22,15 +23,35 @@ const FloatingBox = styled(Box)({
 
 export default function DeckSelector({decks, references}) {
   const [selectedDeck, setSelectedDeck] = useState('');
+
+  const handleScroll = useCallback(() => {
+    if (!references?.length) {
+      return;
+    }
+    const i = references
+      // eslint-disable-next-line no-extra-parens
+      .map((wrapper) => (wrapper ? wrapper?.ref?.current.getBoundingClientRect().top : 0))
+      .findIndex(distance => distance > 100);
+    setSelectedDeck(references[i - 1 < 0 ? references.length - 1 : i - 1]?.ref?.current);
+  }, [references]);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [handleScroll]);
+
+  const handleChange = useCallback((e) => {
+    e.target.value.scrollIntoView({block: 'start', behavior: 'smooth'});
+    setSelectedDeck(e.target.value);
+  }, []);
+
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 500,
   });
-
-  const handleChange = useCallback((e) => {
-    e.target.value.scrollIntoView({block: 'center', behavior: 'smooth'});
-    setSelectedDeck(e.target.value);
-  }, []);
 
   return (
       <Zoom appear={false}
@@ -48,7 +69,7 @@ export default function DeckSelector({decks, references}) {
               {decks.map((deck, i) =>
                 <MenuItem key={deck.player}
                   value={references[i]?.ref?.current}
-                >{deck.player}</MenuItem>,
+                >{`${deck.genre} - ${deck.player}`}</MenuItem>,
               )}
             </Select>
           </FormControl>
@@ -59,6 +80,7 @@ export default function DeckSelector({decks, references}) {
 
 DeckSelector.propTypes = {
   decks: PropTypes.arrayOf(PropTypes.shape({
+    genre: PropTypes.string.isRequired,
     player: PropTypes.string.isRequired,
   })).isRequired,
   references: PropTypes.arrayOf(PropTypes.shape({

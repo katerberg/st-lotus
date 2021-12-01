@@ -44,6 +44,7 @@ function Deck({deck}, ref) {
     <>
     <Grid container
       ref={ref}
+      sx={{paddingTop: 12}}
     >
       <Grid flexGrow={1}
         item
