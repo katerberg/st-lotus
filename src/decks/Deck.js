@@ -1,4 +1,5 @@
 import React, {useCallback, useMemo, useState} from 'react';
+import Divider from '@mui/material/Divider';
 import {styled} from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
 import Grid from '@mui/material/Grid';
@@ -24,6 +25,16 @@ function Deck({deck}, ref) {
       return sortByColor(deck.decklist);
     }
     return [{title: '', cards: deck.decklist.concat(deck.sideboard).sort((c1, c2) => c1.pickOrder - c2.pickOrder)}];
+  }, [deck, sort]);
+
+  const sideboardSections = useMemo(() => {
+    if (sort === 'cmc') {
+      return sortByCmc(deck.sideboard);
+    }
+    if (sort === 'color') {
+      return sortByColor(deck.sideboard);
+    }
+    return null;
   }, [deck, sort]);
 
   const getColumns = useCallback(() => {
@@ -72,6 +83,20 @@ function Deck({deck}, ref) {
           title={ds.title}
                                     />)}
       </Masonry>
+      {sideboardSections && <>
+      <Typography variant="h4">{'Sideboard'}</Typography>
+      <Divider />
+      <Grid sx={{background: '#eee', borderRadius: '8px', paddingTop: '20px', paddingBottom: '20px'}}>
+        <Masonry columns={getColumns()}
+          sx={{marginTop: '20px'}}
+        >
+          {sideboardSections.map(ds => <DeckSection cards={ds.cards}
+            key={ds.title}
+            sort={sort}
+                                       />)}
+        </Masonry>
+      </Grid>
+      </>}
     </>
   );
 }
