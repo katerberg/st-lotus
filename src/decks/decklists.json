@@ -8,52 +8,54 @@
     "losses": 3,
     "stLotus": 7,
     "decklist": [
-      "Mox Sapphire",
-      "Sol Ring",
-      "Teferi, time Raveler",
-      "Oko, Thief of Crowns",
-      "Prismatic Vista",
-      "Misty Rainforest",
-      "Flooded Strand",
-      "Balance",
-      "Karn, The Great Creator",
-      "Karn, Scion of Urza",
-      "Savannah",
-      "Tundra",
-      "Jace, The Mind Sculptor",
-      "hurkyl's recall",
-      "Swords to plowshares",
-      "Council's Judgment",
-      "Sensei's Divining Top",
-      "Sylvan Library",
-      "Mental Misstep",
-      "Spell Pierce",
-      "Counterspell",
-      "Brainstorm",
-      "Monastery Mentor",
-      "Breeding Pool",
-      "Pentad Prism",
-      "Karakas",
-      "Birds of Paradise",
-      "Noble Hierarch",
-      "Nissa, Who Shakes the World",
-      "Yavimaya, Cradle of Growth",
-      "nature's claim",
-      "Manglehorn",
-      "Leyline of the Void",
-      "Helm of Obedience",
-      "Mycosynth Lattice",
-      "Winter Orb",
-      "Tangle wire",
-      "Karn Liberated",
-      "Ancestral Vision",
-      "Oath of Nissa",
-      "Chalice of the Void",
-      "Settle the Wreckage",
-      "Spell Queller",
-      "Elspeth, Sun's champion",
-      "Land Tax",
-      "Dovin, Hand of Control"
+"Ancestral Recall",
+"Tinker",
+"Blightsteel Colossus",
+"Grim Monolith",
+"Tolarian Academy",
+"Time Walk",
+"Urza, Lord High Artificer",
+"Grindstone",
+"Painter's Servant",
+"Defense Grid",
+"Spellseeker",
+"Flusterstorm",
+"Dress Down",
+"Ensnaring Bridge",
+"Emry, Lurker of the Loch",
+"Inventors' Fair",
+"Standstill",
+"Transmute Artifact",
+"Memory Jar",
+"Mindslaver",
+"Rhystic Study",
+"Repeal",
+"Tezzeret the Seeker",
+"Upheaval",
+"Padeem, Consul of Innovation",
+"Ashiok, Dream Render",
+"Sorcerous Spyglass",
+"Welding Jar",
+"Aether Spellbomb",
+"Torpor Orb",
+"Whir of Invention",
+"Tribute Mage",
+"Cyclonic Rift",
+"Blue Elemental Blast",
+"Witchbane Orb",
+"Rise and Shine",
+"Buried Ruin",
+"Ghoulcaller's Bell",
+"Lantern of Insight",
+"Pyxis of Pandemonium",
+"Subtlety",
+"Bottled Cloister",
+"Trading Post",
+"Codex Shredder",
+"Suspend",
+"Elixir of Immortality"
+      ],
+      "sideboard": [
       ]
     },
     {
@@ -111,6 +113,8 @@
 "Sidisi, Undead Vizier",
 "Damnable Pact",
 "Blooming Marsh"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -168,6 +172,8 @@
 "Chain of vapor",
 "Pyroclasm",
 "Opposition Agent"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -225,6 +231,8 @@
 "Umezawa's Jitte",
 "Eldrazi Temple",
 "Gideon of the Trials"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -282,6 +290,8 @@
 "Gruul Turf",
 "Hanweir Battlements // Hanweir, the Writhing Township",
 "Tireless Tracker"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -339,6 +349,8 @@
 "Elspeth, Sun's champion",
 "Land Tax",
 "Dovin, Hand of Control"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -396,6 +408,8 @@
 "Shard Volley",
 "Barbarian Ring",
 "Ramunap Ruins"
+  ],
+    "sideboard": [
     ]
   },
     {
@@ -453,6 +467,8 @@
 "Steel Overseer",
 "Thrumming Stone",
 "Relentless Rats"
+  ],
+    "sideboard": [
     ]
   }
 ]
