@@ -23,7 +23,7 @@ function Deck({deck}, ref) {
     if (sort === 'color') {
       return sortByColor(deck.decklist);
     }
-    return [{title: '', cards: deck.decklist}];
+    return [{title: '', cards: deck.decklist.concat(deck.sideboard).sort((c1, c2) => c1.pickOrder - c2.pickOrder)}];
   }, [deck, sort]);
 
   const getColumns = useCallback(() => {
@@ -88,5 +88,6 @@ Deck.propTypes = {
     losses: PropTypes.number,
     stLotus: PropTypes.number,
     decklist: PropTypes.arrayOf(cardShape).isRequired,
+    sideboard: PropTypes.arrayOf(cardShape).isRequired,
   }).isRequired,
 };
