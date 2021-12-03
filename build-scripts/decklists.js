@@ -10,7 +10,7 @@ async function getCards(dirtyLists) {
   const cards = {};
   await dirtyLists.reduce(async(previousDeck, dirtyDeck) => {
     await previousDeck;
-    const axiosCalls = await dirtyDeck.decklist.concat(dirtyDeck.sideboard).reduce(async(prev, card) => {
+    const axiosCalls = await dirtyDeck.decklist.concat(dirtyDeck.sideboard).reduce(async(prev, [, card]) => {
       await prev;
       if (cards[card]) {
         console.log(`skipping ${card}`);
@@ -86,8 +86,8 @@ fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dir
     }).then(() => {
       const cleanLists = parsedDirtyLists.map(dirtyList => ({
         ...dirtyList,
-        decklist: dirtyList.decklist.map((dirtyCard, i) => buildCard(dirtyCard, processedCards[dirtyCard], i + 1)),
-        sideboard: dirtyList.sideboard.map((dirtyCard, i) => buildCard(dirtyCard, processedCards[dirtyCard], i + 1)),
+        decklist: dirtyList.decklist.map(([pick, dirtyCard]) => buildCard(dirtyCard, processedCards[dirtyCard], pick)),
+        sideboard: dirtyList.sideboard.map(([pick, dirtyCard]) => buildCard(dirtyCard, processedCards[dirtyCard], pick)),
       }));
       fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
         if (err) {
