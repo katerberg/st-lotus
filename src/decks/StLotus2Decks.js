@@ -3,10 +3,10 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import SpacedHeader from '../common/SpacedHeader';
 import Deck from './Deck';
-import decks from './vrd1Decklists.json';
+import decks from './vrd2Decklists.json';
 import DeckSelector from './DeckSelector';
 
-export default function StLotus1Decks() {
+export default function StLotus2Decks() {
   const [refList, setRefList] = useState([]);
 
 
@@ -20,8 +20,8 @@ export default function StLotus1Decks() {
         component="h1"
         sx={{marginTop: 10}}
         variant="h2"
-      >{'St Lotus 1'}</SpacedHeader>
-      <Typography paragraph>{'Naveen beat me.'}</Typography>
+      >{'St Lotus 2'}</SpacedHeader>
+      <Typography paragraph>{'I did not play.'}</Typography>
       <DeckSelector decks={decks}
         references={refList}
       />

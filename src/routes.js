@@ -8,6 +8,7 @@ import {
 import Home from './home/Home';
 import HowToPlay from './HowToPlay';
 import StLotus1Decks from './decks/StLotus1Decks';
+import StLotus2Decks from './decks/StLotus2Decks';
 import StLotus7Decks from './decks/StLotus7Decks';
 import Rulings from './rulings/Rulings';
 import Articles from './articles/Articles';
@@ -26,6 +27,12 @@ function Routes() {
           path="/decks/st-lotus-1"
         >
           <StLotus1Decks />
+        </Route>
+        <Route
+          exact
+          path="/decks/st-lotus-2"
+        >
+          <StLotus2Decks />
         </Route>
         <Route
           exact
