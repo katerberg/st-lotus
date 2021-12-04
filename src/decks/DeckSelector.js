@@ -15,7 +15,7 @@ const FloatingBox = styled(Box)({
   position: 'fixed',
   paddingTop: '8px',
   background: 'white',
-  zIndex: 10000,
+  zIndex: 1200,
   top: '56px',
   width: '100%',
   left: '0',
