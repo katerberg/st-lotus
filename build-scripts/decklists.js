@@ -94,6 +94,15 @@ fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dir
           throw err;
         }
       });
+      const drafts = Object.keys(cleanLists.reduce((a, c) => ({...a, [c.stLotus]: true}), {}));
+
+      drafts.forEach((draft) => {
+        fs.writeFile(`${process.cwd()}/src/decks/vrd${draft}Decklists.json`, JSON.stringify(cleanLists.filter(c => `${c.stLotus}` === draft), null, 2), (err) => {
+          if (err) {
+            throw err;
+          }
+        });
+      });
     });
   });
 }).catch((e) => {

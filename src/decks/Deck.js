@@ -83,7 +83,7 @@ function Deck({deck}, ref) {
           title={ds.title}
                                     />)}
       </Masonry>
-      {sideboardSections && <>
+      {sideboardSections && sideboardSections.length !== 0 && <>
       <Typography variant="h4">{'Sideboard'}</Typography>
       <Divider />
       <Grid sx={{background: '#eee', borderBottomRightRadius: '8px', borderBottomLeftRadius: '8px', paddingTop: '20px', paddingBottom: '20px'}}>
