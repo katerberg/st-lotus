@@ -10,7 +10,7 @@ import ManaCost from '../common/mana-cost/ManaCost';
 export default function DeckSection({cards, title, sort}) {
   const getPrefix = useCallback((card) => {
     if (sort === 'pick') {
-      return card.pickOrder;
+      return `${card.pickOrder}: `;
     }
     return '';
   }, [sort]);

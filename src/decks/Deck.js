@@ -1,11 +1,10 @@
 import React, {useCallback, useMemo, useState} from 'react';
 import Divider from '@mui/material/Divider';
+import {deckShape} from './DeckShapes';
 import {styled} from '@mui/system';
 import Masonry from '@mui/lab/Masonry';
 import Grid from '@mui/material/Grid';
-import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
-import {cardShape} from './DeckShapes';
 import DeckSection from './DeckSection';
 import SortSelector from './SortSelector';
 import {sortByCmc, sortByColor} from './Sorting';
@@ -104,15 +103,5 @@ function Deck({deck}, ref) {
 export default React.forwardRef(Deck);
 
 Deck.propTypes = {
-  deck: PropTypes.shape({
-    date: PropTypes.string.isRequired,
-    player: PropTypes.string.isRequired,
-    genre: PropTypes.string.isRequired,
-    seat: PropTypes.number.isRequired,
-    wins: PropTypes.number,
-    losses: PropTypes.number,
-    stLotus: PropTypes.number,
-    decklist: PropTypes.arrayOf(cardShape).isRequired,
-    sideboard: PropTypes.arrayOf(cardShape).isRequired,
-  }).isRequired,
+  deck: deckShape.isRequired,
 };

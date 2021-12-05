@@ -9,3 +9,15 @@ export const cardShape = PropTypes.shape({
   cmc: PropTypes.number.isRequired,
   colors: PropTypes.arrayOf(PropTypes.string).isRequired,
 });
+
+export const deckShape = PropTypes.shape({
+  date: PropTypes.string.isRequired,
+  player: PropTypes.string.isRequired,
+  genre: PropTypes.string.isRequired,
+  seat: PropTypes.number.isRequired,
+  wins: PropTypes.number,
+  losses: PropTypes.number,
+  stLotus: PropTypes.number,
+  decklist: PropTypes.arrayOf(cardShape).isRequired,
+  sideboard: PropTypes.arrayOf(cardShape).isRequired,
+});

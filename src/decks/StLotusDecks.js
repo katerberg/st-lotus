@@ -1,18 +1,18 @@
 import React, {useEffect, useState, createRef} from 'react';
+import {deckShape} from './DeckShapes';
+import PropTypes from 'prop-types';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
 import SpacedHeader from '../common/SpacedHeader';
 import Deck from './Deck';
-import decks from './vrd2Decklists.json';
 import DeckSelector from './DeckSelector';
 
-export default function StLotus2Decks() {
+export default function StLotusDecks({number, children, decks}) {
   const [refList, setRefList] = useState([]);
 
 
   useEffect(() => {
     setRefList(decks.map((deck) => ({ref: createRef(), deck})));
-  }, []);
+  }, [decks]);
 
   return (
     <Container maxWidth="md">
@@ -20,8 +20,8 @@ export default function StLotus2Decks() {
         component="h1"
         sx={{marginTop: 10}}
         variant="h2"
-      >{'St Lotus 2'}</SpacedHeader>
-      <Typography paragraph>{'I did not play.'}</Typography>
+      >{`St Lotus ${number}`}</SpacedHeader>
+      {children}
       <DeckSelector decks={decks}
         references={refList}
       />
@@ -32,3 +32,10 @@ export default function StLotus2Decks() {
     </Container>
   );
 }
+
+
+StLotusDecks.propTypes = {
+  number: PropTypes.number.isRequired,
+  decks: PropTypes.arrayOf(deckShape).isRequired,
+  children: PropTypes.node.isRequired,
+};
