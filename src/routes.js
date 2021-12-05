@@ -18,6 +18,7 @@ import StLotusDecks from './decks/StLotusDecks';
 import Rulings from './rulings/Rulings';
 import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
+import ManaCost from './common/mana-cost/ManaCost';
 
 function Routes() {
   return (
@@ -75,7 +76,7 @@ function Routes() {
           <StLotusDecks decks={vrd5}
             number={5}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'John Ryan Hamilton took down the “Queen of VRD”, Elaine Cao, using her own technology against her. Having seen the power of Arcane Savant in the previous draft, he dug through the archives and found Aether Searcher, which he was able to use to result in a '}<ManaCost manaCost="{6}" />{' mana Emrakul, the Aeons Torn. To make matters worse for the rest of the field, he also drafted Tinker for a duplicate, cheaper copy. He used these all to great effect in a controlling shell that let him win the tournament with arguably the best deck in VRD history. Elaine’s innovative and controlling Kess deck could not keep up in finals, despite having a great day as well.'} </Typography>
           </StLotusDecks>
         </Route>
         <Route
@@ -85,7 +86,7 @@ function Routes() {
           <StLotusDecks decks={vrd6}
             number={6}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'Mason Lange won the event with a strategy often spurned at these events: playing creatures and turning them sideways. Although opening with his traditional strategy of early discard, he quickly pivoted off of '}<ManaCost manaCost="{B}" />{' cards and into the open slot of aggressive '}<ManaCost manaCost="{G}" />{' creatures. His use of Elvish Clan-Caller allowed for him to try out the “Self-tutoring” rule to great effect, and he won a close finals against John Ryan who was on an incredibly consistent Reanimator deck that had a powerful back-up plan of Pack Rat. This was the first draft where “draft-matters” cards did not have an effect, which allowed for other strategies to prosper.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
