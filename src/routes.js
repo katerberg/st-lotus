@@ -36,7 +36,7 @@ function Routes() {
           <StLotusDecks decks={vrd1}
             number={1}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'The first streamed VRD since Shotgun Lotus shut down nearly four years earlier. All of us were first time drafters and had so much to learn. Naveen Balaji ended up teaching us the power of Time Vault and Tinker in decks that have other combos to back it up. Sadly this draft VOD has been lost to the sands of time.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
@@ -46,7 +46,7 @@ function Routes() {
           <StLotusDecks decks={vrd2}
             number={2}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'In a field full of decks that all performed well, Daniel Zielinski took first place by drafting fast '}<ManaCost manaCost="{U}" />{' interaction early, and then surprising the table by picking up Infect cards in round 22. This strategy has gained popularity and is now used in many shells, including Painter/Grindstone, Twin, and even attempts at Storm. Stephen notably pushed the envelope by taking Karn and Narset incredibly early, which has since become almost standard. Elaine, in her Nicol Bolas tribute-deck, found her niche with Grixis or Esper control decks.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
