@@ -56,7 +56,7 @@ function Routes() {
           <StLotusDecks decks={vrd3}
             number={3}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'Elaine Cao took Stephen’s innovative planeswalker approach to the format and turned the knob to 11. She ended up drafting seven walkers along with plenty of stack-based interaction and solid interaction, which has since become her trademark. She ended up defeating an otherwise very evenly matched field full of '}<ManaCost manaCost="{U}" />{' decks.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
@@ -66,7 +66,7 @@ function Routes() {
           <StLotusDecks decks={vrd4}
             number={4}
           >
-            <Typography paragraph>{'Write'}</Typography>
+            <Typography paragraph>{'Elaine Cao became the first (and only) player to win two VRDs, and managed to do it in back-to-back tournaments, largely with the same base of cards. The innovation that she brought to the table this time was the addition of “draft-matters” cards when she took Arcane Savant. In combination with Kindred Charge, it provided a one-card combo that took her to finals victory against Brandon Curry. Brandon piloted a Pikula-style Esper interaction deck. It was his first to demonstrate the power of Pentad Prism, which has since become a mainstay of VRDs, even outside of St Lotus.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
