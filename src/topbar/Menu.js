@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import HomeIcon from '@mui/icons-material/Home';
+import ListAltIcon from '@mui/icons-material/ListAlt';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import GavelIcon from '@mui/icons-material/Gavel';
@@ -19,6 +20,11 @@ export default function Menu({isOpen, onClose}) {
         link= "/"
         onClick={onClose}
         text="Home"
+      />
+      <MenuItem icon={<ListAltIcon />}
+        link="/decks"
+        onClick={onClose}
+        text="Decks"
       />
       <MenuItem icon={<AssignmentIcon />}
         link="/how-to-play"

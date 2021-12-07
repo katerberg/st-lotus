@@ -1,10 +1,17 @@
 import React from 'react';
+import Divider from '@mui/material/Divider';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import SpacedHeader from '../common/SpacedHeader';
 import DeckPreview from './DeckPreview';
+import {faFile} from '@fortawesome/free-regular-svg-icons';
 import Grid from '@mui/material/Grid';
 
 export default function Decks() {
+  const link = 'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {number: 1, image: 'https://c1.scryfall.com/file/scryfall-cards/art_crop/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.jpg?1562863289', date: new Date('2019-02-03'), text: 'The first streamed VRD since Shotgun Lotus shut down nearly four years earlier. All of us were first time drafters and had so much to learn. Naveen Balaji ended up teaching us the power of Time Vault and Tinker'},
     {number: 2, image: 'https://c1.scryfall.com/file/scryfall-cards/art_crop/front/8/b/8b94f4c6-b518-43b3-be52-e889d1f3ea38.jpg?1562879525', date: new Date('2019-06-09'), text: 'In a field full of decks that all performed well, Daniel Zielinski took first place by drafting fast Blue interaction early, and then surprising the table by picking up Infect cards in round 22. This strategy has'},
@@ -15,7 +22,7 @@ export default function Decks() {
     {number: 7, image: 'https://c1.scryfall.com/file/scryfall-cards/art_crop/front/6/f/6f9ea46a-411f-40ce-a873-a905180093f4.jpg?1559591470', date: new Date('2021-10-02'), text: 'Brandon Curry took the tournament with a planeswalker heavy deck. He managed to squeak out a win against Eric Levine’s Eldrazi and Taxes list. This draft really showed the power of continuous board-control and'},
   ];
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <SpacedHeader
         component="h1"
         sx={{marginTop: 10}}
@@ -33,6 +40,39 @@ export default function Decks() {
         </Grid>,
         )}
       </Grid>
+      <Divider />
+      <Box
+        sx={{
+        width: '100%',
+        paddingTop: 2,
+        paddingBottom: 2,
+      }}
+      >
+        <Container>
+          <Typography
+            sx={{
+              marginBottom: 2,
+            }}
+            variant="h3"
+          >{'Other Drafts'}</Typography>
+          <Typography paragraph>
+            {'Over the past ten years, there have been numerous VRDs that have not been streamed. These drafts provide a really interesting look at how other people approach the format. The stats from various groups around the world really can show how different cards perform as new strategies are introduced, rise, and fall in popularity.'}
+          </Typography>
+          <Box sx={{textAlign: 'center'}}>
+            <Button
+              color="secondary"
+              href={link}
+              size="large"
+              startIcon={<FontAwesomeIcon
+                icon={faFile}
+                         />}
+              variant="contained"
+            >
+              {'See drafts from outside St Lotus'}
+            </Button>
+          </Box>
+        </Container>
+      </Box>
     </Container>
   );
 }

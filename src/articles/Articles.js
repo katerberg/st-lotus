@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 
 export default function Articles() {
   return (
-    <Container maxWidth="lg" >
+    <Container maxWidth="lg">
       <SpacedHeader
         component="h1"
         sx={{marginTop: 10}}

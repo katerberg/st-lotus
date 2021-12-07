@@ -7,6 +7,7 @@ import Routes from './routes';
 import {createBrowserHistory} from 'history';
 import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
 import Box from '@mui/material/Box';
+import ScrollToTop from './common/ScrollToTop';
 import Topbar from './topbar/Topbar';
 
 const theme = responsiveFontSizes(createTheme({
@@ -67,6 +68,7 @@ function App() {
       <div className="App">
         <Router>
           <Topbar/>
+          <ScrollToTop />
           <Box sx={{marginTop: '58px'}}>
             <Routes />
           </Box>

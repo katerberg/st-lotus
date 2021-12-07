@@ -38,6 +38,6 @@ export default function DeckSection({cards, title, sort}) {
 
 DeckSection.propTypes = {
   cards: PropTypes.arrayOf(cardShape).isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   sort: PropTypes.string.isRequired,
 };

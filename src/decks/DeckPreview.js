@@ -54,6 +54,6 @@ export default function DeckPreview({date, image, number, text}) {
 DeckPreview.propTypes = {
   date: PropTypes.instanceOf(Date).isRequired,
   image: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
 };
