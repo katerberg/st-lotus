@@ -15,6 +15,7 @@ import vrd5 from './decks/decklists/vrd5Decklists.json';
 import vrd6 from './decks/decklists/vrd6Decklists.json';
 import vrd7 from './decks/decklists/vrd7Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
+import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
 import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
@@ -28,6 +29,12 @@ function Routes() {
           path="/how-to-play"
         >
           <HowToPlay />
+        </Route>
+        <Route
+          exact
+          path="/decks"
+        >
+          <Decks />
         </Route>
         <Route
           exact
@@ -76,7 +83,7 @@ function Routes() {
           <StLotusDecks decks={vrd5}
             number={5}
           >
-            <Typography paragraph>{'John Ryan Hamilton took down the “Queen of VRD”, Elaine Cao, using her own technology against her. Having seen the power of Arcane Savant in the previous draft, he dug through the archives and found Aether Searcher, which he was able to use to result in a '}<ManaCost manaCost="{6}" />{' mana Emrakul, the Aeons Torn. To make matters worse for the rest of the field, he also drafted Tinker for a duplicate, cheaper copy. He used these all to great effect in a controlling shell that let him win the tournament with arguably the best deck in VRD history. Elaine’s innovative and controlling Kess deck could not keep up in finals, despite having a great day as well.'} </Typography>
+            <Typography paragraph>{'John Ryan Hamilton took down the “Queen of VRD”, Elaine Cao, using her own technology against her. Having seen the power of Arcane Savant in the previous draft, he prioritized Aether Searcher over all else, which he was able to use to result in a '}<ManaCost manaCost="{6}" />{' mana Emrakul, the Aeons Torn. To make matters worse for the rest of the field, he also drafted Tinker for a duplicate, cheaper copy. He used these all to great effect in a controlling shell that let him win the tournament with arguably the best deck in VRD history. Elaine’s innovative and controlling Kess deck could not keep up in finals, despite having a great day as well.'} </Typography>
           </StLotusDecks>
         </Route>
         <Route

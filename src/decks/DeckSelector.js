@@ -44,8 +44,10 @@ export default function DeckSelector({decks, references}) {
   }, [handleScroll]);
 
   const handleChange = useCallback((e) => {
-    e.target.value.scrollIntoView({block: 'start', behavior: 'smooth'});
-    setSelectedDeck(e.target.value);
+    if (e.target.value) {
+      e.target.value.scrollIntoView({block: 'start', behavior: 'smooth'});
+      setSelectedDeck(e.target.value);
+    }
   }, []);
 
   const trigger = useScrollTrigger({
