@@ -29,7 +29,7 @@ export default function PreviewVideo() {
         marginBottom: 2,
       }}
         variant="h2"
-      >{'Latest Event'}</Typography>
+      >{'Most Recent Event'}</Typography>
       <StyledIFrame allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         frameBorder="0"
