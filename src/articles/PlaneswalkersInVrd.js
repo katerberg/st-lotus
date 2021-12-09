@@ -39,7 +39,7 @@ export default function PlaneswalkersInVrd() {
         color="text.secondary"
         sx={{marginBottom: '20px', marginLeft: '20px'}}
         variant="subtitle1"
-      >{'Written by: Stephen Hagan on December 6, 2021'}</Typography>
+      >{'Written by: Stephen Hagan on November 6, 2021'}</Typography>
       <Typography paragraph>After St. Lotus 7 there has been some discussion about the ascendency of planeswalker cards to the top of the format. Brandon Curry’s powerful <Link href="https://scryfall.com/card/lea/3/balance">Balance</Link>/planeswalker deck was built around getting a 3 mana walker of some type (<Link href="https://scryfall.com/card/eld/197/oko-thief-of-crowns">Oko, Thief of Crowns</Link>, <Link href="https://scryfall.com/card/war/221/teferi-time-raveler">Teferi, Time Raveler</Link>, or <Link href="https://scryfall.com/card/war/229/dovin-hand-of-control">Dovin, Hand of Control</Link>) out on turn 2 as often as he could. Packing 8 maindeck walkers his strategy carried him to a 5-2 + a play off win against Eric Levine’s Eldrazi list.</Typography>
       <StyledIFrame allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
