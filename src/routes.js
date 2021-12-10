@@ -20,6 +20,7 @@ import Rulings from './rulings/Rulings';
 import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
 import ManaCost from './common/mana-cost/ManaCost';
+import YourFirstVrd from './articles/YourFirstVrd';
 
 function Routes() {
   return (
@@ -129,6 +130,12 @@ function Routes() {
           path="/articles/2021-11-25/Combos in VRD"
         >
           <CombosInVrd />
+        </Route>
+        <Route
+          exact
+          path="/articles/2021-12-09/Your First VRD"
+        >
+          <YourFirstVrd />
         </Route>
         <Route
           path="/"

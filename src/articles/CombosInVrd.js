@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-literals*/
-import katerberg from './katerberg.jpg';
+import katerberg from './authors/katerberg.jpg';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import ManaCost from '../common/mana-cost/ManaCost';

@@ -9,7 +9,7 @@ import {styled} from '@mui/system';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
-import hagan from './hagan.jpg';
+import hagan from './authors/hagan.jpg';
 
 const SubSectionHeader = styled(Typography)({
   marginTop: '20px',
