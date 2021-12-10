@@ -17,6 +17,7 @@ const SubSectionHeader = styled(Typography)({
 
 const CardImage = styled('img')({
   maxWidth: '400px',
+  width: '100%',
 });
 
 const FullWidthImage = styled('img')({
