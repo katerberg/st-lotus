@@ -97,7 +97,7 @@ fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dir
       const drafts = Object.keys(cleanLists.reduce((a, c) => ({...a, [c.stLotus]: true}), {}));
 
       drafts.forEach((draft) => {
-        fs.writeFile(`${process.cwd()}/src/decks/decklists/vrd${draft}Decklists.json`, JSON.stringify(cleanLists.filter(c => `${c.stLotus}` === draft), null, 2), (err) => {
+        fs.writeFile(`${process.cwd()}/src/decks/decklists/vrd${draft}Decklists.json`, JSON.stringify(cleanLists.filter(c => `${c.stLotus}` === draft)), (err) => {
           if (err) {
             throw err;
           }
