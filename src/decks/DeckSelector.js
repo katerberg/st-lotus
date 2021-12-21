@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, {useEffect, useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
 import Zoom from '@mui/material/Zoom';

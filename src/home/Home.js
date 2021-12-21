@@ -1,6 +1,7 @@
 import React from 'react';
 import PreviewVideo from './PreviewVideo';
 import CountDown from './CountDown';
+import CardSearch from './CardSearch';
 import Hero from './Hero';
 import Follow from './Follow';
 
@@ -9,8 +10,9 @@ function Home() {
     <div>
       <Hero />
       <CountDown />
-      <PreviewVideo />
+      <CardSearch />
       <Follow />
+      <PreviewVideo />
     </div>
   );
 }

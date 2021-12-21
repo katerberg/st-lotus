@@ -56,7 +56,6 @@ export default function CountDown() {
           >{time}</Typography>
                                            </Grid>)}
       </Grid>
-
       <Typography
         color="text.secondary"
         sx={{
@@ -68,7 +67,7 @@ export default function CountDown() {
       <Typography
         sx={{
           paddingTop: 4,
-          paddingBottom: 14,
+          paddingBottom: 8,
           textAlign: 'center',
         }}
         variant="h2"

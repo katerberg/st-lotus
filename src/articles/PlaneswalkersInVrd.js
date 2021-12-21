@@ -57,7 +57,6 @@ export default function PlaneswalkersInVrd() {
       <Typography paragraph>St. Lotus 2 featured myself with five main deck planeswalkers and Elaine with five as well. We both finished a strong 5-2 record, part of a three way tie with Dan Zielinski’s impressive infect deck. Elaine would go on to win St. Lotus 3 and 4, and tie for first (losing in the finals) at St. Lotus 5. Each of her decks featured powerful walker-backed strategies (3 had seven walkers, 4 had six, and 5 had five). While walker strategies are popular in St. Lotus drafts, two recent discord based asynchronous drafts featured ten and fourteen walkers respectively, proving that the strength of planeswalkers is also evident outside of the home of Pointersaurus. </Typography>
       <FullWidthImage alt="Pointersaurus pizza"
         src="https://pbs.twimg.com/media/EKKGWWGW4AAYEa7?format=jpg"
-        sx={{maxWidth: '100%'}}
       />
       <Typography paragraph>So why the rise? The power that these planeswalkers bring to the table is that they are often more difficult to answer in a format that tends towards more combos and fewer creatures, the static abilities on WAR-Walkers are potent effects, and they offer reliable effects over several turns. They offer a consistent threat that takes special cards to answer, and as of yet the drafts have not started heavily taking those cards (I am looking at you <Link href="https://scryfall.com/card/stx/188/fracture">Fracture</Link>).</Typography>
       <SubSectionHeader
