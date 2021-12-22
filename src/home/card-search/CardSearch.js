@@ -40,35 +40,42 @@ export default function CardSearch() {
   const [suggestion, setSuggestion] = useState(null);
   const [cardImage, setCardImage] = useState('https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
 
-  useUpdateEffect(async() => {
-    try {
-      const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
-      setSuggestion(null);
-      setStats(data);
-      axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
-        let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
-        if (data?.image_uris) {
-          image = data?.image_uris?.normal;
-        } else if (data?.card_faces) {
-          image = data?.card_faces[0]?.image_uris?.normal;
+  useUpdateEffect(() => {
+    const populateCardStats = async() => {
+      try {
+        const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
+        setSuggestion(null);
+        if (!data.numberTaken) {
+          setStats(null);
+        } else {
+          setStats(data);
         }
+        axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
+          let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
+          if (data?.image_uris) {
+            image = data?.image_uris?.normal;
+          } else if (data?.card_faces) {
+            image = data?.card_faces[0]?.image_uris?.normal;
+          }
 
-        setCardImage(image);
-      });
-    } catch (e) {
-      const response = e?.response;
-      const errorMessage = response?.data?.message;
-      if (response?.status === 404) {
+          setCardImage(image);
+        });
+      } catch (e) {
+        const response = e?.response;
+        const errorMessage = response?.data?.message;
+        if (response?.status === 404) {
         // Clearing the errors for expected 404s
         // eslint-disable-next-line no-console
-        console.clear();
+          console.clear();
+        }
+        if (errorMessage) {
+          setSuggestion(errorMessage);
+        } else {
+          setSuggestion(null);
+        }
       }
-      if (errorMessage) {
-        setSuggestion(errorMessage);
-      } else {
-        setSuggestion(null);
-      }
-    }
+    };
+    populateCardStats();
   }, [searchText]);
 
   const handleSearchTextChange = e => {
@@ -126,10 +133,10 @@ export default function CardSearch() {
           xs={12}
         >
           <Hidden mdUp>
-            {stats && <CardStats averageRound={stats.averageRound}
-              numberOfDrafts={stats.numberOfDrafts}
-              numberTaken={stats.numberTaken}
-                      />}
+            <CardStats averageRound={stats?.averageRound}
+              numberOfDrafts={stats?.numberOfDrafts}
+              numberTaken={stats?.numberTaken}
+            />
           </Hidden>
         </Grid>
         <Grid item
@@ -153,10 +160,10 @@ export default function CardSearch() {
           xs={0}
         >
           <Hidden mdDown>
-            {stats && <CardStats averageRound={stats.averageRound}
-              numberOfDrafts={stats.numberOfDrafts}
-              numberTaken={stats.numberTaken}
-                      />}
+            <CardStats averageRound={stats?.averageRound}
+              numberOfDrafts={stats?.numberOfDrafts}
+              numberTaken={stats?.numberTaken}
+            />
           </Hidden>
         </Grid>
       </Grid>
