@@ -1,7 +1,7 @@
 import React from 'react';
 import PreviewVideo from './PreviewVideo';
 import CountDown from './CountDown';
-import CardSearch from './CardSearch';
+import CardSearch from './card-search/CardSearch';
 import Hero from './Hero';
 import Follow from './Follow';
 

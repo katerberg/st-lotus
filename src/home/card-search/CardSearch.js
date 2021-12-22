@@ -1,20 +1,19 @@
-/* eslint-disable no-console */
 import Link from '@mui/material/Link';
-import {config} from '../common/config';
+import {config} from '../../common/config';
 import axios from 'axios';
 import React, {useState} from 'react';
-import Box from '@mui/material/Box';
+import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import {styled} from '@mui/system';
-import useUpdateEffect from '../common/UseUpdateEffect';
-import {Typography} from '@mui/material';
+import useUpdateEffect from '../../common/UseUpdateEffect';
+import CardStats from './CardStats';
+import {Hidden, Typography} from '@mui/material';
 
 const CardImage = styled('img')({
   maxWidth: '400px',
   textAlign: 'center',
-  marginTop: '20px',
 });
 
 const SearchTextField = styled(TextField)({
@@ -31,7 +30,7 @@ const SearchTextField = styled(TextField)({
 
 export default function CardSearch() {
   const [searchText, setSearchText] = useState('Black Lotus');
-  const [, setStats] = useState({average: 1.3833,
+  const [stats, setStats] = useState({average: 1.3833,
     averageRound: 1,
     card: 'black lotus',
     numberOfDrafts: 60,
@@ -42,8 +41,8 @@ export default function CardSearch() {
   useUpdateEffect(async() => {
     try {
       const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
-      console.log(data);
       setSuggestion(null);
+      setStats(data);
       axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
         let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
         if (data?.image_uris) {
@@ -54,16 +53,19 @@ export default function CardSearch() {
 
         setCardImage(image);
       });
-      setStats(data);
     } catch (e) {
-      const errorMessage = e?.response?.data?.message;
+      const response = e?.response;
+      const errorMessage = response?.data?.message;
+      if (response?.status === 404) {
+        // Clearing the errors for expected 404s
+        // eslint-disable-next-line no-console
+        console.clear();
+      }
       if (errorMessage) {
         setSuggestion(errorMessage);
-        console.clear();
       } else {
         setSuggestion(null);
       }
-      setStats(null);
     }
   }, [searchText]);
 
@@ -76,13 +78,14 @@ export default function CardSearch() {
   };
 
   return (
-    <Box sx={{
+    <Grid
+      alignItems="center"
+      container
+      flexDirection="column"
+      sx={{
       backgroundColor: 'grey.800',
       width: '100%',
-      display: 'flex',
-      flexDirection: 'column',
       marginTop: '-6px',
-      alignItems: 'center',
       paddingTop: 2,
       paddingBottom: 2,
     }}
@@ -95,8 +98,12 @@ export default function CardSearch() {
             <SearchIcon />
           </InputAdornment>,
         }}
+
         label="Search"
         onChange={handleSearchTextChange}
+        onFocus={event => {
+        event.target.select();
+      }}
         value={searchText}
         variant="standard"
       />
@@ -107,9 +114,50 @@ export default function CardSearch() {
                        onClick={handleAcceptSuggestion}
                        sx={{cursor: 'pointer'}}
                                                               >{`“${suggestion}”`}</Link>{'?'}</Typography>}
-      <CardImage alt="Card Image"
-        src={cardImage}
-      />
-    </Box>
+      <Grid container
+        flexDirection="row"
+        sx={{marginTop: '20px'}}
+      >
+        <Grid
+          item
+          md={0}
+          xs={12}
+        >
+          <Hidden mdUp>
+            {stats && <CardStats averageRound={stats.averageRound}
+              numberOfDrafts={stats.numberOfDrafts}
+              numberTaken={stats.numberTaken}
+                      />}
+          </Hidden>
+        </Grid>
+        <Grid item
+          lg={4}
+          xs={0}
+        />
+        <Grid container
+          item
+          justifyContent="center"
+          lg={4}
+          md={8}
+          xs={12}
+        >
+          <CardImage alt="Card Image"
+            src={cardImage}
+          />
+        </Grid>
+        <Grid
+          item
+          md={4}
+          xs={0}
+        >
+          <Hidden mdDown>
+            {stats && <CardStats averageRound={stats.averageRound}
+              numberOfDrafts={stats.numberOfDrafts}
+              numberTaken={stats.numberTaken}
+                      />}
+          </Hidden>
+        </Grid>
+      </Grid>
+    </Grid>
   );
 }
