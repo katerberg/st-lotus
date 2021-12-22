@@ -14,6 +14,7 @@ import {Hidden, Typography} from '@mui/material';
 const CardImage = styled('img')({
   maxWidth: '400px',
   textAlign: 'center',
+  width: '90%',
 });
 
 const SearchTextField = styled(TextField)({

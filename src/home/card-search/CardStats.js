@@ -20,7 +20,9 @@ export default function CardStats({numberTaken, numberOfDrafts, averageRound}) {
       },
     }}
     >
-      <Box sx={{marginBottom: '20px'}}>
+      <Box sx={{
+        marginBottom: {xs: 0, sm: '20px'},
+    }}>
         <Typography color="white"
           sx={{display: 'inline-block'}}
         >{'Picked in '}</Typography>
