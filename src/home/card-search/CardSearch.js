@@ -45,7 +45,11 @@ export default function CardSearch() {
       try {
         const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
         setSuggestion(null);
-        setStats(data);
+        if (!data.numberTaken) {
+          setStats(null);
+        } else {
+          setStats(data);
+        }
         axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
           if (data?.image_uris) {
@@ -129,10 +133,10 @@ export default function CardSearch() {
           xs={12}
         >
           <Hidden mdUp>
-            {stats && <CardStats averageRound={stats.averageRound}
-              numberOfDrafts={stats.numberOfDrafts}
-              numberTaken={stats.numberTaken}
-                      />}
+            <CardStats averageRound={stats?.averageRound}
+              numberOfDrafts={stats?.numberOfDrafts}
+              numberTaken={stats?.numberTaken}
+            />
           </Hidden>
         </Grid>
         <Grid item
@@ -156,10 +160,10 @@ export default function CardSearch() {
           xs={0}
         >
           <Hidden mdDown>
-            {stats && <CardStats averageRound={stats.averageRound}
-              numberOfDrafts={stats.numberOfDrafts}
-              numberTaken={stats.numberTaken}
-                      />}
+            <CardStats averageRound={stats?.averageRound}
+              numberOfDrafts={stats?.numberOfDrafts}
+              numberTaken={stats?.numberTaken}
+            />
           </Hidden>
         </Grid>
       </Grid>
