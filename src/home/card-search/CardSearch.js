@@ -1,6 +1,7 @@
 import Link from '@mui/material/Link';
 import {config} from '../../common/config';
 import axios from 'axios';
+import Skeleton from '@mui/material/Skeleton';
 import React, {useState} from 'react';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -13,7 +14,7 @@ import {Hidden, Typography} from '@mui/material';
 
 const CardImage = styled('img')({
   maxWidth: '400px',
-  borderRadius: '15px',
+  borderRadius: '19px',
   textAlign: 'center',
   width: '90%',
 });
@@ -32,6 +33,7 @@ const SearchTextField = styled(TextField)({
 
 export default function CardSearch() {
   const [searchText, setSearchText] = useState('Black Lotus');
+  const [loadingImage, setLoadingImage] = useState(false);
   const [stats, setStats] = useState({average: 1.3833,
     averageRound: 1,
     card: 'black lotus',
@@ -50,6 +52,7 @@ export default function CardSearch() {
         } else {
           setStats(data);
         }
+        setLoadingImage(true);
         axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
           if (data?.image_uris) {
@@ -58,6 +61,9 @@ export default function CardSearch() {
             image = data?.card_faces[0]?.image_uris?.normal;
           }
 
+          if (cardImage === image) {
+            setLoadingImage(false);
+          }
           setCardImage(image);
         });
       } catch (e) {
@@ -77,6 +83,10 @@ export default function CardSearch() {
     };
     populateCardStats();
   }, [searchText]);
+
+  const handleImageLoad = () => {
+    setLoadingImage(false);
+  };
 
   const handleSearchTextChange = e => {
     setSearchText(e.target.value);
@@ -150,8 +160,17 @@ export default function CardSearch() {
           md={8}
           xs={12}
         >
+          {loadingImage && <Skeleton color="white"
+            height="480px"
+            sx={{maxWidth: '400px', bgcolor: 'grey.500'}}
+            variant="rectangular"
+            width="90%"
+                           />
+          }
           <CardImage alt="Card Image"
+            onLoad={handleImageLoad}
             src={cardImage}
+            sx={{height: loadingImage ? 0 : 'auto', opacity: loadingImage ? 0 : 1}}
           />
         </Grid>
         <Grid
