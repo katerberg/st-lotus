@@ -34,6 +34,7 @@ const SearchTextField = styled(TextField)({
 export default function CardSearch() {
   const [searchText, setSearchText] = useState('Black Lotus');
   const [loadingImage, setLoadingImage] = useState(false);
+  const [loadingStats, setLoadingStats] = useState(false);
   const [stats, setStats] = useState({average: 1.3833,
     averageRound: 1,
     card: 'black lotus',
@@ -45,13 +46,16 @@ export default function CardSearch() {
   useUpdateEffect(() => {
     const populateCardStats = async() => {
       try {
+        setLoadingStats(true);
         const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
-        setSuggestion(null);
         if (!data.numberTaken) {
-          setStats(null);
+          setStats(data);
+          setSuggestion({knownCard: true, suggestion: data.suggestion});
         } else {
           setStats(data);
+          setSuggestion(null);
         }
+        setLoadingStats(false);
         setLoadingImage(true);
         axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
@@ -75,10 +79,12 @@ export default function CardSearch() {
           console.clear();
         }
         if (errorMessage) {
-          setSuggestion(errorMessage);
+          setSuggestion({knownCard: false, suggestion: errorMessage});
         } else {
           setSuggestion(null);
         }
+        setStats(null);
+        setLoadingStats(false);
       }
     };
     populateCardStats();
@@ -93,7 +99,7 @@ export default function CardSearch() {
   };
 
   const handleAcceptSuggestion = () => {
-    setSearchText(suggestion);
+    setSearchText(suggestion.suggestion);
   };
 
   return (
@@ -127,12 +133,16 @@ export default function CardSearch() {
         variant="standard"
       />
       {suggestion && <Typography color="white"
-        sx={{marginTop: '20px'}}
+        sx={{margin: '20px 20px 0'}}
         variant="subtitle1"
-                     >{'Hmmm, can’t find that. Did you mean '}<Link color="primary"
+                     >
+                       {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberOfDrafts} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
+                     <Link color="primary"
                        onClick={handleAcceptSuggestion}
                        sx={{cursor: 'pointer'}}
-                                                              >{`“${suggestion}”`}</Link>{'?'}</Typography>}
+                     >{`“${suggestion.suggestion}”`}</Link>
+                     {'?'}
+                     </Typography>}
       <Grid container
         flexDirection="row"
         sx={{marginTop: '20px'}}
@@ -143,10 +153,11 @@ export default function CardSearch() {
           xs={12}
         >
           <Hidden mdUp>
-            <CardStats averageRound={stats?.averageRound}
+            {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+              loading={loadingStats}
               numberOfDrafts={stats?.numberOfDrafts}
               numberTaken={stats?.numberTaken}
-            />
+                                     />}
           </Hidden>
         </Grid>
         <Grid item
@@ -179,10 +190,11 @@ export default function CardSearch() {
           xs={0}
         >
           <Hidden mdDown>
-            <CardStats averageRound={stats?.averageRound}
+            {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+              loading={loadingStats}
               numberOfDrafts={stats?.numberOfDrafts}
               numberTaken={stats?.numberTaken}
-            />
+                                     />}
           </Hidden>
         </Grid>
       </Grid>
