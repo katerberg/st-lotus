@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 
 export default function CountDown() {
   const calculateTimeLeft = useCallback(() => {
-    const difference = new Date('2022-01-08') - new Date();
+    const difference = new Date('2022-03-26') - new Date();
 
     let timeLeft = {};
 
@@ -71,7 +71,7 @@ export default function CountDown() {
           textAlign: 'center',
         }}
         variant="h2"
-      >{'January 8, 2022'}</Typography>
+      >{'March 26, 2022'}</Typography>
     </>
   );
 }
