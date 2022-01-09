@@ -38,6 +38,7 @@ export default function CardSearch() {
   const [stats, setStats] = useState({average: 1.3833,
     averageRound: 1,
     card: 'black lotus',
+    lotusScore: 99.6,
     numberOfDrafts: 60,
     numberTaken: 60});
   const [suggestion, setSuggestion] = useState(null);
@@ -155,6 +156,7 @@ export default function CardSearch() {
           <Hidden mdUp>
             {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
               loading={loadingStats}
+              lotusScore={stats?.lotusScore}
               numberOfDrafts={stats?.numberOfDrafts}
               numberTaken={stats?.numberTaken}
                                      />}
@@ -192,6 +194,7 @@ export default function CardSearch() {
           <Hidden mdDown>
             {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
               loading={loadingStats}
+              lotusScore={stats?.lotusScore}
               numberOfDrafts={stats?.numberOfDrafts}
               numberTaken={stats?.numberTaken}
                                      />}

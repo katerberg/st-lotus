@@ -4,13 +4,14 @@ import Grid from '@mui/material/Grid';
 import {styled} from '@mui/system';
 import Skeleton from '@mui/material/Skeleton';
 import {Box, Typography} from '@mui/material';
+import LotusScore from './LotusScore';
 
 const StatTypography = styled(Typography)({
   margin: '0 8px',
   display: 'inline-block',
 });
 
-export default function CardStats({loading, numberTaken, numberOfDrafts, averageRound}) {
+export default function CardStats({loading, numberTaken, numberOfDrafts, averageRound, lotusScore}) {
   const unpicked = !numberTaken || !numberOfDrafts || !averageRound;
   return (
     <Grid container
@@ -38,11 +39,8 @@ export default function CardStats({loading, numberTaken, numberOfDrafts, average
             >{'Unpicked so far.'}</Typography>
         </Box>}
         {!unpicked && <>
-          <Box sx={{
-            marginBottom: {xs: 0, sm: '20px'},
-          }}
-          >
-
+          <LotusScore lotusScore={lotusScore} />
+          <Box>
             <Typography color="white"
               sx={{display: 'inline-block'}}
             >{'Picked in '}</Typography>
@@ -88,5 +86,6 @@ CardStats.propTypes = {
   numberTaken: PropTypes.number,
   numberOfDrafts: PropTypes.number,
   averageRound: PropTypes.number,
+  lotusScore: PropTypes.number,
   loading: PropTypes.bool.isRequired,
 };
