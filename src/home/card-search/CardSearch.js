@@ -148,24 +148,24 @@ export default function CardSearch() {
         flexDirection="row"
         sx={{marginTop: '20px'}}
       >
-        <Grid
-          item
-          md={0}
-          xs={12}
-        >
-          <Hidden mdUp>
-            {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
-              loading={loadingStats}
-              lotusScore={stats?.lotusScore}
-              numberOfDrafts={stats?.numberOfDrafts}
-              numberTaken={stats?.numberTaken}
-                                     />}
-          </Hidden>
-        </Grid>
-        <Grid item
-          lg={4}
-          xs={0}
-        />
+        <Hidden mdUp>
+          <Grid
+            item
+            xs={12}
+          >
+              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                loading={loadingStats}
+                lotusScore={stats?.lotusScore}
+                numberOfDrafts={stats?.numberOfDrafts}
+                numberTaken={stats?.numberTaken}
+                                       />}
+          </Grid>
+        </Hidden>
+        <Hidden mdDown>
+          <Grid item
+            lg={4}
+          />
+        </Hidden>
         <Grid container
           item
           justifyContent="center"
@@ -186,20 +186,19 @@ export default function CardSearch() {
             sx={{height: loadingImage ? 0 : 'auto', opacity: loadingImage ? 0 : 1}}
           />
         </Grid>
-        <Grid
-          item
-          md={4}
-          xs={0}
-        >
-          <Hidden mdDown>
-            {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
-              loading={loadingStats}
-              lotusScore={stats?.lotusScore}
-              numberOfDrafts={stats?.numberOfDrafts}
-              numberTaken={stats?.numberTaken}
-                                     />}
-          </Hidden>
-        </Grid>
+        <Hidden mdDown>
+          <Grid
+            item
+            md={4}
+          >
+              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                loading={loadingStats}
+                lotusScore={stats?.lotusScore}
+                numberOfDrafts={stats?.numberOfDrafts}
+                numberTaken={stats?.numberTaken}
+                                       />}
+          </Grid>
+        </Hidden>
       </Grid>
     </Grid>
   );

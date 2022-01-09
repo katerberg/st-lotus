@@ -23,13 +23,26 @@ export default function LotusScore({lotusScore}) {
     setAnchorEl(null);
   };
 
+  const getStatColor = (lotusScore) => {
+    if (lotusScore > 98) {
+      return 'primary.main';
+    }
+    if (lotusScore > 50) {
+      return 'white';
+    }
+    if (lotusScore > 10) {
+      return 'warning.main';
+    }
+    return 'error.main';
+  };
+
   return (
     <Grid alignItems="center"
       container
       justifyContent={{md: 'start', xs: 'center'}}
       sx={{
-      marginBottom: {xs: 0, sm: '20px'},
-    }}
+        marginBottom: {xs: 0, sm: '20px'},
+      }}
     >
       <Typography
         color="white"
@@ -58,10 +71,10 @@ export default function LotusScore({lotusScore}) {
       </Popover>
       </Typography>
       <StatTypography
-        color="primary"
         component="p"
+        sx={{color: getStatColor(lotusScore)}}
         variant="h3"
-      >{Math.round(lotusScore * 10) / 10}</StatTypography>
+      >{Number.parseFloat(Math.round(lotusScore * 10) / 10).toFixed(1)}</StatTypography>
     </Grid>
   );
 }
