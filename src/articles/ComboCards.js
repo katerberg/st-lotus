@@ -38,11 +38,11 @@ const CardImage = styled('img')({
 export default function ComboCards({children, title, cards}) {
   return (
     <Grid sx={{marginBottom: 4}}>
-      <SpacedHeader
+      {title && <SpacedHeader
         component="h3"
         sx={{marginTop: 2}}
         variant="h4"
-      >{title}</SpacedHeader>
+                >{title}</SpacedHeader>}
       <Grid container
         justifyContent="space-around"
       >
@@ -91,6 +91,6 @@ ComboCards.propTypes = {
     numberOfDrafts: PropTypes.number.isRequired,
     averageRound: PropTypes.number.isRequired,
   })).isRequired,
-  title: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.object).isRequired,
+  title: PropTypes.string,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.object), PropTypes.object]).isRequired,
 };

@@ -21,6 +21,7 @@ import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
 import ManaCost from './common/mana-cost/ManaCost';
 import YourFirstVrd from './articles/YourFirstVrd';
+import HowIWonMyVrd from './articles/HowIWonMyVrd';
 
 function Routes() {
   return (
@@ -136,6 +137,12 @@ function Routes() {
           path="/articles/2021-12-09/Your First VRD"
         >
           <YourFirstVrd />
+        </Route>
+        <Route
+          exact
+          path="/articles/2022-03-19/How I Won My VRD"
+        >
+          <HowIWonMyVrd/>
         </Route>
         <Route
           path="/"
