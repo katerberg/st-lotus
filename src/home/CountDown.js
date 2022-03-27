@@ -5,7 +5,7 @@ import {Link} from '@mui/material';
 
 export default function CountDown() {
   const calculateTimeLeft = useCallback(() => {
-    const difference = new Date('2022-03-26T13:44:00.000Z') - new Date();
+    const difference = new Date('2022-08-13T13:44:00.000Z') - new Date();
 
     let timeLeft = {};
 
