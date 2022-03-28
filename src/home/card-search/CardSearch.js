@@ -1,8 +1,10 @@
+/* eslint-disable no-console */
 import Link from '@mui/material/Link';
 import {config} from '../../common/config';
 import axios from 'axios';
 import Skeleton from '@mui/material/Skeleton';
-import React, {useState} from 'react';
+import React, {useMemo, useCallback, useState} from 'react';
+import AwesomeDebouncePromise from 'awesome-debounce-promise';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
@@ -35,7 +37,7 @@ export default function CardSearch() {
   const [searchText, setSearchText] = useState('Black Lotus');
   const [loadingImage, setLoadingImage] = useState(false);
   const [loadingStats, setLoadingStats] = useState(false);
-  const [stats, setStats] = useState({average: 1.3833,
+  const [stats, setStats] = useState({average: 1.3906,
     averageRound: 1,
     card: 'black lotus',
     lotusScore: 99.6,
@@ -44,11 +46,14 @@ export default function CardSearch() {
   const [suggestion, setSuggestion] = useState(null);
   const [cardImage, setCardImage] = useState('https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
 
+  const cardStats = useCallback((text) => axios.get(`${config.API_CARD_URL}${encodeURIComponent(text)}`), []);
+  const getCardStats = useMemo(() => AwesomeDebouncePromise(cardStats, 300), [cardStats]);
+
   useUpdateEffect(() => {
     const populateCardStats = async() => {
       try {
+        const {data} = await getCardStats(searchText);
         setLoadingStats(true);
-        const {data} = await axios.get(`${config.API_CARD_URL}${encodeURIComponent(searchText)}`);
         if (!data.numberTaken) {
           setStats(data);
           setSuggestion({knownCard: true, suggestion: data.suggestion});

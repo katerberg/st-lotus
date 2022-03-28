@@ -21,6 +21,7 @@
     "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
+    "awesome-debounce-promise": "^2.1.0",
     "axios": "^0.23.0",
     "babel-eslint": "10.0.3",
     "babel-jest": "^27.3.1",
