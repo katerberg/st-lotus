@@ -52,7 +52,7 @@ export default function CardSearch() {
   useUpdateEffect(() => {
     const populateCardStats = async() => {
       try {
-        const {data} = await getCardStats(searchText);
+        const {data} = await getCardStats(searchText.trim());
         setLoadingStats(true);
         if (!data.numberTaken) {
           setStats(data);
