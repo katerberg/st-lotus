@@ -34,7 +34,7 @@ export default function PreviewVideo() {
         allowFullScreen
         frameBorder="0"
         height="315"
-        src="https://www.youtube-nocookie.com/embed/r25ZU6cVIIc"
+        src="https://www.youtube.com/embed/pwDn1z8IhWc"
         title="YouTube video player"
         width="560"
       />
