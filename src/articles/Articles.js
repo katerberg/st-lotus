@@ -18,6 +18,19 @@ export default function Articles() {
           md={6}
           xs={12}
         >
+            <ArticlePreview author="Dom Harvey"
+              date={new Date(2022, 3, 3)}
+              heading="How I Won My VRD"
+              image="https://c1.scryfall.com/file/scryfall-cards/art_crop/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.jpg?1559591444"
+              link="/articles/2022-04-03/How I Won My VRD"
+              text="Rotisserie Drafts sound like they might grow old fast - a static card pool that is only marginally shaken up by most new sets and lacks the variety that the random contents of packs gives to normal booster draft. In practice, Vintage Rotisserie Draft has remained popular over the years and as soon as you try it you see why - it's a format of endless possibilities where the public information of the drafting process creates"
+            />
+        </Grid>
+        <Grid
+          item
+          md={6}
+          xs={12}
+        >
             <ArticlePreview author="CommonOpponent"
               date={new Date(2021, 11, 9)}
               heading="Your First VRD"

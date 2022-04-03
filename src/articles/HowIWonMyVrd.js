@@ -8,7 +8,14 @@ import Container from '@mui/material/Container';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import SpacedHeader from '../common/SpacedHeader';
 import Typography from '@mui/material/Typography';
+import dom from './authors/dom-harvey.png';
 import Link from '@mui/material/Link';
+import Divider from '@mui/material/Divider';
+import Grid from '@mui/material/Grid';
+
+const FullWidthImage = styled('img')({
+  maxWidth: '100%',
+});
 
 const SubSectionHeader = styled(Typography)({
   marginTop: '20px',
@@ -316,6 +323,38 @@ export default function HowIWonMyVrd() {
       >
         {'See this draft'}
       </Button>
+      <Typography
+        color="text.secondary"
+        component="h2"
+        sx={{marginTop: '60px'}}
+        variant="h4"
+      >About the author:</Typography>
+      <Divider sx={{margin: '10px 0 30px'}}/>
+      <Grid container
+        sx={{marginBottom: '40px'}}
+      >
+        <Grid item
+          sm={2}
+          xs={3}
+        >
+          <FullWidthImage src={dom}
+            sx={{borderRadius: '10px'}}
+          />
+        </Grid>
+        <Grid alignItems="center"
+          container
+          flexGrow={1}
+          item
+          sm={10}
+          xs={9}
+        >
+        <Typography
+          color="text.secondary"
+          sx={{verticalAlign: 'middle', marginLeft: '20px'}}
+          variant="subtitle2"
+        >Dom is immersed in competitive Magic as a writer, podcaster, and player but loves the chance to dive into unique puzzles like VRD when he's not sketching yet another Cube. His favourite cards are <Link href="https://scryfall.com/card/war/79/bolass-citadel">Bolas's Citadel</Link>, <Link href="https://scryfall.com/card/khc/31/restoration-angel">Restoration Angel</Link>, and <Link href="https://scryfall.com/card/rav/172/life-from-the-loam">Life from the Loam</Link>. He is reachable on <Link href="https://twitter.com/domhrv?lang=en">Twitter</Link></Typography>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
