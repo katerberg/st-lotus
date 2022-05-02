@@ -1,11 +1,12 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {Link} from '@mui/material';
 
 export default function CountDown() {
+  const nextDate = useMemo(() => new Date('2022-08-13T13:44:00.000Z'), []);
   const calculateTimeLeft = useCallback(() => {
-    const difference = new Date('2022-08-13T13:44:00.000Z') - new Date();
+    const difference = nextDate - new Date();
 
     let timeLeft = {};
 
@@ -19,7 +20,7 @@ export default function CountDown() {
     }
 
     return timeLeft;
-  }, []);
+  }, [nextDate]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -94,7 +95,7 @@ export default function CountDown() {
           textAlign: 'center',
         }}
         variant="h2"
-      >{'March 26, 2022'}</Typography>
+      >{new Intl.DateTimeFormat('en-US', {dateStyle: 'long'}).format(nextDate)}</Typography>
     </>
   );
 }
