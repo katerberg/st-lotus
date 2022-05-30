@@ -41,8 +41,8 @@ export default function CardSearch() {
     averageRound: 1,
     card: 'black lotus',
     lotusScore: 99.6,
-    numberOfDrafts: 65,
-    numberTaken: 65});
+    numberOfDrafts: 66,
+    numberTaken: 66});
   const [suggestion, setSuggestion] = useState(null);
   const [cardImage, setCardImage] = useState('https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
 
