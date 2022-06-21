@@ -22,6 +22,7 @@ import Articles from './articles/Articles';
 import ManaCost from './common/mana-cost/ManaCost';
 import YourFirstVrd from './articles/YourFirstVrd';
 import HowIWonMyVrd from './articles/HowIWonMyVrd';
+import WorkshopAggro from './articles/WorkshopAggro';
 
 function Routes() {
   return (
@@ -137,6 +138,12 @@ function Routes() {
           path="/articles/2021-12-09/Your First VRD"
         >
           <YourFirstVrd />
+        </Route>
+        <Route
+          exact
+          path="/articles/2022-06-21/Deep Dive Workshop Aggro"
+        >
+          <WorkshopAggro />
         </Route>
         <Route
           exact

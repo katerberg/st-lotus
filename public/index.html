@@ -28,6 +28,7 @@
 
     <!-- Windows 8.1 + IE11 and above -->
     <meta name="msapplication-config" content="/build/browserconfig.xml" />
+    <script> function moxfieldOnMessage(e){const t=e.data;if("object"==typeof t&&"moxfield"===t.type){const e=document.getElementById(t.id);e&&(e.style.height=t.data+"px")}}function moxfieldOnLoad(e){e.target&&e.target.contentWindow&&e.target.contentWindow.postMessage({type:"moxfield",data:e.target.id},"*")}window.addEventListener("message",moxfieldOnMessage); </script> 
     <title>St Lotus</title>
   </head>
   <body>
