@@ -49,7 +49,7 @@ browserHistory.listen(location => {
         if (element) {
           element.scrollIntoView();
         }
-        window.ga('set', 'page', pathname + search);
+        window.ga('set', 'page', pathname + search + hash);
         window.ga('send', 'pageview');
       },
       0,
@@ -60,7 +60,7 @@ browserHistory.listen(location => {
 
 function App() {
   ReactGA.initialize('UA-208899645-1');
-  window.ga('set', 'page', window.location.pathname + window.location.search);
+  window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
   window.ga('send', 'pageview');
 
   return (
