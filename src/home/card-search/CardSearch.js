@@ -104,6 +104,12 @@ export default function CardSearch() {
     setSearchText(e.target.value);
   };
 
+  const handleSearchKeyPress = useCallback(e => {
+    if (e.keyCode === 13 && suggestion) {
+      setSearchText(suggestion.suggestion);
+    }
+  }, [suggestion]);
+
   const handleAcceptSuggestion = () => {
     setSearchText(suggestion.suggestion);
   };
@@ -135,6 +141,7 @@ export default function CardSearch() {
         onFocus={event => {
         event.target.select();
       }}
+        onKeyDown={handleSearchKeyPress}
         value={searchText}
         variant="standard"
       />
