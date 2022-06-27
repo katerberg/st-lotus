@@ -20,7 +20,7 @@ export default function Articles() {
         >
             <ArticlePreview author="CommonOpponent"
               date={new Date(2022, 5, 21)}
-              heading="How I Won My VRD"
+              heading="Deep Dive: Workshop Aggro"
               image="https://c1.scryfall.com/file/scryfall-cards/art_crop/front/7/2/72c1a731-7854-42b1-8719-ac3c2a269c1f.jpg?1562637545"
               link="/articles/2022-06-21/Deep Dive Workshop Aggro"
               text="Fundamental to understanding any meta-game is a familiarity with the capabilities, limitations, and weaknesses of the most aggressive viable strategies. Vintage Rotisserie Draft is no different, so I’d like to give a thorough look at a class of aggressive decks with many common threads, but best described as Mishra’s Workshop-based aggressive decks. Artifact-heavy decks have sprung up across Magic’s history of formats, meaning"
