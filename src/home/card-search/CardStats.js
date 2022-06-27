@@ -57,7 +57,7 @@ export default function CardStats({loading, numberTaken, numberOfDrafts, average
               color="white"
               component="p"
               variant="h3"
-            >{numberOfDrafts}
+            >{numberTaken > numberOfDrafts ? numberTaken : numberOfDrafts}
             </StatTypography>
             <Typography
               color="white"
