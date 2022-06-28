@@ -146,7 +146,7 @@ export default function CardSearch() {
         variant="standard"
       />
       {suggestion && <Typography color="white"
-        sx={{margin: '20px 20px 0'}}
+        sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
         variant="subtitle1"
                      >
                        {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberOfDrafts} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
