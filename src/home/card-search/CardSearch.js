@@ -2,8 +2,8 @@
 import Link from '@mui/material/Link';
 import {config} from '../../common/config';
 import axios from 'axios';
-import Skeleton from '@mui/material/Skeleton';
 import React, {useMemo, useCallback, useState} from 'react';
+import CardImage from './CardImage';
 import AwesomeDebouncePromise from 'awesome-debounce-promise';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -13,13 +13,6 @@ import {styled} from '@mui/system';
 import useUpdateEffect from '../../common/UseUpdateEffect';
 import CardStats from './CardStats';
 import {Hidden, Typography} from '@mui/material';
-
-const CardImage = styled('img')({
-  maxWidth: '400px',
-  borderRadius: '19px',
-  textAlign: 'center',
-  width: '90%',
-});
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -45,6 +38,7 @@ export default function CardSearch() {
     numberTaken: 69});
   const [suggestion, setSuggestion] = useState(null);
   const [cardImage, setCardImage] = useState('https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
+  const [cardBackFaceImage, setCardBackFaceImage] = useState(null);
 
   const cardStats = useCallback((text) => axios.get(`${config.API_CARD_URL}${encodeURIComponent(text)}`), []);
   const getCardStats = useMemo(() => AwesomeDebouncePromise(cardStats, 300), [cardStats]);
@@ -64,11 +58,15 @@ export default function CardSearch() {
         setLoadingStats(false);
         setLoadingImage(true);
         axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
+          setCardBackFaceImage(null);
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
           if (data?.image_uris) {
             image = data?.image_uris?.normal;
           } else if (data?.card_faces) {
             image = data?.card_faces[0]?.image_uris?.normal;
+            if (data?.card_faces.length > 1) {
+              setCardBackFaceImage(data?.card_faces[1]?.image_uris?.normal);
+            }
           }
 
           if (cardImage === image) {
@@ -185,17 +183,11 @@ export default function CardSearch() {
           md={8}
           xs={12}
         >
-          {loadingImage && <Skeleton color="white"
-            height="557px"
-            sx={{maxWidth: '400px', bgcolor: 'grey.500', borderRadius: '10px'}}
-            variant="rectangular"
-            width="90%"
-                           />
-          }
-          <CardImage alt="Card Image"
-            onLoad={handleImageLoad}
-            src={cardImage}
-            sx={{height: loadingImage ? 0 : 'auto', opacity: loadingImage ? 0 : 1}}
+          <CardImage
+            cardBackFaceImage={cardBackFaceImage}
+            cardImage={cardImage}
+            loadingImage={loadingImage}
+            onImageLoad={handleImageLoad}
           />
         </Grid>
         <Hidden mdDown>
