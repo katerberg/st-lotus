@@ -74,7 +74,7 @@ export default function LotusScore({lotusScore}) {
         component="p"
         sx={{color: getStatColor(lotusScore)}}
         variant="h3"
-      >{Number.parseFloat(Math.round(lotusScore * 10) / 10).toFixed(1)}</StatTypography>
+      >{Number.parseFloat(Math.round((lotusScore < 0 ? 0 : lotusScore) * 10) / 10).toFixed(1)}</StatTypography>
     </Grid>
   );
 }

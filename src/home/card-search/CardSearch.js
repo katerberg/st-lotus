@@ -186,8 +186,8 @@ export default function CardSearch() {
           xs={12}
         >
           {loadingImage && <Skeleton color="white"
-            height="480px"
-            sx={{maxWidth: '400px', bgcolor: 'grey.500'}}
+            height="557px"
+            sx={{maxWidth: '400px', bgcolor: 'grey.500', borderRadius: '10px'}}
             variant="rectangular"
             width="90%"
                            />
