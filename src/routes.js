@@ -14,6 +14,7 @@ import vrd4 from './decks/decklists/vrd4Decklists.json';
 import vrd5 from './decks/decklists/vrd5Decklists.json';
 import vrd6 from './decks/decklists/vrd6Decklists.json';
 import vrd7 from './decks/decklists/vrd7Decklists.json';
+import vrd8 from './decks/decklists/vrd8Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
@@ -107,6 +108,16 @@ function Routes() {
             number={7}
           >
             <Typography paragraph>{'Brandon Curry took the tournament with a planeswalker heavy deck. He managed to squeak out a win against Eric Levine’s Eldrazi and Taxes list. This draft really showed the power of continuous board-control and prioritizing mana fixing incredibly early. Often we see combo decks get attempted in really high numbers, but the consistency of a bunch of planeswalkers, consistent mana, and good controlling elements got Brandon his first VRD win.'}</Typography>
+          </StLotusDecks>
+        </Route>
+        <Route
+          exact
+          path="/decks/st-lotus-8"
+        >
+          <StLotusDecks decks={vrd8}
+            number={8}
+          >
+            <Typography paragraph>{'Mason Lange came back and tied the record of two VRD championships with a blue tempo deck (with some white), featuring flash creatures and many of the best cards ever printed. Managing to snag both Time Walk and Ancestral, this list has all sorts of stack-based interaction, while still putting pressure on life totals with ninjas and ETB flash creatures. Blue went slightly undervalued in this field, with two nearly mono-blue lists emerging as a result.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route
