@@ -13,6 +13,7 @@ const StatTypography = styled(Typography)({
 
 export default function CardStats({loading, numberTaken, numberOfDrafts, averageRound, lotusScore}) {
   const unpicked = !numberTaken || !numberOfDrafts || !averageRound;
+
   return (
     <Grid container
       flexDirection="column"

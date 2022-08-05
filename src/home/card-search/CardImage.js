@@ -1,4 +1,3 @@
-import Skeleton from '@mui/material/Skeleton';
 import {styled} from '@mui/system';
 import PropTypes from 'prop-types';
 import React, {useEffect, useState} from 'react';
@@ -13,7 +12,7 @@ const CardFace = styled('img')({
   width: '90%',
 });
 
-export default function CardImage({loadingImage, cardImage, cardBackFaceImage, onImageLoad}) {
+export default function CardImage({cardImage, cardBackFaceImage}) {
   const [flipped, setFlipped] = useState(false);
 
   const handleFlip = () => {
@@ -25,17 +24,9 @@ export default function CardImage({loadingImage, cardImage, cardBackFaceImage, o
   }, [setFlipped, cardImage]);
 
   return <Box sx={{position: 'relative'}}>
-    {loadingImage && <Skeleton color="white"
-      height="557px"
-      sx={{maxWidth: '400px', bgcolor: 'grey.500', borderRadius: '10px'}}
-      variant="rectangular"
-      width="90%"
-                     />
-    }
     <CardFace alt="Card Image"
-      onLoad={onImageLoad}
       src={flipped ? cardBackFaceImage : cardImage}
-      sx={{height: loadingImage ? 0 : 'auto', opacity: loadingImage ? 0 : 1}}
+      sx={{height: 'auto', opacity: 1}}
     />
     {cardBackFaceImage && <IconButton aria-label="flip"
       color="primary"

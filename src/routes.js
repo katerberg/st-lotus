@@ -21,6 +21,7 @@ import Rulings from './rulings/Rulings';
 import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
 import ManaCost from './common/mana-cost/ManaCost';
+import Details from './details/Details';
 import YourFirstVrd from './articles/YourFirstVrd';
 import HowIWonMyVrd from './articles/HowIWonMyVrd';
 import WorkshopAggro from './articles/WorkshopAggro';
@@ -131,6 +132,12 @@ function Routes() {
           path="/articles"
         >
           <Articles />
+        </Route>
+        <Route
+          exact
+          path="/details/:card"
+        >
+          <Details />
         </Route>
         <Route
           exact

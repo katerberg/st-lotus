@@ -10,7 +10,7 @@ function Home() {
     <div>
       <Hero />
       <CountDown />
-      <CardSearch />
+      <CardSearch startingSearchText="Black Lotus"/>
       <Follow />
       <PreviewVideo />
     </div>
