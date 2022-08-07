@@ -1,4 +1,5 @@
 import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
@@ -6,9 +7,23 @@ import React, {useCallback, useState} from 'react';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import {useHistory, useParams} from 'react-router-dom';
-import CardSearch from '../home/card-search/CardSearch';
 import TextField from '@mui/material/TextField';
+import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
+import CardStats from '../home/card-search/CardStats';
+import CardImage from '../common/CardImage';
+
+const SearchTextField = styled(TextField)({
+  '& label': {
+    color: 'white',
+  },
+  '& .MuiInput-underline:before': {
+    borderBottomColor: 'white !important',
+  },
+  '& input': {
+    color: 'white',
+  },
+});
 
 export default function Details() {
   const history = useHistory();
@@ -34,9 +49,20 @@ export default function Details() {
   const handleDetailsPress = useCallback(() => history.push(`/details/${card}`), [history, card]);
 
   return (
-    <>
-    <CardSearch startingSearchText={card} />
-      <TextField
+    <Grid
+      alignItems="center"
+      container
+      flexDirection="column"
+      sx={{
+        backgroundColor: 'grey.800',
+        width: '100%',
+        marginTop: '-6px',
+        paddingTop: 2,
+        minHeight: 'calc(100vh - 52px)',
+        paddingBottom: 2,
+      }}
+    >
+      <SearchTextField
         InputProps={{
           startAdornment: <InputAdornment position="start"
             sx={{color: 'white'}}
@@ -72,6 +98,16 @@ export default function Details() {
               size="large"
             >{'See Details'}</Button>
           </Box>
-    </>
+          <CardImage
+            cardBackFaceImage={cardBackFaceImage}
+            cardImage={cardImage}
+          />
+              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                loading={loadingStats}
+                lotusScore={stats?.lotusScore}
+                numberOfDrafts={stats?.numberOfDrafts}
+                numberTaken={stats?.numberTaken}
+                                       />}
+    </Grid>
   );
 }

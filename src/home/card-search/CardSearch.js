@@ -1,6 +1,5 @@
 import Link from '@mui/material/Link';
 import React, {useCallback, useState} from 'react';
-import CardImage from './CardImage';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
@@ -8,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import {styled} from '@mui/system';
 import CardStats from './CardStats';
 import {Hidden, Typography} from '@mui/material';
+import CardImage from '../../common/CardImage';
 import useCardStats from '../../hooks/useCardStats';
 
 const SearchTextField = styled(TextField)({
