@@ -41,8 +41,6 @@ export default function CardImage({cardImage, cardBackFaceImage}) {
 }
 
 CardImage.propTypes = {
-  loadingImage: PropTypes.bool.isRequired,
   cardImage: PropTypes.string,
   cardBackFaceImage: PropTypes.string,
-  onImageLoad: PropTypes.func.isRequired,
 };

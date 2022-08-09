@@ -20,8 +20,6 @@ const useCardStats = (searchText) => {
   useEffect(() => {
     (async() => {
       try {
-        //eslint-disable-next-line
-        console.log('fetching data');
         const {data} = await getCardStats(searchText.trim());
         setLoadingStats(true);
         if (!data.numberTaken) {

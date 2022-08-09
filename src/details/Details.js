@@ -3,15 +3,15 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
-import React, {useCallback, useState} from 'react';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import {useHistory, useParams} from 'react-router-dom';
+import React, {useCallback, useEffect, useState} from 'react';
+import {useParams} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
+import useCardPairings from '../hooks/useCardPairings';
 import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
+import Synergy from './Synergy';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -26,10 +26,11 @@ const SearchTextField = styled(TextField)({
 });
 
 export default function Details() {
-  const history = useHistory();
   const {card} = useParams();
   const [searchText, setSearchText] = useState(card);
+  useEffect(() => setSearchText(card), [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(searchText);
+  const {synergies} = useCardPairings(searchText);
 
   const handleSearchTextChange = e => {
     setSearchText(e.target.value);
@@ -44,9 +45,6 @@ export default function Details() {
   const handleAcceptSuggestion = () => {
     setSearchText(suggestion.suggestion);
   };
-  //eslint-disable-next-line
-  console.log(stats, suggestion, cardImage, cardBackFaceImage, loadingStats)
-  const handleDetailsPress = useCallback(() => history.push(`/details/${card}`), [history, card]);
 
   return (
     <Grid
@@ -91,23 +89,26 @@ export default function Details() {
                      >{`“${suggestion.suggestion}”`}</Link>
                      {'?'}
                      </Typography>}
-          <Box>
-            <Button
-              color="secondary"
-              onClick={handleDetailsPress}
-              size="large"
-            >{'See Details'}</Button>
-          </Box>
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
           />
-              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
-                loading={loadingStats}
-                lotusScore={stats?.lotusScore}
-                numberOfDrafts={stats?.numberOfDrafts}
-                numberTaken={stats?.numberTaken}
-                                       />}
+        {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+          loading={loadingStats}
+          lotusScore={stats?.lotusScore}
+          numberOfDrafts={stats?.numberOfDrafts}
+          numberTaken={stats?.numberTaken}
+                                 />}
+                                <Grid
+                                  alignItems="center"
+                                  container
+                                  flexDirection="row"
+                                  wrap="wrap"
+                                >
+                                    {synergies.slice(1, 7).map(p => <Synergy card={p.card}
+                                      key={p.card}
+                                                                    />)}
+                                </Grid>
     </Grid>
   );
 }
