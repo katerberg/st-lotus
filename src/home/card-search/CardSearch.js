@@ -114,6 +114,7 @@ export default function CardSearch() {
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
+            loading={loadingStats}
           />
         </Grid>
         <Hidden mdDown>

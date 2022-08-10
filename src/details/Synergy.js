@@ -9,9 +9,9 @@ import CardImage from '../common/CardImage';
 
 export default function Synergy({card}) {
   const history = useHistory();
-  const {cardImage, cardBackFaceImage} = useCardStats(card);
+  const {loadingStats, cardImage, cardBackFaceImage} = useCardStats(card);
 
-  const handleDetailsPress = useCallback(() => history.push(`/details/${card}`), [history, card]);
+  const handleDetailsPress = useCallback(() => history.push(`/details/${encodeURIComponent(card)}`), [history, card]);
 
   return (
     <Grid
@@ -29,6 +29,7 @@ export default function Synergy({card}) {
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
+            loading={loadingStats}
           />
           <Box>
             <Button

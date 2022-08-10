@@ -12,6 +12,7 @@ import useCardPairings from '../hooks/useCardPairings';
 import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
 import Synergy from './Synergy';
+import {Hidden} from '@mui/material';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -26,7 +27,8 @@ const SearchTextField = styled(TextField)({
 });
 
 export default function Details() {
-  const {card} = useParams();
+  const {encodedCard} = useParams();
+  const card = decodeURIComponent(encodedCard);
   const [searchText, setSearchText] = useState(card);
   useEffect(() => setSearchText(card), [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(searchText);
@@ -68,13 +70,14 @@ export default function Details() {
             <SearchIcon />
           </InputAdornment>,
         }}
-
         label="Search"
+
         onChange={handleSearchTextChange}
         onFocus={event => {
         event.target.select();
       }}
         onKeyDown={handleSearchKeyPress}
+        sx={{margin: '20px'}}
         value={searchText}
         variant="standard"
       />
@@ -89,26 +92,66 @@ export default function Details() {
                      >{`“${suggestion.suggestion}”`}</Link>
                      {'?'}
                      </Typography>}
+      <Grid container
+        flexDirection="row"
+        sx={{marginTop: '20px'}}
+      >
+        <Hidden mdUp>
+          <Grid
+            item
+            xs={12}
+          >
+              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                loading={loadingStats}
+                lotusScore={stats?.lotusScore}
+                numberOfDrafts={stats?.numberOfDrafts}
+                numberTaken={stats?.numberTaken}
+                                       />}
+          </Grid>
+        </Hidden>
+        <Hidden mdDown>
+          <Grid item
+            lg={4}
+          />
+        </Hidden>
+        <Grid container
+          item
+          justifyContent="center"
+          lg={4}
+          md={8}
+          xs={12}
+        >
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
+            loading={loadingStats}
           />
-        {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
-          loading={loadingStats}
-          lotusScore={stats?.lotusScore}
-          numberOfDrafts={stats?.numberOfDrafts}
-          numberTaken={stats?.numberTaken}
-                                 />}
-                                <Grid
-                                  alignItems="center"
-                                  container
-                                  flexDirection="row"
-                                  wrap="wrap"
-                                >
-                                    {synergies.slice(1, 7).map(p => <Synergy card={p.card}
-                                      key={p.card}
-                                                                    />)}
-                                </Grid>
+        </Grid>
+        <Hidden mdDown>
+          <Grid
+            item
+            md={4}
+          >
+              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                loading={loadingStats}
+                lotusScore={stats?.lotusScore}
+                numberOfDrafts={stats?.numberOfDrafts}
+                numberTaken={stats?.numberTaken}
+                                       />}
+          </Grid>
+        </Hidden>
+      </Grid>
+      <Grid
+        alignItems="center"
+        container
+        flexDirection="row"
+        justifyContent="center"
+        wrap="wrap"
+      >
+            {synergies.slice(0, 6).map(p => <Synergy card={p.card}
+              key={p.card}
+                                            />)}
+      </Grid>
     </Grid>
   );
 }

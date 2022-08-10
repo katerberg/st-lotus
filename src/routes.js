@@ -135,7 +135,7 @@ function Routes() {
         </Route>
         <Route
           exact
-          path="/details/:card"
+          path="/details/:encodedCard"
         >
           <Details />
         </Route>

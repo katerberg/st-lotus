@@ -20,8 +20,8 @@ const useCardStats = (searchText) => {
   useEffect(() => {
     (async() => {
       try {
-        const {data} = await getCardStats(searchText.trim());
         setLoadingStats(true);
+        const {data} = await getCardStats(searchText.trim());
         if (!data.numberTaken) {
           setStats(data);
           setSuggestion({knownCard: true, suggestion: data.suggestion});
@@ -29,7 +29,6 @@ const useCardStats = (searchText) => {
           setStats(data);
           setSuggestion(null);
         }
-        setLoadingStats(false);
         axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
           setCardBackFaceImage(null);
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
@@ -43,6 +42,7 @@ const useCardStats = (searchText) => {
           }
 
           setCardImage(image);
+          setLoadingStats(false);
         });
       } catch (e) {
         const response = e?.response;
