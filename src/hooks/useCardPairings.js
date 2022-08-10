@@ -13,8 +13,6 @@ const useCardPairings = (searchText) => {
   useEffect(() => {
     (async() => {
       try {
-        //eslint-disable-next-line
-        console.log('fetching data');
         const {data} = await getCardSynergies(searchText.trim());
         setLoadingSynergies(true);
         if (data.statusCode) {
