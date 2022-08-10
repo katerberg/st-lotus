@@ -1,0 +1,34 @@
+import Typography from '@mui/material/Typography';
+import PropTypes from 'prop-types';
+import Grid from '@mui/material/Grid';
+import React from 'react';
+import useCardPairings from '../hooks/useCardPairings';
+import Synergy from './Synergy';
+
+export default function Synergies({card}) {
+  const {synergies} = useCardPairings(card);
+
+  return (
+    <>
+      <Typography color="white"
+        sx={{marginTop: 4}}
+        variant="h2"
+      >{'Often Drafted With'}</Typography>
+      <Grid
+        alignItems="center"
+        container
+        flexDirection="row"
+        justifyContent="center"
+        wrap="wrap"
+      >
+            {synergies.slice(0, 6).map(p => <Synergy card={p.card}
+              key={p.card}
+                                            />)}
+      </Grid>
+    </>
+  );
+}
+
+Synergies.propTypes = {
+  card: PropTypes.string.isRequired,
+};

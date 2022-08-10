@@ -33,7 +33,7 @@ export default function Synergy({card}) {
           />
           <Box>
             <Button
-              color="secondary"
+              color="primary"
               onClick={handleDetailsPress}
               size="large"
             >{'See Details'}</Button>
@@ -41,7 +41,6 @@ export default function Synergy({card}) {
     </Grid>
   );
 }
-
 
 Synergy.propTypes = {
   card: PropTypes.string.isRequired,

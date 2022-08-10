@@ -61,7 +61,7 @@ export default function CardSearch() {
             <SearchIcon />
           </InputAdornment>,
         }}
-
+        id="search"
         label="Search"
         onChange={handleSearchTextChange}
         onFocus={event => {

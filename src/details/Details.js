@@ -8,11 +8,10 @@ import {useParams} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
-import useCardPairings from '../hooks/useCardPairings';
 import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
-import Synergy from './Synergy';
 import {Hidden} from '@mui/material';
+import Synergies from './Synergies';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -32,7 +31,6 @@ export default function Details() {
   const [searchText, setSearchText] = useState(card);
   useEffect(() => setSearchText(card), [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(searchText);
-  const {synergies} = useCardPairings(searchText);
 
   const handleSearchTextChange = e => {
     setSearchText(e.target.value);
@@ -70,8 +68,8 @@ export default function Details() {
             <SearchIcon />
           </InputAdornment>,
         }}
+        id="search"
         label="Search"
-
         onChange={handleSearchTextChange}
         onFocus={event => {
         event.target.select();
@@ -141,17 +139,7 @@ export default function Details() {
           </Grid>
         </Hidden>
       </Grid>
-      <Grid
-        alignItems="center"
-        container
-        flexDirection="row"
-        justifyContent="center"
-        wrap="wrap"
-      >
-            {synergies.slice(0, 6).map(p => <Synergy card={p.card}
-              key={p.card}
-                                            />)}
-      </Grid>
+      <Synergies card={searchText} />
     </Grid>
   );
 }

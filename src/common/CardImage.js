@@ -49,7 +49,7 @@ export default function CardImage({cardImage, cardBackFaceImage, loading}) {
       color="primary"
       onClick={handleFlip}
       size="large"
-      sx={{position: 'absolute', right: 'calc(50% - 150px)', top: '160px'}}
+      sx={{backgroundColor: 'rgba(0,0,0,0.3)', borderRadius: '50%', position: 'absolute', right: 'calc(50% - 150px)', top: '160px'}}
                           >
       <ThreeSixtyIcon sx={{fontSize: '96px'}} />
     </IconButton>
