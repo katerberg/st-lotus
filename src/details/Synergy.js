@@ -1,17 +1,13 @@
 import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
-import React, {useCallback} from 'react';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import {useHistory} from 'react-router-dom';
+import React from 'react';
 import useCardStats from '../hooks/useCardStats';
 import CardImage from '../common/CardImage';
+import DetailsButton from './DetailsButton';
 
 export default function Synergy({card}) {
-  const history = useHistory();
   const {loadingStats, cardImage, cardBackFaceImage} = useCardStats(card);
 
-  const handleDetailsPress = useCallback(() => history.push(`/details/${encodeURIComponent(card)}`), [history, card]);
 
   return (
     <Grid
@@ -31,13 +27,7 @@ export default function Synergy({card}) {
             cardImage={cardImage}
             loading={loadingStats}
           />
-          <Box>
-            <Button
-              color="primary"
-              onClick={handleDetailsPress}
-              size="large"
-            >{'See Details'}</Button>
-          </Box>
+          <DetailsButton card={card} />
     </Grid>
   );
 }

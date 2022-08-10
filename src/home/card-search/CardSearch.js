@@ -9,6 +9,7 @@ import CardStats from './CardStats';
 import {Hidden, Typography} from '@mui/material';
 import CardImage from '../../common/CardImage';
 import useCardStats from '../../hooks/useCardStats';
+import DetailsButton from '../../details/DetailsButton';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -116,18 +117,23 @@ export default function CardSearch() {
             cardImage={cardImage}
             loading={loadingStats}
           />
+          <Hidden mdUp>
+            <DetailsButton card={searchText} />
+          </Hidden>
         </Grid>
         <Hidden mdDown>
           <Grid
             item
             md={4}
           >
-              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+              {!!stats?.numberTaken && <><CardStats averageRound={stats?.averageRound}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberOfDrafts}
                 numberTaken={stats?.numberTaken}
-                                       />}
+                                         />
+                <DetailsButton card={searchText} />
+              </>}
           </Grid>
         </Hidden>
       </Grid>
