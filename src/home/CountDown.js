@@ -9,14 +9,16 @@ export default function CountDown() {
     const difference = nextDate - new Date();
 
     let timeLeft = {};
-
+    const oneDay = 1000 * 60 * 60 * 24;
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        days: Math.floor(difference / oneDay),
         hours: Math.floor(difference / (1000 * 60 * 60) % 24),
         minutes: Math.floor(difference / 1000 / 60 % 60),
         seconds: Math.floor(difference / 1000 % 60),
       };
+    } else if (difference < -1 * oneDay) {
+      return 'yesterday';
     }
 
     return timeLeft;
@@ -32,6 +34,10 @@ export default function CountDown() {
   });
 
   const getTwoDigitNumber = useCallback(number => new Intl.NumberFormat('en-US', {minimumIntegerDigits: 2}).format(number), []);
+
+  if (calculateTimeLeft() === 'yesterday') {
+    return null;
+  }
 
   if (!Object.keys(calculateTimeLeft()).length) {
     return <Grid container
@@ -52,7 +58,6 @@ export default function CountDown() {
         variant="h2"
       ><Link href="https://twitch.tv/stlotusmtg">{'Tune in today!'}</Link></Typography>
       </Grid>;
-
   }
 
   return (
