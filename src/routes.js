@@ -15,6 +15,7 @@ import vrd5 from './decks/decklists/vrd5Decklists.json';
 import vrd6 from './decks/decklists/vrd6Decklists.json';
 import vrd7 from './decks/decklists/vrd7Decklists.json';
 import vrd8 from './decks/decklists/vrd8Decklists.json';
+import vrd9 from './decks/decklists/vrd9Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
@@ -119,6 +120,16 @@ function Routes() {
             number={8}
           >
             <Typography paragraph>{'Mason Lange came back and tied the record of two VRD championships with a blue tempo deck (with some white), featuring flash creatures and many of the best cards ever printed. Managing to snag both Time Walk and Ancestral, this list has all sorts of stack-based interaction, while still putting pressure on life totals with ninjas and ETB flash creatures. Blue went slightly undervalued in this field, with two nearly mono-blue lists emerging as a result.'}</Typography>
+          </StLotusDecks>
+        </Route>
+        <Route
+          exact
+          path="/decks/st-lotus-9"
+        >
+          <StLotusDecks decks={vrd9}
+            number={9}
+          >
+            <Typography paragraph>{'Mason Lange solidified his position as winningest drafter ever with his third victory on the back of powerful blue cards in a field that largely eschewed blue. There were many multi-colored decks that fought over mana (including two lands-style decks) leaving lots of blue value on the table. It looked like Dan was going to tie it up with the best Storm deck we have seen, but he was narrowly defeated in their late match-up.'}</Typography>
           </StLotusDecks>
         </Route>
         <Route

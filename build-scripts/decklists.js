@@ -1,7 +1,10 @@
 /* eslint-disable no-console */
 const fs = require('fs');
 const util = require('util');
+const rax = require('retry-axios');
 const axios = require('axios');
+
+rax.attach();
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.writeFileAsync = util.promisify(fs.writeFile);
@@ -18,7 +21,17 @@ async function getCards(dirtyLists) {
       }
       console.log(`making call for ${card}`);
       await new Promise(resolve => setTimeout(resolve, 100));
-      const axiosCall = await axios.get(`https://api.scryfall.com/cards/named?fuzzy=${card}`);
+      const config = {
+        raxConfig: {
+          retry: 3,
+          noResponseRetries: 3,
+          onRetryAttempt: err => {
+            console.log(`Retry attempt #${rax.getConfig(err).currentRetryAttempt}`);
+          },
+        },
+        timeout: 10000,
+      };
+      const axiosCall = await axios.get(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(card)}`, config);
       cards[card] = axiosCall.data;
       return axiosCall;
     }, Promise.resolve());
