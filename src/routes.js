@@ -25,6 +25,7 @@ import ManaCost from './common/mana-cost/ManaCost';
 import Details from './details/Details';
 import YourFirstVrd from './articles/YourFirstVrd';
 import HowIWonMyVrd from './articles/HowIWonMyVrd';
+import Faldorn from './articles/Faldorn';
 import WorkshopAggro from './articles/WorkshopAggro';
 
 function Routes() {
@@ -179,6 +180,12 @@ function Routes() {
           path="/articles/2022-04-03/How I Won My VRD"
         >
           <HowIWonMyVrd/>
+        </Route>
+        <Route
+          exact
+          path="/articles/2022-09-19/Cast From Exile"
+        >
+          <Faldorn/>
         </Route>
         <Route
           path="/"

@@ -18,6 +18,19 @@ export default function Articles() {
           md={6}
           xs={12}
         >
+            <ArticlePreview author="Stephen Hagan"
+              date={new Date(2022, 8, 20)}
+              heading="Cast from Exile: Exploring Faldorn"
+              image="https://c1.scryfall.com/file/scryfall-cards/art_crop/front/6/b/6ba78cd7-a3b6-4ef2-b6b7-3416c0ba61f1.jpg?1655088896"
+              link="/articles/2022-09-19/Cast From Exile"
+              text="This article begins with a love of impulse draw. If you are not aware, impulse draw has become the name for the effect commonly found in red where cards are exiled from the top of your deck with the ability to be cast either the same turn, or some point in the feature. Wizards has begun what looks like a heavy lean into impulse in recent sets with cards such as Valakut Exploration, Atsushi, the Blazing Sky, Experimental Synthesizer"
+            />
+        </Grid>
+        <Grid
+          item
+          md={6}
+          xs={12}
+        >
             <ArticlePreview author="CommonOpponent"
               date={new Date(2022, 5, 21)}
               heading="Deep Dive: Workshop Aggro"
