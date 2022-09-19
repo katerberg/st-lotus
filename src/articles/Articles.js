@@ -19,7 +19,7 @@ export default function Articles() {
           xs={12}
         >
             <ArticlePreview author="Stephen Hagan"
-              date={new Date(2022, 8, 20)}
+              date={new Date(2022, 8, 19)}
               heading="Cast from Exile: Exploring Faldorn"
               image="https://c1.scryfall.com/file/scryfall-cards/art_crop/front/6/b/6ba78cd7-a3b6-4ef2-b6b7-3416c0ba61f1.jpg?1655088896"
               link="/articles/2022-09-19/Cast From Exile"
