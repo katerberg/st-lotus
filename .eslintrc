@@ -3,9 +3,9 @@
   "plugins": ["react", "jest"],
   "rules": {
     "no-console": "error",
-    "no-extra-parens":  "error",
+    "no-extra-parens": "error",
     "no-template-curly-in-string": "error",
-    "class-methods-use-this": ["error", {"exceptMethods": ["render"]}],
+    "class-methods-use-this": ["error", { "exceptMethods": ["render"] }],
     "array-callback-return": "error",
     "curly": "error",
     "default-case": "error",
@@ -69,12 +69,12 @@
     "eol-last": "error",
     "func-call-spacing": "error",
     "func-name-matching": "error",
-    "indent": ["error", 2, {"ignoredNodes": ["JSXElement *", "JSXElement"]}],
+    "indent": ["error", 2, { "ignoredNodes": ["JSXElement *", "JSXElement"] }],
     "jsx-quotes": ["error", "prefer-double"],
     "key-spacing": "error",
     "keyword-spacing": "error",
     "multiline-ternary": ["error", "never"],
-    "new-cap": ["error", {"properties": false, "capIsNew": false}],
+    "new-cap": ["error", { "properties": false, "capIsNew": false }],
     "new-parens": "error",
     "no-bitwise": "error",
     "no-continue": "error",
@@ -107,10 +107,10 @@
     "no-confusing-arrow": "error",
     "no-duplicate-imports": "error",
     "no-useless-computed-key": "error",
-    "no-useless-constructor": "error", 
-    "no-useless-rename": "error", 
-    "no-var": "error", 
-    "object-shorthand": "error", 
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
     "prefer-arrow-callback": "error",
     "prefer-const": "error",
     "prefer-destructuring": "error",
@@ -176,6 +176,6 @@
     "react": {
       "pragma": "React",
       "version": "detect"
-    },
+    }
   }
 }
