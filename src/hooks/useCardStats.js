@@ -29,7 +29,7 @@ const useCardStats = (searchText) => {
           setStats(data);
           setSuggestion(null);
         }
-        axios.get(`https://api.scryfall.com/cards/named?fuzzy=${searchText}`).then(({data}) => {
+        axios.get(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(searchText)}`).then(({data}) => {
           setCardBackFaceImage(null);
           let image = 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
           if (data?.image_uris) {
