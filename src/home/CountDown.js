@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import {Link} from '@mui/material';
 
 export default function CountDown() {
-  const nextDate = useMemo(() => new Date('2023-01-14T13:44:00.000Z'), []);
+  const nextDate = useMemo(() => new Date('2023-04-01T13:44:00.000Z'), []);
   const calculateTimeLeft = useCallback(() => {
     const difference = nextDate - new Date();
 
