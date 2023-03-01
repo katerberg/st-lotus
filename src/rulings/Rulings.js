@@ -150,6 +150,48 @@ export default function Rulings() {
             {'2021-10-02: Updated allow more than one copy of some cards.'}
           </Typography>
         </Ruling>
+        <Ruling
+          header="“Stickers” and “Attraction” cards function like constructed"
+          number={7}
+          updated="2023-02-28"
+        >
+          <Typography paragraph>
+            {
+              'Stickers and Attractions follow the constructed rules and do not need to be picked. Only vintage-legal stickers and attractsions are available.'
+            }
+          </Typography>
+          <ul>
+            <li>
+              <Typography>
+                {
+                  'An Attraction deck must contain at least ten Attraction cards and each card in an Attraction deck must have a different English name. The deck must be chosen at the start of the tournament and cannot be changed between games or matches.'
+                }
+              </Typography>
+            </li>
+            <li>
+              <Typography>
+                {
+                  'A player who chooses to play with stickers must start the game with at least ten sticker sheets selected before play begins, and each of their sticker sheets must be unique. There is no maximum number of sticker sheets a player may start the game with. Each player playing with sticker sheets reveals all of their sticker sheets and chooses three of them at random. '
+                }
+              </Typography>
+            </li>
+          </ul>
+          <Typography paragraph>
+            {
+              'In the unlikely event that a player needs to apply a sticker to one of their cards or open an attraction and has not chosen a deck at the start of the tournament (likely due to a '
+            }
+            <Link href="https://scryfall.com/card/lea/51/clone">{'Clone'}</Link>
+            {
+              ' effect), they immediately assemble an appropriate deck mirroring their opponents’s choices. This means that for stickers, they would randomly pick 3 of the 10 chosen stickers for the rest of the match, and for attractions, they would build an attraction deck of the same cards as their opponent.'
+            }
+          </Typography>
+          <Typography paragraph variant="body2">
+            {'2023-02-28: Adds clarification of the “Clone” situation.'}
+          </Typography>
+          <Typography paragraph variant="body2">
+            {'2022-10-07: Follows constructed rules.'}
+          </Typography>
+        </Ruling>
       </Box>
     </Container>
   );
