@@ -157,7 +157,7 @@ export default function Rulings() {
         >
           <Typography paragraph>
             {
-              'Stickers and Attractions follow the constructed rules and do not need to be picked. Only vintage-legal stickers and attractsions are available.'
+              'Stickers and Attractions follow the constructed rules and do not need to be picked. Only vintage-legal stickers and attractions are available.'
             }
           </Typography>
           <ul>

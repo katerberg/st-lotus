@@ -18,7 +18,7 @@ export default function Decks() {
       number: 10,
       image:
         'https://cards.scryfall.io/art_crop/front/c/c/cc5338e1-26a6-466e-9393-788f69370e15.jpg?1673308519',
-      date: new Date('2022-01-15'),
+      date: new Date('2023-01-15'),
       text: 'Andrew Swift took down his first event by skillfully piloting a Blue-White control deck full of many of the standard slots, but with some spicy additions made possible by a robust mana-base. Among the two splash colors',
     },
     {
