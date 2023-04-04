@@ -10,22 +10,25 @@ import {config} from '../common/config';
 export default function CardStats({card}) {
   const [stats, setStats] = useState(null);
   useEffect(() => {
-    axios.get(`${config.API_CARD_URL}${encodeURIComponent(card.apiName)}`).then(({data}) => {
-      setStats(data);
-    }).catch(() => {
-      setStats(null);
-    });
+    axios
+      .get(`${config.API_CARD_URL}${encodeURIComponent(card.apiName)}?premier`)
+      .then(({data}) => {
+        setStats(data);
+      })
+      .catch(() => {
+        setStats(null);
+      });
   }, [card]);
 
   return (
-    <Grid
-      container
-      direction="column"
-      sx={{paddingLeft: '20px', paddingRight: '20px'}}
-    >
+    <Grid container direction="column" sx={{paddingLeft: '20px', paddingRight: '20px'}}>
       <Stack>
         <Typography>
-          {stats ? `Taken in ${stats.numberTaken} of ${stats.numberOfDrafts} drafts` : <Skeleton variant="text" />}
+          {stats ? (
+            `Taken in ${stats.numberTaken} of ${stats.numberAvailable} drafts`
+          ) : (
+            <Skeleton variant="text" />
+          )}
         </Typography>
         <Typography>
           {stats ? `Usually taken in round ${stats.averageRound}` : <Skeleton variant="text" />}

@@ -83,7 +83,7 @@ export default function Details() {
         sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
         variant="subtitle1"
                      >
-                       {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberOfDrafts} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
+                       {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberAvailable} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
                      <Link color="primary"
                        onClick={handleAcceptSuggestion}
                        sx={{cursor: 'pointer'}}
@@ -102,7 +102,7 @@ export default function Details() {
               {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
-                numberOfDrafts={stats?.numberOfDrafts}
+                numberOfDrafts={stats?.numberAvailable}
                 numberTaken={stats?.numberTaken}
                                        />}
           </Grid>
@@ -133,7 +133,7 @@ export default function Details() {
               {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
-                numberOfDrafts={stats?.numberOfDrafts}
+                numberOfDrafts={stats?.numberAvailable}
                 numberTaken={stats?.numberTaken}
                                        />}
           </Grid>
