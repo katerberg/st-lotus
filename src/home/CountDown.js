@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import {Link} from '@mui/material';
 
 export default function CountDown() {
-  const nextDate = useMemo(() => new Date('2023-04-01T13:44:00.000Z'), []);
+  const nextDate = useMemo(() => new Date('2023-07-29T13:44:00.000Z'), []);
   const calculateTimeLeft = useCallback(() => {
     const difference = nextDate - new Date();
 
@@ -13,9 +13,9 @@ export default function CountDown() {
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / oneDay),
-        hours: Math.floor(difference / (1000 * 60 * 60) % 24),
-        minutes: Math.floor(difference / 1000 / 60 % 60),
-        seconds: Math.floor(difference / 1000 % 60),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
       };
     } else if (difference < -1 * oneDay) {
       return 'yesterday';
@@ -78,24 +78,17 @@ export default function CountDown() {
           paddingBottom: 2,
         }}
       >
-        {Object.keys(timeLeft).map((time) =>
-          <Grid item
-            justifyContent="center"
-            key={time}
-          >
-            <Typography color="text.secondary"
-              variant="h1"
-            >
+        {Object.keys(timeLeft).map((time) => (
+          <Grid item justifyContent="center" key={time}>
+            <Typography color="text.secondary" variant="h1">
               {getTwoDigitNumber(timeLeft[time])}
               {time !== 'seconds' ? ':' : ''}
             </Typography>
-            <Typography color="text.secondary"
-              sx={{textAlign: 'center'}}
-            >
+            <Typography color="text.secondary" sx={{textAlign: 'center'}}>
               {time}
             </Typography>
-          </Grid>,
-        )}
+          </Grid>
+        ))}
       </Grid>
       <Typography
         color="text.secondary"
