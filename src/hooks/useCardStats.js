@@ -3,7 +3,7 @@ import {useCallback, useEffect, useMemo, useState} from 'react';
 import axios from 'axios';
 import {config} from '../common/config';
 
-const useCardStats = (searchText) => {
+const useCardStats = (searchText, includeOldDrafts = false) => {
   const [stats, setStats] = useState({
     average: 1.3906,
     averageRound: 1,
@@ -19,8 +19,11 @@ const useCardStats = (searchText) => {
   const [suggestion, setSuggestion] = useState(null);
   const [cardBackFaceImage, setCardBackFaceImage] = useState(null);
   const cardStats = useCallback(
-    (text) => axios.get(`${config.API_CARD_URL}${encodeURIComponent(text)}?premier`),
-    [],
+    (text) =>
+      axios.get(
+        `${config.API_CARD_URL}${encodeURIComponent(text)}${includeOldDrafts ? '' : '?premier'}`,
+      ),
+    [includeOldDrafts],
   );
   const getCardStats = useMemo(() => AwesomeDebouncePromise(cardStats, 300), [cardStats]);
 

@@ -1,3 +1,4 @@
+/* eslint-disable operator-linebreak */
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
@@ -10,7 +11,7 @@ import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
 import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
-import {Hidden} from '@mui/material';
+import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
 
 const SearchTextField = styled(TextField)({
@@ -28,22 +29,33 @@ const SearchTextField = styled(TextField)({
 export default function Details() {
   const {encodedCard} = useParams();
   const card = decodeURIComponent(encodedCard);
+  const [isPremier, setIsPremier] = useState(true);
   const [searchText, setSearchText] = useState(card);
   useEffect(() => setSearchText(card), [card]);
-  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(searchText);
+  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(
+    searchText,
+    !isPremier,
+  );
 
-  const handleSearchTextChange = e => {
+  const handleSearchTextChange = (e) => {
     setSearchText(e.target.value);
   };
 
-  const handleSearchKeyPress = useCallback(e => {
-    if (e.keyCode === 13 && suggestion) {
-      setSearchText(suggestion.suggestion);
-    }
-  }, [suggestion]);
+  const handleSearchKeyPress = useCallback(
+    (e) => {
+      if (e.keyCode === 13 && suggestion) {
+        setSearchText(suggestion.suggestion);
+      }
+    },
+    [suggestion],
+  );
 
   const handleAcceptSuggestion = () => {
     setSearchText(suggestion.suggestion);
+  };
+
+  const handlePremierToggle = () => {
+    setIsPremier(!isPremier);
   };
 
   return (
@@ -60,65 +72,68 @@ export default function Details() {
         paddingBottom: 2,
       }}
     >
+      <FormGroup>
+        <FormControlLabel
+          control={
+            <Checkbox checked={!isPremier} color="secondary" onClick={handlePremierToggle} />
+          }
+          label={<Typography color="white">{'Include very old drafts'}</Typography>}
+        />
+      </FormGroup>
       <SearchTextField
         InputProps={{
-          startAdornment: <InputAdornment position="start"
-            sx={{color: 'white'}}
-                          >
-            <SearchIcon />
-          </InputAdornment>,
+          startAdornment: (
+            <InputAdornment position="start" sx={{color: 'white'}}>
+              <SearchIcon />
+            </InputAdornment>
+          ),
         }}
         id="search"
         label="Search"
         onChange={handleSearchTextChange}
-        onFocus={event => {
-        event.target.select();
-      }}
+        onFocus={(event) => {
+          event.target.select();
+        }}
         onKeyDown={handleSearchKeyPress}
         sx={{margin: '20px'}}
         value={searchText}
         variant="standard"
       />
-      {suggestion && <Typography color="white"
-        sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
-        variant="subtitle1"
-                     >
-                       {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberAvailable} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
-                     <Link color="primary"
-                       onClick={handleAcceptSuggestion}
-                       sx={{cursor: 'pointer'}}
-                     >{`“${suggestion.suggestion}”`}</Link>
-                     {'?'}
-                     </Typography>}
-      <Grid container
-        flexDirection="row"
-        sx={{marginTop: '20px'}}
-      >
+      {suggestion && (
+        <Typography
+          color="white"
+          sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
+          variant="subtitle1"
+        >
+          {suggestion.knownCard
+            ? `That hasn’t been played in the ${stats?.numberAvailable} drafts it’s been available. How about `
+            : 'Hmmm, can’t find that. Did you mean '}
+          <Link
+            color="primary"
+            onClick={handleAcceptSuggestion}
+            sx={{cursor: 'pointer'}}
+          >{`“${suggestion.suggestion}”`}</Link>
+          {'?'}
+        </Typography>
+      )}
+      <Grid container flexDirection="row" sx={{marginTop: '20px'}}>
         <Hidden mdUp>
-          <Grid
-            item
-            xs={12}
-          >
-              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+          <Grid item xs={12}>
+            {!!stats?.numberTaken && (
+              <CardStats
+                averageRound={stats?.averageRound}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}
                 numberTaken={stats?.numberTaken}
-                                       />}
+              />
+            )}
           </Grid>
         </Hidden>
         <Hidden mdDown>
-          <Grid item
-            lg={4}
-          />
+          <Grid item lg={4} />
         </Hidden>
-        <Grid container
-          item
-          justifyContent="center"
-          lg={4}
-          md={8}
-          xs={12}
-        >
+        <Grid container item justifyContent="center" lg={4} md={8} xs={12}>
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
@@ -126,16 +141,16 @@ export default function Details() {
           />
         </Grid>
         <Hidden mdDown>
-          <Grid
-            item
-            md={4}
-          >
-              {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+          <Grid item md={4}>
+            {!!stats?.numberTaken && (
+              <CardStats
+                averageRound={stats?.averageRound}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}
                 numberTaken={stats?.numberTaken}
-                                       />}
+              />
+            )}
           </Grid>
         </Hidden>
       </Grid>
