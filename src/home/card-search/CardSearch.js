@@ -1,4 +1,3 @@
-import Link from '@mui/material/Link';
 import React, {useCallback, useState} from 'react';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
@@ -6,10 +5,11 @@ import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import {styled} from '@mui/system';
 import CardStats from './CardStats';
-import {Hidden, Typography} from '@mui/material';
+import {Hidden} from '@mui/material';
 import CardImage from '../../common/CardImage';
 import useCardStats from '../../hooks/useCardStats';
 import DetailsButton from '../../details/DetailsButton';
+import Suggestion from '../../details/Suggestion';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -72,17 +72,7 @@ export default function CardSearch() {
         value={searchText}
         variant="standard"
       />
-      {suggestion && <Typography color="white"
-        sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
-        variant="subtitle1"
-                     >
-                       {suggestion.knownCard ? `That hasn’t been played in the ${stats?.numberAvailable} drafts it’s been available. How about ` : 'Hmmm, can’t find that. Did you mean '}
-                     <Link color="primary"
-                       onClick={handleAcceptSuggestion}
-                       sx={{cursor: 'pointer'}}
-                     >{`“${suggestion.suggestion}”`}</Link>
-                     {'?'}
-                     </Typography>}
+      <Suggestion onAcceptSuggestion={handleAcceptSuggestion} stats={stats} suggestion={suggestion} />
       <Grid container
         flexDirection="row"
         sx={{marginTop: '20px'}}

@@ -1,7 +1,6 @@
 /* eslint-disable operator-linebreak */
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Link from '@mui/material/Link';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import React, {useCallback, useEffect, useState} from 'react';
@@ -13,6 +12,7 @@ import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
 import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
+import Suggestion from './Suggestion';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -99,23 +99,7 @@ export default function Details() {
         value={searchText}
         variant="standard"
       />
-      {suggestion && (
-        <Typography
-          color="white"
-          sx={{margin: '20px 20px 0', minHeight: {xs: '92px', sm: '144px', md: 0}}}
-          variant="subtitle1"
-        >
-          {suggestion.knownCard
-            ? `That hasn’t been played in the ${stats?.numberAvailable} drafts it’s been available. How about `
-            : 'Hmmm, can’t find that. Did you mean '}
-          <Link
-            color="primary"
-            onClick={handleAcceptSuggestion}
-            sx={{cursor: 'pointer'}}
-          >{`“${suggestion.suggestion}”`}</Link>
-          {'?'}
-        </Typography>
-      )}
+      <Suggestion onAcceptSuggestion={handleAcceptSuggestion} stats={stats} suggestion={suggestion} />
       <Grid container flexDirection="row" sx={{marginTop: '20px'}}>
         <Hidden mdUp>
           <Grid item xs={12}>
