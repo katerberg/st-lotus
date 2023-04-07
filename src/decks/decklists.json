@@ -4578,7 +4578,7 @@
     "seat": 8,
     "wins": 5,
     "losses": 2,
-    "stlotus": 10,
+    "stLotus": 10,
     "decklist": [
       [1, "mox pearl"],
       [2, "mox emerald"],
@@ -4637,7 +4637,7 @@
     "seat": 1,
     "wins": 3,
     "losses": 4,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Black Lotus"],
 [2, "Mox Jet"],
@@ -4696,7 +4696,7 @@
     "seat": 2,
     "wins": 4,
     "losses": 3,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Ancestral Recall"],
 [2, "Mana Vault"],
@@ -4755,7 +4755,7 @@
     "seat": 3,
     "wins": 1,
     "losses": 6,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Mox Emerald"],
 [2, "Collector Ouphe"],
@@ -4814,7 +4814,7 @@
     "seat": 4,
     "wins": 4,
     "losses": 3,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "mana crypt"],
 [2, "fastbond"],
@@ -4873,7 +4873,7 @@
     "seat": 5,
     "wins": 5,
     "losses": 2,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Time Walk"],
 [2, "Oko, Thief of Crowns"],
@@ -4932,7 +4932,7 @@
     "seat": 6,
     "wins": 1,
     "losses": 6,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Mox Pearl"],
 [2, "Tinker"],
@@ -4991,7 +4991,7 @@
     "seat": 7,
     "wins": 6,
     "losses": 1,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "Mox Sapphire"],
 [2, "Demonic Tutor"],
@@ -5050,7 +5050,7 @@
     "seat": 8,
     "wins": 4,
     "losses": 3,
-    "stlotus": 11,
+    "stLotus": 11,
     "decklist": [
 [1, "sol ring"],
 [2, "mox ruby"],

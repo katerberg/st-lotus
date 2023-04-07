@@ -13,18 +13,19 @@ async function getCards(dirtyLists) {
   const cards = {};
   await dirtyLists.reduce(async(previousDeck, dirtyDeck) => {
     await previousDeck;
-    const axiosCalls = await dirtyDeck.decklist.concat(dirtyDeck.sideboard).reduce(async(prev, [, card]) => {
+    const axiosCalls = await dirtyDeck.decklist.concat(dirtyDeck.sideboard).reduce(async(prev, [, listCard]) => {
+      const card = listCard?.toLowerCase();
       await prev;
       if (cards[card]) {
         console.log(`skipping ${card}`);
         return Promise.resolve();
       }
       console.log(`making call for ${card}`);
-      await new Promise(resolve => setTimeout(resolve, 100));
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const config = {
         raxConfig: {
-          retry: 3,
-          noResponseRetries: 3,
+          retry: 10,
+          noResponseRetries: 10,
           onRetryAttempt: err => {
             console.log(`Retry attempt #${rax.getConfig(err).currentRetryAttempt}`);
           },
