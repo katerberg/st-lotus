@@ -88,7 +88,7 @@ export default function Articles() {
               heading="Planeswalkers in VRD"
               image="https://c1.scryfall.com/file/scryfall-cards/art_crop/front/c/8/c8817585-0d32-4d56-9142-0d29512e86a9.jpg?1598304029"
               link="/articles/2021-11-06/Planeswalkers in VRD"
-              text="After St. Lotus VRD 7 there is some discussion about the ascendency of planeswalker cards to the top of the format. Brandon Curry’s powerful Balance/planeswalker deck was built around getting a 3 mana walker of some type (Oko, Thief of Crowns, Teferi, Time Raveler, or Dovin, Hand of Control) out on turn 2 as often as he could. Packing 8 maindeck walkers his strategy carried him to a 5-2 + a play off win against Eric Levine’s"
+              text="After St. Lotus VRD 7 there is some discussion about the ascendancy of planeswalker cards to the top of the format. Brandon Curry’s powerful Balance/planeswalker deck was built around getting a 3 mana walker of some type (Oko, Thief of Crowns, Teferi, Time Raveler, or Dovin, Hand of Control) out on turn 2 as often as he could. Packing 8 maindeck walkers his strategy carried him to a 5-2 + a play off win against Eric Levine’s"
             />
         </Grid>
       </Grid>
