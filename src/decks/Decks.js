@@ -15,6 +15,13 @@ export default function Decks() {
     'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {
+      number: 11,
+      image:
+        'https://cards.scryfall.io/art_crop/front/8/d/8d727b9b-6114-414d-9172-16b6e1db41cc.jpg?1562921228',
+      date: new Date('2023-04-01'),
+      text: 'A newcomer to VRD, but an expert Legacy-enthusiast, managed to win the whole thing with a nearly undefeated record. Michael Reed piloted a Consultation list jam-packed with tutors through a field that eschewed',
+    },
+    {
       number: 10,
       image:
         'https://cards.scryfall.io/art_crop/front/c/c/cc5338e1-26a6-466e-9393-788f69370e15.jpg?1673308519',
@@ -61,7 +68,7 @@ export default function Decks() {
       image:
         'https://c1.scryfall.com/file/scryfall-cards/art_crop/front/0/e/0e7466e5-9443-4b38-a7e9-e0d615a35667.jpg?1576381686',
       date: new Date('2019-11-24'),
-      text: 'Elaine Cao became the first (and only) player to win two VRDs, and managed to do it in back-to-back tournaments, largely with the same base of cards. The innovation that she brought to the table this time was',
+      text: 'Elaine Cao became the first (and at the time only) player to win two VRDs, and managed to do it in back-to-back tournaments, largely with the same base of cards. The innovation that she brought to the table this time was',
     },
     {
       number: 3,

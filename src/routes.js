@@ -14,6 +14,7 @@ import vrd7 from './decks/decklists/vrd7Decklists.json';
 import vrd8 from './decks/decklists/vrd8Decklists.json';
 import vrd9 from './decks/decklists/vrd9Decklists.json';
 import vrd10 from './decks/decklists/vrd10Decklists.json';
+import vrd11 from './decks/decklists/vrd11Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
@@ -72,7 +73,7 @@ function Routes() {
         <StLotusDecks decks={vrd4} number={4}>
           <Typography paragraph>
             {
-              'Elaine Cao became the first (and only) player to win two VRDs, and managed to do it in back-to-back tournaments, largely with the same base of cards. The innovation that she brought to the table this time was the addition of “draft-matters” cards when she took Arcane Savant. In combination with Kindred Charge, it provided a one-card combo that took her to finals victory against Brandon Curry. Brandon piloted a Pikula-style Esper interaction deck. It was his first to demonstrate the power of Pentad Prism, which has since become a mainstay of VRDs, even outside of St Lotus.'
+              'Elaine Cao became the first (and at the time only) player to win two VRDs, and managed to do it in back-to-back tournaments, largely with the same base of cards. The innovation that she brought to the table this time was the addition of “draft-matters” cards when she took Arcane Savant. In combination with Kindred Charge, it provided a one-card combo that took her to finals victory against Brandon Curry. Brandon piloted a Pikula-style Esper interaction deck. It was his first to demonstrate the power of Pentad Prism, which has since become a mainstay of VRDs, even outside of St Lotus.'
             }
           </Typography>
         </StLotusDecks>
@@ -137,6 +138,15 @@ function Routes() {
           <Typography paragraph>
             {
               'Andrew Swift took down his first event by skillfully piloting a Blue-White control deck full of many of the standard slots, but with some spicy additions made possible by a robust mana-base. Among the two splash colors is the ability to play Comet, Stellar Pup, which dug him out of games where he had stabilized the board but needed something to get him out of the doghouse as his opponents nipped at his heels for a follow-up play.'
+            }
+          </Typography>
+        </StLotusDecks>
+      </Route>
+      <Route exact path="/decks/st-lotus-11">
+        <StLotusDecks decks={vrd11} number={11}>
+          <Typography paragraph>
+            {
+              'A newcomer to VRD, but an expert Legacy-enthusiast, managed to win the whole thing with a nearly undefeated record. Michael Reed piloted a Consultation list jam-packed with tutors through a field that eschewed counterspells and black cards at their own detriment. He slid a Breach combo into the list as a back-up and ended with something close to the platonic ideal of a tutor-based combo deck.'
             }
           </Typography>
         </StLotusDecks>
