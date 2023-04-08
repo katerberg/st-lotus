@@ -5,6 +5,7 @@ import {config} from '../common/config';
 
 const useCardStats = (searchText, includeOldDrafts = false) => {
   const [stats, setStats] = useState({
+    drafts: [],
     average: 1.3906,
     averageRound: 1,
     card: 'black lotus',

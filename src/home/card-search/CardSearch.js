@@ -83,6 +83,7 @@ export default function CardSearch() {
             xs={12}
           >
               {!!stats?.numberTaken && <CardStats averageRound={stats?.averageRound}
+                drafts={stats?.drafts}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}
@@ -117,6 +118,7 @@ export default function CardSearch() {
             md={4}
           >
               {!!stats?.numberTaken && <><CardStats averageRound={stats?.averageRound}
+                drafts={stats?.drafts}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}

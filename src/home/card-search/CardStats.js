@@ -5,13 +5,14 @@ import {styled} from '@mui/system';
 import Skeleton from '@mui/material/Skeleton';
 import {Box, Typography} from '@mui/material';
 import LotusScore from './LotusScore';
+import CardSparkLines from '../../details/CardSparkLines';
 
 const StatTypography = styled(Typography)({
   margin: '0 8px',
   display: 'inline-block',
 });
 
-export default function CardStats({loading, numberTaken, numberOfDrafts, averageRound, lotusScore}) {
+export default function CardStats({drafts, loading, numberTaken, numberOfDrafts, averageRound, lotusScore}) {
   const unpicked = !numberTaken || !numberOfDrafts || !averageRound;
 
   return (
@@ -77,6 +78,7 @@ export default function CardStats({loading, numberTaken, numberOfDrafts, average
               variant="h3"
             >{averageRound}</StatTypography>
           </Box>
+          {drafts?.length && <CardSparkLines drafts={drafts} />}
           </>}
       </>}
     </Grid>
@@ -89,4 +91,5 @@ CardStats.propTypes = {
   averageRound: PropTypes.number,
   lotusScore: PropTypes.number,
   loading: PropTypes.bool.isRequired,
+  drafts: PropTypes.arrayOf(PropTypes.shape({pick: PropTypes.number})),
 };

@@ -4,10 +4,6 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 
 export default function Suggestion({suggestion, stats, onAcceptSuggestion}) {
-  //eslint-disable-next-line
-  console.log(suggestion);
-  //eslint-disable-next-line
-  console.log(stats);
   return suggestion && (
         <Typography
           color="white"

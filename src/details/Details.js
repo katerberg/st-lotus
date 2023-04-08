@@ -106,6 +106,7 @@ export default function Details() {
             {!!stats?.numberTaken && (
               <CardStats
                 averageRound={stats?.averageRound}
+                drafts={stats?.drafts}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}
@@ -129,6 +130,7 @@ export default function Details() {
             {!!stats?.numberTaken && (
               <CardStats
                 averageRound={stats?.averageRound}
+                drafts={stats?.drafts}
                 loading={loadingStats}
                 lotusScore={stats?.lotusScore}
                 numberOfDrafts={stats?.numberAvailable}
