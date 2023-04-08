@@ -26,7 +26,7 @@ export default function CardSparkLines({drafts}) {
         overflow: 'hidden',
       }}
     >
-    <Sparklines data={drafts.map(d => (d.pick ? (max - d.pick / 8) : 0))} max={Math.max(...translatedDrafts)} min={Math.min(...translatedDrafts.filter(d => d))}>
+    <Sparklines data={drafts.map(d => (d.pick ? (max - d.pick / 8) : 0))} max={Math.max(...translatedDrafts)} min={Math.min(...translatedDrafts.filter(d => d))} style={{width: '100%'}}>
       <SparklinesCurve style={{stroke: '#8dd8f8', fill: '#ffffff', fillOpacity: 0.8}} />
       <SparklinesReferenceLine type="avg"/>
     </Sparklines>
