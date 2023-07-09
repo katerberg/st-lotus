@@ -127,7 +127,6 @@
     "react/jsx-key": "error",
     "react/jsx-no-bind": 0,
     "react/jsx-no-duplicate-props": "error",
-    "react/jsx-no-literals": "error",
     "react/jsx-no-undef": "error",
     "react/jsx-pascal-case": "error",
     "react/jsx-sort-props": "error",

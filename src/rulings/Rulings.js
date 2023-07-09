@@ -160,30 +160,10 @@ export default function Rulings() {
               'Stickers and Attractions follow the constructed rules and do not need to be picked. Only vintage-legal stickers and attractions are available.'
             }
           </Typography>
-          <ul>
-            <li>
-              <Typography>
-                {
-                  'An Attraction deck must contain at least ten Attraction cards and each card in an Attraction deck must have a different English name. The deck must be chosen at the start of the tournament and cannot be changed between games or matches.'
-                }
-              </Typography>
-            </li>
-            <li>
-              <Typography>
-                {
-                  'A player who chooses to play with stickers must start the game with at least ten sticker sheets selected before play begins, and each of their sticker sheets must be unique. There is no maximum number of sticker sheets a player may start the game with. Each player playing with sticker sheets reveals all of their sticker sheets and chooses three of them at random. '
-                }
-              </Typography>
-            </li>
-          </ul>
-          <Typography paragraph>
-            {
-              'In the unlikely event that a player needs to apply a sticker to one of their cards or open an attraction and has not chosen a deck at the start of the tournament (likely due to a '
-            }
-            <Link href="https://scryfall.com/card/lea/51/clone">{'Clone'}</Link>
-            {
-              ' effect), they immediately assemble an appropriate deck mirroring their opponents’s choices. This means that for stickers, they would randomly pick 3 of the 10 chosen stickers for the rest of the match, and for attractions, they would build an attraction deck of the same cards as their opponent.'
-            }
+          <Typography paragraph>Players can pick any 10+ unique cards for their Attraction deck, and any 10+ unique Sticker sheets. At the start of each game, they randomly select three of their Sticker sheets to use for that game.</Typography>
+          <Typography paragraph>If a player needs an Attraction or Sticker and did not choose any for their deck (likely due to a <Link href="https://scryfall.com/card/lea/51/clone">Clone</Link> effect), they get their own copy of the same Attraction deck or set of Sticker sheets that their opponent selected, and selects three Sticker sheets at random.</Typography>
+          <Typography paragraph variant="body2">
+            {'2023-07-09: Makes language less verbose.'}
           </Typography>
           <Typography paragraph variant="body2">
             {'2023-02-28: Adds clarification of the “Clone” situation.'}
