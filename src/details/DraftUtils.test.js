@@ -21,5 +21,9 @@ describe('DraftUtils', () => {
     it('keeps two letter capped titles together', () => {
       expect(getDraftTitle({draft: 'VRD Archives - GG21'})).toEqual('GG 21');
     });
+
+    it('allows for INITStrings to show separated', () => {
+      expect(getDraftTitle({draft: 'VRD Archives - STLPresents21'})).toEqual('Stl Presents 21');
+    });
   });
 });
