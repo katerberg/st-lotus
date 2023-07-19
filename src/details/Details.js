@@ -13,6 +13,7 @@ import CardImage from '../common/CardImage';
 import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
 import Suggestion from './Suggestion';
+import RecentDrafts from './RecentDrafts';
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -63,6 +64,7 @@ export default function Details() {
       alignItems="center"
       container
       flexDirection="column"
+      item
       sx={{
         backgroundColor: 'grey.800',
         width: '100%',
@@ -100,7 +102,7 @@ export default function Details() {
         variant="standard"
       />
       <Suggestion onAcceptSuggestion={handleAcceptSuggestion} stats={stats} suggestion={suggestion} />
-      <Grid container flexDirection="row" sx={{marginTop: '20px'}}>
+      <Grid container flexDirection="row" item sx={{marginTop: '20px'}}>
         <Hidden mdUp>
           <Grid item xs={12}>
             {!!stats?.numberTaken && (
@@ -116,9 +118,12 @@ export default function Details() {
           </Grid>
         </Hidden>
         <Hidden mdDown>
-          <Grid item lg={4} />
+          <Grid item md={4}>
+            <Typography align="right" color="white" variant="h3">Recent Drafts</Typography>
+            <RecentDrafts drafts={stats?.drafts} />
+          </Grid>
         </Hidden>
-        <Grid container item justifyContent="center" lg={4} md={8} xs={12}>
+        <Grid container item justifyContent="center" md={4} xs={12}>
           <CardImage
             cardBackFaceImage={cardBackFaceImage}
             cardImage={cardImage}
@@ -137,6 +142,12 @@ export default function Details() {
                 numberTaken={stats?.numberTaken}
               />
             )}
+          </Grid>
+        </Hidden>
+        <Hidden mdUp>
+          <Grid container item justifyContent="center" xs={12}>
+            <Typography color="white" sx={{marginTop: 2}} textAlign="center" variant="h3">Recent Drafts</Typography>
+            <RecentDrafts drafts={stats?.drafts} />
           </Grid>
         </Hidden>
       </Grid>
