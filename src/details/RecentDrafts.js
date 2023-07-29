@@ -28,6 +28,7 @@ export default function RecentDrafts({drafts}) {
               <Link
                 color="primary"
                 href={`https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=${draft.gid}`}
+                target="_blank"
               >
                 {getDraftTitle(draft)} &mdash; Round {Math.ceil(draft.pick / 8)}
               </Link>
