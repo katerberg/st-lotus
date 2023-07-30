@@ -8,6 +8,7 @@ rax.attach();
 
 fs.readFileAsync = util.promisify(fs.readFile);
 fs.writeFileAsync = util.promisify(fs.writeFile);
+fs.unlinkAsync = util.promisify(fs.unlink);
 
 async function getCards(dirtyLists) {
   const cards = {};
@@ -17,7 +18,7 @@ async function getCards(dirtyLists) {
       const card = listCard?.toLowerCase();
       await prev;
       if (cards[card]) {
-        console.log(`skipping ${card}`);
+        // skipping ${card}
         return Promise.resolve();
       }
       console.log(`making call for ${card}`);
@@ -90,35 +91,42 @@ function buildCard(rawCardName, processedCard, pickOrder) {
   };
 }
 
-fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then((dirtyLists) => {
+const processedCardsPath = `${process.cwd()}/tmp/processedCards.json`;
+fs.readFileAsync(`${process.cwd()}/src/decks/decklists.json`, 'utf-8').then(async (dirtyLists) => {
   const parsedDirtyLists = JSON.parse(dirtyLists);
-  getCards(parsedDirtyLists).then(processedCards => {
-    fs.writeFileAsync(`${process.cwd()}/tmp/processedCards.json`, JSON.stringify(processedCards, null, 2), (err) => {
+  let processedCards;
+  try {
+    const rawCards = await fs.readFileAsync(processedCardsPath);
+    processedCards = JSON.parse(rawCards);
+  } catch (e) {
+    console.log('No previous cards found, fetching new ones');
+    processedCards = getCards(parsedDirtyLists);
+    await fs.writeFileAsync(processedCardsPath, JSON.stringify(processedCards, null, 2), (err) => {
       if (err) {
         throw err;
       }
-    }).then(() => {
-      const cleanLists = parsedDirtyLists.map(dirtyList => ({
-        ...dirtyList,
-        decklist: dirtyList.decklist.map(([pick, dirtyCard]) => buildCard(dirtyCard, processedCards[dirtyCard], pick)),
-        sideboard: dirtyList.sideboard.map(([pick, dirtyCard]) => buildCard(dirtyCard, processedCards[dirtyCard], pick)),
-      }));
-      fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
-        if (err) {
-          throw err;
-        }
-      });
-      const drafts = Object.keys(cleanLists.reduce((a, c) => ({...a, [c.stLotus]: true}), {}));
+    });
+  }
+  const cleanLists = parsedDirtyLists.map(dirtyList => ({
+    ...dirtyList,
+    decklist: dirtyList.decklist.map(([pick, dirtyCard]) => buildCard(dirtyCard.toLowerCase(), processedCards[dirtyCard.toLowerCase()], pick)),
+    sideboard: dirtyList.sideboard.map(([pick, dirtyCard]) => buildCard(dirtyCard.toLowerCase(), processedCards[dirtyCard.toLowerCase()], pick)),
+  }));
+  fs.writeFile(`${process.cwd()}/src/decks/processedDecklists.json`, JSON.stringify(cleanLists, null, 2), (err) => {
+    if (err) {
+      throw err;
+    }
+  });
+  const drafts = Object.keys(cleanLists.reduce((a, c) => ({...a, [c.stLotus]: true}), {}));
 
-      drafts.forEach((draft) => {
-        fs.writeFile(`${process.cwd()}/src/decks/decklists/vrd${draft}Decklists.json`, JSON.stringify(cleanLists.filter(c => `${c.stLotus}` === draft)), (err) => {
-          if (err) {
-            throw err;
-          }
-        });
-      });
+  drafts.forEach((draft) => {
+    fs.writeFile(`${process.cwd()}/src/decks/decklists/vrd${draft}Decklists.json`, JSON.stringify(cleanLists.filter(c => `${c.stLotus}` === draft)), (err) => {
+      if (err) {
+        throw err;
+      }
     });
   });
+  fs.unlinkAsync(processedCardsPath);
 }).catch((e) => {
   console.log('There was an error reading decklists.json');
   console.log(e);
