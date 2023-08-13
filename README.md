@@ -3,19 +3,19 @@
 A static site to provide links to the St Lotus history and content
 
 # Requirements
-You will need `yarn` installed.
+You will need `npm` installed.
 
 # Starting
 
 Run the following to build the files in `./src`. This will watch the development files and automatically rebuild when needed.
 ```
-yarn start
+npm start
 ```
 
 To actually build the deployment package:
 
 ```
-yarn build
+npm run build
 ```
 
 
