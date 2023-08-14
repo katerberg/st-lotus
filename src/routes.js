@@ -15,6 +15,7 @@ import vrd8 from './decks/decklists/vrd8Decklists.json';
 import vrd9 from './decks/decklists/vrd9Decklists.json';
 import vrd10 from './decks/decklists/vrd10Decklists.json';
 import vrd11 from './decks/decklists/vrd11Decklists.json';
+import vrd12 from './decks/decklists/vrd12Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
 import Decks from './decks/Decks';
 import Rulings from './rulings/Rulings';
@@ -148,6 +149,13 @@ function Routes() {
             {
               'A newcomer to VRD, but an expert Legacy-enthusiast, managed to win the whole thing with a nearly undefeated record. Michael Reed piloted a Consultation list jam-packed with tutors through a field that eschewed counterspells and black cards at their own detriment. He slid a Breach combo into the list as a back-up and ended with something close to the platonic ideal of a tutor-based combo deck.'
             }
+          </Typography>
+        </StLotusDecks>
+      </Route>
+      <Route exact path="/decks/st-lotus-12">
+        <StLotusDecks decks={vrd12} number={12}>
+          <Typography paragraph>
+            Mason showed up with a target on his back in a field that was deeply hoping to hold him back from his fourth win. Mike pushed him into play-off match after being the only player in the field to take him down in regular matches, but Mason clinched the play-offs showing why black green removal might be the best in the format.
           </Typography>
         </StLotusDecks>
       </Route>

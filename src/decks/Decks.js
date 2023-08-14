@@ -15,6 +15,13 @@ export default function Decks() {
     'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {
+      number: 12,
+      image:
+        'https://cards.scryfall.io/art_crop/front/3/b/3b1e92b4-6e53-4dba-a572-c67e01965ac5.jpg?1562785076',
+      date: new Date('2023-07-30'),
+      text: 'Mason showed up with a target on his back in a field that was deeply hoping to hold him back from his fourth win. Mike pushed him into play-off match after being the only player in the field to take him down',
+    },
+    {
       number: 11,
       image:
         'https://cards.scryfall.io/art_crop/front/8/d/8d727b9b-6114-414d-9172-16b6e1db41cc.jpg?1562921228',
