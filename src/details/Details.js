@@ -1,10 +1,9 @@
-/* eslint-disable operator-linebreak */
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import React, {useCallback, useEffect, useState} from 'react';
-import {useParams} from 'react-router-dom';
+import {useHistory, useParams} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
@@ -32,6 +31,7 @@ export default function Details() {
   const card = decodeURIComponent(encodedCard);
   const [isPremier, setIsPremier] = useState(true);
   const [searchText, setSearchText] = useState(card);
+  const history = useHistory();
   useEffect(() => setSearchText(card), [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(
     searchText,
@@ -39,21 +39,23 @@ export default function Details() {
   );
 
   const handleSearchTextChange = (e) => {
+    history.replace(`/details/${e.target.value}`);
     setSearchText(e.target.value);
   };
+
+  const handleAcceptSuggestion = useCallback(() => {
+    history.replace(`/details/${suggestion.suggestion}`);
+    setSearchText(suggestion.suggestion);
+  }, [history, suggestion]);
 
   const handleSearchKeyPress = useCallback(
     (e) => {
       if (e.keyCode === 13 && suggestion) {
-        setSearchText(suggestion.suggestion);
+        handleAcceptSuggestion();
       }
     },
-    [suggestion],
+    [suggestion, handleAcceptSuggestion],
   );
-
-  const handleAcceptSuggestion = () => {
-    setSearchText(suggestion.suggestion);
-  };
 
   const handlePremierToggle = () => {
     setIsPremier(!isPremier);

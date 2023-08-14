@@ -19,7 +19,7 @@ export default function RecentDrafts({drafts}) {
       <Grid item lg={6} md={4} xs={0}/>
       <Grid container direction={largerThanSmall ? 'column' : 'row'} item justifyContent="flex-start" lg={6} md={8} xs={12}>
         {orderedDrafts.filter(d => d.pick).map((draft) => (
-          <Grid key={draft.gid} md={12} xs={6}>
+          <Grid item key={draft.gid} md={12} xs={6}>
             <Typography
               color="white"
               sx={{display: 'block', textAlign: {xs: 'center', md: 'left'}}}
