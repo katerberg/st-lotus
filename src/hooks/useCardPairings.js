@@ -26,11 +26,6 @@ const useCardPairings = (searchText) => {
       } catch (e) {
         const response = e?.response;
         const errorMessage = response?.data?.message;
-        if (response?.status === 404) {
-          // Clearing the errors for expected 404s
-          // eslint-disable-next-line no-console
-          console.clear();
-        }
         if (errorMessage) {
           setSuggestion({knownCard: false, suggestion: errorMessage});
         } else {

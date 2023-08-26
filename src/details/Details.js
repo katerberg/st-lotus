@@ -4,14 +4,15 @@ import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import React, {useCallback, useEffect, useState} from 'react';
 import {useHistory, useParams} from 'react-router-dom';
+import Suggestion from './Suggestion';
 import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 import {styled} from '@mui/system';
 import useCardStats from '../hooks/useCardStats';
 import CardStats from '../home/card-search/CardStats';
 import CardImage from '../common/CardImage';
 import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
-import Suggestion from './Suggestion';
 import RecentDrafts from './RecentDrafts';
 
 const SearchTextField = styled(TextField)({
@@ -33,29 +34,25 @@ export default function Details() {
   const [searchText, setSearchText] = useState(card);
   const history = useHistory();
   useEffect(() => setSearchText(card), [card]);
-  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion} = useCardStats(
+  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestions} = useCardStats(
     searchText,
     !isPremier,
   );
 
-  const handleSearchTextChange = (e) => {
-    history.replace(`/details/${e.target.value}`);
+  const handleSearchTextChange = useCallback((e) => {
+    if (e.target.value) {
+      history.replace(`/details/${e.target.value}`);
+    }
     setSearchText(e.target.value);
-  };
+  }, [history, setSearchText]);
+
+  const handleAutoCompleteChange = useCallback((event, value) => {
+    handleSearchTextChange({target: {value}});
+  }, [handleSearchTextChange]);
 
   const handleAcceptSuggestion = useCallback(() => {
-    history.replace(`/details/${suggestion.suggestion}`);
-    setSearchText(suggestion.suggestion);
-  }, [history, suggestion]);
-
-  const handleSearchKeyPress = useCallback(
-    (e) => {
-      if (e.keyCode === 13 && suggestion) {
-        handleAcceptSuggestion();
-      }
-    },
-    [suggestion, handleAcceptSuggestion],
-  );
+    handleSearchTextChange({target: {value: suggestions[0]}});
+  }, [handleSearchTextChange, suggestions]);
 
   const handlePremierToggle = () => {
     setIsPremier(!isPremier);
@@ -84,26 +81,37 @@ export default function Details() {
           label={<Typography color="white">{'Include very old drafts'}</Typography>}
         />
       </FormGroup>
-      <SearchTextField
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start" sx={{color: 'white'}}>
-              <SearchIcon />
-            </InputAdornment>
-          ),
+      <Autocomplete
+        autoHighlight
+        disableClearable
+        forcePopupIcon={false}
+        freeSolo
+        onChange={handleAutoCompleteChange}
+        openOnFocus
+        options={suggestions || []}
+        renderInput={(params) => <SearchTextField
+          {...params}
+          InputProps={{
+            ...params.InputProps,
+            endAdornment: (
+              <InputAdornment position="end" sx={{color: 'white'}}>
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+          fullWidth
+          label="Search"
+          onChange={handleSearchTextChange}
+          sx={{margin: '20px'}}
+          variant="standard"
+                                 />}
+        selectOnFocus
+        sx={{
+          width: 300,
         }}
-        id="search"
-        label="Search"
-        onChange={handleSearchTextChange}
-        onFocus={(event) => {
-          event.target.select();
-        }}
-        onKeyDown={handleSearchKeyPress}
-        sx={{margin: '20px'}}
         value={searchText}
-        variant="standard"
       />
-      <Suggestion onAcceptSuggestion={handleAcceptSuggestion} stats={stats} suggestion={suggestion} />
+      {suggestions.length > 0 && !loadingStats && <Suggestion onAcceptSuggestion={handleAcceptSuggestion} searchText={searchText} stats={stats} suggestion={{knownCard: stats?.numberAvailable, suggestion: suggestions[0]}} />}
       <Grid container flexDirection="row" item sx={{marginTop: '20px'}}>
         <Hidden mdUp>
           <Grid item xs={12}>

@@ -17,6 +17,7 @@ const useCardStats = (searchText, includeOldDrafts = false) => {
   const [cardImage, setCardImage] = useState(
     'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595',
   );
+  const [suggestions, setSuggestions] = useState([]);
   const [suggestion, setSuggestion] = useState(null);
   const [cardBackFaceImage, setCardBackFaceImage] = useState(null);
   const cardStats = useCallback(
@@ -36,9 +37,11 @@ const useCardStats = (searchText, includeOldDrafts = false) => {
         if (!data.numberTaken) {
           setStats(data);
           setSuggestion({knownCard: true, suggestion: data.suggestion});
+          setSuggestions(data.suggestions);
         } else {
           setStats(data);
           setSuggestion(null);
+          setSuggestions([]);
         }
         axios
           .get(`https://api.scryfall.com/cards/named?fuzzy=${encodeURIComponent(searchText)}`)
@@ -61,15 +64,12 @@ const useCardStats = (searchText, includeOldDrafts = false) => {
       } catch (e) {
         const response = e?.response;
         const errorMessage = response?.data?.message;
-        if (response?.status === 404) {
-          // Clearing the errors for expected 404s
-          // eslint-disable-next-line no-console
-          console.clear();
-        }
         if (errorMessage) {
           setSuggestion({knownCard: false, suggestion: errorMessage});
+          setSuggestions(response?.data?.suggestions || []);
         } else {
           setSuggestion(null);
+          setSuggestions([]);
         }
         setStats(null);
         setLoadingStats(false);
@@ -77,7 +77,7 @@ const useCardStats = (searchText, includeOldDrafts = false) => {
     })();
   }, [searchText, getCardStats]);
 
-  return {stats, loadingStats, cardImage, cardBackFaceImage, suggestion};
+  return {stats, loadingStats, cardImage, cardBackFaceImage, suggestion, suggestions};
 };
 
 export default useCardStats;

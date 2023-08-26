@@ -1,4 +1,4 @@
-/* eslint-disable react/jsx-no-literals, no-undef */
+/* eslint-disable no-undef */
 import {styled} from '@mui/system';
 import ManaCost from '../common/mana-cost/ManaCost';
 import React from 'react';

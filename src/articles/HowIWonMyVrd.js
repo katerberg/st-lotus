@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-literals*/
 import {faFile} from '@fortawesome/free-regular-svg-icons';
 import Button from '@mui/material/Button';
 import {styled} from '@mui/system';

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-literals*/
 import React from 'react';
 import Container from '@mui/material/Container';
 import SpacedHeader from '../common/SpacedHeader';

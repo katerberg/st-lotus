@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-literals*/
 import katerberg from './authors/katerberg.jpg';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
