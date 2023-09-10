@@ -4,6 +4,7 @@ import CombosInVrd from './articles/CombosInVrd';
 import {Switch, Route} from 'react-router-dom';
 import Home from './home/Home';
 import HowToPlay from './HowToPlay';
+import TopCards from './top-cards/TopCards';
 import vrd1 from './decks/decklists/vrd1Decklists.json';
 import vrd2 from './decks/decklists/vrd2Decklists.json';
 import vrd3 from './decks/decklists/vrd3Decklists.json';
@@ -167,6 +168,9 @@ function Routes() {
       </Route>
       <Route exact path="/details/:encodedCard">
         <Details />
+      </Route>
+      <Route exact path="/top-cards">
+        <TopCards />
       </Route>
       <Route exact path="/articles/2021-11-06/Planeswalkers in VRD">
         <PlaneswalkersInVrd />

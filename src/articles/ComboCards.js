@@ -11,7 +11,7 @@ const CardText = styled(Typography)(({theme}) => ({
   display: 'inline-block',
   [theme.breakpoints.up('md')]: {
     margin: '0 20px',
-    '&:first-child': {
+    '&:first-of-type': {
       marginLeft: 0,
     },
     '&:last-child': {
