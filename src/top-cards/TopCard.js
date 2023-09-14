@@ -1,24 +1,17 @@
 
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, {useCallback} from 'react';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/system';
 import Grid from '@mui/material/Grid';
 import useCardImage from '../hooks/useCardImage';
+import {Checkbox, FormControlLabel, useMediaQuery} from '@mui/material';
+import {useTheme} from '@mui/material/styles';
 
 
-const CardText = styled(Typography)(({theme}) => ({
+const CardText = styled(Typography)(() => ({
   whiteSpace: 'nowrap',
   display: 'inline-block',
-  [theme.breakpoints.up('md')]: {
-    margin: '0 20px',
-    '&:first-of-type': {
-      marginLeft: 0,
-    },
-    '&:last-child': {
-      marginRight: 0,
-    },
-  },
 }));
 
 const CardContainer = styled(Grid)(({theme}) => ({
@@ -32,14 +25,18 @@ const CardImage = styled('img')({
   maxWidth: '100%',
 });
 
-export default function TopCard({name, averageRound, numberTaken, numberAvailable}) {
+export default function TopCard({name, averageRound, numberTaken, numberAvailable, onSelect}) {
   const {loadingImage, cardImage} = useCardImage(name);
+  const theme = useTheme();
+  const matchesUpSm = useMediaQuery(theme.breakpoints.up('sm'));
+  const handleSelect = useCallback(() => {
+    onSelect(name);
+  }, [name, onSelect]);
+
   if (loadingImage) {
     return null;
   }
 
-  // eslint-disable-next-line no-console
-  console.log(cardImage);
   return (<CardContainer
     item
     key={name}
@@ -47,20 +44,30 @@ export default function TopCard({name, averageRound, numberTaken, numberAvailabl
             <CardImage alt={`${name} magic card`}
               src={cardImage}
             />
-            <Grid container
-              sx={{marginLeft: '20px'}}
-            >
-              {numberTaken ? <>
-                  <CardText color="text.secondary"
-                    variant="subtitle1"
-                  >{`Picked ${numberTaken} of ${numberAvailable} drafts`}</CardText>
-                  <CardText color="text.secondary"
-                    variant="subtitle1"
-                  >{`Average pick round ${averageRound}`}</CardText>
+            <Grid container flexDirection="row">
+              <Grid container item sm={8} sx={{paddingLeft: 2}} xs={12}>
+                {numberTaken ?
+                <>
+                    <CardText color="text.secondary"
+                      variant="subtitle1"
+                    >{`Picked ${numberTaken} of ${numberAvailable} drafts`}</CardText>
+                    <CardText color="text.secondary"
+                      variant="subtitle1"
+                    >{`Average pick round ${averageRound}`}</CardText>
                 </> :
-              <Typography color="text.secondary"
-                variant="subtitle1"
-              >{'Unpicked'}</Typography>}
+                <Typography color="text.secondary"
+                  variant="subtitle1"
+                >{'Unpicked'}</Typography>}
+              </Grid>
+              <Grid item sm={4} xs={12}>
+                <FormControlLabel
+                  control={<Checkbox
+                    onClick={handleSelect}
+                           />}
+                  label="Filter"
+                  labelPlacement={matchesUpSm ? 'top' : 'start'}
+                />
+              </Grid>
             </Grid>
           </CardContainer>
   );
@@ -71,5 +78,6 @@ TopCard.propTypes = {
   averageRound: PropTypes.number.isRequired,
   numberTaken: PropTypes.number.isRequired,
   numberAvailable: PropTypes.number.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
 
