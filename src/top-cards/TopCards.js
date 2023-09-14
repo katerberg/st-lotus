@@ -37,7 +37,15 @@ export default function TopCards() {
       <Grid container
         justifyContent="space-around"
       >
-        {cards.filter(c => !currentSelections.includes(c.card)).map(c => <TopCard averageRound={c.averageRound} key={c.card} name={c.card} numberAvailable={c.numberAvailable} numberTaken={c.numberTaken} onSelect={handleSelect}/>)}
+        {cards.filter(c => !currentSelections.includes(c.card)).slice(0, 100).map(c => <TopCard
+          averageRound={c.averageRound}
+          key={c.card}
+          name={c.card}
+          numberAvailable={c.numberAvailable}
+          numberTaken={c.numberTaken}
+          onSelect={handleSelect}
+          overallPick={c.overallPick + 1}
+                                                                                       />)}
       </Grid>
     </>
   );

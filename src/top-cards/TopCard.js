@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import useCardImage from '../hooks/useCardImage';
 import {Checkbox, FormControlLabel, useMediaQuery} from '@mui/material';
 import {useTheme} from '@mui/material/styles';
-
+import {Link} from 'react-router-dom';
 
 const CardText = styled(Typography)(() => ({
   whiteSpace: 'nowrap',
@@ -21,11 +21,39 @@ const CardContainer = styled(Grid)(({theme}) => ({
   },
 }));
 
+const CardImageContainer = styled(Grid)({
+  position: 'relative',
+  '&:hover .text-overlay': {
+    display: 'flex',
+  },
+});
+
+const CardOverlay = styled(Grid)(({theme}) => ({
+  display: 'none',
+  color: theme.palette.primary.main,
+  backgroundColor: 'rgba(0,0,0,0.3)',
+  alignItems: 'center',
+  justifyContent: 'center',
+  position: 'absolute',
+  margin: 'auto',
+  width: '100%',
+  height: 'calc(100% - 6px)',
+  top: 0,
+  borderRadius: '10px',
+}));
+
 const CardImage = styled('img')({
   maxWidth: '100%',
 });
 
-export default function TopCard({name, averageRound, numberTaken, numberAvailable, onSelect}) {
+function toTitleCase(str) {
+  return str.replace(
+    /\w\S*/g,
+    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(),
+  );
+}
+
+export default function TopCard({name, overallPick, averageRound, numberTaken, numberAvailable, onSelect}) {
   const {loadingImage, cardImage} = useCardImage(name);
   const theme = useTheme();
   const matchesUpSm = useMediaQuery(theme.breakpoints.up('sm'));
@@ -41,9 +69,22 @@ export default function TopCard({name, averageRound, numberTaken, numberAvailabl
     item
     key={name}
           >
-            <CardImage alt={`${name} magic card`}
-              src={cardImage}
-            />
+            <Typography
+              noWrap
+              variant="h5"
+            ><Link rel="noopener noreferrer" target="_blank" to={`/details/${name}`}>{toTitleCase(name)}</Link></Typography>
+            <CardImageContainer>
+              <CardImage alt={`${name} magic card`}
+                src={cardImage}
+              />
+              <CardOverlay
+                className="text-overlay"
+              >
+                <Typography component="span" variant="h1">
+                  {overallPick}
+                </Typography>
+              </CardOverlay>
+            </CardImageContainer>
             <Grid container flexDirection="row">
               <Grid container item sm={8} sx={{paddingLeft: 2}} xs={12}>
                 {numberTaken ?
@@ -75,6 +116,7 @@ export default function TopCard({name, averageRound, numberTaken, numberAvailabl
 
 TopCard.propTypes = {
   name: PropTypes.string.isRequired,
+  overallPick: PropTypes.number.isRequired,
   averageRound: PropTypes.number.isRequired,
   numberTaken: PropTypes.number.isRequired,
   numberAvailable: PropTypes.number.isRequired,
