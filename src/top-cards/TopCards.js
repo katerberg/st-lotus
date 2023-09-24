@@ -6,7 +6,16 @@ import Grid from '@mui/material/Grid';
 import useTopCardStats from '../hooks/useTopCardStats';
 import TopCard from './TopCard';
 import {Button} from '@mui/material';
+import Chip from '@mui/material/Chip';
+import Paper from '@mui/material/Paper';
+import {styled} from '@mui/system';
+
 const LOCAL_STORAGE_KEY = 'top-cards-selections';
+
+const ListItem = styled('li')(({theme}) => ({
+  margin: theme.spacing(0.5),
+}));
+
 export default function TopCards() {
   const topCards = useTopCardStats();
   const cards = topCards.stats;
@@ -22,6 +31,13 @@ export default function TopCards() {
     window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newSelections));
   }, [currentSelections]);
 
+  const removeSelection = useCallback((selection) => {
+    const newSelections = currentSelections.filter(c => c !== selection);
+    setCurrentSelections(newSelections);
+    window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newSelections));
+  }, [currentSelections]);
+
+
   return (
     <>
       <Container maxWidth="lg" sx={{marginBottom: 6}}>
@@ -31,8 +47,32 @@ export default function TopCards() {
           variant="h2"
         >Top VRD Cards</SpacedHeader>
         <Typography paragraph>These are the current cards in the order they’re drafted. Every draft will be different, but this is the aggregate rating of the cards</Typography>
-        {currentSelections.length > 0 && <Button onClick={clearSelections} variant="contained">Clear selected cards</Button>}
+      {currentSelections.length > 0 && <Paper
+        component="ul"
+        sx={{
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        listStyle: 'none',
+        p: 0.5,
+        m: 0,
+        maxWidth: '600px',
+        height: '60px',
+        overflow: 'auto',
+      }}
+                                       >
+        <Button onClick={clearSelections} sx={{maxHeight: '36px'}} variant="contained">Clear all</Button>
+        {currentSelections.map((selection) => (
+            <ListItem key={selection}>
+              <Chip
+                label={selection}
+                onDelete={() => removeSelection(selection)}
+              />
+            </ListItem>
+          ))}
+      </Paper>}
       </Container>
+
 
       <Grid container
         justifyContent="space-around"

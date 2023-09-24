@@ -72,7 +72,9 @@ export default function TopCard({name, overallPick, averageRound, numberTaken, n
             <Typography
               noWrap
               variant="h5"
-            ><Link rel="noopener noreferrer" target="_blank" to={`/details/${name}`}>{toTitleCase(name)}</Link></Typography>
+            >
+              <Link rel="noopener noreferrer" target="_blank" to={`/details/${name}`}>{toTitleCase(name)}</Link>
+            </Typography>
             <CardImageContainer>
               <CardImage alt={`${name} magic card`}
                 src={cardImage}
