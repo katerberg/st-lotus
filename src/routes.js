@@ -19,6 +19,7 @@ import vrd11 from './decks/decklists/vrd11Decklists.json';
 import vrd12 from './decks/decklists/vrd12Decklists.json';
 import StLotusDecks from './decks/StLotusDecks';
 import Decks from './decks/Decks';
+import BulkSearch from './bulk-search/BulkSearch';
 import Rulings from './rulings/Rulings';
 import Typography from '@mui/material/Typography';
 import Articles from './articles/Articles';
@@ -155,6 +156,9 @@ function Routes() {
             Mason showed up with a target on his back in a field that was deeply hoping to hold him back from his fourth win. Mike pushed him into play-off match after being the only player in the field to take him down in regular matches, but Mason clinched the play-offs showing why black green removal might be the best in the format.
           </Typography>
         </StLotusDecks>
+      </Route>
+      <Route exact path="/deck-builder">
+        <BulkSearch />
       </Route>
       <Route exact path="/rulings">
         <Rulings />

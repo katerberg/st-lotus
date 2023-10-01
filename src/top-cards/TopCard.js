@@ -8,6 +8,7 @@ import useCardImage from '../hooks/useCardImage';
 import {Checkbox, FormControlLabel, useMediaQuery} from '@mui/material';
 import {useTheme} from '@mui/material/styles';
 import {Link} from 'react-router-dom';
+import {toTitleCase} from '../common/textHelpers.js';
 
 const CardText = styled(Typography)(() => ({
   whiteSpace: 'nowrap',
@@ -45,13 +46,6 @@ const CardOverlay = styled(Grid)(({theme}) => ({
 const CardImage = styled('img')({
   maxWidth: '100%',
 });
-
-function toTitleCase(str) {
-  return str.replace(
-    /\w\S*/g,
-    (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(),
-  );
-}
 
 export default function TopCard({name, overallPick, averageRound, numberTaken, numberAvailable, onSelect}) {
   const {loadingImage, cardImage} = useCardImage(name);
