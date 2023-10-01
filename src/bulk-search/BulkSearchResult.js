@@ -1,11 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Typography from '@mui/material/Typography';
 import useCardImage from '../hooks/useCardImage';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Avatar from '@mui/material/Avatar';
+import Box from '@mui/material/Box';
 import {toTitleCase} from '../common/textHelpers.js';
 
 export default function BulkSearchResult({card}) {
@@ -13,13 +14,23 @@ export default function BulkSearchResult({card}) {
   return (
     <ListItem alignItems="flex-start">
       {!loadingImage && <ListItemAvatar>
-        <Avatar
-          alt={`${card.card} card image`}
-          src={cardImage}
-        />
+        <Link rel="noopener noreferrer" target="_blank" to={`/details/${card.card}`}>
+          <Box
+            alt={`${card.card} card image`}
+            component="img"
+            src={cardImage}
+            sx={{
+              height: 40,
+            }}
+          />
+        </Link>
       </ListItemAvatar>}
       <ListItemText
-        primary={toTitleCase(card.card)}
+        primary={
+          <Link rel="noopener noreferrer" target="_blank" to={`/details/${card.card}`}>
+            {toTitleCase(card.card)}
+          </Link>
+        }
         secondary={
           <>
             <Typography
