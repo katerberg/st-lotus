@@ -22,6 +22,11 @@ export default function HowToPlay() {
       >{'Pick Order'}</SpacedHeader>
       <Typography paragraph>{'With eight players, there are eight spots to choose from. We could determine the pick order at random, but we like adding an extra layer of strategy (and, let’s face it, complication) by randomly ordering the players and allowing them, in that order, to choose their spot in the draft.'}</Typography>
       <Typography paragraph>{'But why would anyone choose a spot other than the earliest one available? Well, once we get through the draft order, with each player in succession choosing one card, we reverse the draft order and repeat the process. That means whoever picked first during the first round picks last during the second round! You might know this as a “snake draft”. Therefore, there’s some value to be had in the eighth pick - you might get the last pick in the first round, but you get the the first pick in the second round, and those two picks in a row can have a lot of value.'}</Typography>
+      <StyledImage
+        alt="Diagram example of how a snake draft works"
+        src={`${process.env.PUBLIC_URL}/draft-order.png`}
+        sx={{marginBottom: 3}}
+      />
       <SpacedHeader
         variant="h3"
       >{'Draft'}</SpacedHeader>

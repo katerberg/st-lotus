@@ -32,7 +32,7 @@ export default function Rulings() {
             }
           </Typography>
           <DraftPickImage
-            alt="Players sitting around a table with computers drafting cards"
+            alt="Diagram example of how a snake draft works"
             src={`${process.env.PUBLIC_URL}/draft-order.png`}
           />
           <Typography paragraph>
