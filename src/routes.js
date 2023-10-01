@@ -41,9 +41,7 @@ function Routes() {
       <Route exact path="/decks/st-lotus-1">
         <StLotusDecks decks={vrd1} number={1}>
           <Typography paragraph>
-            {
-              'The first streamed VRD since Shotgun Lotus shut down nearly four years earlier. All of us were first time drafters and had so much to learn. Naveen Balaji ended up teaching us the power of Time Vault and Tinker in decks that have other combos to back it up. Sadly this draft VOD has been lost to the sands of time.'
-            }
+            The first streamed VRD since Shotgun Lotus shut down nearly four years earlier. All of us were first time drafters and had so much to learn. Naveen Balaji ended up teaching us the power of Time Vault and Tinker in decks that have other combos to back it up. Sadly this draft VOD has been lost to the sands of time.
           </Typography>
         </StLotusDecks>
       </Route>
@@ -147,9 +145,7 @@ function Routes() {
       <Route exact path="/decks/st-lotus-11">
         <StLotusDecks decks={vrd11} number={11}>
           <Typography paragraph>
-            {
-              'A newcomer to VRD, but an expert Legacy-enthusiast, managed to win the whole thing with a nearly undefeated record. Michael Reed piloted a Consultation list jam-packed with tutors through a field that eschewed counterspells and black cards at their own detriment. He slid a Breach combo into the list as a back-up and ended with something close to the platonic ideal of a tutor-based combo deck.'
-            }
+            A newcomer to VRD, but an expert Legacy-enthusiast, managed to win the whole thing with a nearly undefeated record. Michael Reed piloted a Consultation list jam-packed with tutors through a field that eschewed counterspells and black cards at their own detriment. He slid a Breach combo into the list as a back-up and ended with something close to the platonic ideal of a tutor-based combo deck.
           </Typography>
         </StLotusDecks>
       </Route>

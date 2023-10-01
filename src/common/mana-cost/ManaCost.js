@@ -22,7 +22,7 @@ export default function ManaCost({manaCost}) {
   });
   return (
     <>
-      {manaSymbols.map((manaSymbol, i) => <StyledImage alt={`${manaSymbol ? manaSymbol[1] : ''} icon`}
+      {manaSymbols.map((manaSymbol, i) => <StyledImage alt="mana symbol"
         key={i}
         src={manaSymbol}
                                           />)}
