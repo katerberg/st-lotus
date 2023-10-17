@@ -41,7 +41,7 @@ export default function Details() {
 
   const handleSearchTextChange = useCallback((e) => {
     if (e.target.value) {
-      history.replace(`/details/${e.target.value}`);
+      history.replace(`/details/${encodeURIComponent(e.target.value)}`);
     }
     setSearchText(e.target.value);
   }, [history, setSearchText]);
