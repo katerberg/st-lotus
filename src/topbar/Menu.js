@@ -10,7 +10,8 @@ import GavelIcon from '@mui/icons-material/Gavel';
 import MenuItem from './MenuItem';
 
 export default function Menu({isOpen, onClose}) {
-  return <Drawer
+  return (
+  <Drawer
     anchor="right"
     onClose={onClose}
     open={isOpen}
@@ -42,7 +43,8 @@ export default function Menu({isOpen, onClose}) {
         text="Rulings"
       />
     </List>
-  </Drawer>;
+  </Drawer>
+  );
 }
 
 Menu.propTypes = {

@@ -1,8 +1,0 @@
-{
-  "short_name": "St Lotus",
-  "name": "Home Page for St Lotus",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
