@@ -4,9 +4,17 @@ import {styled} from '@mui/system';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import NextLink from 'next/link';
 
 const StyledImg = styled('img')(({theme}) => ({
   marginRight: theme.spacing(1),
+}));
+
+const StyledLink = styled(NextLink)(() => ({
+  flexGrow: 1,
+  textDecoration: 'none',
+  display: 'flex',
+  alignItems: 'center',
 }));
 
 export default function Topbar() {
@@ -16,6 +24,9 @@ export default function Topbar() {
 
   return <AppBar position="fixed">
     <Toolbar>
+      <StyledLink
+        href="/"
+      >
         <StyledImg
           alt="St Lotus logo"
           height="50px"
@@ -27,6 +38,7 @@ export default function Topbar() {
         >
           {'St Lotus'}
         </Typography>
+      </StyledLink>
     </Toolbar>
   </AppBar>;
 }
