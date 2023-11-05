@@ -1,9 +1,12 @@
 'use client'
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 import React, {useCallback, useState} from 'react';
 import {styled} from '@mui/system';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import Menu from './Menu';
 import NextLink from 'next/link';
 
 const StyledImg = styled('img')(({theme}) => ({
@@ -39,6 +42,18 @@ export default function Topbar() {
           {'St Lotus'}
         </Typography>
       </StyledLink>
+      <IconButton
+        aria-label="menu"
+        edge="start"
+        onClick={handleDrawerOpen}
+        size="large"
+        sx={{color: 'common.black'}}
+      >
+            <MenuIcon />
+          </IconButton>
     </Toolbar>
+    <Menu isOpen={isDrawerOpen}
+      onClose={handleDrawerClose}
+    />
   </AppBar>;
 }

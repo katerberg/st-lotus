@@ -4,16 +4,16 @@ import PropTypes from 'prop-types';
 import ListItem from '@mui/material/ListItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import {Link} from 'react-router-dom';
+import NextLink from 'next/link';
 
-const StyledLink = styled(Link)(({theme}) => ({
+const StyledLink = styled(NextLink)(({theme}) => ({
   textDecoration: 'none',
   color: theme.palette.text.primary,
 }));
 
 export default function MenuItem({text, onClick, link, icon}) {
   return <StyledLink style={{textDecoration: 'none'}}
-    to={link}
+    href={link}
          >
     <ListItem button
       onClick={onClick}
