@@ -1,4 +1,5 @@
 'use client'
+
 import PreviewVideo from '@/app/home/PreviewVideo';
 import CountDown from '@/app/home/CountDown';
 import CardSearch from '@/app/home/card-search/CardSearch';
