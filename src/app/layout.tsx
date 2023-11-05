@@ -1,11 +1,11 @@
 'use client'
-import type { Metadata } from 'next'
 import './globals.css'
+import React from 'react';
 import '@fontsource/roboto';
 import Topbar from '@/topbar/Topbar';
 import Box from '@mui/material/Box';
 import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
-
+import ReactGA from 'react-ga';
 
 const theme = responsiveFontSizes(createTheme({
   components: {
@@ -37,6 +37,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  ReactGA.initialize('UA-208899645-1');
+  // window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
+  // window.ga('send', 'pageview');
+
   return (
     <html lang="en">
       <head>

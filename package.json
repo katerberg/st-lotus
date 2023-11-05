@@ -14,13 +14,19 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/icons-material": "^5.14.13",
     "@mui/material": "^5.14.13",
     "@mui/system": "^5.14.13",
+    "awesome-debounce-promise": "^2.1.0",
+    "axios": "^1.5.1",
     "next": "13.5.5",
     "react": "^18",
     "react-dom": "^18",
-    "react-router-dom": "^6.17.0"
+    "react-ga": "^3.3.1",
+    "react-router-dom": "^6.17.0",
+    "react-sparklines": "^1.7.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,6 +34,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "13.5.5",
+    "eslint-plugin-jest": "^27.6.0",
     "typescript": "^5"
   },
   "browserslist": {

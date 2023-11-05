@@ -1,7 +1,10 @@
 'use client'
-// import Image from 'next/image'
+import PreviewVideo from '@/app/home/PreviewVideo';
+import CountDown from '@/app/home/CountDown';
+import CardSearch from '@/app/home/card-search/CardSearch';
+import Hero from '@/app/home/Hero';
+import Follow from '@/app/home/Follow';
 
-// import ReactGA from 'react-ga';
 // import {
 //   HashRouter as Router,
 // } from 'react-router-dom';
@@ -33,12 +36,14 @@
 
 
 export default function App() {
-  // ReactGA.initialize('UA-208899645-1');
-  // window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
-  // window.ga('send', 'pageview');
-
   return (
-    <h1> hello</h1>
+    <div>
+      <Hero />
+      <CountDown />
+      <CardSearch />
+      <Follow />
+      <PreviewVideo />
+    </div>
   );
 }
 
