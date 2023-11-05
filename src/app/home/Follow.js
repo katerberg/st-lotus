@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import FollowIcon from './FollowIcon';
-import {faDiscord, faYoutube, faTwitter, faTwitch} from '@fortawesome/free-brands-svg-icons';
+import {faDiscord, faYoutube, faTwitch} from '@fortawesome/free-brands-svg-icons';
 
 export default function Follow() {
 
