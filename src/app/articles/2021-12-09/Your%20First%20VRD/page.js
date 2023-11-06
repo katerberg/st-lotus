@@ -1,13 +1,14 @@
+"use client";
+
 import React from 'react';
 import Container from '@mui/material/Container';
-import SpacedHeader from '../common/SpacedHeader';
+import SpacedHeader from '@/common/SpacedHeader';
 import ManaCost from '@/common/mana-cost/ManaCost';
 import Typography from '@mui/material/Typography';
 import {styled} from '@mui/system';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
-import common from './authors/common.jpg';
 
 const SubSectionHeader = styled(Typography)({
   marginTop: '20px',
@@ -128,7 +129,7 @@ export default function YourFirstVrd() {
           sm={2}
           xs={3}
         >
-          <FullWidthImage src={common}
+          <FullWidthImage src="/authors/common.jpg"
             sx={{borderRadius: '10px'}}
           />
         </Grid>

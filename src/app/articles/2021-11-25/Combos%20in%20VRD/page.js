@@ -1,4 +1,5 @@
-import katerberg from './authors/katerberg.jpg';
+"use client";
+
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import ManaCost from '@/common/mana-cost/ManaCost';
@@ -8,7 +9,7 @@ import SpacedHeader from '@/common/SpacedHeader';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import {styled} from '@mui/system';
-import ComboCards from './ComboCards';
+import ComboCards from '@/common/ComboCards';
 
 const FullWidthImage = styled('img')({
   maxWidth: '100%',
@@ -399,7 +400,7 @@ export default function CombosInVrd() {
         title="Power Artifact + Grim Monolith"
       >
         <Typography paragraph>This generates infinite <ManaCost manaCost="{C}"/> mana.</Typography>
-        <Typography paragraph>With both in play, tap <Link href="https://scryfall.com/card/ulg/126/grim-monolith">Grim Monolith</Link> for <ManaCost manaCost="{3}"/>. Activate <Link href="https://scryfall.com/card/atq/11/power-artifact">Power Artifact</Link>'s ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
+        <Typography paragraph>With both in play, tap <Link href="https://scryfall.com/card/ulg/126/grim-monolith">Grim Monolith</Link> for <ManaCost manaCost="{3}"/>. Activate <Link href="https://scryfall.com/card/atq/11/power-artifact">Power Artifact</Link>’s ability to untap the monolith for <ManaCost manaCost="{2}"/>. Repeat ad nauseam.</Typography>
         <Typography
           variant="h6"
         >Replacements:</Typography>
@@ -867,7 +868,7 @@ export default function CombosInVrd() {
           sm={2}
           xs={3}
         >
-          <FullWidthImage src={katerberg}
+          <FullWidthImage src="/authors/katerberg.jpg"
             sx={{borderRadius: '10px'}}
           />
         </Grid>

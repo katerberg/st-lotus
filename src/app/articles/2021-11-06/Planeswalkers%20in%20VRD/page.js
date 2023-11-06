@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
@@ -8,7 +10,6 @@ import {styled} from '@mui/system';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
-import hagan from './authors/hagan.jpg';
 
 const SubSectionHeader = styled(Typography)({
   marginTop: '20px',
@@ -238,7 +239,7 @@ export default function PlaneswalkersInVrd() {
           sm={2}
           xs={3}
         >
-          <FullWidthImage src={hagan}
+          <FullWidthImage src="/authors/hagan.jpg"
             sx={{borderRadius: '10px'}}
           />
         </Grid>
