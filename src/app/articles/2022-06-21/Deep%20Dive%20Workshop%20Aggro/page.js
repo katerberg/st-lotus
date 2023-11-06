@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 'use client';
 
 import {styled} from '@mui/system';
@@ -23,6 +22,7 @@ const SubSectionHeader = styled(Typography)({
 export default function WorkshopAggro() {
 
   const moxfieldInit = useCallback((e) => {
+    // eslint-disable-next-line no-undef -- Moxfield is global
     setTimeout(() => moxfieldOnLoad(e), 10);
   }, [])
 

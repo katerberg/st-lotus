@@ -6,10 +6,6 @@ import CardSearch from '@/app/home/card-search/CardSearch';
 import Hero from '@/app/home/Hero';
 import Follow from '@/app/home/Follow';
 
-// import {
-//   HashRouter as Router,
-// } from 'react-router-dom';
-// import Routes from './routes';
 // import {createBrowserHistory} from 'history';
 // import styles from '@/app/page.module.css'
 // const browserHistory = createBrowserHistory();

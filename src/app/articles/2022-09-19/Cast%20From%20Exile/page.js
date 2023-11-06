@@ -1,14 +1,14 @@
-/* eslint-disable no-undef -- Moxfield is global */
+"use client";
+
 import {styled} from '@mui/system';
 import ManaCost from '@/common/mana-cost/ManaCost';
-import React from 'react';
+import React, { useCallback } from 'react';
 import Container from '@mui/material/Container';
-import SpacedHeader from '../common/SpacedHeader';
+import SpacedHeader from '@/common/SpacedHeader';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
-import hagan from './authors/hagan.jpg';
 
 const FullWidthImage = styled('img')({
   maxWidth: '100%',
@@ -20,7 +20,10 @@ const SubSectionHeader = styled(Typography)({
 });
 
 export default function Faldorn() {
-
+  const moxfieldInit = useCallback((e) => {
+    // eslint-disable-next-line no-undef -- Moxfield is global
+    setTimeout(() => moxfieldOnLoad(e), 10);
+  }, [])
 
   return (
     <Container maxWidth="lg" >
@@ -39,7 +42,7 @@ export default function Faldorn() {
   <iframe
     frameBorder="0"
     id="moxfield-frame-edh"
-    onLoad={moxfieldOnLoad}
+    onLoad={moxfieldInit}
     src="https://www.moxfield.com/embed/tf6k-GJqSUyK-3cbSCXk_A"
     width="100%"
   />
@@ -81,12 +84,12 @@ export default function Faldorn() {
   <iframe
     frameBorder="0"
     id="moxfield-frame-sti"
-    onLoad={moxfieldOnLoad}
+    onLoad={moxfieldInit}
     src="https://www.moxfield.com/embed/vTNoq0SHikmz89ZvvRR7fg"
     width="100%"
   />
 <Typography paragraph>Sti makes a fair assumption that he can get <Link href="https://scryfall.com/card/vma/8/mox-ruby">Mox Ruby</Link> and <Link href="https://scryfall.com/card/vma/2/time-walk">Time Walk</Link>. Both of these seem pretty straight forward and reasonable. His theory list leaves off duals/fetches. But looking at the rest of the list I think it is fair to assume we would be able to grab a few to make our mana more consistent. Getting the <ManaCost manaCost="{1}"/> mana draw spells and all the key pieces might be a challenge, but I think overall this list looks reasonable. I would probably worry less about fetches and grab my duals later to make sure I got all the key pieces I wanted.</Typography>
-<Typography paragraph>What makes this deck potentially work for me is that the aggressive pieces are all pretty strong on their own. You can win without ever drawing <Link href="https://scryfall.com/card/clb/647/faldorn-dread-wolf-herald">Faldorn</Link>, but if you do get a turn 2 <Link href="https://scryfall.com/card/clb/647/faldorn-dread-wolf-herald">Faldorn</Link> to stick you are going to put down a lot of wolves through <Link href="https://scryfall.com/card/clb/801/laelia-the-blade-reforged">Laelia</Link>, <Link href="https://scryfall.com/card/mh2/292/shardless-agent">Shardless</Link>, <Link href="https://scryfall.com/card/2x2/184/bloodbraid-elf">Bloodbraid</Link>, and the Adventure spells. I really like the inclusion of <Link href="https://scryfall.com/card/clb/682/tlincalli-hunter-retrieve-prey">Tlincalli Hunter</Link>, which you are pretty much playing for the rebuy Adventure half. But if you do get to the creature itself, lots of upside.</Typography>
+<Typography paragraph>What makes this deck potentially work for me is that the aggressive pieces are all pretty strong on their own. You can win without ever drawing <Link href="https://scryfall.com/card/clb/647/faldorn-dread-wolf-herald">Faldorn</Link>, but if you do get a turn 2 <Link href="https://scryfall.com/card/clb/647/faldorn-dread-wolf-herald">Faldorn</Link> to stick you are going to put down a lot of wolves through <Link href="https://scryfall.com/card/clb/801/laelia-the-blade-reforged">Laelia</Link>, <Link href="https://scryfall.com/card/mh2/292/shardless-agent">Shardless</Link>, <Link href="https://scryfall.com/card/2x2/184/bloodbraid-elf">Bloodbraid</Link>, and the Adventure spells. I really like the inclusion of <Link href="https://scryfall.com/card/clb/682/tlincalli-hunter-retrieve-prey">Tlincalli Hunter</Link>, which you are pretty much playing for the re-buy Adventure half. But if you do get to the creature itself, lots of upside.</Typography>
 <Typography paragraph>The goldfishes I’ve done of the deck felt powerful. I probably want another bounce spell for the tempo but I particularly like the <Link href="https://scryfall.com/card/isd/181/garruk-relentless-garruk-the-veil-cursed">Garruk Relentless</Link> as a card that can take over a game and break a stalled board. <Link href="https://scryfall.com/card/clb/804/outpost-siege">Outpost Siege</Link> is probably the one I would question the most, though if the card gets rolling it is going to be hard to lose.</Typography>
 
 <SubSectionHeader
@@ -98,7 +101,7 @@ export default function Faldorn() {
   <iframe
     frameBorder="0"
     id="moxfield-frame-brandon"
-    onLoad={moxfieldOnLoad}
+    onLoad={moxfieldInit}
     src="https://www.moxfield.com/embed/oCiLf2RTp0qW31BeIwvXNQ"
     width="100%"
   />
@@ -111,7 +114,7 @@ export default function Faldorn() {
   <iframe
     frameBorder="0"
     id="moxfield-frame-hagan"
-    onLoad={moxfieldOnLoad}
+    onLoad={moxfieldInit}
     src="https://www.moxfield.com/embed/5VipTqYKhEmzXqUUW5pnQQ"
     width="100%"
   />
@@ -140,7 +143,7 @@ export default function Faldorn() {
           sm={2}
           xs={3}
         >
-          <FullWidthImage src={hagan}
+          <FullWidthImage src="/authors/hagan.jpg"
             sx={{borderRadius: '10px'}}
           />
         </Grid>
