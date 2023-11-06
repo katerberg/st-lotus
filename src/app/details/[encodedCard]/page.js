@@ -5,7 +5,6 @@ import Grid from '@mui/material/Grid';
 import InputAdornment from '@mui/material/InputAdornment';
 import SearchIcon from '@mui/icons-material/Search';
 import React, {useCallback, useEffect, useState} from 'react';
-import {useHistory, useParams} from 'react-router-dom';
 import Suggestion from './Suggestion';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
@@ -13,6 +12,7 @@ import {styled} from '@mui/system';
 import useCardStats from '@/hooks/useCardStats';
 import CardStats from '@/app/home/card-search/CardStats';
 import CardImage from '@/common/CardImage';
+import { useRouter } from 'next/navigation'
 import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
 import RecentDrafts from './RecentDrafts';
@@ -29,12 +29,12 @@ const SearchTextField = styled(TextField)({
   },
 });
 
-export default function Details() {
-  const {encodedCard} = useParams();
+export default function Details({ params }) {
+  const {encodedCard} = params
   const card = decodeURIComponent(encodedCard);
   const [isPremier, setIsPremier] = useState(true);
   const [searchText, setSearchText] = useState(card);
-  const history = useHistory();
+  const router = useRouter();
   useEffect(() => setSearchText(card), [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestions} = useCardStats(
     searchText,
@@ -43,12 +43,12 @@ export default function Details() {
 
   const handleSearchTextChange = useCallback((e) => {
     if (e.target.value) {
-      history.replace(`/details/${encodeURIComponent(e.target.value)}`);
+      router.replace(`/details/${encodeURIComponent(e.target.value)}`);
     }
     setSearchText(e.target.value);
-  }, [history, setSearchText]);
+  }, [router, setSearchText]);
 
-  const handleAutoCompleteChange = useCallback((event, value) => {
+  const handleAutoCompleteChange = useCallback((_, value) => {
     handleSearchTextChange({target: {value}});
   }, [handleSearchTextChange]);
 
