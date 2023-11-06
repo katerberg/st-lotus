@@ -6,6 +6,7 @@ import Topbar from '@/topbar/Topbar';
 import Box from '@mui/material/Box';
 import {ThemeProvider, createTheme, responsiveFontSizes} from '@mui/material/styles';
 import ReactGA from 'react-ga';
+import Script from 'next/script';
 
 const theme = responsiveFontSizes(createTheme({
   components: {
@@ -45,6 +46,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>St Lotus</title>
+        <Script id="moxfield">
+          {'function moxfieldOnMessage(e){const t=e.data;if("object"==typeof t&&"moxfield"===t.type){const e=document.getElementById(t.id);e&&(e.style.height=t.data+"px")}}function moxfieldOnLoad(e){e.target&&e.target.contentWindow&&e.target.contentWindow.postMessage({type:"moxfield",data:e.target.id},"*")}window.addEventListener("message",moxfieldOnMessage);'}
+        </Script>
       </head>
       <body>
         <ThemeProvider theme={theme}>
