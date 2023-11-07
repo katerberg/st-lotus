@@ -8,7 +8,7 @@ export default function DetailsButton({card}) {
   const router = useRouter()
   // const history = useHistory();
 
-  const handleDetailsPress = useCallback(() => router.push(`/details/${encodeURIComponent(card)}`), [router, card]);
+  const handleDetailsPress = useCallback(() => router.push(`/details?card=${encodeURIComponent(card)}`), [router, card]);
 
   return (
     <Button

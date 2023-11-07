@@ -8,8 +8,8 @@ import CardStats from './CardStats';
 import {Hidden} from '@mui/material';
 import CardImage from '@/common/CardImage';
 import useCardStats from '@/hooks/useCardStats';
-import DetailsButton from '@/app/details/[encodedCard]/DetailsButton';
-import Suggestion from '@/app/details/[encodedCard]/Suggestion';
+import DetailsButton from '@/app/details/DetailsButton';
+import Suggestion from '@/app/details/Suggestion';
 
 const SearchTextField = styled(TextField)({
   '& label': {

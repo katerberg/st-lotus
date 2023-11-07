@@ -5,7 +5,7 @@ import {styled} from '@mui/system';
 import Skeleton from '@mui/material/Skeleton';
 import {Box, Typography} from '@mui/material';
 import LotusScore from './LotusScore';
-import CardSparkLines from '@/app/details/[encodedCard]/CardSparkLines';
+import CardSparkLines from '@/app/details/CardSparkLines';
 
 const StatTypography = styled(Typography)({
   margin: '0 8px',

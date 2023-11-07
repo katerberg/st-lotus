@@ -16,6 +16,7 @@ import { useRouter } from 'next/navigation'
 import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
 import RecentDrafts from './RecentDrafts';
+import { useSearchParams } from 'next/navigation'
 
 const SearchTextField = styled(TextField)({
   '& label': {
@@ -29,9 +30,9 @@ const SearchTextField = styled(TextField)({
   },
 });
 
-export default function Details({ params }) {
-  const {encodedCard} = params
-  const card = decodeURIComponent(encodedCard);
+export default function Details() {
+  const searchParams = useSearchParams()
+  const card = decodeURIComponent(searchParams.get('card'));
   const [isPremier, setIsPremier] = useState(true);
   const [searchText, setSearchText] = useState(card);
   const router = useRouter();
@@ -43,7 +44,7 @@ export default function Details({ params }) {
 
   const handleSearchTextChange = useCallback((e) => {
     if (e.target.value) {
-      router.replace(`/details/${encodeURIComponent(e.target.value)}`);
+      router.replace(`/details?card=${encodeURIComponent(e.target.value)}`);
     }
     setSearchText(e.target.value);
   }, [router, setSearchText]);
