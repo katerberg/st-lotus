@@ -1,4 +1,5 @@
 'use client'
+
 import './globals.css'
 import React from 'react';
 import '@fontsource/roboto';
@@ -32,15 +33,14 @@ const theme = responsiveFontSizes(createTheme({
   },
 }));
 
-
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   ReactGA.initialize('UA-208899645-1');
-  // window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
-  // window.ga('send', 'pageview');
+  window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
+  window.ga('send', 'pageview');
 
   return (
     <html lang="en">
