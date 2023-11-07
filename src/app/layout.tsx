@@ -1,7 +1,7 @@
 'use client'
 
 import './globals.css'
-import React from 'react';
+import React, {useEffect} from 'react';
 import '@fontsource/roboto';
 import Topbar from '@/topbar/Topbar';
 import Box from '@mui/material/Box';
@@ -38,9 +38,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  ReactGA.initialize('UA-208899645-1');
-  window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
-  window.ga('send', 'pageview');
+  useEffect(() => {
+    ReactGA.initialize('UA-208899645-1');
+    window.ga('set', 'page', window.location.pathname + window.location.search + window.location.hash);
+    window.ga('send', 'pageview');
+  }, [])
 
   return (
     <html lang="en">
