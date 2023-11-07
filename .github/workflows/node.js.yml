@@ -8,11 +8,8 @@
 name: GitHub Pages deploy
 
 on:
-  workflow_run:
-      workflows: ["CI"]
-      branches: [main]
-      types:
-        - completed
+  push:
+    branches: [main]
 
 jobs:
   build:
@@ -28,6 +25,12 @@ jobs:
 
       - name: Installing my packages
         run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test
 
       - name: Build my App
         run: npm run build && touch ./out/.nojekyll
