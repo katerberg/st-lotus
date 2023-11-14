@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
@@ -21,7 +21,11 @@ const ListItem = styled('li')(({theme}) => ({
 export default function TopCards() {
   const topCards = useTopCardStats();
   const cards = topCards.stats;
-  const [currentSelections, setCurrentSelections] = useState(JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY)) || []);
+  const [currentSelections, setCurrentSelections] = useState([])
+  useEffect(() => {
+    setCurrentSelections(JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY)))
+  }, [])
+
   const clearSelections = useCallback(() => {
     setCurrentSelections([]);
     window.localStorage.removeItem(LOCAL_STORAGE_KEY);
