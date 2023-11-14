@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import React, {useCallback, useEffect, useState} from 'react';
 import Typography from '@mui/material/Typography';
@@ -23,7 +23,7 @@ export default function TopCards() {
   const cards = topCards.stats;
   const [currentSelections, setCurrentSelections] = useState([])
   useEffect(() => {
-    setCurrentSelections(JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY)))
+    setCurrentSelections(JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY)) || [])
   }, [])
 
   const clearSelections = useCallback(() => {
