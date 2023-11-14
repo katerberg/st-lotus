@@ -55,7 +55,8 @@ export default function TopCards() {
           sx={{marginTop: 10}}
           variant="h2"
         >Top VRD Cards</SpacedHeader>
-        <Typography paragraph>These are the current cards in the order they’re drafted. Every draft will be different, but this is the aggregate rating of the cards</Typography>
+        <Typography paragraph>These are the current cards in the order they’re drafted. Every draft will be different, but this is the aggregate rating of the cards.</Typography>
+        <Typography paragraph>If you are participating in a draft, you can provide your draft URL and have this page track which cards have not yet been taken, or just select the cards as they are picked to filter them out.</Typography>
       {currentSelections.length > 0 && <Paper
         component="ul"
         sx={{
