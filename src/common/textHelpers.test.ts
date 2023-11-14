@@ -1,4 +1,4 @@
-import {docsLinkToCsv} from './textHelpers';
+import {csvToPicks, docsLinkToCsv} from './textHelpers';
 
 describe('textHelpers', () => {
   describe('docsLinkToCsv()', () => {
@@ -20,5 +20,84 @@ describe('textHelpers', () => {
     it('hands back empty string for empty input', () => {
       expect(docsLinkToCsv('')).toEqual('');
     });
+  });
+
+  describe('csvToPicks()', () => {
+    it('handles vrd archive draft, stripping out rows without data', () => {
+      const input = [
+        {
+          "": "Date",
+          "trashboat6824": "2023-08-01",
+          "bensonericb": "",
+          "xxxmason1337xxx": "",
+          "wanderingwinder": "",
+          "everbrink": "",
+          "masterplum": "",
+          "sphagan": "",
+          "jasterrogue7": ""
+        },
+        {
+          "": "7",
+          "trashboat6824": "Narset, Parter of Veils",
+          "bensonericb": "Thassa's Oracle",
+          "xxxmason1337xxx": "Wooded Foothills",
+          "wanderingwinder": "Flooded Strand",
+          "everbrink": "Scalding Tarn",
+          "masterplum": "Caves of Chaos Adventurer",
+          "sphagan": "Lightning Bolt",
+          "jasterrogue7": "Windswept Heath"
+        },
+        {
+          "": "8",
+          "trashboat6824": "Timetwister",
+          "bensonericb": "Bloodstained Mire",
+          "xxxmason1337xxx": "Sheoldred, the Apocalypse",
+          "wanderingwinder": "Marsh Flats",
+          "everbrink": "Pyroblast",
+          "masterplum": "Brazen Borrower",
+          "sphagan": "Fable of the Mirror-Breaker",
+          "jasterrogue7": "Veil of Summer"
+        },
+      ]
+
+      const result = csvToPicks(input);
+
+      expect(result.length).toEqual(16);
+      expect(result).toContain('marsh flats');
+      expect(result).toContain("thassa's oracle");
+
+    });
+
+    it('handles discord draft', () => {
+      const input = [
+        {
+          "": "",
+          "alex": "Black Lotus",
+          "hyphenated": "Ancestral Recall",
+          "trashboat6824": "Mana Crypt",
+          "itsmejuri": "Time Walk",
+          "thekniphoon": "Mox Sapphire",
+          "sphagan": "Mox Ruby",
+          "bensonericb": "Mox Jet",
+          "sti1983": "Mox Emerald"
+        },
+        {
+          "": "",
+          "alex": "Vampiric Tutor",
+          "hyphenated": "Mox Diamond",
+          "trashboat6824": "White Plume Adventurer",
+          "itsmejuri": "Time Vault",
+          "thekniphoon": "Force of Will",
+          "sphagan": "Ragavan, Nimble Pilferer",
+          "bensonericb": "Sol Ring",
+          "sti1983": "Mox Pearl"
+        },
+      ];
+      const result = csvToPicks(input);
+
+      expect(result.length).toEqual(16);
+      expect(result).toContain('mox emerald');
+      expect(result).toContain("mox diamond");
+    })
   });
 });

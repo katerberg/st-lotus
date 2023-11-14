@@ -24,3 +24,12 @@ export function docsLinkToCsv(followingDraft: string) {
 
   return gid ? baseDraftUrl + `&gid=${gid}` : baseDraftUrl
 }
+
+export function csvToPicks(parsedCsv: {[key: string]: string}[] ) {
+  return parsedCsv
+  .filter(r=> r && (r[''] === '' || r[''].match(/\d+/)))
+  .reduce((accumulator: string[], currentRow) => 
+    [...accumulator, ...Object.entries(currentRow).map(([drafter, card]) => (!drafter || !card) ? '' : card.toLowerCase())
+    .filter(c=>c)],
+  [])
+}

@@ -1,6 +1,7 @@
 import {useCallback, useEffect, useState} from 'react';
 import axios from 'axios';
 import { parse } from 'csv-parse/sync';
+import { csvToPicks } from '@/common/textHelpers';
 
 const useDraftCsv = (draftUrl: string) => {
   const [loading, setLoading] = useState(false);
@@ -19,8 +20,7 @@ const useDraftCsv = (draftUrl: string) => {
         columns: true,
         skip_empty_lines: true
       }) as {[key: string]: string}[]; 
-      const picks = records.filter(r=> r && r[''] && r[''].match(/\d+/)).reduce((accumulator: string[], currentRow) => [...accumulator, ...Object.entries(currentRow).map(([drafter, card]) => (!drafter || !card) ? '' : card.toLowerCase()).filter(c=>c)], [])
-      setPicks(picks);
+      setPicks(csvToPicks(records));
       setLoading(false);
     } catch (e) {
       setLoading(false);
