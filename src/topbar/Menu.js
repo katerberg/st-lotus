@@ -5,7 +5,6 @@ import List from '@mui/material/List';
 import HomeIcon from '@mui/icons-material/Home';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import GavelIcon from '@mui/icons-material/Gavel';
 import MenuItem from './MenuItem';
@@ -32,11 +31,6 @@ export default function Menu({isOpen, onClose}) {
         link="/how-to-play"
         onClick={onClose}
         text="How To Play"
-      />
-      <MenuItem icon={<FormatListNumberedIcon />}
-        link="/top-cards"
-        onClick={onClose}
-        text="Top Cards"
       />
       <MenuItem icon={<MenuBookIcon />}
         link="/articles"
