@@ -7,7 +7,7 @@ import useCardImage from '@/hooks/useCardImage';
 import {Checkbox, FormControlLabel, useMediaQuery} from '@mui/material';
 import NextLink from 'next/link';
 import {useTheme} from '@mui/material/styles';
-import {toTitleCase} from '@/common/textHelpers.js';
+import {toTitleCase} from '@/common/textHelpers';
 
 const CardText = styled(Typography)(() => ({
   whiteSpace: 'nowrap',

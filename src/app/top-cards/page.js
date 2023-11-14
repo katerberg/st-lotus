@@ -7,10 +7,12 @@ import SpacedHeader from '@/common/SpacedHeader';
 import Grid from '@mui/material/Grid';
 import useTopCardStats from '@/hooks/useTopCardStats';
 import TopCard from './TopCard';
-import {Button} from '@mui/material';
+import {Button, TextField} from '@mui/material';
 import Chip from '@mui/material/Chip';
+import {docsLinkToCsv} from '@/common/textHelpers';
 import Paper from '@mui/material/Paper';
 import {styled} from '@mui/system';
+import useDraftCsv from '@/hooks/useDraftCsv';
 
 const LOCAL_STORAGE_KEY = 'top-cards-selections';
 
@@ -21,7 +23,8 @@ const ListItem = styled('li')(({theme}) => ({
 export default function TopCards() {
   const topCards = useTopCardStats();
   const cards = topCards.stats;
-  const [currentSelections, setCurrentSelections] = useState([])
+  const [currentSelections, setCurrentSelections] = useState([]);
+  const [followingDraft, setFollowingDraft] = useState('');
   useEffect(() => {
     setCurrentSelections(JSON.parse(window.localStorage.getItem(LOCAL_STORAGE_KEY)) || [])
   }, [])
@@ -42,7 +45,7 @@ export default function TopCards() {
     setCurrentSelections(newSelections);
     window.localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newSelections));
   }, [currentSelections]);
-
+  const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
 
   return (
     <>
@@ -77,13 +80,21 @@ export default function TopCards() {
             </ListItem>
           ))}
       </Paper>}
+      <TextField 
+      sx={{mt: 1}}
+        fullWidth
+        label="Draft link to follow" 
+        variant="standard" 
+        helperText="Example: https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=1008615612"
+        onChange={e => setFollowingDraft(e.target.value)}
+      />
       </Container>
 
 
       <Grid container
         justifyContent="space-around"
       >
-        {cards.filter(c => !currentSelections.includes(c.card)).slice(0, 100).map(c => <TopCard
+        {cards.filter(c => !picks.includes(c.card) && !currentSelections.includes(c.card)).slice(0, 100).map(c => <TopCard
           averageRound={c.averageRound}
           key={c.card}
           name={c.card}

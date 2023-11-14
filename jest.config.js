@@ -1,5 +1,6 @@
 module.exports = {
   transform: {
-    '\\.js$': ['babel-jest', { configFile: './babel.config.testing.js' }]
+    '\\.(t|j)s$': ['babel-jest', { configFile: './babel.config.testing.js' }]
   },
+  testEnvironment: 'jest-environment-node',
 };
