@@ -1,10 +1,12 @@
+'use client'
+
 import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import {Link} from '@mui/material';
 
 export default function CountDown() {
-  const nextDate = useMemo(() => new Date('2023-07-29T13:44:00.000Z'), []);
+  const nextDate = useMemo(() => new Date('2023-12-02T16:30:00.000Z'), []); //https://www.timestamp-converter.com/
   const calculateTimeLeft = useCallback(() => {
     const difference = nextDate - new Date();
 
@@ -24,21 +26,22 @@ export default function CountDown() {
     return timeLeft;
   }, [nextDate]);
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState('yesterday');
 
   useEffect(() => {
+    setTimeLeft(calculateTimeLeft());
     const timer = setTimeout(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearTimeout(timer);
-  });
+  }, [setTimeLeft, calculateTimeLeft]);
 
   const getTwoDigitNumber = useCallback(
     (number) => new Intl.NumberFormat('en-US', {minimumIntegerDigits: 2}).format(number),
     [],
   );
 
-  if (calculateTimeLeft() === 'yesterday') {
+  if (timeLeft === 'yesterday') {
     return null;
   }
 
