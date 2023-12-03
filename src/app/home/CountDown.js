@@ -11,7 +11,8 @@ export default function CountDown() {
     const difference = nextDate - new Date();
 
     let timeLeft = {};
-    const oneDay = 1000 * 60 * 60 * 24;
+    const oneHour = 1000 * 60 * 60;
+    const oneDay= 1000 * 60 * 60*24;
     if (difference > 0) {
       timeLeft = {
         days: Math.floor(difference / oneDay),
@@ -19,7 +20,7 @@ export default function CountDown() {
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60),
       };
-    } else if (difference < -1 * oneDay) {
+    } else if (difference < -12 * oneHour) {
       return 'yesterday';
     }
 
@@ -30,7 +31,7 @@ export default function CountDown() {
 
   useEffect(() => {
     setTimeLeft(calculateTimeLeft());
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearTimeout(timer);
