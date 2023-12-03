@@ -18653,5 +18653,1581 @@
         "Voracious Greatshark"
       ]
     ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Dan Magnin",
+    "genre": "Splinter Twin",
+    "seat": 1,
+    "wins": 4,
+    "losses": 3,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "Ancestral Recall"
+      ],
+      [
+        2,
+        "Force of Negation"
+      ],
+      [
+        3,
+        "Mana Drain"
+      ],
+      [
+        4,
+        "Hullbreacher"
+      ],
+      [
+        5,
+        "Snapcaster Mage"
+      ],
+      [
+        7,
+        "Preordain"
+      ],
+      [
+        8,
+        "Gitaxian Probe"
+      ],
+      [
+        9,
+        "Daze"
+      ],
+      [
+        10,
+        "Volcanic Island"
+      ],
+      [
+        11,
+        "Dack Fayden"
+      ],
+      [
+        12,
+        "Brazen Borrower"
+      ],
+      [
+        13,
+        "Jace, the Mind Sculptor"
+      ],
+      [
+        14,
+        "Remand"
+      ],
+      [
+        15,
+        "Miscalculation"
+      ],
+      [
+        16,
+        "Archmage's Charm"
+      ],
+      [
+        17,
+        "Library of Alexandria"
+      ],
+      [
+        18,
+        "Cryptic Command"
+      ],
+      [
+        20,
+        "Vendilion Clique"
+      ],
+      [
+        21,
+        "Dig Through Time"
+      ],
+      [
+        22,
+        "Shelldock Isle"
+      ],
+      [
+        23,
+        "Consider"
+      ],
+      [
+        25,
+        "Fiery Islet"
+      ],
+      [
+        26,
+        "Deceiver Exarch"
+      ],
+      [
+        27,
+        "Splinter Twin"
+      ],
+      [
+        28,
+        "Pestermite"
+      ],
+      [
+        29,
+        "Kiki-Jiki, mirror breaker"
+      ],
+      [
+        30,
+        "Spirebluff Canal"
+      ],
+      [
+        31,
+        "Expressive Iteration"
+      ],
+      [
+        32,
+        "mystic confluence"
+      ],
+      [
+        38,
+        "Frostboil Snarl"
+      ],
+      [
+        39,
+        "Sulfur Falls"
+      ],
+      [
+        40,
+        "Cascade Bluffs"
+      ],
+      [
+        46,
+        "Stormcarved Coast"
+      ]
+    ],
+    "sideboard": [
+      [
+        6,
+        "Teferi, Time Raveler"
+      ],
+      [
+        19,
+        "Miscast"
+      ],
+      [
+        24,
+        "null rod"
+      ],
+      [
+        33,
+        "Brotherhood's End"
+      ],
+      [
+        34,
+        "chain lightning"
+      ],
+      [
+        35,
+        "pyroclasm"
+      ],
+      [
+        36,
+        "Cast into the fire"
+      ],
+      [
+        37,
+        "Muddle the Mixture"
+      ],
+      [
+        41,
+        "Divert"
+      ],
+      [
+        42,
+        "Grafdigger's Cage"
+      ],
+      [
+        43,
+        "Glen Elendra Archmage"
+      ],
+      [
+        44,
+        "Boomerang"
+      ],
+      [
+        45,
+        "Kozilek's Return"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Alex Wiggins",
+    "genre": "Four Drops",
+    "seat": 2,
+    "wins": 5,
+    "losses": 2,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "black lotus"
+      ],
+      [
+        2,
+        "ragavan, nimble pilferer"
+      ],
+      [
+        3,
+        "strip mine"
+      ],
+      [
+        4,
+        "minsc & boo, timeless heroes"
+      ],
+      [
+        5,
+        "fury"
+      ],
+      [
+        6,
+        "wooded foothills"
+      ],
+      [
+        7,
+        "prismatic vista"
+      ],
+      [
+        8,
+        "chrome mox"
+      ],
+      [
+        9,
+        "verdant catacombs"
+      ],
+      [
+        10,
+        "caves of chaos adventurer"
+      ],
+      [
+        12,
+        "wrenn and six"
+      ],
+      [
+        13,
+        "comet, stellar pup"
+      ],
+      [
+        15,
+        "noble hierarch"
+      ],
+      [
+        17,
+        "undermountain adventurer"
+      ],
+      [
+        18,
+        "hexdrinker"
+      ],
+      [
+        19,
+        "once upon a time"
+      ],
+      [
+        20,
+        "endurance"
+      ],
+      [
+        21,
+        "delighted halfling"
+      ],
+      [
+        22,
+        "ignoble hierarch"
+      ],
+      [
+        23,
+        "questing beast"
+      ],
+      [
+        24,
+        "outland liberator"
+      ],
+      [
+        26,
+        "orcish lumberjack"
+      ],
+      [
+        27,
+        "savannah"
+      ],
+      [
+        28,
+        "arbor elf"
+      ],
+      [
+        29,
+        "utopia sprawl"
+      ],
+      [
+        30,
+        "trumpeting carnosaur"
+      ],
+      [
+        31,
+        "natural order"
+      ],
+      [
+        32,
+        "craterhoof behemoth"
+      ],
+      [
+        33,
+        "migloz, maze crusher"
+      ],
+      [
+        34,
+        "green sun's zenith"
+      ],
+      [
+        37,
+        "taiga"
+      ],
+      [
+        38,
+        "gaea's cradle"
+      ],
+      [
+        39,
+        "jetmir's garden"
+      ],
+      [
+        42,
+        "cankerbloom"
+      ],
+      [
+        43,
+        "stomping ground"
+      ],
+      [
+        46,
+        "yavimaya, cradle of growth"
+      ]
+    ],
+    "sideboard": [
+      [
+        11,
+        "chandra, torch of defiance"
+      ],
+      [
+        14,
+        "collector ouphe"
+      ],
+      [
+        16,
+        "veil of summer"
+      ],
+      [
+        25,
+        "scavenging ooze"
+      ],
+      [
+        35,
+        "cindervines"
+      ],
+      [
+        36,
+        "shifting ceratops"
+      ],
+      [
+        40,
+        "domri, anarch of bolas"
+      ],
+      [
+        41,
+        "angel's grace"
+      ],
+      [
+        44,
+        "wheel of fortune"
+      ],
+      [
+        45,
+        "tsunami"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Adam Varner",
+    "genre": "Bomberman",
+    "seat": 3,
+    "wins": 6,
+    "losses": 1,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "mana crypt"
+      ],
+      [
+        2,
+        "time vault"
+      ],
+      [
+        3,
+        "urza's saga"
+      ],
+      [
+        4,
+        "mana vault"
+      ],
+      [
+        5,
+        "ancient tomb"
+      ],
+      [
+        6,
+        "swords to plowshares"
+      ],
+      [
+        7,
+        "urza, lord high artificer"
+      ],
+      [
+        8,
+        "grim monolith"
+      ],
+      [
+        9,
+        "stoneforge mystic"
+      ],
+      [
+        10,
+        "walking ballista"
+      ],
+      [
+        11,
+        "tundra"
+      ],
+      [
+        15,
+        "retrofitter foundry"
+      ],
+      [
+        16,
+        "balance"
+      ],
+      [
+        17,
+        "lion's eye diamond"
+      ],
+      [
+        19,
+        "auriok salvagers"
+      ],
+      [
+        20,
+        "enlightened tutor"
+      ],
+      [
+        21,
+        "manifold key"
+      ],
+      [
+        23,
+        "transmute artifact"
+      ],
+      [
+        24,
+        "thopter foundry"
+      ],
+      [
+        25,
+        "sword of the meek"
+      ],
+      [
+        27,
+        "batterskull"
+      ],
+      [
+        28,
+        "aether spellbomb"
+      ],
+      [
+        30,
+        "mox opal"
+      ],
+      [
+        31,
+        "arcum's astrolabe"
+      ],
+      [
+        36,
+        "emry, lurker of the loch"
+      ],
+      [
+        37,
+        "seat of the synod"
+      ],
+      [
+        38,
+        "thought monitor"
+      ],
+      [
+        39,
+        "ancient den"
+      ],
+      [
+        41,
+        "city of traitors"
+      ],
+      [
+        46,
+        "urza's bauble"
+      ]
+    ],
+    "sideboard": [
+      [
+        12,
+        "mystical dispute"
+      ],
+      [
+        13,
+        "zirda, the dawnwaker"
+      ],
+      [
+        14,
+        "skullclamp"
+      ],
+      [
+        18,
+        "blue elemental blast"
+      ],
+      [
+        22,
+        "teferi, hero of dominaria"
+      ],
+      [
+        26,
+        "whir of invention"
+      ],
+      [
+        29,
+        "lutri, the spellchaser"
+      ],
+      [
+        32,
+        "metallic rebuke"
+      ],
+      [
+        33,
+        "portable hole"
+      ],
+      [
+        34,
+        "soul-guide lantern"
+      ],
+      [
+        35,
+        "karn, scion of urza"
+      ],
+      [
+        40,
+        "echoing truth"
+      ],
+      [
+        42,
+        "ghostly prison"
+      ],
+      [
+        43,
+        "ingenious smith"
+      ],
+      [
+        44,
+        "palace jailer"
+      ],
+      [
+        45,
+        "fractured identity"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Matt Welch",
+    "genre": "Reanimator",
+    "seat": 4,
+    "wins": 3,
+    "losses": 4,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "Time Walk"
+      ],
+      [
+        2,
+        "Force of Will"
+      ],
+      [
+        3,
+        "Demonic Tutor"
+      ],
+      [
+        4,
+        "Thassa's Oracle"
+      ],
+      [
+        5,
+        "Spell Pierce"
+      ],
+      [
+        6,
+        "Scalding Tarn"
+      ],
+      [
+        7,
+        "Bloodstained Mire"
+      ],
+      [
+        8,
+        "Brainstorm"
+      ],
+      [
+        9,
+        "Duress"
+      ],
+      [
+        10,
+        "Grief"
+      ],
+      [
+        11,
+        "Underground Sea"
+      ],
+      [
+        12,
+        "Steam Vents"
+      ],
+      [
+        16,
+        "An Offer You Can't Refuse"
+      ],
+      [
+        17,
+        "Demonic Consultation"
+      ],
+      [
+        18,
+        "Reanimate"
+      ],
+      [
+        19,
+        "Entomb"
+      ],
+      [
+        20,
+        "Atraxa, Grand Unifier"
+      ],
+      [
+        21,
+        "Faithless Looting"
+      ],
+      [
+        22,
+        "Dark Ritual"
+      ],
+      [
+        23,
+        "Tainted Pact"
+      ],
+      [
+        24,
+        "Lotus Petal"
+      ],
+      [
+        27,
+        "Frantic Search"
+      ],
+      [
+        28,
+        "Animate Dead"
+      ],
+      [
+        29,
+        "Griselbrand"
+      ],
+      [
+        30,
+        "Watery Grave"
+      ],
+      [
+        31,
+        "Shivan Reef"
+      ],
+      [
+        32,
+        "Unmask"
+      ],
+      [
+        33,
+        "Mana Confluence"
+      ],
+      [
+        34,
+        "City of Brass"
+      ],
+      [
+        35,
+        "Exhume"
+      ],
+      [
+        36,
+        "Imperial Seal"
+      ],
+      [
+        37,
+        "Riverglide Pathway"
+      ],
+      [
+        38,
+        "Careful Study"
+      ],
+      [
+        43,
+        "Underground River"
+      ],
+      [
+        44,
+        "Clearwater Pathway"
+      ],
+      [
+        46,
+        "Tainted Indulgence"
+      ]
+    ],
+    "sideboard": [
+      [
+        13,
+        "Flusterstorm"
+      ],
+      [
+        14,
+        "Hydroblast"
+      ],
+      [
+        15,
+        "Underworld Breach"
+      ],
+      [
+        25,
+        "Hurkyl's Recall"
+      ],
+      [
+        26,
+        "Energy Flux"
+      ],
+      [
+        39,
+        "Iona, Shield of Emeria"
+      ],
+      [
+        40,
+        "Liliana of the Veil"
+      ],
+      [
+        41,
+        "Dread Fugue"
+      ],
+      [
+        42,
+        "Into the Roil"
+      ],
+      [
+        45,
+        "Collective Brutality"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Josh Smith",
+    "genre": "TinkerBond",
+    "seat": 5,
+    "wins": 2,
+    "losses": 5,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "mox sapphire"
+      ],
+      [
+        2,
+        "mox emerald"
+      ],
+      [
+        3,
+        "tinker"
+      ],
+      [
+        4,
+        "oko, thief of crowns"
+      ],
+      [
+        5,
+        "fastbond"
+      ],
+      [
+        6,
+        "narset, parter of veils"
+      ],
+      [
+        7,
+        "misty rainforest"
+      ],
+      [
+        8,
+        "mental misstep"
+      ],
+      [
+        10,
+        "windswept heath"
+      ],
+      [
+        11,
+        "sensei's divining top"
+      ],
+      [
+        12,
+        "tropical island"
+      ],
+      [
+        13,
+        "boseiju, who endures"
+      ],
+      [
+        14,
+        "birds of paradise"
+      ],
+      [
+        15,
+        "wasteland"
+      ],
+      [
+        16,
+        "uro, titan of nature's wrath"
+      ],
+      [
+        17,
+        "sylvan library"
+      ],
+      [
+        18,
+        "mystical tutor"
+      ],
+      [
+        19,
+        "jace, vryn's prodigy"
+      ],
+      [
+        20,
+        "lodestone golem"
+      ],
+      [
+        22,
+        "ledger shredder"
+      ],
+      [
+        23,
+        "blightsteel colossus"
+      ],
+      [
+        24,
+        "otawara, soaring city"
+      ],
+      [
+        25,
+        "phyrexian metamorph"
+      ],
+      [
+        26,
+        "stern scolding"
+      ],
+      [
+        29,
+        "swan song"
+      ],
+      [
+        30,
+        "deathrite shaman"
+      ],
+      [
+        32,
+        "breeding pool"
+      ],
+      [
+        34,
+        "tangle wire"
+      ],
+      [
+        35,
+        "thieving skydiver"
+      ],
+      [
+        36,
+        "ramunap excavator"
+      ],
+      [
+        37,
+        "joraga treespeaker"
+      ],
+      [
+        38,
+        "venser, shaper savant"
+      ],
+      [
+        39,
+        "wurmcoil engine"
+      ],
+      [
+        42,
+        "upheaval"
+      ],
+      [
+        44,
+        "zuran orb"
+      ],
+      [
+        45,
+        "waterlogged grove"
+      ]
+    ],
+    "sideboard": [
+      [
+        9,
+        "tolarian academy"
+      ],
+      [
+        21,
+        "gush"
+      ],
+      [
+        27,
+        "force of vigor"
+      ],
+      [
+        28,
+        "courser of kruphix"
+      ],
+      [
+        31,
+        "ashiok, dream render"
+      ],
+      [
+        33,
+        "tireless tracker"
+      ],
+      [
+        40,
+        "chain of vapor"
+      ],
+      [
+        41,
+        "surgical extraction"
+      ],
+      [
+        43,
+        "defense grid"
+      ],
+      [
+        46,
+        "thought scour"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Andrew Swift",
+    "genre": "Mardu Disruption",
+    "seat": 6,
+    "wins": 3,
+    "losses": 4,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "Mox Jet"
+      ],
+      [
+        2,
+        "White Plume Adventurer"
+      ],
+      [
+        3,
+        "Thoughtseize"
+      ],
+      [
+        4,
+        "Mox Diamond"
+      ],
+      [
+        5,
+        "Karn, the Great Creator"
+      ],
+      [
+        6,
+        "Polluted Delta"
+      ],
+      [
+        7,
+        "Marsh Flats"
+      ],
+      [
+        8,
+        "Esper Sentinel"
+      ],
+      [
+        9,
+        "Inquisition of Kozilek"
+      ],
+      [
+        10,
+        "Prismatic Ending"
+      ],
+      [
+        11,
+        "Mind Twist"
+      ],
+      [
+        12,
+        "Forth Eorlingas!"
+      ],
+      [
+        13,
+        "Scrubland"
+      ],
+      [
+        14,
+        "Plateau"
+      ],
+      [
+        15,
+        "Dovin, Hand of Control"
+      ],
+      [
+        17,
+        "Dark Confidant"
+      ],
+      [
+        18,
+        "Hymn to Tourach"
+      ],
+      [
+        21,
+        "Kolaghan's Command"
+      ],
+      [
+        22,
+        "Dauthi Voidwalker"
+      ],
+      [
+        23,
+        "Karakas"
+      ],
+      [
+        24,
+        "March of Otherworldly Light"
+      ],
+      [
+        25,
+        "Savai Triome"
+      ],
+      [
+        26,
+        "Bitterblossom"
+      ],
+      [
+        28,
+        "Loran of the Third Path"
+      ],
+      [
+        29,
+        "Ajani Vengeant"
+      ],
+      [
+        30,
+        "Cabal Therapy"
+      ],
+      [
+        31,
+        "Godless Shrine"
+      ],
+      [
+        32,
+        "Phyrexian Revoker"
+      ],
+      [
+        33,
+        "Young Pyromancer"
+      ],
+      [
+        37,
+        "Lingering Souls"
+      ],
+      [
+        38,
+        "Bloodchief's Thirst"
+      ],
+      [
+        39,
+        "Opposition Agent"
+      ]
+    ],
+    "sideboard": [
+      [
+        16,
+        "Sorcerous Spyglass"
+      ],
+      [
+        19,
+        "Relic of Progenitus"
+      ],
+      [
+        20,
+        "Mycosynth Lattice"
+      ],
+      [
+        27,
+        "Authority of the Consuls"
+      ],
+      [
+        34,
+        "Toxic Deluge"
+      ],
+      [
+        35,
+        "Boil"
+      ],
+      [
+        36,
+        "Meltdown"
+      ],
+      [
+        40,
+        "Torpor Orb"
+      ],
+      [
+        41,
+        "Everybody Lives!"
+      ],
+      [
+        42,
+        "Ensnaring Bridge"
+      ],
+      [
+        43,
+        "Fracture"
+      ],
+      [
+        44,
+        "Helm of Obedience"
+      ],
+      [
+        45,
+        "Rest in Peace"
+      ],
+      [
+        46,
+        "Moat"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Kevin Freeman",
+    "genre": "BR Aggro",
+    "seat": 7,
+    "wins": 4,
+    "losses": 3,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "mox ruby"
+      ],
+      [
+        2,
+        "sol ring"
+      ],
+      [
+        3,
+        "orcish bowmasters"
+      ],
+      [
+        4,
+        "lightning bolt"
+      ],
+      [
+        5,
+        "laelia, the blade reforged"
+      ],
+      [
+        6,
+        "badlands"
+      ],
+      [
+        7,
+        "arid mesa"
+      ],
+      [
+        8,
+        "blood crypt"
+      ],
+      [
+        9,
+        "eidolon of the great revel"
+      ],
+      [
+        10,
+        "vampiric tutor"
+      ],
+      [
+        15,
+        "abrade"
+      ],
+      [
+        16,
+        "aether vial"
+      ],
+      [
+        17,
+        "bonecrusher giant"
+      ],
+      [
+        18,
+        "fable of the mirror-breaker"
+      ],
+      [
+        19,
+        "roiling vortex"
+      ],
+      [
+        21,
+        "sheoldred, the apocalypse"
+      ],
+      [
+        22,
+        "scytheclaw raptor"
+      ],
+      [
+        23,
+        "goblin rabblemaster"
+      ],
+      [
+        25,
+        "feldon, ronom excavator"
+      ],
+      [
+        26,
+        "inti, seneschal of the sun"
+      ],
+      [
+        28,
+        "delayed blast fireball"
+      ],
+      [
+        29,
+        "krenko, tin street kingpin"
+      ],
+      [
+        30,
+        "geological appraiser"
+      ],
+      [
+        31,
+        "florian, voldaren scion"
+      ],
+      [
+        32,
+        "impact tremors"
+      ],
+      [
+        33,
+        "ojer axonil, deepest might"
+      ],
+      [
+        35,
+        "blackcleave cliffs"
+      ],
+      [
+        36,
+        "smoldering marsh"
+      ],
+      [
+        37,
+        "monastery swiftspear"
+      ],
+      [
+        39,
+        "light up the stage"
+      ],
+      [
+        41,
+        "scalding viper"
+      ],
+      [
+        42,
+        "maddening hex"
+      ],
+      [
+        45,
+        "spikefield hazard"
+      ]
+    ],
+    "sideboard": [
+      [
+        11,
+        "pyroblast"
+      ],
+      [
+        12,
+        "red elemental blast"
+      ],
+      [
+        13,
+        "pithing needle"
+      ],
+      [
+        14,
+        "fry"
+      ],
+      [
+        20,
+        "harsh mentor"
+      ],
+      [
+        24,
+        "rampaging ferocidon"
+      ],
+      [
+        27,
+        "rakdos charm"
+      ],
+      [
+        34,
+        "spiteful visions"
+      ],
+      [
+        38,
+        "soul-scar mage"
+      ],
+      [
+        40,
+        "goblin guide"
+      ],
+      [
+        43,
+        "skullcrack"
+      ],
+      [
+        44,
+        "goblin chainwhirler"
+      ],
+      [
+        46,
+        "kruphix, god of horizons"
+      ]
+    ]
+  },
+  {
+    "date": "2023-12-02",
+    "player": "Patrick Bargeon",
+    "genre": "Jeskai Prowess",
+    "seat": 8,
+    "wins": 1,
+    "losses": 6,
+    "stLotus": 13,
+    "decklist": [
+      [
+        1,
+        "Mox Pearl"
+      ],
+      [
+        2,
+        "Timetwister"
+      ],
+      [
+        4,
+        "Ponder"
+      ],
+      [
+        5,
+        "Solitude"
+      ],
+      [
+        6,
+        "True-Name Nemesis"
+      ],
+      [
+        7,
+        "Flooded Strand"
+      ],
+      [
+        10,
+        "Murktide Regent"
+      ],
+      [
+        11,
+        "Seasoned Dungeoneer"
+      ],
+      [
+        12,
+        "Mana leak"
+      ],
+      [
+        13,
+        "Hallowed Fountain"
+      ],
+      [
+        14,
+        "Monastery Mentor"
+      ],
+      [
+        16,
+        "Lose Focus"
+      ],
+      [
+        18,
+        "Smuggler's Copter"
+      ],
+      [
+        23,
+        "Lorien Revealed"
+      ],
+      [
+        24,
+        "Raugrin Triome"
+      ],
+      [
+        25,
+        "Third Path Iconoclast"
+      ],
+      [
+        26,
+        "Lightning Helix"
+      ],
+      [
+        28,
+        "Subtlety"
+      ],
+      [
+        29,
+        "Fire // Ice"
+      ],
+      [
+        31,
+        "Prismari Command"
+      ],
+      [
+        32,
+        "Treasure Cruise"
+      ],
+      [
+        33,
+        "Winds of Abandon"
+      ],
+      [
+        35,
+        "Sacred Foundry"
+      ],
+      [
+        37,
+        "poppet stitcher"
+      ],
+      [
+        38,
+        "Virtue of Loyalty"
+      ],
+      [
+        39,
+        "Mystic Sanctuary"
+      ],
+      [
+        41,
+        "Eiganjo, Seat of the Empire"
+      ],
+      [
+        43,
+        "Khenra Spellspear"
+      ],
+      [
+        44,
+        "Opt"
+      ]
+    ],
+    "sideboard": [
+      [
+        3,
+        "The One Ring"
+      ],
+      [
+        8,
+        "Counterspell"
+      ],
+      [
+        9,
+        "Path to Exile"
+      ],
+      [
+        15,
+        "Reprieve"
+      ],
+      [
+        17,
+        "Thalia, Guardian of Thraben"
+      ],
+      [
+        19,
+        "Stony Silence"
+      ],
+      [
+        20,
+        "Skyclave Apparition"
+      ],
+      [
+        21,
+        "The Reality Chip"
+      ],
+      [
+        22,
+        "Dovin's veto"
+      ],
+      [
+        27,
+        "Council's Judgment"
+      ],
+      [
+        30,
+        "Tishana's Tidebinder"
+      ],
+      [
+        34,
+        "Dress Down"
+      ],
+      [
+        36,
+        "Unexpectedly Absent"
+      ],
+      [
+        40,
+        "Crucible of Worlds"
+      ],
+      [
+        42,
+        "Defabricate"
+      ],
+      [
+        45,
+        "Sevinne's Reclamation"
+      ],
+      [
+        46,
+        "Urza, Lord Protector"
+      ]
+    ]
   }
 ]

@@ -18,6 +18,13 @@ export default function Decks() {
     'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {
+      number: 13,
+      image:
+        'https://cards.scryfall.io/art_crop/front/0/9/09c9cd1b-9260-4f98-ac7a-25bb5ae3e06d.jpg?1562875356',
+      date: new Date('2023-12-03'),
+      text: 'Adam arrived at his first VRD with nothing but ideas, but walked out with a trophy. He leveraged a glut of fast colorless mana into a proactive artifact strategy with various combos, including Salvagers',
+    },
+    {
       number: 12,
       image:
         'https://cards.scryfall.io/art_crop/front/3/b/3b1e92b4-6e53-4dba-a572-c67e01965ac5.jpg?1562785076',
