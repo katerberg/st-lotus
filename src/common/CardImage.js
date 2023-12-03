@@ -45,7 +45,7 @@ export default function CardImage({cardImage, cardBackFaceImage, loading}) {
       src={flipped ? cardBackFaceImage : cardImage}
       sx={{height: loading ? 0 : 'auto', opacity: loading ? 0 : 1}}
                  />}
-    {cardBackFaceImage && <IconButton aria-label="flip"
+    {cardBackFaceImage && !loading && <IconButton aria-label="flip"
       color="primary"
       onClick={handleFlip}
       size="large"
