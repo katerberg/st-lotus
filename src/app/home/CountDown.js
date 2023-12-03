@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import {Link} from '@mui/material';
 
 export default function CountDown() {
-  const nextDate = useMemo(() => new Date('2023-12-02T16:30:00.000Z'), []); //https://www.timestamp-converter.com/
+  const nextDate = useMemo(() => new Date('2023-12-01T16:30:00.000Z'), []); //https://www.timestamp-converter.com/
   const calculateTimeLeft = useCallback(() => {
     const difference = nextDate - new Date();
 
