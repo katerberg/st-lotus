@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# Decklist processing
+/tmp
+
 # production
 /build
 
