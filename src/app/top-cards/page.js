@@ -47,6 +47,10 @@ export default function TopCards() {
   }, [currentSelections]);
   const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
 
+  const isCardUnpicked = useCallback((cardName) => { // Handle Brazen Borrower
+    return !picks.some(pick => pick === cardName || cardName?.match(new RegExp('^' + pick + ' //', 'i')));
+  }, [picks]);
+
   return (
     <>
       <Container maxWidth="lg" sx={{marginBottom: 6}}>
@@ -95,7 +99,7 @@ export default function TopCards() {
       <Grid container
         justifyContent="space-around"
       >
-        {cards.filter(c => !picks.includes(c.card) && !currentSelections.includes(c.card)).slice(0, 100).map(c => <TopCard
+        {cards.filter(c => isCardUnpicked(c.card) && !currentSelections.includes(c.card)).slice(0, 100).map(c => <TopCard
           averageRound={c.averageRound}
           key={c.card}
           name={c.card}
