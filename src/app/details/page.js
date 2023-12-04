@@ -13,7 +13,7 @@ import useCardStats from '@/hooks/useCardStats';
 import CardStats from '@/app/home/card-search/CardStats';
 import CardImage from '@/common/CardImage';
 import { useRouter } from 'next/navigation'
-import {Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
+import {Box, Checkbox, FormControlLabel, FormGroup, Hidden} from '@mui/material';
 import Synergies from './Synergies';
 import RecentDrafts from './RecentDrafts';
 import { useSearchParams } from 'next/navigation'
@@ -92,8 +92,20 @@ export default function Details() {
         onChange={handleAutoCompleteChange}
         openOnFocus
         options={suggestions || []}
+        renderOption={(props, option, state, ownerState) => (
+          <Box
+            component="li"
+            {...props}
+            key={option}
+          >
+            {ownerState.getOptionLabel(option)}
+          </Box>
+        )}
         renderInput={(params) => <SearchTextField
-          {...params}
+          inputProps={params.inputProps}
+          size={params.size}
+          id={params.id}
+          disabled={params.disabled}
           InputProps={{
             ...params.InputProps,
             endAdornment: (
