@@ -1,7 +1,7 @@
 import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import Grid from '@mui/material/Grid';
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import Button from '@mui/material/Button';
 import useCardPairings from '@/hooks/useCardPairings';
 import Synergy from './Synergy';
@@ -10,6 +10,9 @@ import {Alert, AlertTitle} from '@mui/material';
 export default function Synergies({card}) {
   const {synergies} = useCardPairings(card);
   const [visibleCards, setVisibleCards] = useState(6);
+  useEffect(() => {
+    setVisibleCards(6);
+  }, [card])
 
   const handleSeeMore = useCallback(() => {
     setVisibleCards(visibleCards + 6);
