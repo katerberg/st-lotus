@@ -36,7 +36,10 @@ export default function Details() {
   const [isPremier, setIsPremier] = useState(true);
   const [searchText, setSearchText] = useState(card);
   const router = useRouter();
-  useEffect(() => setSearchText(card), [card]);
+  useEffect(() => {
+    setSearchText(card);
+    document.title = 'St Lotus | ' + card;
+  }, [card]);
   const {stats, loadingStats, cardImage, cardBackFaceImage, suggestions} = useCardStats(
     searchText,
     !isPremier,
