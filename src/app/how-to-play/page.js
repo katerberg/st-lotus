@@ -36,7 +36,7 @@ export default function HowToPlay() {
       <Typography paragraph>{'After all the players have drafted their 45 cards, they build their 40-card decks, adding as many basic lands (Plains, Island, Swamp, Mountain, Forest and Wastes only - if you want Snow lands, you have to draft them!) as they want, just like in any draft. This event doesn’t have continuous construction - maindecks and sideboards are locked in from Round 1 through the end of the event, so building your deck right to start the day is a must.'}</Typography>
       <StyledImage
         alt="Players sitting at a table with computers"
-        src={`/draft.jpg`}
+        src={`/draft.png`}
         sx={{marginBottom: 3}}
       />
       <SpacedHeader
