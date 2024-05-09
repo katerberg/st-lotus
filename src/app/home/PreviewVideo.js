@@ -34,7 +34,7 @@ export default function PreviewVideo() {
         allowFullScreen
         frameBorder="0"
         height="315"
-        src="https://www.youtube.com/embed/LZ5kcJrjv_8"
+        src="https://www.youtube.com/embed/XZYQs070a6E"
         title="YouTube video player"
         width="560"
       />
