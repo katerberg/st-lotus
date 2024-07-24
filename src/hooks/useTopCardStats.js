@@ -2,15 +2,15 @@ import {useCallback, useEffect, useState} from 'react';
 import axios from 'axios';
 import {config} from '@/common/config';
 
-const useTopCardStats = () => {
+const useTopCardStats = (filters) => {
   const [stats, setStats] = useState([]);
   const [loading, setLoading] = useState(false);
   const getTopCards = useCallback(
     () =>
       axios.get(
-        config.API_TOP_CARDS_URL,
+        `${config.API_TOP_CARDS_URL}${filters.length ? `?${filters.reduce((a,c)=> `${a}colorAnd=${c}&`, '')}` : ''}`,
       ),
-    [],
+    [filters],
   );
 
   useEffect(() => {

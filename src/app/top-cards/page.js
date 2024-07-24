@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
@@ -13,6 +13,7 @@ import {docsLinkToCsv} from '@/common/textHelpers';
 import Paper from '@mui/material/Paper';
 import {styled} from '@mui/system';
 import useDraftCsv from '@/hooks/useDraftCsv';
+import { useSearchParams } from 'next/navigation'
 
 const LOCAL_STORAGE_KEY = 'top-cards-selections';
 
@@ -21,7 +22,9 @@ const ListItem = styled('li')(({theme}) => ({
 }));
 
 export default function TopCards() {
-  const topCards = useTopCardStats();
+  const searchParams = useSearchParams()
+  const colorsFilter = useMemo(() => searchParams.getAll('color'), [searchParams]);
+  const topCards = useTopCardStats(colorsFilter);
   const cards = topCards.stats;
   const [currentSelections, setCurrentSelections] = useState([]);
   const [followingDraft, setFollowingDraft] = useState('');
