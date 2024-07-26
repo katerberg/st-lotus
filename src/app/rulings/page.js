@@ -5,7 +5,6 @@ import {styled} from '@mui/system';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Container from '@mui/material/Container';
-import BannedCards from './BannedCards';
 import SpacedHeader from '@/common/SpacedHeader';
 import Box from '@mui/material/Box';
 import Ruling from './Ruling';
@@ -82,10 +81,9 @@ export default function Rulings() {
               {'banned in Vintage'}
             </Link>
             {
-              ' are also banned in St Lotus tournaments. As of January 8, 2022 (St Lotus #8), this includes the following:'
+              ' are also banned in St Lotus tournaments.'
             }
           </Typography>
-          <BannedCards />
         </Ruling>
         <Ruling
           header="“Self-tutoring” cards are picked like any other"
@@ -153,17 +151,19 @@ export default function Rulings() {
           </Typography>
         </Ruling>
         <Ruling
-          header="“Stickers” and “Attraction” cards function like constructed"
+          header="“Stickers” and “Attraction” cards are banned"
           number={7}
-          updated="2023-02-28"
+          updated="2024-07-25"
         >
           <Typography paragraph>
             {
-              'Stickers and Attractions follow the constructed rules and do not need to be picked. Only vintage-legal stickers and attractions are available.'
+              'Any sets that are fully spoiled are legal.'
             }
           </Typography>
-          <Typography paragraph>Players can pick any 10+ unique cards for their Attraction deck, and any 10+ unique Sticker sheets. At the start of each game, they randomly select three of their Sticker sheets to use for that game.</Typography>
-          <Typography paragraph>If a player needs an Attraction or Sticker and did not choose any for their deck (likely due to a <Link href="https://scryfall.com/card/lea/51/clone">Clone</Link> effect), they get their own copy of the same Attraction deck or set of Sticker sheets that their opponent selected, and selects three Sticker sheets at random.</Typography>
+          <Typography paragraph>Any set that is fully spoiled is legal in St Lotus tournaments. The authoritative source of whether a set is spoiled is <a href="https://www.mythicspoiler.com/">Mythic Spoiler</a>.</Typography>
+          <Typography paragraph variant="body2">
+            {'2024-07-25: Updates ruling to be about fully spoiled sets.'}
+          </Typography>
           <Typography paragraph variant="body2">
             {'2023-07-09: Makes language less verbose.'}
           </Typography>
