@@ -151,16 +151,11 @@ export default function Rulings() {
           </Typography>
         </Ruling>
         <Ruling
-          header="“Stickers” and “Attraction” cards are banned"
+          header="Any sets that are fully spoiled are legal"
           number={7}
           updated="2024-07-25"
         >
-          <Typography paragraph>
-            {
-              'Any sets that are fully spoiled are legal.'
-            }
-          </Typography>
-          <Typography paragraph>Any set that is fully spoiled is legal in St Lotus tournaments. The authoritative source of whether a set is spoiled is <a href="https://www.mythicspoiler.com/">Mythic Spoiler</a>.</Typography>
+          <Typography paragraph>{'Any set that is fully spoiled is legal in St Lotus tournaments. The authoritative source of whether a set is spoiled is '}<Link href="https://www.mythicspoiler.com/">{'Mythic Spoiler'}</Link>{'.'}</Typography>
           <Typography paragraph variant="body2">
             {'2024-07-25: Updates ruling to be about fully spoiled sets.'}
           </Typography>
