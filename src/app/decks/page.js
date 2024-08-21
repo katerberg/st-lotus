@@ -18,6 +18,13 @@ export default function Decks() {
     'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {
+      number: 14,
+      image:
+        'https://cards.scryfall.io/art_crop/front/3/d/3d8ca18d-9099-4f1e-95c1-f04da58a26bd.jpg?1674136598',
+      date: new Date('2023-05-04'),
+      text: 'Daniel Magnin had quite the chip on his shoulder when he showed up for his second, and managed to demonstrate that he is a fast learner by taking down the whole thing after a three-way tie with a 5-2 record. Initiative',
+    },
+    {
       number: 13,
       image:
         'https://cards.scryfall.io/art_crop/front/0/9/09c9cd1b-9260-4f98-ac7a-25bb5ae3e06d.jpg?1562875356',

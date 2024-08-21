@@ -78,7 +78,6 @@ function getManaCost(processedCard) {
 }
 
 function buildCard(rawCardName, processedCard, pickOrder) {
-  console.log('building card', rawCardName, processedCard, pickOrder)
   return {
     apiName: rawCardName,
     displayName: getCardDisplayName(processedCard),
