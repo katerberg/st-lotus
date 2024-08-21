@@ -10,7 +10,7 @@
     "build": "next build",
     "prod": "next build && http-server out/",
     "build:getSymbols": "node build-scripts/getSymbols.js",
-    "build:decklists": "node --experimental-modules build-scripts/decklists.js"
+    "build:decklists": "node --experimental-modules build-scripts/decklists.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
