@@ -24,7 +24,7 @@
     "@mui/material": "^5.14.13",
     "@mui/system": "^5.14.13",
     "awesome-debounce-promise": "^2.1.0",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "csv-parse": "^5.5.2",
     "next": "^13.0.0",
     "react": "^18",
