@@ -18,6 +18,13 @@ export default function Decks() {
     'https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=6604930';
   const decks = [
     {
+      number: 15,
+      image:
+        'https://cards.scryfall.io/art_crop/front/e/4/e419cd0b-2449-4cc5-9ead-b9e45e271700.jpg?1717012789',
+      date: new Date('2025-01-17'),
+      text: 'Dan Zielinski took down the whole thing in an undisputed 6-1 with the bogeyman of the format: RW Initiative. This time, he ran it into Naya for powerful walkers, but the core aggressive strategy remained intact. Even with',
+    },
+    {
       number: 14,
       image:
         'https://cards.scryfall.io/art_crop/front/3/d/3d8ca18d-9099-4f1e-95c1-f04da58a26bd.jpg?1674136598',
