@@ -1,6 +1,6 @@
 'use client'
 
-import React, {useCallback, useMemo, useState} from 'react';
+import React, {useCallback, useState} from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
@@ -27,7 +27,7 @@ export default function TopCards() {
     return !picks.some(pick => pick === cardName || cardName?.match(new RegExp('^' + pick + ' //', 'i')));
   }, [picks]);
 
-  const handleColorsChange = (e, colors) => {
+  const handleColorsChange = (_, colors) => {
     //bgruw is the filter order required by the API
     const order = 'bgruw';
 
