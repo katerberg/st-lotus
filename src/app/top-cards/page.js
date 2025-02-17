@@ -1,18 +1,21 @@
 'use client'
 
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
+import {faXmarkCircle} from '@fortawesome/free-regular-svg-icons';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
 import Grid from '@mui/material/Grid';
 import useTopCardStats from '@/hooks/useTopCardStats';
 import TopCard from './TopCard';
-import { TextField, ToggleButton, ToggleButtonGroup} from '@mui/material';
+import { IconButton, InputAdornment, TextField, ToggleButton, ToggleButtonGroup} from '@mui/material';
 import {docsLinkToCsv} from '@/common/textHelpers';
 import useDraftCsv from '@/hooks/useDraftCsv';
 import { useSearchParams } from 'next/navigation'
 import ManaCost from '@/common/mana-cost/ManaCost';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+const LOCAL_STORAGE_KEY = 'top-cards-draft';
 
 export default function TopCards() {
   const searchParams = useSearchParams()
@@ -20,6 +23,14 @@ export default function TopCards() {
   const topCards = useTopCardStats(colors);
   const cards = topCards.stats;
   const [followingDraft, setFollowingDraft] = useState('');
+  const handleDraftChange = useCallback(e => {
+    setFollowingDraft(e.target.value);
+    window.localStorage.setItem(LOCAL_STORAGE_KEY, e.target.value);
+  }, [setFollowingDraft]);
+  useEffect(() => {
+    setFollowingDraft(window.localStorage.getItem(LOCAL_STORAGE_KEY) || '')
+  }, []);
+  const handleClickClearForm = useCallback(() => handleDraftChange({target: {value: ''}}), [handleDraftChange]);
 
   const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
 
@@ -51,7 +62,22 @@ export default function TopCards() {
           label="Draft link to follow" 
           variant="standard" 
           helperText="Example: https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=1008615612"
-          onChange={e => setFollowingDraft(e.target.value)}
+          value={followingDraft}
+          onChange={handleDraftChange}
+          InputProps={{
+              endAdornment: followingDraft && <InputAdornment position="end">
+              <IconButton
+                aria-label={
+                  'clear draft input'
+                }
+                onClick={handleClickClearForm}
+              >
+                <FontAwesomeIcon
+                  icon={faXmarkCircle}
+                />
+              </IconButton>
+            </InputAdornment>,
+          }}
         />
 
         <Grid container
