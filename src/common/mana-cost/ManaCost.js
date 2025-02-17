@@ -4,11 +4,10 @@ import {styled} from '@mui/system';
 import symbols from './symbols.json';
 
 const StyledImage = styled('img')({
-  height: '1rem',
   verticalAlign: 'middle',
 });
 
-export default function ManaCost({manaCost}) {
+export default function ManaCost({manaCost, height = '1rem'}) {
   const manaSymbols = manaCost.split('}').filter(n => n).map(symbol => {
     if (symbol === '{M') {
       return "/mana-cost/gold.svg";
@@ -22,6 +21,7 @@ export default function ManaCost({manaCost}) {
     <>
       {manaSymbols.map((manaSymbol, i) => <StyledImage alt="mana symbol"
         key={i}
+        sx={{height}}
         src={manaSymbol}
                                           />)}
     </>
