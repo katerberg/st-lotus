@@ -34,7 +34,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Add new entries to `src/decklists.json` for the latest deck (the following regex will be helpful here).
 
-- `s/(\d+)\t/[\1, "/``
+- `s/(\d+)\t/[\1, "/`
 - `s/$/"],/`
 
 The format for each deck is:
