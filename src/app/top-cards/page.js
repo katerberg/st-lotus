@@ -8,8 +8,9 @@ import SpacedHeader from '@/common/SpacedHeader';
 import Grid from '@mui/material/Grid';
 import useTopCardStats from '@/hooks/useTopCardStats';
 import TopCard from './TopCard';
-import { IconButton, InputAdornment, TextField, ToggleButton, ToggleButtonGroup} from '@mui/material';
+import { IconButton, InputAdornment, TextField, ToggleButton, ToggleButtonGroup, useMediaQuery} from '@mui/material';
 import {docsLinkToCsv} from '@/common/textHelpers';
+import {useTheme} from '@mui/material/styles';
 import useDraftCsv from '@/hooks/useDraftCsv';
 import { useSearchParams } from 'next/navigation'
 import ManaCost from '@/common/mana-cost/ManaCost';
@@ -30,6 +31,10 @@ export default function TopCards() {
   useEffect(() => {
     setFollowingDraft(window.localStorage.getItem(LOCAL_STORAGE_KEY) || '')
   }, []);
+  const theme = useTheme();
+  const matchesUpSm = useMediaQuery(theme.breakpoints.up('sm'));
+
+  const iconSize = matchesUpSm ? '3rem': '2rem';
   const handleClickClearForm = useCallback(() => handleDraftChange({target: {value: ''}}), [handleDraftChange]);
 
   const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
@@ -97,22 +102,22 @@ export default function TopCards() {
             value={colors}
           >
             <ToggleButton value="w" aria-label="white">
-              <ManaCost height="3rem" manaCost="{W}"/>
+              <ManaCost height={iconSize} manaCost="{W}"/>
             </ToggleButton>
             <ToggleButton value="u" aria-label="blue">
-              <ManaCost height="3rem" manaCost="{U}"/>
+              <ManaCost height={iconSize} manaCost="{U}"/>
             </ToggleButton>
             <ToggleButton value="b" aria-label="black">
-              <ManaCost height="3rem" manaCost="{B}"/>
+              <ManaCost height={iconSize} manaCost="{B}"/>
             </ToggleButton>
             <ToggleButton value="r" aria-label="red">
-              <ManaCost height="3rem" manaCost="{R}"/>
+              <ManaCost height={iconSize} manaCost="{R}"/>
             </ToggleButton>
             <ToggleButton value="g" aria-label="green">
-              <ManaCost height="3rem" manaCost="{G}"/>
+              <ManaCost height={iconSize} manaCost="{G}"/>
             </ToggleButton>
             <ToggleButton value="c" aria-label="colorless">
-              <ManaCost height="3rem" manaCost="{C}"/>
+              <ManaCost height={iconSize} manaCost="{C}"/>
             </ToggleButton>
           </ToggleButtonGroup>
         </Grid>
