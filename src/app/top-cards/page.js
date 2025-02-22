@@ -38,9 +38,17 @@ export default function TopCards() {
     return !picks.some(pick => pick === cardName || cardName?.match(new RegExp('^' + pick + ' //', 'i')));
   }, [picks]);
 
-  const handleColorsChange = (_, colors) => {
+  const handleColorsChange = (a, passedColors) => {
     //bgruw is the filter order required by the API
     const order = 'bgruw';
+    let colors;
+
+    console.log()
+    if (a.currentTarget.value === 'c') {
+      colors = ['c'];
+    } else {
+      colors = passedColors.filter(color => color !== 'c');
+    }
 
     window.history.replaceState(null, '', `/top-cards${colors.length ? '?' : ''}${colors.sort((a, b) => order.indexOf(a) - order.indexOf(b)).map(color => `color=${color}`).join('&')}`);
     setColors(colors);
@@ -102,6 +110,9 @@ export default function TopCards() {
             </ToggleButton>
             <ToggleButton value="g" aria-label="green">
               <ManaCost height="3rem" manaCost="{G}"/>
+            </ToggleButton>
+            <ToggleButton value="c" aria-label="colorless">
+              <ManaCost height="3rem" manaCost="{C}"/>
             </ToggleButton>
           </ToggleButtonGroup>
         </Grid>
