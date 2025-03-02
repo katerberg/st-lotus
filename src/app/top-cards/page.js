@@ -15,6 +15,7 @@ import useDraftCsv from '@/hooks/useDraftCsv';
 import { useSearchParams } from 'next/navigation'
 import ManaCost from '@/common/mana-cost/ManaCost';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Alert from '@mui/material/Alert';
 
 const LOCAL_STORAGE_KEY = 'top-cards-draft';
 
@@ -39,6 +40,8 @@ export default function TopCards() {
 
   const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
 
+  const draftLinkRegex = 
+      /^https:\/\/docs.google.com\/spreadsheets\/d\/[\d\w-]+\/edit(\?gid=\d+(#gid=\d+)?)?$/;
   const isCardUnpicked = useCallback((cardName) => { // Handle Brazen Borrower
     return !picks.some(pick => pick === cardName || cardName?.match(new RegExp('^' + pick + ' //', 'i')));
   }, [picks]);
@@ -92,6 +95,7 @@ export default function TopCards() {
             </InputAdornment>,
           }}
         />
+        {followingDraft && !draftLinkRegex.test(followingDraft) && <Alert severity="error">Invalid draft URL</Alert>}
 
         <Grid container
           justifyContent="flex-start"
