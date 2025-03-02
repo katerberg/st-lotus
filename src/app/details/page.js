@@ -147,7 +147,7 @@ export default function Details() {
         </Hidden>
         <Hidden mdDown>
           <Grid item md={4}>
-            <Typography align="right" color="white" variant="h3">Recent Drafts</Typography>
+            {stats?.drafts && <Typography align="right" color="white" variant="h3">Recent Drafts</Typography>}
             <RecentDrafts drafts={stats?.drafts} />
           </Grid>
         </Hidden>
@@ -174,7 +174,7 @@ export default function Details() {
         </Hidden>
         <Hidden mdUp>
           <Grid container item justifyContent="center" xs={12}>
-            <Typography color="white" sx={{marginTop: 2}} textAlign="center" variant="h3">Recent Drafts</Typography>
+            {stats?.drafts && <Typography color="white" sx={{marginTop: 2}} textAlign="center" variant="h3">Recent Drafts</Typography>}
             <RecentDrafts drafts={stats?.drafts} />
           </Grid>
         </Hidden>
