@@ -2,7 +2,7 @@ import {useCallback, useEffect, useState} from 'react';
 import axios from 'axios';
 import {config} from '@/common/config';
 
-const useTopCardStats = (filters) => {
+const useTopCardStats = (filters: string[]) => {
   const [stats, setStats] = useState([]);
   const [loading, setLoading] = useState(false);
   const getTopCards = useCallback(

@@ -5,19 +5,21 @@ import {faXmarkCircle} from '@fortawesome/free-regular-svg-icons';
 import { Alert, IconButton, InputAdornment, TextField} from '@mui/material';
 import {docsLinkToCsv, draftLinkRegex} from '@/common/textHelpers';
 
-export default function DraftEntry({onDraftCsvChange, localStorageKey = 'draft-entry-draft'}) {
+export default function DraftEntry({onDraftCsvChange=() => void 0, onDraftChange = () => void 0, localStorageKey = 'draft-entry-draft'}) {
   const [followingDraft, setFollowingDraft] = useState('');
   const handleDraftChange = useCallback(e => {
+    onDraftChange(e.target.value);
     setFollowingDraft(e.target.value);
     onDraftCsvChange(docsLinkToCsv(e.target.value));
     window.localStorage.setItem(localStorageKey, e.target.value);
-  }, [onDraftCsvChange, localStorageKey]);
+  }, [onDraftChange, onDraftCsvChange, localStorageKey]);
   const handleClickClearForm = useCallback(() => handleDraftChange({target: {value: ''}}), [handleDraftChange]);
   useEffect(() => {
 const localStorageValue = window.localStorage.getItem(localStorageKey) || ''
     setFollowingDraft(localStorageValue)
+    onDraftChange(localStorageValue);
     onDraftCsvChange(docsLinkToCsv(localStorageValue));
-  }, [localStorageKey, onDraftCsvChange]);
+  }, [localStorageKey, onDraftCsvChange,onDraftChange]);
 
   return (
     <>
@@ -50,6 +52,7 @@ const localStorageValue = window.localStorage.getItem(localStorageKey) || ''
 }
 
 DraftEntry.propTypes = {
-  onDraftCsvChange: PropTypes.func.isRequired,
+  onDraftCsvChange: PropTypes.func,
+  onDraftChange: PropTypes.func,
   localStorageKey: PropTypes.string,
 };
