@@ -6,6 +6,8 @@ export function toTitleCase(str: string) {
     (txt) => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(),
   );
 }
+export const draftLinkRegex = 
+      /^https:\/\/docs.google.com\/spreadsheets\/d\/[\d\w-]+\/edit(\?gid=\d+(#gid=\d+)?)?$/;
 
 export function docsLinkToCsv(followingDraft: string) {
   if (!followingDraft) {

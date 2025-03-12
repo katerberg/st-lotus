@@ -1,21 +1,18 @@
 'use client'
 
-import React, {useCallback, useEffect, useState} from 'react';
-import {faXmarkCircle} from '@fortawesome/free-regular-svg-icons';
+import React, {useCallback, useState} from 'react';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import SpacedHeader from '@/common/SpacedHeader';
 import Grid from '@mui/material/Grid';
 import useTopCardStats from '@/hooks/useTopCardStats';
 import TopCard from './TopCard';
-import { IconButton, InputAdornment, TextField, ToggleButton, ToggleButtonGroup, useMediaQuery} from '@mui/material';
-import {docsLinkToCsv} from '@/common/textHelpers';
+import { ToggleButton, ToggleButtonGroup, useMediaQuery} from '@mui/material';
 import {useTheme} from '@mui/material/styles';
 import useDraftCsv from '@/hooks/useDraftCsv';
 import { useSearchParams } from 'next/navigation'
 import ManaCost from '@/common/mana-cost/ManaCost';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Alert from '@mui/material/Alert';
+import DraftEntry from '@/common/DraftEntry';
 
 const LOCAL_STORAGE_KEY = 'top-cards-draft';
 
@@ -24,24 +21,14 @@ export default function TopCards() {
   const [colors, setColors] = useState(searchParams.getAll('color'))
   const topCards = useTopCardStats(colors);
   const cards = topCards.stats;
-  const [followingDraft, setFollowingDraft] = useState('');
-  const handleDraftChange = useCallback(e => {
-    setFollowingDraft(e.target.value);
-    window.localStorage.setItem(LOCAL_STORAGE_KEY, e.target.value);
-  }, [setFollowingDraft]);
-  useEffect(() => {
-    setFollowingDraft(window.localStorage.getItem(LOCAL_STORAGE_KEY) || '')
-  }, []);
+  const [csvLink, setCsvLink] = useState('');
   const theme = useTheme();
   const matchesUpSm = useMediaQuery(theme.breakpoints.up('sm'));
 
   const iconSize = matchesUpSm ? '3rem': '2rem';
-  const handleClickClearForm = useCallback(() => handleDraftChange({target: {value: ''}}), [handleDraftChange]);
 
-  const {picks} = useDraftCsv(docsLinkToCsv(followingDraft))
+  const {picks} = useDraftCsv(csvLink)
 
-  const draftLinkRegex = 
-      /^https:\/\/docs.google.com\/spreadsheets\/d\/[\d\w-]+\/edit(\?gid=\d+(#gid=\d+)?)?$/;
   const isCardUnpicked = useCallback((cardName) => { // Handle Brazen Borrower
     return !picks.some(pick => pick === cardName || cardName?.match(new RegExp('^' + pick + ' //', 'i')));
   }, [picks]);
@@ -72,30 +59,7 @@ export default function TopCards() {
         >Top VRD Cards</SpacedHeader>
         <Typography paragraph>These are the current cards in the order they’re drafted. Every draft will be different, but this is the aggregate rating of the cards.</Typography>
         <Typography paragraph>If you are participating in a draft, you can provide your draft URL and have this page track which cards have not yet been taken, or just select the cards as they are picked to filter them out.</Typography>
-        <TextField 
-          sx={{mb: 2}}
-          fullWidth
-          label="Draft link to follow" 
-          variant="standard" 
-          helperText="Example: https://docs.google.com/spreadsheets/d/1AdrhWkDX7i9p2rZbEKzDs3nQAhCvcH0LAXZQNwWMsnA/edit#gid=1008615612"
-          value={followingDraft}
-          onChange={handleDraftChange}
-          InputProps={{
-              endAdornment: followingDraft && <InputAdornment position="end">
-              <IconButton
-                aria-label={
-                  'clear draft input'
-                }
-                onClick={handleClickClearForm}
-              >
-                <FontAwesomeIcon
-                  icon={faXmarkCircle}
-                />
-              </IconButton>
-            </InputAdornment>,
-          }}
-        />
-        {followingDraft && !draftLinkRegex.test(followingDraft) && <Alert severity="error">Invalid draft URL</Alert>}
+        <DraftEntry localStorageKey={LOCAL_STORAGE_KEY} onDraftCsvChange={setCsvLink} />
 
         <Grid container
           justifyContent="flex-start"

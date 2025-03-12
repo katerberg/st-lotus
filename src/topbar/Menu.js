@@ -6,6 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
+// import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import GavelIcon from '@mui/icons-material/Gavel';
 import MenuItem from './MenuItem';
@@ -43,6 +44,11 @@ export default function Menu({isOpen, onClose}) {
         onClick={onClose}
         text="Articles"
       />
+      {/* <MenuItem icon={<QueryStatsIcon />}
+        link="/draft-analyzer"
+        onClick={onClose}
+        text="Draft Analyzer"
+      /> */}
       <MenuItem icon={<GavelIcon />}
         link="/rulings"
         onClick={onClose}
