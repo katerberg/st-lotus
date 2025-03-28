@@ -20,10 +20,9 @@ export default function DraftAnalyzer() {
         variant="h2"
       >Draft Analyzer</SpacedHeader>
       <DraftEntry localStorageKey={LOCAL_STORAGE_KEY} onDraftChange={setDraftChange} />
-        {draft}
         <div>
-        {JSON.stringify(stats.response,null,2)}
-</div>
+          {JSON.stringify(stats.response,null,2)}
+        </div>
     </Container>
   );
 }
