@@ -38,7 +38,6 @@ export default function TopCards() {
     const order = 'bgruw';
     let colors;
 
-    console.log()
     if (a.currentTarget.value === 'c') {
       colors = ['c'];
     } else {

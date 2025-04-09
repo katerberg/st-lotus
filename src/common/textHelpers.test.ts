@@ -1,4 +1,4 @@
-import {csvToPicks, docsLinkToCsv} from './textHelpers';
+import { csvToPicks, docsLinkToCsv } from './textHelpers';
 
 describe('textHelpers', () => {
   describe('docsLinkToCsv()', () => {
@@ -48,7 +48,7 @@ describe('textHelpers', () => {
           "jasterrogue7": "Windswept Heath"
         },
         {
-          "": "8",
+          "": "  ",
           "trashboat6824": "Timetwister",
           "bensonericb": "Bloodstained Mire",
           "xxxmason1337xxx": "Sheoldred, the Apocalypse",
@@ -58,13 +58,37 @@ describe('textHelpers', () => {
           "sphagan": "Fable of the Mirror-Breaker",
           "jasterrogue7": "Veil of Summer"
         },
+        {
+          "": ">>>",
+          "trashboat6824": "Sol Ring",
+          "bensonericb": "Mox Pearl",
+          "xxxmason1337xxx": "Swamp",
+          "wanderingwinder": "Island",
+          "everbrink": "Wastes",
+          "masterplum": "Lightning Strike",
+          "sphagan": "Dismal Backwater",
+          "jasterrogue7": "Relentless Dead"
+        },
+        {
+          "": "The cards are all unique",
+          "trashboat6824": "Mountain",
+          "bensonericb": "Goblin Guide",
+          "xxxmason1337xxx": "Goblin Grenade",
+          "wanderingwinder": "Goblin Hero",
+          "everbrink": "Goblin Recruiter",
+          "masterplum": "Goblin Rabblemaster",
+          "sphagan": "Goblin Warchief",
+          "jasterrogue7": "Goblin Warlord"
+        },
       ]
 
       const result = csvToPicks(input);
 
-      expect(result.length).toEqual(16);
+      expect(result.length).toEqual(32);
       expect(result).toContain('marsh flats');
       expect(result).toContain("thassa's oracle");
+      expect(result).toContain("wastes");
+      expect(result).toContain("goblin warchief");
 
     });
 

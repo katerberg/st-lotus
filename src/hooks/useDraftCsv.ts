@@ -1,4 +1,4 @@
-import {useCallback, useEffect, useState} from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import { parse } from 'csv-parse/sync';
 import { csvToPicks } from '@/common/textHelpers';
@@ -15,11 +15,12 @@ const useDraftCsv = (draftUrl: string) => {
         return;
       }
       setLoading(true);
-      const {data} = await axios.get(draftUrl);
-      const records = parse(data, {
+      const { data } = await axios.get(draftUrl);
+      const fixedCsv = data//.replaceAll(/\n/g, ',\n')
+      const records = parse(fixedCsv, {
         columns: true,
-        skip_empty_lines: true
-      }) as {[key: string]: string}[]; 
+        skipEmptyLines: true
+      }) as { [key: string]: string }[];
       setPicks(csvToPicks(records));
       setLoading(false);
     } catch (e) {
@@ -36,7 +37,7 @@ const useDraftCsv = (draftUrl: string) => {
     return () => clearInterval(intervalId);
   }, [fetchData, draftUrl]);
 
-  return {loading, picks};
+  return { loading, picks };
 };
 
 export default useDraftCsv;

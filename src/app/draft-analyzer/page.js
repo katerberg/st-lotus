@@ -10,7 +10,7 @@ const LOCAL_STORAGE_KEY = 'draft-analyzer-draft';
 
 export default function DraftAnalyzer() {
   const [draft, setDraftChange] = useState('');
-  const {stats, loading}= useDraftAnalysis(draft);
+  const {stats} = useDraftAnalysis(draft);
 
   return (
     <Container maxWidth="lg">
