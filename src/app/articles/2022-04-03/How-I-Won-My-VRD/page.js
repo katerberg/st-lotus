@@ -50,19 +50,19 @@ export default function HowIWonMyVrd() {
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Black Lotus',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838',
+        imageLink: 'https://cards.scryfall.io/normal/front/b/d/bd8fa327-dd41-4737-8f19-2cf5eb1f7cdd.jpg?1614638838',
       }, {
         averageRound: 1,
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Ancestral Recall',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/2/3/2398892d-28e9-4009-81ec-0d544af79d2b.jpg?1614638829',
+        imageLink: 'https://cards.scryfall.io/normal/front/2/3/2398892d-28e9-4009-81ec-0d544af79d2b.jpg?1614638829',
       }, {
         averageRound: 2,
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Time Walk',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/70901356-3266-4bd9-aacc-f06c27271de5.jpg?1614638832',
+        imageLink: 'https://cards.scryfall.io/normal/front/7/0/70901356-3266-4bd9-aacc-f06c27271de5.jpg?1614638832',
       },
       ]}
       >
@@ -74,7 +74,7 @@ export default function HowIWonMyVrd() {
         pickCount: 62,
         numberOfDrafts: 63,
         name: 'Time Vault',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/c/3/c367ffc1-8084-45a1-87d5-22183604d1cb.jpg?1562934224',
+        imageLink: 'https://cards.scryfall.io/normal/front/c/3/c367ffc1-8084-45a1-87d5-22183604d1cb.jpg?1562934224',
       }]}
       >
         <Typography><Link href="https://scryfall.com/card/vma/287/time-vault">Time Vault</Link> is a frequent first-round pick as the best combo enabler around. There are many cards that go infinite with it (well-known ones like <Link href="https://scryfall.com/card/m20/230/manifold-key">Manifold Key</Link>/<Link href="https://scryfall.com/card/usg/314/voltaic-key">Voltaic Key</Link> or <Link href="https://scryfall.com/card/mm2/62/tezzeret-the-seeker">Tezzeret the Seeker</Link>, which is effectively a one-card combo with it as it searches for it and untaps it every turn, all the way through to obscure ones like <Link href="https://scryfall.com/card/ddo/52/kioras-follower">Kiora’s Follower</Link>/<Link href="https://scryfall.com/card/dom/236/voltaic-servant">Voltaic Servant</Link> or <Link href="https://scryfall.com/card/gpt/153/mizzium-transreliquat">Mizzium Transreliquat</Link>). Many of these combos are fully colorless, allowing them to slot into basically any deck; are artifacts, making those combos even easier to assemble (and interact with); and are cheap, threatening fast wins or allowing you to spend mana finding the missing piece and still winning in the same turn.</Typography>
@@ -85,7 +85,7 @@ export default function HowIWonMyVrd() {
         pickCount: 30,
         numberOfDrafts: 30,
         name: 'Narset, Parter of Veils',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/8/c/8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5.jpg?1574294103',
+        imageLink: 'https://cards.scryfall.io/normal/front/8/c/8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5.jpg?1574294103',
       }]}
       >
         <Typography>Familiar to any Constructed player as a blue mirror-breaker, this carries its own A+B setups with cards like <Link href="https://scryfall.com/card/vma/3/timetwister">Timetwister</Link>/<Link href="https://scryfall.com/card/vma/192/wheel-of-fortune">Wheel of Fortune</Link> and is fantastic at assembling other combos or digging for specific interaction.</Typography>
@@ -95,7 +95,7 @@ export default function HowIWonMyVrd() {
         pickCount: 11,
         numberOfDrafts: 11,
         name: 'Urza\'s Saga',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/c/1/c1e0f201-42cb-46a1-901a-65bb4fc18f6c.jpg?1626099958',
+        imageLink: 'https://cards.scryfall.io/normal/front/c/1/c1e0f201-42cb-46a1-901a-65bb4fc18f6c.jpg?1626099958',
       }]}
       >
         <Typography >It’s hard for a card to do more than <Link href="https://scryfall.com/card/mh2/259/urzas-saga">Urza’s Saga</Link> - it’s several threats in one card that resists the most common forms of interaction and can find a combo piece, a hate card, or just grind the opponent down with even more card advantage. You can support <Link href="https://scryfall.com/card/mh2/259/urzas-saga">Saga</Link> with just a single card to find with the final chapter but it scales scarily well with any incidental artifacts you have lying around. I expect <Link href="https://scryfall.com/card/mh2/259/urzas-saga">Saga</Link> to become a very common pick in Rounds ~3-4 as more and more drafters see how impressive it is.</Typography>
@@ -105,7 +105,7 @@ export default function HowIWonMyVrd() {
         pickCount: 30,
         numberOfDrafts: 30,
         name: 'Karn, the Great Creator',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.jpg?1566819742',
+        imageLink: 'https://cards.scryfall.io/normal/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.jpg?1566819742',
       }]}
       >
         <Typography><Link href="https://scryfall.com/card/war/1/karn-the-great-creator">Karn</Link> hoses most of the most powerful VRD strategies without even trying, finds suitable hate for the others, is a one-card route to combos that you don’t want to support in your maindeck, and a self-contained win condition (via <Link href="https://scryfall.com/card/bbd/241/mycosynth-lattice">Mycosynth Lattice</Link> or various other cards that nobody else wants). It also happens to be the perfect payoff for one of the most dangerous cards in all of Magic:</Typography>
@@ -115,7 +115,7 @@ export default function HowIWonMyVrd() {
         pickCount: 48,
         numberOfDrafts: 63,
         name: 'Channel',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1618695674',
+        imageLink: 'https://cards.scryfall.io/normal/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1618695674',
       }]}
       >
         <Typography>It’s trivial to find ways to win on the spot with <Link href="https://scryfall.com/card/ima/157/channel">Channel</Link> - <Link href="https://scryfall.com/card/war/1/karn-the-great-creator">Karn</Link>, either generation of any of the big Eldrazi, <Link href="https://scryfall.com/card/cns/53/aether-searcher">Aether Searcher</Link> if your rules allow that, and many more. Most of these are fine cards in their own right or function as part of other combos, making it easy for <Link href="https://scryfall.com/card/ima/157/channel">Channel</Link> to coexist with those if you can manage its mana requirements. Other than dealing your opponent somehow - not easy in the face of Turn 2 <Link href="https://scryfall.com/card/ima/157/channel">Channel</Link> - these sequences are also virtually impossible to interact with.</Typography>
@@ -126,14 +126,14 @@ export default function HowIWonMyVrd() {
         pickCount: 54,
         numberOfDrafts: 63,
         name: 'Emrakul, the Aeons Torn',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/0/e/0e0d989d-7186-40dc-bdfe-cfbb77656bc8.jpg?1612809706',
+        imageLink: 'https://cards.scryfall.io/normal/front/0/e/0e0d989d-7186-40dc-bdfe-cfbb77656bc8.jpg?1612809706',
       },
         {
         averageRound: 14,
         pickCount: 27,
         numberOfDrafts: 63,
         name: 'Sneak Attack',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/3/d/3d9709ea-5962-4590-8b14-5213b14f9229.jpg?1599706719',
+        imageLink: 'https://cards.scryfall.io/normal/front/3/d/3d9709ea-5962-4590-8b14-5213b14f9229.jpg?1599706719',
       },
     ]}
       >
@@ -144,7 +144,7 @@ export default function HowIWonMyVrd() {
         pickCount: 28,
         numberOfDrafts: 63,
         name: 'Oath of Druids',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/9/d/9dad6b50-c415-4c55-8eac-bbc9d656c2fc.jpg?1562412357',
+        imageLink: 'https://cards.scryfall.io/normal/front/9/d/9dad6b50-c415-4c55-8eac-bbc9d656c2fc.jpg?1562412357',
       }]}
       >
         <Typography>A bedrock of the planeswalker control decks, <Link href="https://scryfall.com/card/c16/159/oath-of-druids">Oath of Druids</Link> is backbreaking against any creature strategy and can be generously enabled via the <Link href="https://scryfall.com/card/eld/197/oko-thief-of-crowns">Oko</Link> you have to pick highly or the <Link href="https://scryfall.com/card/c16/98/swan-song">Swan Song</Link> you can get whenever you like (as well as explicit setup cards like <Link href="https://scryfall.com/card/c16/296/forbidden-orchard">Forbidden Orchard</Link>). Beyond restricting you to just the creatures you want to hit, <Link href="https://scryfall.com/card/c16/159/oath-of-druids">Oath</Link> asks very little of you and adds a whole new dimension to a deck that can meet that condition without much trouble. Your hits can just be good cards in your deck anyway - T3 <Link href="https://scryfall.com/card/c16/159/oath-of-druids">Oath</Link> into <Link href="https://scryfall.com/card/thb/229/uro-titan-of-natures-wrath">Uro</Link> + escape <Link href="https://scryfall.com/card/thb/229/uro-titan-of-natures-wrath">Uro</Link> will put you massively ahead in any sensible game.</Typography>
@@ -155,14 +155,14 @@ export default function HowIWonMyVrd() {
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Demonic Tutor',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/3/b/3bdbc231-5316-4abd-9d8d-d87cff2c9847.jpg?1618695728',
+        imageLink: 'https://cards.scryfall.io/normal/front/3/b/3bdbc231-5316-4abd-9d8d-d87cff2c9847.jpg?1618695728',
       },
         {
         averageRound: 4,
         pickCount: 62,
         numberOfDrafts: 63,
         name: 'Vampiric Tutor',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005',
+        imageLink: 'https://cards.scryfall.io/normal/front/1/8/18bd50f2-c3ba-4217-a2d5-bb771e199706.jpg?1608910005',
       },
     ]}
       >
@@ -174,14 +174,14 @@ export default function HowIWonMyVrd() {
         pickCount: 12,
         numberOfDrafts: 20,
         name: 'Thassa\'s Oracle',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.jpg?1628801828',
+        imageLink: 'https://cards.scryfall.io/normal/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.jpg?1628801828',
       },
         {
         averageRound: 29,
         pickCount: 10,
         numberOfDrafts: 63,
         name: 'Demonic Consultation',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/1/d/1d779f19-3068-4976-b96b-8f93d156900b.jpg?1610146869',
+        imageLink: 'https://cards.scryfall.io/normal/front/1/d/1d779f19-3068-4976-b96b-8f93d156900b.jpg?1610146869',
       },
     ]}
       >
@@ -193,14 +193,14 @@ export default function HowIWonMyVrd() {
         pickCount: 39,
         numberOfDrafts: 59,
         name: 'Thespian\'s Stage',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/2/6/269a926d-7788-4668-8bd8-7572dbf5f5eb.jpg?1599710662',
+        imageLink: 'https://cards.scryfall.io/normal/front/2/6/269a926d-7788-4668-8bd8-7572dbf5f5eb.jpg?1599710662',
       },
         {
         averageRound: 15,
         pickCount: 46,
         numberOfDrafts: 63,
         name: 'Dark Depths',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396',
+        imageLink: 'https://cards.scryfall.io/normal/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396',
       },
     ]}
       >
@@ -212,28 +212,28 @@ export default function HowIWonMyVrd() {
         pickCount: 15,
         numberOfDrafts: 63,
         name: 'Intuition',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/1/b13e73a5-067d-4dbd-9c98-34a0db6140de.jpg?1562431264',
+        imageLink: 'https://cards.scryfall.io/normal/front/b/1/b13e73a5-067d-4dbd-9c98-34a0db6140de.jpg?1562431264',
       },
         {
         averageRound: 17,
         pickCount: 10,
         numberOfDrafts: 20,
         name: 'Underworld Breach',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/0/e/0e51d796-7279-4c06-87f0-37adbdaa41df.jpg?1596451461',
+        imageLink: 'https://cards.scryfall.io/normal/front/0/e/0e51d796-7279-4c06-87f0-37adbdaa41df.jpg?1596451461',
       },
         {
         averageRound: 43,
         pickCount: 3,
         numberOfDrafts: 27,
         name: 'Sevinne\'s Reclamation',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/7/e/7e68f4df-88ce-4e09-a03c-7edf40bff167.jpg?1568003378',
+        imageLink: 'https://cards.scryfall.io/normal/front/7/e/7e68f4df-88ce-4e09-a03c-7edf40bff167.jpg?1568003378',
       },
         {
         averageRound: 16,
         pickCount: 46,
         numberOfDrafts: 63,
         name: 'lion\'s eye diamond',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/7/5/758f95f8-bcb0-43ae-b474-56ebd855951e.jpg?1590511899',
+        imageLink: 'https://cards.scryfall.io/normal/front/7/5/758f95f8-bcb0-43ae-b474-56ebd855951e.jpg?1590511899',
       },
     ]}
       >
@@ -245,21 +245,21 @@ export default function HowIWonMyVrd() {
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Polluted Delta',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978',
+        imageLink: 'https://cards.scryfall.io/normal/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978',
       },
         {
         averageRound: 11,
         pickCount: 61,
         numberOfDrafts: 63,
         name: 'Volcanic Island',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669',
+        imageLink: 'https://cards.scryfall.io/normal/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669',
       },
         {
         averageRound: 8,
         pickCount: 29,
         numberOfDrafts: 29,
         name: 'Prismatic Vista',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585',
+        imageLink: 'https://cards.scryfall.io/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585',
       },
     ]}
       >
@@ -273,21 +273,21 @@ export default function HowIWonMyVrd() {
         pickCount: 63,
         numberOfDrafts: 63,
         name: 'Thoughtseize',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/2/b281a308-ab6b-47b6-bec7-632c9aaecede.jpg?1599706001',
+        imageLink: 'https://cards.scryfall.io/normal/front/b/2/b281a308-ab6b-47b6-bec7-632c9aaecede.jpg?1599706001',
       },
         {
         averageRound: 21,
         pickCount: 55,
         numberOfDrafts: 63,
         name: 'Pyroblast',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621',
+        imageLink: 'https://cards.scryfall.io/normal/front/b/0/b029eb9a-dd7a-40c2-96c4-0063d9cc002c.jpg?1580014621',
       },
         {
         averageRound: 23,
         pickCount: 21,
         numberOfDrafts: 29,
         name: 'Force of Vigor',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/normal/front/0/1/017c415b-d635-43c6-92b8-8c95d1c4ff8d.jpg?1562202072',
+        imageLink: 'https://cards.scryfall.io/normal/front/0/1/017c415b-d635-43c6-92b8-8c95d1c4ff8d.jpg?1562202072',
       },
     ]}
       >

@@ -4,7 +4,7 @@ import axios from 'axios';
 const useCardImage = (cardName) => {
   const [loadingImage, setLoadingImage] = useState(false);
   const [cardImage, setCardImage] = useState(
-    'https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595',
+    'https://cards.scryfall.io/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595',
   );
   const [cardBackFaceImage, setCardBackFaceImage] = useState(null);
 
@@ -17,7 +17,7 @@ const useCardImage = (cardName) => {
           .then(({data}) => {
             setCardBackFaceImage(null);
             let image =
-              'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
+              'https://cards.scryfall.io/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
             if (data?.image_uris) {
               image = data?.image_uris?.normal;
             } else if (data?.card_faces) {
@@ -31,7 +31,7 @@ const useCardImage = (cardName) => {
             setLoadingImage(false);
           });
       } catch (e) {
-        setCardImage('https://c1.scryfall.com/file/scryfall-cards/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
+        setCardImage('https://cards.scryfall.io/normal/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.jpg?1559591595');
         setLoadingImage(false);
       }
     })();

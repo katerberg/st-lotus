@@ -68,7 +68,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={22}
         averageRound={13}
         cardName="Wrenn and Six"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/4/a/4a706ecf-3277-40e3-871c-4ba4ead16e20.png?1582053605"
+        link="https://cards.scryfall.io/png/front/4/a/4a706ecf-3277-40e3-871c-4ba4ead16e20.png?1582053605"
         losses={27}
         timesTaken={11}
         wins={30}
@@ -78,7 +78,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={26}
         cardName="Nissa, Who Shakes the World"
-        link="https://c1.scryfall.com/file/scryfall-cards/normal/front/f/8/f857bbe4-5619-4733-a0c7-69700f2ef4f3.jpg?1618426283"
+        link="https://cards.scryfall.io/normal/front/f/8/f857bbe4-5619-4733-a0c7-69700f2ef4f3.jpg?1618426283"
         losses={18}
         timesTaken={4}
         wins={11}
@@ -88,7 +88,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={42}
         averageRound={25}
         cardName="Daretti, Scrap Savant"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/f/a/fa393eeb-bccc-453c-b783-6b0ff445c3a6.png?1625193660"
+        link="https://cards.scryfall.io/png/front/f/a/fa393eeb-bccc-453c-b783-6b0ff445c3a6.png?1625193660"
         losses={18}
         timesTaken={11}
         wins={15}
@@ -98,7 +98,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={53}
         averageRound={14}
         cardName="Liliana of the Veil"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/e/6/e653437e-2e56-4443-aec5-5bb7d8860238.png?1547516945"
+        link="https://cards.scryfall.io/png/front/e/6/e653437e-2e56-4443-aec5-5bb7d8860238.png?1547516945"
         losses={113}
         timesTaken={46}
         wins={89}
@@ -112,7 +112,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={56}
         averageRound={15}
         cardName="Tezzeret the Seeker"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.png?1562702928"
+        link="https://cards.scryfall.io/png/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.png?1562702928"
         losses={88}
         ranking={10}
         timesTaken={45}
@@ -123,7 +123,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={47}
         averageRound={11}
         cardName="Dack Fayden"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/3/f/3fcb7810-1054-4001-855c-6e17939b3d3f.png?1562864959"
+        link="https://cards.scryfall.io/png/front/3/f/3fcb7810-1054-4001-855c-6e17939b3d3f.png?1562864959"
         losses={80}
         ranking={9}
         timesTaken={41}
@@ -134,7 +134,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={56}
         averageRound={5}
         cardName="Jace, the Mind Sculptor"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/0/e/0e606072-a3aa-4300-ba90-ec92a721fa76.png?1562281841"
+        link="https://cards.scryfall.io/png/front/0/e/0e606072-a3aa-4300-ba90-ec92a721fa76.png?1562281841"
         losses={103}
         ranking={8}
         timesTaken={56}
@@ -145,7 +145,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={29}
         cardName="Dovin, Hand of Control"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/b/d/bd6ff745-919b-4688-9e9e-ab7835b3b891.png?1557577351"
+        link="https://cards.scryfall.io/png/front/b/d/bd6ff745-919b-4688-9e9e-ab7835b3b891.png?1557577351"
         losses={22}
         ranking={7}
         timesTaken={14}
@@ -156,7 +156,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={24}
         cardName="Ashiok, Dream Render"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/f/2/f2df3258-c053-48a8-974f-d80899b2cd93.png?1557577343"
+        link="https://cards.scryfall.io/png/front/f/2/f2df3258-c053-48a8-974f-d80899b2cd93.png?1557577343"
         losses={58}
         ranking={6}
         timesTaken={18}
@@ -167,7 +167,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={34}
         averageRound={18}
         cardName="Jace, Telepath Unbound"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/back/0/2/02d6d693-f1f3-4317-bcc0-c21fa8490d38.png?1590511929"
+        link="https://cards.scryfall.io/png/back/0/2/02d6d693-f1f3-4317-bcc0-c21fa8490d38.png?1590511929"
         losses={48}
         ranking={5}
         timesTaken={28}
@@ -178,7 +178,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={10}
         cardName="Teferi, Time Raveler"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.png?1613386796"
+        link="https://cards.scryfall.io/png/front/5/c/5cb76266-ae50-4bbc-8f96-d98f309b02d3.png?1613386796"
         losses={43}
         ranking={4}
         timesTaken={22}
@@ -189,7 +189,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={19}
         averageRound={6}
         cardName="Oko, Thief of Crowns"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/3/4/3462a3d0-5552-49fa-9eb7-100960c55891.png?1613387000"
+        link="https://cards.scryfall.io/png/front/3/4/3462a3d0-5552-49fa-9eb7-100960c55891.png?1613387000"
         losses={40}
         ranking={3}
         timesTaken={19}
@@ -200,7 +200,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={5}
         cardName="Narset, Parter of Veils"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/8/c/8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5.png?1574294103"
+        link="https://cards.scryfall.io/png/front/8/c/8c39f9b4-02b9-4d44-b8d6-4fd02ebbb0c5.png?1574294103"
         losses={41}
         ranking={2}
         timesTaken={23}
@@ -211,7 +211,7 @@ export default function PlaneswalkersInVrd() {
         availableDrafts={23}
         averageRound={6}
         cardName="Karn, the Great Creator"
-        link="https://c1.scryfall.com/file/scryfall-cards/png/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.png?1566819742"
+        link="https://cards.scryfall.io/png/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.png?1566819742"
         losses={41}
         ranking={1}
         timesTaken={23}

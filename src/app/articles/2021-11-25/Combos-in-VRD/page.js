@@ -51,13 +51,13 @@ export default function CombosInVrd() {
         pickCount: 7,
         numberOfDrafts: 7,
         name: 'Hullbreacher',
-    imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/4/d/4df8aabc-7fcb-4b7b-980b-18f499e6c170.png?1626088514',
+    imageLink: 'https://cards.scryfall.io/png/front/4/d/4df8aabc-7fcb-4b7b-980b-18f499e6c170.png?1626088514',
       }, {
         averageRound: 8,
         pickCount: 57,
         numberOfDrafts: 57,
         name: 'Timetwister',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/a/9a49dc44-616e-4bdd-8220-0bb71eccc512.png?1559591443',
+        imageLink: 'https://cards.scryfall.io/png/front/9/a/9a49dc44-616e-4bdd-8220-0bb71eccc512.png?1559591443',
       }]}
         title="Hullbreacher + Timetwister"
       >
@@ -73,13 +73,13 @@ export default function CombosInVrd() {
         pickCount: 56,
         numberOfDrafts: 57,
         name: 'Time Vault',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/0/902441dc-c976-4c92-b897-6376eaa0fe38.png?1559591445',
+        imageLink: 'https://cards.scryfall.io/png/front/9/0/902441dc-c976-4c92-b897-6376eaa0fe38.png?1559591445',
       }, {
         averageRound: 15,
         pickCount: 46,
         numberOfDrafts: 57,
         name: 'Tezzeret the Seeker',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.png?1562702928',
+        imageLink: 'https://cards.scryfall.io/png/front/3/b/3b214b6f-4734-4200-8467-92d7e3469b5d.png?1562702928',
       }]}
         title="Time Vault + Tezzeret the Seeker"
       >
@@ -96,13 +96,13 @@ export default function CombosInVrd() {
         pickCount: 51,
         numberOfDrafts: 57,
         name: 'Painter’s Servant',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/e/be407a81-b25a-4e5d-845e-be0cc0d18db8.png?1562835450',
+        imageLink: 'https://cards.scryfall.io/png/front/b/e/be407a81-b25a-4e5d-845e-be0cc0d18db8.png?1562835450',
       }, {
         averageRound: 15,
         pickCount: 51,
         numberOfDrafts: 57,
         name: 'Grindstone',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/4/f4459187-de64-456f-bb66-56dea40d5c3e.png?1562057371',
+        imageLink: 'https://cards.scryfall.io/png/front/f/4/f4459187-de64-456f-bb66-56dea40d5c3e.png?1562057371',
       }]}
         title="Painter’s Servant + Grindstone"
       >
@@ -120,13 +120,13 @@ export default function CombosInVrd() {
         pickCount: 43,
         numberOfDrafts: 57,
         name: 'Dark Depths',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/2/92409c3a-fb1a-4205-9fe1-0f5affc7b21d.png?1593275643',
+        imageLink: 'https://cards.scryfall.io/png/front/9/2/92409c3a-fb1a-4205-9fe1-0f5affc7b21d.png?1593275643',
       }, {
         averageRound: 20,
         pickCount: 37,
         numberOfDrafts: 53,
         name: 'Thespian’s Stage',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/6/b6f27909-e5cd-44c0-91c4-21624f692fd9.png?1561843043',
+        imageLink: 'https://cards.scryfall.io/png/front/b/6/b6f27909-e5cd-44c0-91c4-21624f692fd9.png?1561843043',
       }]}
         title="Dark Depths + Thespian’s Stage"
       >
@@ -142,13 +142,13 @@ export default function CombosInVrd() {
         pickCount: 57,
         numberOfDrafts: 57,
         name: 'Tinker',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.png?1562863289',
+        imageLink: 'https://cards.scryfall.io/png/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.png?1562863289',
       }, {
         averageRound: 15,
         pickCount: 43,
         numberOfDrafts: 54,
         name: 'Blightsteel Colossus',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/9/7928bb14-7631-4830-a756-26d1ea832ba2.png?1562612395',
+        imageLink: 'https://cards.scryfall.io/png/front/7/9/7928bb14-7631-4830-a756-26d1ea832ba2.png?1562612395',
       }]}
         title="Tinker + Blightsteel Colossus"
       >
@@ -175,13 +175,13 @@ export default function CombosInVrd() {
         pickCount: 35,
         numberOfDrafts: 57,
         name: 'Pestermite',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/2/f252ae53-443c-4a27-b8f0-639a9a2b8598.png?1562374183',
+        imageLink: 'https://cards.scryfall.io/png/front/f/2/f252ae53-443c-4a27-b8f0-639a9a2b8598.png?1562374183',
       }, {
         averageRound: 23,
         pickCount: 33,
         numberOfDrafts: 57,
         name: 'Splinter Twin',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/f/2f8f22fb-7291-4517-9b15-e98501f2856b.png?1562702491',
+        imageLink: 'https://cards.scryfall.io/png/front/2/f/2f8f22fb-7291-4517-9b15-e98501f2856b.png?1562702491',
       }]}
         title="Pestermite + Splinter Twin"
       >
@@ -198,13 +198,13 @@ export default function CombosInVrd() {
         pickCount: 33,
         numberOfDrafts: 57,
         name: 'Helm of Obedience',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/1/b17e9216-b1ed-4101-a04e-2bb139ccfa55.png?1562770147',
+        imageLink: 'https://cards.scryfall.io/png/front/b/1/b17e9216-b1ed-4101-a04e-2bb139ccfa55.png?1562770147',
       }, {
         averageRound: 26,
         pickCount: 39,
         numberOfDrafts: 57,
         name: 'Leyline of the Void',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37dfe8b8-b39e-4e70-9e5b-be42c93b4f70.png?1593272209',
+        imageLink: 'https://cards.scryfall.io/png/front/3/7/37dfe8b8-b39e-4e70-9e5b-be42c93b4f70.png?1593272209',
       }]}
         title="Helm of Obedience + Leyline of the Void"
       >
@@ -221,13 +221,13 @@ export default function CombosInVrd() {
         pickCount: 9,
         numberOfDrafts: 57,
         name: 'Demonic Consultation',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/d/8d727b9b-6114-414d-9172-16b6e1db41cc.png?1562921228',
+        imageLink: 'https://cards.scryfall.io/png/front/8/d/8d727b9b-6114-414d-9172-16b6e1db41cc.png?1562921228',
       }, {
         averageRound: 16,
         pickCount: 9,
         numberOfDrafts: 14,
         name: 'Thassa’s Oracle',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.png?1628801828',
+        imageLink: 'https://cards.scryfall.io/png/front/7/2/726e8b29-13e9-4138-b6a9-d2a0d8188d1c.png?1628801828',
       }]}
         title="Demonic Consultation + Thassa’s Oracle"
       >
@@ -244,13 +244,13 @@ export default function CombosInVrd() {
         pickCount: 38,
         numberOfDrafts: 57,
         name: 'Academy Ruins',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/a/f/af09af65-0a3b-42df-b0fd-372e2158beac.png?1562931959',
+        imageLink: 'https://cards.scryfall.io/png/front/a/f/af09af65-0a3b-42df-b0fd-372e2158beac.png?1562931959',
       }, {
         averageRound: 27,
         pickCount: 25,
         numberOfDrafts: 57,
         name: 'Mindslaver',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/8/98fb1eaa-2871-491a-a4f5-3e358778ba40.png?1562151747',
+        imageLink: 'https://cards.scryfall.io/png/front/9/8/98fb1eaa-2871-491a-a4f5-3e358778ba40.png?1562151747',
       }]}
         title="Academy Ruins + Mindslaver"
       >
@@ -267,13 +267,13 @@ export default function CombosInVrd() {
         pickCount: 24,
         numberOfDrafts: 24,
         name: 'Karn, the Great Creator',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.png?1566819742',
+        imageLink: 'https://cards.scryfall.io/png/front/3/e/3ec0c0fb-1a4f-45f4-85b7-346a6d3ce2c5.png?1566819742',
       }, {
         averageRound: 28,
         pickCount: 23,
         numberOfDrafts: 57,
         name: 'Mycosynth Lattice',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/7/e7e7f15a-074a-4137-88ca-e5d376d146fd.png?1562640258',
+        imageLink: 'https://cards.scryfall.io/png/front/e/7/e7e7f15a-074a-4137-88ca-e5d376d146fd.png?1562640258',
       }]}
         title="Karn, the Great Creator + Mycosynth Lattice"
       >
@@ -285,13 +285,13 @@ export default function CombosInVrd() {
         pickCount: 5,
         numberOfDrafts: 57,
         name: 'Chain of Smog',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/b/6bfe64f9-8b03-41f6-a47b-fade397ad9d1.png?1562920423',
+        imageLink: 'https://cards.scryfall.io/png/front/6/b/6bfe64f9-8b03-41f6-a47b-fade397ad9d1.png?1562920423',
       }, {
         averageRound: 25,
         pickCount: 2,
         numberOfDrafts: 6,
         name: 'Witherbloom Apprentice',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/f/7f80a11b-188b-464c-b00d-c9d1cfb8ddee.png?1624740448',
+        imageLink: 'https://cards.scryfall.io/png/front/7/f/7f80a11b-188b-464c-b00d-c9d1cfb8ddee.png?1624740448',
       }]}
         title="Chain of Smog + Witherbloom Apprentice"
       >
@@ -320,13 +320,13 @@ export default function CombosInVrd() {
         pickCount: 17,
         numberOfDrafts: 54,
         name: 'Thopter Foundry',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/4/2/42b8d797-b01d-49cf-9818-d84bba17029d.png?1562640917',
+        imageLink: 'https://cards.scryfall.io/png/front/4/2/42b8d797-b01d-49cf-9818-d84bba17029d.png?1562640917',
       }, {
         averageRound: 24,
         pickCount: 17,
         numberOfDrafts: 57,
         name: 'Sword of the Meek',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/9/e9f13705-6ede-4c29-a2b4-a082bf69e9c5.png?1562941962',
+        imageLink: 'https://cards.scryfall.io/png/front/e/9/e9f13705-6ede-4c29-a2b4-a082bf69e9c5.png?1562941962',
       }]}
         title="Thopter Foundry + Sword of the Meek"
       >
@@ -344,13 +344,13 @@ export default function CombosInVrd() {
         pickCount: 10,
         numberOfDrafts: 57,
         name: 'Auriok Salvagers',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/9/09c9cd1b-9260-4f98-ac7a-25bb5ae3e06d.png?1562875356',
+        imageLink: 'https://cards.scryfall.io/png/front/0/9/09c9cd1b-9260-4f98-ac7a-25bb5ae3e06d.png?1562875356',
       }, {
         averageRound: 15,
         pickCount: 41,
         numberOfDrafts: 57,
         name: 'Lion’s Eye Diamond',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/3/63bacc32-d6ba-420c-9b49-299c08e5fb39.png?1562719750',
+        imageLink: 'https://cards.scryfall.io/png/front/6/3/63bacc32-d6ba-420c-9b49-299c08e5fb39.png?1562719750',
       }]}
         title="Auriok Salvagers + Lion’s Eye Diamond"
       >
@@ -367,13 +367,13 @@ export default function CombosInVrd() {
         pickCount: 1,
         numberOfDrafts: 53,
         name: 'Ivy Lane Denizen',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/9/b95be874-93c0-4e05-9e5a-fe8f38bcb445.png?1561843498',
+        imageLink: 'https://cards.scryfall.io/png/front/b/9/b95be874-93c0-4e05-9e5a-fe8f38bcb445.png?1561843498',
       }, {
         averageRound: 19,
         pickCount: 1,
         numberOfDrafts: 5,
         name: 'Scurry Oak',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/f/0fb48c2e-ee0f-4fae-9c22-247870c10d5b.png?1626097756',
+        imageLink: 'https://cards.scryfall.io/png/front/0/f/0fb48c2e-ee0f-4fae-9c22-247870c10d5b.png?1626097756',
       }]}
         title="Ivy Lane Denizen + Scurry Oak"
       >
@@ -389,13 +389,13 @@ export default function CombosInVrd() {
         pickCount: 22,
         numberOfDrafts: 57,
         name: 'Power Artifact',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/4/e48bc89e-6da5-43da-b4e0-60d5f850199c.png?1562943281',
+        imageLink: 'https://cards.scryfall.io/png/front/e/4/e48bc89e-6da5-43da-b4e0-60d5f850199c.png?1562943281',
       }, {
         averageRound: 6,
         pickCount: 57,
         numberOfDrafts: 57,
         name: 'Grim Monolith',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/d/9ddc9fe1-17c8-4e1d-aeb8-c4214e881280.png?1562863767',
+        imageLink: 'https://cards.scryfall.io/png/front/9/d/9ddc9fe1-17c8-4e1d-aeb8-c4214e881280.png?1562863767',
       }]}
         title="Power Artifact + Grim Monolith"
       >
@@ -412,13 +412,13 @@ export default function CombosInVrd() {
         pickCount: 34,
         numberOfDrafts: 57,
         name: 'Isochron Scepter',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/7/878b0159-6917-45d3-b9ea-562ac49f0b8f.png?1562149998',
+        imageLink: 'https://cards.scryfall.io/png/front/8/7/878b0159-6917-45d3-b9ea-562ac49f0b8f.png?1562149998',
       }, {
         averageRound: 34,
         pickCount: 5,
         numberOfDrafts: 31,
         name: 'Dramatic Reversal',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/c/dcb59045-2743-48ae-8063-727e551b1c41.png?1576381170',
+        imageLink: 'https://cards.scryfall.io/png/front/d/c/dcb59045-2743-48ae-8063-727e551b1c41.png?1576381170',
       }]}
         title="Isochron Scepter + Dramatic Reversal"
       >
@@ -430,13 +430,13 @@ export default function CombosInVrd() {
         pickCount: 7,
         numberOfDrafts: 57,
         name: 'Worldgorger Dragon',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/9/99783a2b-a95a-457b-82d6-001933aee5ec.png?1562631091',
+        imageLink: 'https://cards.scryfall.io/png/front/9/9/99783a2b-a95a-457b-82d6-001933aee5ec.png?1562631091',
       }, {
         averageRound: 20,
         pickCount: 36,
         numberOfDrafts: 57,
         name: 'Animate Dead',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/f/8fd7861d-925f-4b4c-a4ab-60be6f43d50b.png?1559591550',
+        imageLink: 'https://cards.scryfall.io/png/front/8/f/8fd7861d-925f-4b4c-a4ab-60be6f43d50b.png?1559591550',
       }]}
         title="Worldgorger Dragon + Animate Dead"
       >
@@ -457,13 +457,13 @@ export default function CombosInVrd() {
         pickCount: 4,
         numberOfDrafts: 36,
         name: 'Soulfire Grand Master',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/f/c/fc3a4e7d-6667-4c2f-b6b4-484f401b0455.png?1562831870',
+        imageLink: 'https://cards.scryfall.io/png/front/f/c/fc3a4e7d-6667-4c2f-b6b4-484f401b0455.png?1562831870',
       }, {
         averageRound: 2,
         pickCount: 57,
         numberOfDrafts: 57,
         name: 'Time Walk',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.png?1559591444',
+        imageLink: 'https://cards.scryfall.io/png/front/e/0/e0139f60-d48e-46fb-9f5a-1e3d7558c834.png?1559591444',
       }]}
         title="Soulfire Grand Master + Time Walk"
       >
@@ -479,13 +479,13 @@ export default function CombosInVrd() {
         pickCount: 12,
         numberOfDrafts: 57,
         name: 'Flash',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/6/3/63af3c26-5b1f-46f6-9aa2-036c615bf5ea.png?1562719749',
+        imageLink: 'https://cards.scryfall.io/png/front/6/3/63af3c26-5b1f-46f6-9aa2-036c615bf5ea.png?1562719749',
       }, {
         averageRound: 28,
         pickCount: 8,
         numberOfDrafts: 57,
         name: 'Protean Hulk',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/d/3d978332-95bf-4f86-9e67-06f10983c267.png?1593273433',
+        imageLink: 'https://cards.scryfall.io/png/front/3/d/3d978332-95bf-4f86-9e67-06f10983c267.png?1593273433',
       }]}
         title="Flash + Protean Hulk"
       >
@@ -501,13 +501,13 @@ export default function CombosInVrd() {
         pickCount: 3,
         numberOfDrafts: 30,
         name: 'Vizier of Remedies',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/6/36ab760e-93e0-4dbc-aaa1-02316f62ed3f.png?1543674853',
+        imageLink: 'https://cards.scryfall.io/png/front/3/6/36ab760e-93e0-4dbc-aaa1-02316f62ed3f.png?1543674853',
       }, {
         averageRound: 13,
         pickCount: 3,
         numberOfDrafts: 57,
         name: 'Devoted Druid',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/2/820e2f07-f637-4144-b45a-0e1430dcf55e.png?1562832416',
+        imageLink: 'https://cards.scryfall.io/png/front/8/2/820e2f07-f637-4144-b45a-0e1430dcf55e.png?1562832416',
       }]}
         title="Vizier of Remedies + Devoted Druid"
       >
@@ -535,13 +535,13 @@ export default function CombosInVrd() {
         pickCount: 4,
         numberOfDrafts: 57,
         name: 'Squirrel Nest',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/2/22eccb27-1723-4c5a-96b8-85e6e5739c30.png?1562901472',
+        imageLink: 'https://cards.scryfall.io/png/front/2/2/22eccb27-1723-4c5a-96b8-85e6e5739c30.png?1562901472',
       }, {
         averageRound: 36,
         pickCount: 5,
         numberOfDrafts: 57,
         name: 'Earthcraft',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/9/d/9dda7531-82a1-4f49-8858-601ddbc6e2bc.png?1587857352',
+        imageLink: 'https://cards.scryfall.io/png/front/9/d/9dda7531-82a1-4f49-8858-601ddbc6e2bc.png?1587857352',
       }]}
         title="Squirrel Nest + Earthcraft"
       >
@@ -553,13 +553,13 @@ export default function CombosInVrd() {
         pickCount: 5,
         numberOfDrafts: 57,
         name: 'Energy Field',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/1/81ff5770-b207-41e1-97b7-b9347c72b407.png?1562922391',
+        imageLink: 'https://cards.scryfall.io/png/front/8/1/81ff5770-b207-41e1-97b7-b9347c72b407.png?1562922391',
       }, {
         averageRound: 22,
         pickCount: 36,
         numberOfDrafts: 53,
         name: 'Rest in Peace',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37c2b1d1-faa0-40fd-82f4-216604ce7635.png?1562784882',
+        imageLink: 'https://cards.scryfall.io/png/front/3/7/37c2b1d1-faa0-40fd-82f4-216604ce7635.png?1562784882',
       }]}
         title="Energy Field + Rest in Peace"
       >
@@ -571,13 +571,13 @@ export default function CombosInVrd() {
         pickCount: 4,
         numberOfDrafts: 43,
         name: 'Dualcaster Mage',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/b/0b80c8a0-0870-4836-bee1-f4a805d119d6.png?1561931952',
+        imageLink: 'https://cards.scryfall.io/png/front/0/b/0b80c8a0-0870-4836-bee1-f4a805d119d6.png?1561931952',
       }, {
         averageRound: 41,
         pickCount: 2,
         numberOfDrafts: 49,
         name: 'Twinflame',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/0/207128b3-2de3-495a-bf29-eec50c3bd752.png?1593096134',
+        imageLink: 'https://cards.scryfall.io/png/front/2/0/207128b3-2de3-495a-bf29-eec50c3bd752.png?1593096134',
       }]}
         title="Dualcaster Mage + Twinflame"
       >
@@ -593,13 +593,13 @@ export default function CombosInVrd() {
         pickCount: 2,
         numberOfDrafts: 54,
         name: 'Mindcrank',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/1/d13a5ae0-d76a-4430-98c1-47a19e615e2c.png?1562881729',
+        imageLink: 'https://cards.scryfall.io/png/front/d/1/d13a5ae0-d76a-4430-98c1-47a19e615e2c.png?1562881729',
       }, {
         averageRound: 12,
         pickCount: 1,
         numberOfDrafts: 57,
         name: 'Bloodchief Ascension',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/a/a/aa213dbb-c52a-4084-92aa-d0b5d97a97d9.png?1562615322',
+        imageLink: 'https://cards.scryfall.io/png/front/a/a/aa213dbb-c52a-4084-92aa-d0b5d97a97d9.png?1562615322',
       }]}
         title="Mindcrank + Bloodchief Ascension"
       >
@@ -615,13 +615,13 @@ export default function CombosInVrd() {
         pickCount: 4,
         numberOfDrafts: 30,
         name: 'Solemnity',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/a/0a71fb62-acbd-49f5-842f-0fc9fa48afea.png?1562788659',
+        imageLink: 'https://cards.scryfall.io/png/front/0/a/0a71fb62-acbd-49f5-842f-0fc9fa48afea.png?1562788659',
       }, {
         averageRound: 38,
         pickCount: 1,
         numberOfDrafts: 54,
         name: 'Phyrexian Unlife',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/b/4/b4a1e16a-39f0-47ab-aba8-73e82ba9ab18.png?1562880895',
+        imageLink: 'https://cards.scryfall.io/png/front/b/4/b4a1e16a-39f0-47ab-aba8-73e82ba9ab18.png?1562880895',
       }]}
         title="Solemnity + Phyrexian Unlife"
       >
@@ -637,13 +637,13 @@ export default function CombosInVrd() {
         pickCount: 3,
         numberOfDrafts: 57,
         name: 'Valakut, the Molten Pinnacle',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/7/37bce60d-2cb0-4772-9f5c-122a7ed426a0.png?1562611305',
+        imageLink: 'https://cards.scryfall.io/png/front/3/7/37bce60d-2cb0-4772-9f5c-122a7ed426a0.png?1562611305',
       }, {
         averageRound: 28,
         pickCount: 3,
         numberOfDrafts: 57,
         name: 'Scapeshift',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/8/4/84829605-50eb-455d-a236-ebfa11e883c5.png?1562879722',
+        imageLink: 'https://cards.scryfall.io/png/front/8/4/84829605-50eb-455d-a236-ebfa11e883c5.png?1562879722',
       }]}
         title="Valakut, the Molten Pinnacle + Scapeshift"
       >
@@ -659,13 +659,13 @@ export default function CombosInVrd() {
         pickCount: 2,
         numberOfDrafts: 57,
         name: 'Ad Nauseam',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/a/0a4ce4a1-65e3-4b40-be35-8fc55a968ec8.png?1562700939',
+        imageLink: 'https://cards.scryfall.io/png/front/0/a/0a4ce4a1-65e3-4b40-be35-8fc55a968ec8.png?1562700939',
       }, {
         averageRound: 56,
         pickCount: 2,
         numberOfDrafts: 57,
         name: 'Angel’s Grace',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/5/8/580cb5be-fa59-4eb9-8808-7d2943fb6413.png?1562913383',
+        imageLink: 'https://cards.scryfall.io/png/front/5/8/580cb5be-fa59-4eb9-8808-7d2943fb6413.png?1562913383',
       }]}
         title="Ad Nauseam + Angel’s Grace"
       >
@@ -682,13 +682,13 @@ export default function CombosInVrd() {
         pickCount: 1,
         numberOfDrafts: 14,
         name: 'Heliod, Sun-Crowned',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/0/1/01a8576e-cadc-4521-aadd-3a05f0bc4d20.png?1581479085',
+        imageLink: 'https://cards.scryfall.io/png/front/0/1/01a8576e-cadc-4521-aadd-3a05f0bc4d20.png?1581479085',
       }, {
         averageRound: 20,
         pickCount: 26,
         numberOfDrafts: 30,
         name: 'Walking Ballista',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.png?1576382470',
+        imageLink: 'https://cards.scryfall.io/png/front/3/2/329a8738-3e17-403a-857a-0ba529ce8cd1.png?1576382470',
       }]}
         title="Heliod, Sun-Crowned + Walking Ballista"
       >
@@ -705,13 +705,13 @@ export default function CombosInVrd() {
         pickCount: 1,
         numberOfDrafts: 57,
         name: 'Phyrexian Dreadnought',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/b/7b8197b9-0cd1-4fa1-9668-d1b5f1759151.png?1562720243',
+        imageLink: 'https://cards.scryfall.io/png/front/7/b/7b8197b9-0cd1-4fa1-9668-d1b5f1759151.png?1562720243',
       }, {
         averageRound: 26,
         pickCount: 19,
         numberOfDrafts: 57,
         name: 'Stifle',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.png?1562527068',
+        imageLink: 'https://cards.scryfall.io/png/front/2/d/2d7643c0-b2db-478f-944e-b27b77bad3eb.png?1562527068',
       }]}
         title="Phyrexian Dreadnought + Stifle"
       >
@@ -727,13 +727,13 @@ export default function CombosInVrd() {
         pickCount: 2,
         numberOfDrafts: 57,
         name: 'Opalescence',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/c/3c0071fb-afa5-47b5-b266-2b10a4f5a98a.png?1562443752',
+        imageLink: 'https://cards.scryfall.io/png/front/3/c/3c0071fb-afa5-47b5-b266-2b10a4f5a98a.png?1562443752',
       }, {
         averageRound: 26,
         pickCount: 1,
         numberOfDrafts: 57,
         name: 'Enchanted Evening',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/5/0/5033a7b0-39b0-4c49-b332-7ea62d85455d.png?1562830075',
+        imageLink: 'https://cards.scryfall.io/png/front/5/0/5033a7b0-39b0-4c49-b332-7ea62d85455d.png?1562830075',
       }]}
         title="Opalescence + Enchanted Evening"
       >
@@ -745,13 +745,13 @@ export default function CombosInVrd() {
         pickCount: 1,
         numberOfDrafts: 57,
         name: 'Illusions of Grandeur',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/7/17eeeef2-2ced-42b8-a5e0-1095c9e13b02.png?1562899523',
+        imageLink: 'https://cards.scryfall.io/png/front/1/7/17eeeef2-2ced-42b8-a5e0-1095c9e13b02.png?1562899523',
       }, {
         averageRound: 36,
         pickCount: 1,
         numberOfDrafts: 57,
         name: 'Donate',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/7/f/7f6d8ce9-f8c8-45ad-b74c-97fba0e2982e.png?1562444248',
+        imageLink: 'https://cards.scryfall.io/png/front/7/f/7f6d8ce9-f8c8-45ad-b74c-97fba0e2982e.png?1562444248',
       }]}
         title="Illusions of Grandeur + Donate"
       >
@@ -779,13 +779,13 @@ export default function CombosInVrd() {
         pickCount: 0,
         numberOfDrafts: 57,
         name: 'Knowledge Pool',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/9/393454c2-b256-4a6e-9bc2-56a47cab5073.png?1562610637',
+        imageLink: 'https://cards.scryfall.io/png/front/3/9/393454c2-b256-4a6e-9bc2-56a47cab5073.png?1562610637',
       }, {
         averageRound: 37,
         pickCount: 13,
         numberOfDrafts: 57,
         name: 'Teferi, Mage of Zhalfir',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/3/c/3c0145f6-4e27-49e7-9ef6-bac6fa3de26d.png?1562907491',
+        imageLink: 'https://cards.scryfall.io/png/front/3/c/3c0145f6-4e27-49e7-9ef6-bac6fa3de26d.png?1562907491',
       }]}
         title="Knowledge Pool + Teferi, Mage of Zhalfir"
       >
@@ -802,13 +802,13 @@ export default function CombosInVrd() {
         pickCount: 0,
         numberOfDrafts: 57,
         name: 'Acererak the Archlich',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/d/d/dd52d0bd-3abd-401c-9f56-ee911613da3b.png?1627704283',
+        imageLink: 'https://cards.scryfall.io/png/front/d/d/dd52d0bd-3abd-401c-9f56-ee911613da3b.png?1627704283',
       }, {
         averageRound: 29,
         pickCount: 3,
         numberOfDrafts: 57,
         name: 'Aluren',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/2/6/268403bc-733d-446e-a7c1-abc957c42bc2.png?1595430482',
+        imageLink: 'https://cards.scryfall.io/png/front/2/6/268403bc-733d-446e-a7c1-abc957c42bc2.png?1595430482',
       }]}
         title="Acererak the Archlich + Aluren"
       >
@@ -829,13 +829,13 @@ export default function CombosInVrd() {
         pickCount: 0,
         numberOfDrafts: 57,
         name: 'Food Chain',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/8/18a1bb9e-006c-495e-8f99-d451183d2669.png?1562379435',
+        imageLink: 'https://cards.scryfall.io/png/front/1/8/18a1bb9e-006c-495e-8f99-d451183d2669.png?1562379435',
       }, {
         averageRound: 0,
         pickCount: 0,
         numberOfDrafts: 57,
         name: 'Eternal Scourge',
-        imageLink: 'https://c1.scryfall.com/file/scryfall-cards/png/front/1/3/13ce52f5-6d49-4d44-a3d7-925340de8406.png?1576383733',
+        imageLink: 'https://cards.scryfall.io/png/front/1/3/13ce52f5-6d49-4d44-a3d7-925340de8406.png?1576383733',
       }]}
         title="Food Chain and Eternal Scourge"
       >

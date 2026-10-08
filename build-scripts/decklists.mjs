@@ -49,7 +49,7 @@ function getCardImage(processedCard) {
   if (processedCard.card_faces) {
     return processedCard.card_faces[0].image_uris.normal;
   }
-  return 'https://c1.scryfall.com/file/scryfall-cards/normal/front/5/8/5865603c-0a5e-45c3-84e3-2dc3b4cf0cf7.jpg?1562915786';
+  return 'https://cards.scryfall.io/display/front/b/3/b3a69a1c-c80f-4413-a6fd-ae54cabbce28.webp?1783948607';
 }
 
 function getCardColors(processedCard) {
