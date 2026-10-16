@@ -63,13 +63,22 @@ const useCardStats = (searchText, includeOldDrafts = false) => {
           });
       } catch (e) {
         const response = e?.response;
-        const errorMessage = response?.data?.message;
-        if (errorMessage) {
-          setSuggestion({knownCard: false, suggestion: errorMessage});
-          setSuggestions(response?.data?.suggestions || []);
-        } else {
-          setSuggestion(null);
+        const status = response?.status;
+        if (!response || status >= 500) {
+          setSuggestion({
+            error: true,
+            message: 'The stats server is currently unavailable. Please try again later.',
+          });
           setSuggestions([]);
+        } else {
+          const errorMessage = response?.data?.message;
+          if (errorMessage) {
+            setSuggestion({knownCard: false, suggestion: errorMessage});
+            setSuggestions(response?.data?.suggestions || []);
+          } else {
+            setSuggestion(null);
+            setSuggestions([]);
+          }
         }
         setStats(null);
         setLoadingStats(false);

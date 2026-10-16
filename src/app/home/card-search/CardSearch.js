@@ -32,13 +32,15 @@ export default function CardSearch() {
   };
 
   const handleSearchKeyPress = useCallback(e => {
-    if (e.keyCode === 13 && suggestion) {
+    if (e.keyCode === 13 && suggestion && !suggestion.error) {
       setSearchText(suggestion.suggestion);
     }
   }, [suggestion]);
 
   const handleAcceptSuggestion = () => {
-    setSearchText(suggestion.suggestion);
+    if (!suggestion?.error) {
+      setSearchText(suggestion.suggestion);
+    }
   };
 
   return (

@@ -25,11 +25,19 @@ const useCardPairings = (searchText) => {
         setLoadingSynergies(false);
       } catch (e) {
         const response = e?.response;
-        const errorMessage = response?.data?.message;
-        if (errorMessage) {
-          setSuggestion({knownCard: false, suggestion: errorMessage});
+        const status = response?.status;
+        if (!response || status >= 500) {
+          setSuggestion({
+            error: true,
+            message: 'The stats server is currently unavailable. Please try again later.',
+          });
         } else {
-          setSuggestion(null);
+          const errorMessage = response?.data?.message;
+          if (errorMessage) {
+            setSuggestion({knownCard: false, suggestion: errorMessage});
+          } else {
+            setSuggestion(null);
+          }
         }
         setSynergies([]);
         setLoadingSynergies(false);

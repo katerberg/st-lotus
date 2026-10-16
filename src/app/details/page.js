@@ -40,7 +40,7 @@ export default function Details() {
     setSearchText(card);
     document.title = 'St Lotus | ' + card;
   }, [card]);
-  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestions} = useCardStats(
+  const {stats, loadingStats, cardImage, cardBackFaceImage, suggestion, suggestions} = useCardStats(
     searchText,
     !isPremier,
   );
@@ -129,7 +129,14 @@ export default function Details() {
         }}
         value={searchText}
       />
-      {suggestions.length > 0 && !loadingStats && <Suggestion onAcceptSuggestion={handleAcceptSuggestion} searchText={searchText} stats={stats} suggestion={{knownCard: stats?.numberAvailable, suggestion: suggestions[0]}} />}
+      {!loadingStats && (suggestion?.error || suggestions.length > 0) && (
+        <Suggestion
+          onAcceptSuggestion={handleAcceptSuggestion}
+          searchText={searchText}
+          stats={stats}
+          suggestion={suggestion?.error ? suggestion : {knownCard: stats?.numberAvailable, suggestion: suggestions[0]}}
+        />
+      )}
       <Grid container flexDirection="row" item sx={{marginTop: '20px'}}>
         <Hidden mdUp>
           <Grid item xs={12}>
